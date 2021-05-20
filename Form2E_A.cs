@@ -14,5 +14,31 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void buttonInsert_Click(object sender, EventArgs e)
+        {
+            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("The insertion is failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is inserted successfully!");
+            }*/
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("The insertion is failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is inserted successfully!");
+            }*/
+        }
     }
 }
