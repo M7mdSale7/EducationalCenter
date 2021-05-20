@@ -32,29 +32,29 @@ namespace EducationalCenter
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelBookRooms = new System.Windows.Forms.Label();
             this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelBookRooms = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(25, 71);
+            this.labelWelcome.Location = new System.Drawing.Point(21, 62);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 6;
             this.labelWelcome.Text = "Welcome,";
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(477, 29);
+            this.buttonLogOut.Location = new System.Drawing.Point(409, 25);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
             this.buttonLogOut.TabIndex = 7;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
@@ -68,21 +68,11 @@ namespace EducationalCenter
             this.ColumnRoom,
             this.ColumnDateTime,
             this.ColumnType});
-            this.dataGridView1.Location = new System.Drawing.Point(28, 153);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 133);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(539, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(539, 130);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // labelBookRooms
-            // 
-            this.labelBookRooms.AutoSize = true;
-            this.labelBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelBookRooms.Location = new System.Drawing.Point(28, 125);
-            this.labelBookRooms.Name = "labelBookRooms";
-            this.labelBookRooms.Size = new System.Drawing.Size(80, 15);
-            this.labelBookRooms.TabIndex = 9;
-            this.labelBookRooms.Text = "Book Rooms:";
             // 
             // ColumnTeacher
             // 
@@ -109,11 +99,21 @@ namespace EducationalCenter
             this.ColumnType.HeaderText = "Type";
             this.ColumnType.Name = "ColumnType";
             // 
+            // labelBookRooms
+            // 
+            this.labelBookRooms.AutoSize = true;
+            this.labelBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelBookRooms.Location = new System.Drawing.Point(24, 108);
+            this.labelBookRooms.Name = "labelBookRooms";
+            this.labelBookRooms.Size = new System.Drawing.Size(80, 15);
+            this.labelBookRooms.TabIndex = 9;
+            this.labelBookRooms.Text = "Book Rooms:";
+            // 
             // Form2E_B
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelBookRooms);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonLogOut);

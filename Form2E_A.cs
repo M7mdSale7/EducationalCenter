@@ -17,7 +17,7 @@ namespace EducationalCenter
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text);
+            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text,comboBoxSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show("The insertion is failed");

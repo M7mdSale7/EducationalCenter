@@ -33,8 +33,9 @@ namespace EducationalCenter
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Back = new System.Windows.Forms.Button();
             this.labelTeachingAssistants = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +46,10 @@ namespace EducationalCenter
             this.ColumnName,
             this.ColumnID,
             this.ColumnPhoneNumber});
-            this.dataGridView1.Location = new System.Drawing.Point(26, 150);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(343, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(341, 130);
             this.dataGridView1.TabIndex = 0;
             // 
             // ColumnName
@@ -68,31 +69,42 @@ namespace EducationalCenter
             this.ColumnPhoneNumber.HeaderText = "Phone Number";
             this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
             // 
-            // Back
-            // 
-            this.Back.Location = new System.Drawing.Point(269, 29);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(100, 50);
-            this.Back.TabIndex = 1;
-            this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
-            // 
             // labelTeachingAssistants
             // 
             this.labelTeachingAssistants.AutoSize = true;
-            this.labelTeachingAssistants.Location = new System.Drawing.Point(26, 119);
+            this.labelTeachingAssistants.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTeachingAssistants.Location = new System.Drawing.Point(22, 103);
             this.labelTeachingAssistants.Name = "labelTeachingAssistants";
-            this.labelTeachingAssistants.Size = new System.Drawing.Size(112, 15);
+            this.labelTeachingAssistants.Size = new System.Drawing.Size(125, 13);
             this.labelTeachingAssistants.TabIndex = 2;
             this.labelTeachingAssistants.Text = "Teaching Assistants:";
             // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Location = new System.Drawing.Point(19, 25);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
+            this.labelWelcome.TabIndex = 3;
+            this.labelWelcome.Text = "Welcome,";
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(508, 21);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
+            this.buttonBack.TabIndex = 4;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
             // Form2T_C
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.labelTeachingAssistants);
-            this.Controls.Add(this.Back);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2T_C";
             this.Text = "Form2T-C";
@@ -108,7 +120,8 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
-        private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Label labelTeachingAssistants;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
