@@ -36,18 +36,18 @@ namespace EducationalCenter
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(361, 40);
+            this.buttonLogOut.Location = new System.Drawing.Point(480, 32);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
             this.buttonLogOut.TabIndex = 0;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
             // 
             // buttonHireEmployees
             // 
-            this.buttonHireEmployees.Location = new System.Drawing.Point(55, 168);
+            this.buttonHireEmployees.Location = new System.Drawing.Point(47, 146);
             this.buttonHireEmployees.Name = "buttonHireEmployees";
-            this.buttonHireEmployees.Size = new System.Drawing.Size(100, 50);
+            this.buttonHireEmployees.Size = new System.Drawing.Size(86, 43);
             this.buttonHireEmployees.TabIndex = 1;
             this.buttonHireEmployees.Text = "Hire Employees";
             this.buttonHireEmployees.UseVisualStyleBackColor = true;
@@ -55,17 +55,17 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(55, 89);
+            this.labelWelcome.Location = new System.Drawing.Point(47, 77);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 3;
             this.labelWelcome.Text = "Welcome,";
             // 
             // Form1M
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonHireEmployees);
             this.Controls.Add(this.buttonLogOut);

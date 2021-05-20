@@ -38,37 +38,37 @@ namespace EducationalCenter
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(360, 21);
+            this.buttonLogOut.Location = new System.Drawing.Point(492, 12);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
             this.buttonLogOut.TabIndex = 0;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
             // 
             // buttonBookLessons
             // 
-            this.buttonBookLessons.Location = new System.Drawing.Point(24, 166);
+            this.buttonBookLessons.Location = new System.Drawing.Point(21, 144);
             this.buttonBookLessons.Name = "buttonBookLessons";
-            this.buttonBookLessons.Size = new System.Drawing.Size(100, 50);
+            this.buttonBookLessons.Size = new System.Drawing.Size(86, 43);
             this.buttonBookLessons.TabIndex = 1;
             this.buttonBookLessons.Text = "Book Lessons";
             this.buttonBookLessons.UseVisualStyleBackColor = true;
             // 
             // buttonBookRooms
             // 
-            this.buttonBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonBookRooms.Location = new System.Drawing.Point(185, 168);
+            this.buttonBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonBookRooms.Location = new System.Drawing.Point(241, 146);
             this.buttonBookRooms.Name = "buttonBookRooms";
-            this.buttonBookRooms.Size = new System.Drawing.Size(100, 50);
+            this.buttonBookRooms.Size = new System.Drawing.Size(86, 43);
             this.buttonBookRooms.TabIndex = 2;
             this.buttonBookRooms.Text = "Book Rooms";
             this.buttonBookRooms.UseVisualStyleBackColor = true;
             // 
             // buttonSchedule
             // 
-            this.buttonSchedule.Location = new System.Drawing.Point(333, 168);
+            this.buttonSchedule.Location = new System.Drawing.Point(470, 146);
             this.buttonSchedule.Name = "buttonSchedule";
-            this.buttonSchedule.Size = new System.Drawing.Size(100, 50);
+            this.buttonSchedule.Size = new System.Drawing.Size(86, 43);
             this.buttonSchedule.TabIndex = 3;
             this.buttonSchedule.Text = "Schedule";
             this.buttonSchedule.UseVisualStyleBackColor = true;
@@ -76,17 +76,17 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(24, 66);
+            this.labelWelcome.Location = new System.Drawing.Point(21, 57);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 4;
             this.labelWelcome.Text = "Welcome,";
             // 
             // Form1E
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonSchedule);
             this.Controls.Add(this.buttonBookRooms);

@@ -40,45 +40,45 @@ namespace EducationalCenter
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(363, 32);
+            this.buttonLogOut.Location = new System.Drawing.Point(490, 27);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
             this.buttonLogOut.TabIndex = 0;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
             // 
             // buttonViewSchedule
             // 
-            this.buttonViewSchedule.Location = new System.Drawing.Point(88, 146);
+            this.buttonViewSchedule.Location = new System.Drawing.Point(75, 127);
             this.buttonViewSchedule.Name = "buttonViewSchedule";
-            this.buttonViewSchedule.Size = new System.Drawing.Size(100, 50);
+            this.buttonViewSchedule.Size = new System.Drawing.Size(86, 43);
             this.buttonViewSchedule.TabIndex = 1;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
             // 
             // buttonGradesReport
             // 
-            this.buttonGradesReport.Location = new System.Drawing.Point(88, 241);
+            this.buttonGradesReport.Location = new System.Drawing.Point(75, 226);
             this.buttonGradesReport.Name = "buttonGradesReport";
-            this.buttonGradesReport.Size = new System.Drawing.Size(100, 50);
+            this.buttonGradesReport.Size = new System.Drawing.Size(86, 43);
             this.buttonGradesReport.TabIndex = 2;
             this.buttonGradesReport.Text = "Grades Report";
             this.buttonGradesReport.UseVisualStyleBackColor = true;
             // 
             // buttonAvailableLessons
             // 
-            this.buttonAvailableLessons.Location = new System.Drawing.Point(293, 145);
+            this.buttonAvailableLessons.Location = new System.Drawing.Point(378, 127);
             this.buttonAvailableLessons.Name = "buttonAvailableLessons";
-            this.buttonAvailableLessons.Size = new System.Drawing.Size(100, 50);
+            this.buttonAvailableLessons.Size = new System.Drawing.Size(86, 43);
             this.buttonAvailableLessons.TabIndex = 3;
             this.buttonAvailableLessons.Text = "Available Lessons";
             this.buttonAvailableLessons.UseVisualStyleBackColor = true;
             // 
             // buttonContactTA
             // 
-            this.buttonContactTA.Location = new System.Drawing.Point(293, 240);
+            this.buttonContactTA.Location = new System.Drawing.Point(378, 226);
             this.buttonContactTA.Name = "buttonContactTA";
-            this.buttonContactTA.Size = new System.Drawing.Size(100, 50);
+            this.buttonContactTA.Size = new System.Drawing.Size(86, 43);
             this.buttonContactTA.TabIndex = 4;
             this.buttonContactTA.Text = "Contact a TA";
             this.buttonContactTA.UseVisualStyleBackColor = true;
@@ -86,26 +86,26 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(40, 39);
+            this.labelWelcome.Location = new System.Drawing.Point(34, 34);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 5;
             this.labelWelcome.Text = "Welcome,";
             // 
             // labelGrade
             // 
             this.labelGrade.AutoSize = true;
-            this.labelGrade.Location = new System.Drawing.Point(40, 81);
+            this.labelGrade.Location = new System.Drawing.Point(34, 70);
             this.labelGrade.Name = "labelGrade";
-            this.labelGrade.Size = new System.Drawing.Size(41, 15);
+            this.labelGrade.Size = new System.Drawing.Size(39, 13);
             this.labelGrade.TabIndex = 6;
             this.labelGrade.Text = "Grade ";
             // 
             // Form1S
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelGrade);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonContactTA);

@@ -30,39 +30,30 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.labelSchedule = new System.Windows.Forms.Label();
             this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
             this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelWelcome.Location = new System.Drawing.Point(55, 79);
+            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.labelWelcome.Location = new System.Drawing.Point(19, 51);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(78, 20);
             this.labelWelcome.TabIndex = 14;
             this.labelWelcome.Text = "Welcome, ";
             // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(299, 12);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(73, 31);
-            this.buttonBack.TabIndex = 12;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            // 
             // labelSchedule
             // 
             this.labelSchedule.AutoSize = true;
-            this.labelSchedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelSchedule.Location = new System.Drawing.Point(22, 134);
+            this.labelSchedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.labelSchedule.Location = new System.Drawing.Point(19, 116);
             this.labelSchedule.Name = "labelSchedule";
             this.labelSchedule.Size = new System.Drawing.Size(84, 21);
             this.labelSchedule.TabIndex = 15;
@@ -75,10 +66,10 @@ namespace EducationalCenter
             this.ColumnDate,
             this.ColumnTime,
             this.ColumnRoom});
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(22, 187);
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(19, 162);
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
             this.dataGridViewSchedule.RowTemplate.Height = 25;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(342, 183);
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(341, 159);
             this.dataGridViewSchedule.TabIndex = 16;
             // 
             // ColumnDate
@@ -99,15 +90,24 @@ namespace EducationalCenter
             this.ColumnRoom.Name = "ColumnRoom";
             this.ColumnRoom.ReadOnly = true;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(499, 21);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
+            this.buttonBack.TabIndex = 17;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
             // Form2TA_A
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.dataGridViewSchedule);
             this.Controls.Add(this.labelSchedule);
             this.Controls.Add(this.labelWelcome);
-            this.Controls.Add(this.buttonBack);
             this.Name = "Form2TA_A";
             this.Text = "Form2TA_A";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
@@ -119,11 +119,11 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelSchedule;
         private System.Windows.Forms.DataGridView dataGridViewSchedule;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

@@ -29,7 +29,6 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,17 +36,10 @@ namespace EducationalCenter
             this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStudyYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelStudents = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.labelWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(452, 35);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(100, 50);
-            this.buttonBack.TabIndex = 0;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -58,10 +50,10 @@ namespace EducationalCenter
             this.ColumnPhoneNumber,
             this.ColumnParentNumber,
             this.ColumnStudyYear});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 114);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(540, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 130);
             this.dataGridView1.TabIndex = 1;
             // 
             // ColumnName
@@ -97,20 +89,40 @@ namespace EducationalCenter
             // labelStudents
             // 
             this.labelStudents.AutoSize = true;
-            this.labelStudents.Location = new System.Drawing.Point(13, 110);
+            this.labelStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudents.Location = new System.Drawing.Point(11, 95);
             this.labelStudents.Name = "labelStudents";
-            this.labelStudents.Size = new System.Drawing.Size(56, 15);
+            this.labelStudents.Size = new System.Drawing.Size(61, 13);
             this.labelStudents.TabIndex = 2;
             this.labelStudents.Text = "Students:";
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(488, 12);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
+            this.buttonBack.TabIndex = 3;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Location = new System.Drawing.Point(11, 28);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
+            this.labelWelcome.TabIndex = 4;
+            this.labelWelcome.Text = "Welcome,";
+            // 
             // Form2T_B
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.labelWelcome);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelStudents);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonBack);
             this.Name = "Form2T_B";
             this.Text = "Form2T-B";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -120,8 +132,6 @@ namespace EducationalCenter
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
@@ -129,5 +139,7 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParentNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudyYear;
         private System.Windows.Forms.Label labelStudents;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Label labelWelcome;
     }
 }

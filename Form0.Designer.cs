@@ -39,14 +39,14 @@ namespace EducationalCenter
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(315, 77);
+            this.textBox1.Location = new System.Drawing.Point(275, 77);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(86, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(315, 139);
+            this.textBox2.Location = new System.Drawing.Point(275, 139);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(86, 20);
             this.textBox2.TabIndex = 1;
@@ -54,7 +54,7 @@ namespace EducationalCenter
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(239, 77);
+            this.labelUsername.Location = new System.Drawing.Point(196, 77);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(55, 13);
             this.labelUsername.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace EducationalCenter
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(239, 141);
+            this.labelPassword.Location = new System.Drawing.Point(198, 142);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(53, 13);
             this.labelPassword.TabIndex = 3;
@@ -71,7 +71,7 @@ namespace EducationalCenter
             // 
             // buttonLogIn
             // 
-            this.buttonLogIn.Location = new System.Drawing.Point(315, 215);
+            this.buttonLogIn.Location = new System.Drawing.Point(297, 206);
             this.buttonLogIn.Name = "buttonLogIn";
             this.buttonLogIn.Size = new System.Drawing.Size(64, 20);
             this.buttonLogIn.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace EducationalCenter
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(309, 273);
+            this.linkLabel1.Location = new System.Drawing.Point(272, 261);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(92, 13);
             this.linkLabel1.TabIndex = 5;
@@ -92,7 +92,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 390);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.labelPassword);

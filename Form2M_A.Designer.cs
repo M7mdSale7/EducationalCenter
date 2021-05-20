@@ -32,29 +32,29 @@ namespace EducationalCenter
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelEmployees = new System.Windows.Forms.Label();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNationalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelEmployees = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(30, 37);
+            this.labelWelcome.Location = new System.Drawing.Point(26, 32);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(63, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(58, 13);
             this.labelWelcome.TabIndex = 0;
             this.labelWelcome.Text = "Welcome, ";
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(468, 12);
+            this.buttonBack.Location = new System.Drawing.Point(401, 10);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -68,21 +68,11 @@ namespace EducationalCenter
             this.ColumnAddress,
             this.ColumnSalary,
             this.ColumnNationalID});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 119);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(531, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 130);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // labelEmployees
-            // 
-            this.labelEmployees.AutoSize = true;
-            this.labelEmployees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelEmployees.Location = new System.Drawing.Point(30, 83);
-            this.labelEmployees.Name = "labelEmployees";
-            this.labelEmployees.Size = new System.Drawing.Size(69, 15);
-            this.labelEmployees.TabIndex = 3;
-            this.labelEmployees.Text = "Employees:";
             // 
             // ColumnName
             // 
@@ -109,11 +99,21 @@ namespace EducationalCenter
             this.ColumnNationalID.HeaderText = "National ID";
             this.ColumnNationalID.Name = "ColumnNationalID";
             // 
+            // labelEmployees
+            // 
+            this.labelEmployees.AutoSize = true;
+            this.labelEmployees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelEmployees.Location = new System.Drawing.Point(26, 72);
+            this.labelEmployees.Name = "labelEmployees";
+            this.labelEmployees.Size = new System.Drawing.Size(69, 15);
+            this.labelEmployees.TabIndex = 3;
+            this.labelEmployees.Text = "Employees:";
+            // 
             // Form2M_A
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelEmployees);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonBack);
