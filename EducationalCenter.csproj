@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{624B34FB-B47A-4D83-82BB-A4F6A788DE88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EducationalCenter</RootNamespace>
+    <AssemblyName>EducationalCenter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1E.designer.cs">
+      <DependentUpon>Form1E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1M.designer.cs">
+      <DependentUpon>Form1M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1S.designer.cs">
+      <DependentUpon>Form1S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1T.designer.cs">
+      <DependentUpon>Form1T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1TA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1TA.designer.cs">
+      <DependentUpon>Form1TA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2E_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2E_A.designer.cs">
+      <DependentUpon>Form2E_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2E_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2E_B.designer.cs">
+      <DependentUpon>Form2E_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2M_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2M_A.designer.cs">
+      <DependentUpon>Form2M_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2S_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2S_A.designer.cs">
+      <DependentUpon>Form2S_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2S_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2S_B.designer.cs">
+      <DependentUpon>Form2S_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2S_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2S_C.designer.cs">
+      <DependentUpon>Form2S_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TA_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TA_A.Designer.cs">
+      <DependentUpon>Form2TA_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TA_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TA_B.Designer.cs">
+      <DependentUpon>Form2TA_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TA_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TA_C.Designer.cs">
+      <DependentUpon>Form2TA_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TA_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TA_D.Designer.cs">
+      <DependentUpon>Form2TA_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2TA_E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2TA_E.Designer.cs">
+      <DependentUpon>Form2TA_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2T_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2T_A.designer.cs">
+      <DependentUpon>Form2T_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2T_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2T_B.designer.cs">
+      <DependentUpon>Form2T_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2T_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2T_C.designer.cs">
+      <DependentUpon>Form2T_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2T_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2T_D.designer.cs">
+      <DependentUpon>Form2T_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2T_E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2T_E.designer.cs">
+      <DependentUpon>Form2T_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1E.resx">
+      <DependentUpon>Form1E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1M.resx">
+      <DependentUpon>Form1M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1S.resx">
+      <DependentUpon>Form1S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1T.resx">
+      <DependentUpon>Form1T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1TA.resx">
+      <DependentUpon>Form1TA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2E_A.resx">
+      <DependentUpon>Form2E_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2E_B.resx">
+      <DependentUpon>Form2E_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2M_A.resx">
+      <DependentUpon>Form2M_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2S_A.resx">
+      <DependentUpon>Form2S_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2S_B.resx">
+      <DependentUpon>Form2S_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2S_C.resx">
+      <DependentUpon>Form2S_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2TA_A.resx">
+      <DependentUpon>Form2TA_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2TA_B.resx">
+      <DependentUpon>Form2TA_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2TA_C.resx">
+      <DependentUpon>Form2TA_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2TA_D.resx">
+      <DependentUpon>Form2TA_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2TA_E.resx">
+      <DependentUpon>Form2TA_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2T_A.resx">
+      <DependentUpon>Form2T_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2T_B.resx">
+      <DependentUpon>Form2T_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2T_C.resx">
+      <DependentUpon>Form2T_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2T_D.resx">
+      <DependentUpon>Form2T_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2T_E.resx">
+      <DependentUpon>Form2T_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
