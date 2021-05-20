@@ -38,6 +38,18 @@ namespace EducationalCenter
             this.ColumnSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNationalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelEmployees = new System.Windows.Forms.Label();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.labelNationalID = new System.Windows.Forms.Label();
+            this.labelPhoneNumber = new System.Windows.Forms.Label();
+            this.labelSalary = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.textBoxNID = new System.Windows.Forms.TextBox();
+            this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.textBoxSalary = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +121,122 @@ namespace EducationalCenter
             this.labelEmployees.TabIndex = 3;
             this.labelEmployees.Text = "Employees:";
             // 
+            // textBoxAddress
+            // 
+            this.textBoxAddress.Location = new System.Drawing.Point(271, 273);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAddress.TabIndex = 46;
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Location = new System.Drawing.Point(285, 255);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(45, 13);
+            this.labelAddress.TabIndex = 45;
+            this.labelAddress.Text = "Address";
+            // 
+            // labelNationalID
+            // 
+            this.labelNationalID.AutoSize = true;
+            this.labelNationalID.Location = new System.Drawing.Point(156, 310);
+            this.labelNationalID.Name = "labelNationalID";
+            this.labelNationalID.Size = new System.Drawing.Size(60, 13);
+            this.labelNationalID.TabIndex = 44;
+            this.labelNationalID.Text = "National ID";
+            this.labelNationalID.Click += new System.EventHandler(this.labelRoom_Click);
+            // 
+            // labelPhoneNumber
+            // 
+            this.labelPhoneNumber.AutoSize = true;
+            this.labelPhoneNumber.Location = new System.Drawing.Point(156, 255);
+            this.labelPhoneNumber.Name = "labelPhoneNumber";
+            this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
+            this.labelPhoneNumber.TabIndex = 43;
+            this.labelPhoneNumber.Text = "Phone Number";
+            // 
+            // labelSalary
+            // 
+            this.labelSalary.AutoSize = true;
+            this.labelSalary.Location = new System.Drawing.Point(25, 310);
+            this.labelSalary.Name = "labelSalary";
+            this.labelSalary.Size = new System.Drawing.Size(36, 13);
+            this.labelSalary.TabIndex = 42;
+            this.labelSalary.Text = "Salary";
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(21, 257);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(35, 13);
+            this.labelName.TabIndex = 41;
+            this.labelName.Text = "Name";
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(459, 326);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 40;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.Location = new System.Drawing.Point(459, 270);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.TabIndex = 39;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            // 
+            // textBoxNID
+            // 
+            this.textBoxNID.Location = new System.Drawing.Point(156, 329);
+            this.textBoxNID.Name = "textBoxNID";
+            this.textBoxNID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNID.TabIndex = 38;
+            // 
+            // textBoxPhoneNumber
+            // 
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(156, 272);
+            this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
+            this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhoneNumber.TabIndex = 37;
+            // 
+            // textBoxSalary
+            // 
+            this.textBoxSalary.Location = new System.Drawing.Point(24, 329);
+            this.textBoxSalary.Name = "textBoxSalary";
+            this.textBoxSalary.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSalary.TabIndex = 36;
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(24, 273);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.TabIndex = 35;
+            // 
             // Form2M_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.labelNationalID);
+            this.Controls.Add(this.labelPhoneNumber);
+            this.Controls.Add(this.labelSalary);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonInsert);
+            this.Controls.Add(this.textBoxNID);
+            this.Controls.Add(this.textBoxPhoneNumber);
+            this.Controls.Add(this.textBoxSalary);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelEmployees);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonBack);
@@ -137,5 +260,17 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSalary;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNationalID;
         private System.Windows.Forms.Label labelEmployees;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.Label labelNationalID;
+        private System.Windows.Forms.Label labelPhoneNumber;
+        private System.Windows.Forms.Label labelSalary;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.TextBox textBoxNID;
+        private System.Windows.Forms.TextBox textBoxPhoneNumber;
+        private System.Windows.Forms.TextBox textBoxSalary;
+        private System.Windows.Forms.TextBox textBoxName;
     }
 }

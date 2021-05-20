@@ -14,5 +14,10 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void labelRoom_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

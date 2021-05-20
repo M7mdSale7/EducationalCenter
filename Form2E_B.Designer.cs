@@ -38,6 +38,18 @@ namespace EducationalCenter
             this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelBookRooms = new System.Windows.Forms.Label();
+            this.label_Room = new System.Windows.Forms.Label();
+            this.labelType = new System.Windows.Forms.Label();
+            this.labelSubject = new System.Windows.Forms.Label();
+            this.label_DateAndTime = new System.Windows.Forms.Label();
+            this.labelTeacher = new System.Windows.Forms.Label();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.textBoxType = new System.Windows.Forms.TextBox();
+            this.textBoxSubject = new System.Windows.Forms.TextBox();
+            this.textBoxDateAndTime = new System.Windows.Forms.TextBox();
+            this.textBox_Teacher = new System.Windows.Forms.TextBox();
+            this.textBox_Room = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +121,132 @@ namespace EducationalCenter
             this.labelBookRooms.TabIndex = 9;
             this.labelBookRooms.Text = "Book Rooms:";
             // 
+            // label_Room
+            // 
+            this.label_Room.AutoSize = true;
+            this.label_Room.Location = new System.Drawing.Point(285, 282);
+            this.label_Room.Name = "label_Room";
+            this.label_Room.Size = new System.Drawing.Size(35, 13);
+            this.label_Room.TabIndex = 33;
+            this.label_Room.Text = "Room";
+            this.label_Room.Click += new System.EventHandler(this.labelSlot_Click);
+            // 
+            // labelType
+            // 
+            this.labelType.AutoSize = true;
+            this.labelType.Location = new System.Drawing.Point(156, 337);
+            this.labelType.Name = "labelType";
+            this.labelType.Size = new System.Drawing.Size(31, 13);
+            this.labelType.TabIndex = 31;
+            this.labelType.Text = "Type";
+            this.labelType.Click += new System.EventHandler(this.labelRoom_Click);
+            // 
+            // labelSubject
+            // 
+            this.labelSubject.AutoSize = true;
+            this.labelSubject.Location = new System.Drawing.Point(156, 282);
+            this.labelSubject.Name = "labelSubject";
+            this.labelSubject.Size = new System.Drawing.Size(43, 13);
+            this.labelSubject.TabIndex = 30;
+            this.labelSubject.Text = "Subject";
+            this.labelSubject.Click += new System.EventHandler(this.labelSubject_Click);
+            // 
+            // label_DateAndTime
+            // 
+            this.label_DateAndTime.AutoSize = true;
+            this.label_DateAndTime.Location = new System.Drawing.Point(25, 337);
+            this.label_DateAndTime.Name = "label_DateAndTime";
+            this.label_DateAndTime.Size = new System.Drawing.Size(78, 13);
+            this.label_DateAndTime.TabIndex = 29;
+            this.label_DateAndTime.Text = "Date And Time";
+            this.label_DateAndTime.Click += new System.EventHandler(this.labelTeacher_Click);
+            // 
+            // labelTeacher
+            // 
+            this.labelTeacher.AutoSize = true;
+            this.labelTeacher.Location = new System.Drawing.Point(21, 284);
+            this.labelTeacher.Name = "labelTeacher";
+            this.labelTeacher.Size = new System.Drawing.Size(47, 13);
+            this.labelTeacher.TabIndex = 28;
+            this.labelTeacher.Text = "Teacher";
+            this.labelTeacher.Click += new System.EventHandler(this.labelStudentID_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(459, 353);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 27;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.Location = new System.Drawing.Point(459, 297);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.TabIndex = 26;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
+            // 
+            // textBoxType
+            // 
+            this.textBoxType.Location = new System.Drawing.Point(156, 356);
+            this.textBoxType.Name = "textBoxType";
+            this.textBoxType.Size = new System.Drawing.Size(100, 20);
+            this.textBoxType.TabIndex = 25;
+            this.textBoxType.TextChanged += new System.EventHandler(this.textBoxRoom_TextChanged);
+            // 
+            // textBoxSubject
+            // 
+            this.textBoxSubject.Location = new System.Drawing.Point(156, 299);
+            this.textBoxSubject.Name = "textBoxSubject";
+            this.textBoxSubject.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSubject.TabIndex = 24;
+            this.textBoxSubject.TextChanged += new System.EventHandler(this.textBoxSubject_TextChanged);
+            // 
+            // textBoxDateAndTime
+            // 
+            this.textBoxDateAndTime.Location = new System.Drawing.Point(24, 356);
+            this.textBoxDateAndTime.Name = "textBoxDateAndTime";
+            this.textBoxDateAndTime.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDateAndTime.TabIndex = 23;
+            this.textBoxDateAndTime.TextChanged += new System.EventHandler(this.textBoxTeacher_TextChanged);
+            // 
+            // textBox_Teacher
+            // 
+            this.textBox_Teacher.Location = new System.Drawing.Point(24, 300);
+            this.textBox_Teacher.Name = "textBox_Teacher";
+            this.textBox_Teacher.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Teacher.TabIndex = 22;
+            this.textBox_Teacher.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged);
+            // 
+            // textBox_Room
+            // 
+            this.textBox_Room.Location = new System.Drawing.Point(271, 300);
+            this.textBox_Room.Name = "textBox_Room";
+            this.textBox_Room.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Room.TabIndex = 34;
+            // 
             // Form2E_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.textBox_Room);
+            this.Controls.Add(this.label_Room);
+            this.Controls.Add(this.labelType);
+            this.Controls.Add(this.labelSubject);
+            this.Controls.Add(this.label_DateAndTime);
+            this.Controls.Add(this.labelTeacher);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonInsert);
+            this.Controls.Add(this.textBoxType);
+            this.Controls.Add(this.textBoxSubject);
+            this.Controls.Add(this.textBoxDateAndTime);
+            this.Controls.Add(this.textBox_Teacher);
             this.Controls.Add(this.labelBookRooms);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonLogOut);
@@ -137,5 +270,17 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
         private System.Windows.Forms.Label labelBookRooms;
+        private System.Windows.Forms.Label label_Room;
+        private System.Windows.Forms.Label labelType;
+        private System.Windows.Forms.Label labelSubject;
+        private System.Windows.Forms.Label label_DateAndTime;
+        private System.Windows.Forms.Label labelTeacher;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.TextBox textBoxType;
+        private System.Windows.Forms.TextBox textBoxSubject;
+        private System.Windows.Forms.TextBox textBoxDateAndTime;
+        private System.Windows.Forms.TextBox textBox_Teacher;
+        private System.Windows.Forms.TextBox textBox_Room;
     }
 }

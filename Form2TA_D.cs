@@ -14,5 +14,15 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void labelAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewSchedule_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
