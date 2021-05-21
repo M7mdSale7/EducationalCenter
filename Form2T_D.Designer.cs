@@ -38,12 +38,12 @@ namespace EducationalCenter
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
-            this.labelStudentName = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.textBoxStudentID = new System.Windows.Forms.TextBox();
-            this.textBoxStudentName = new System.Windows.Forms.TextBox();
             this.labelDelete = new System.Windows.Forms.Label();
+            this.textBoxOldID = new System.Windows.Forms.TextBox();
+            this.labelOldID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,20 +116,11 @@ namespace EducationalCenter
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(28, 348);
+            this.labelID.Location = new System.Drawing.Point(15, 292);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(18, 13);
             this.labelID.TabIndex = 43;
             this.labelID.Text = "ID";
-            // 
-            // labelStudentName
-            // 
-            this.labelStudentName.AutoSize = true;
-            this.labelStudentName.Location = new System.Drawing.Point(28, 292);
-            this.labelStudentName.Name = "labelStudentName";
-            this.labelStudentName.Size = new System.Drawing.Size(75, 13);
-            this.labelStudentName.TabIndex = 41;
-            this.labelStudentName.Text = "Student Name";
             // 
             // buttonUpdate
             // 
@@ -139,6 +130,7 @@ namespace EducationalCenter
             this.buttonUpdate.TabIndex = 40;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonInsert
             // 
@@ -148,20 +140,15 @@ namespace EducationalCenter
             this.buttonInsert.TabIndex = 39;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // textBoxStudentID
             // 
-            this.textBoxStudentID.Location = new System.Drawing.Point(31, 364);
+            this.textBoxStudentID.Location = new System.Drawing.Point(18, 308);
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 37;
-            // 
-            // textBoxStudentName
-            // 
-            this.textBoxStudentName.Location = new System.Drawing.Point(31, 308);
-            this.textBoxStudentName.Name = "textBoxStudentName";
-            this.textBoxStudentName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStudentName.TabIndex = 35;
+            this.textBoxStudentID.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged);
             // 
             // labelDelete
             // 
@@ -172,24 +159,42 @@ namespace EducationalCenter
             this.labelDelete.TabIndex = 47;
             this.labelDelete.Text = "Double click on a row to delete";
             // 
+            // textBoxOldID
+            // 
+            this.textBoxOldID.Location = new System.Drawing.Point(18, 364);
+            this.textBoxOldID.Name = "textBoxOldID";
+            this.textBoxOldID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldID.TabIndex = 58;
+            this.textBoxOldID.TextChanged += new System.EventHandler(this.textBoxOldID_TextChanged);
+            // 
+            // labelOldID
+            // 
+            this.labelOldID.AutoSize = true;
+            this.labelOldID.Location = new System.Drawing.Point(15, 348);
+            this.labelOldID.Name = "labelOldID";
+            this.labelOldID.Size = new System.Drawing.Size(90, 13);
+            this.labelOldID.TabIndex = 57;
+            this.labelOldID.Text = "Old ID for Update";
+            // 
             // Form2T_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.textBoxOldID);
+            this.Controls.Add(this.labelOldID);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelID);
-            this.Controls.Add(this.labelStudentName);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.textBoxStudentID);
-            this.Controls.Add(this.textBoxStudentName);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelAttendance);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2T_D";
             this.Text = "Form2T-D";
+            this.Load += new System.EventHandler(this.Form2T_D_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,11 +211,11 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.Label labelStudentName;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.TextBox textBoxStudentID;
-        private System.Windows.Forms.TextBox textBoxStudentName;
         private System.Windows.Forms.Label labelDelete;
+        private System.Windows.Forms.TextBox textBoxOldID;
+        private System.Windows.Forms.Label labelOldID;
     }
 }

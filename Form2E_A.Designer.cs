@@ -129,6 +129,7 @@ namespace EducationalCenter
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 9;
+            this.textBoxStudentID.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged_1);
             // 
             // textBoxTeacher
             // 

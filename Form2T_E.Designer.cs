@@ -30,6 +30,11 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelGradesReport = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
@@ -42,11 +47,6 @@ namespace EducationalCenter
             this.label_Grade = new System.Windows.Forms.Label();
             this.textBoxGrade = new System.Windows.Forms.TextBox();
             this.labelDelete = new System.Windows.Forms.Label();
-            this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +64,34 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(536, 130);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ColumnStudentName
+            // 
+            this.ColumnStudentName.HeaderText = "Student ID";
+            this.ColumnStudentName.Name = "ColumnStudentName";
+            this.ColumnStudentName.ReadOnly = true;
+            // 
+            // ColumnPhoneNumber
+            // 
+            this.ColumnPhoneNumber.HeaderText = "Phone Number";
+            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
+            this.ColumnPhoneNumber.ReadOnly = true;
+            // 
+            // ColumnParentNumber
+            // 
+            this.ColumnParentNumber.HeaderText = "Parent Number";
+            this.ColumnParentNumber.Name = "ColumnParentNumber";
+            this.ColumnParentNumber.ReadOnly = true;
+            // 
+            // ColumnExamID
+            // 
+            this.ColumnExamID.HeaderText = "Exam ID";
+            this.ColumnExamID.Name = "ColumnExamID";
+            // 
+            // ColumnGrade
+            // 
+            this.ColumnGrade.HeaderText = "Grade";
+            this.ColumnGrade.Name = "ColumnGrade";
             // 
             // labelGradesReport
             // 
@@ -101,6 +129,7 @@ namespace EducationalCenter
             this.label_ExamID.Size = new System.Drawing.Size(47, 13);
             this.label_ExamID.TabIndex = 54;
             this.label_ExamID.Text = "Exam ID";
+            this.label_ExamID.Click += new System.EventHandler(this.label_ExamID_Click);
             // 
             // labelStudentID
             // 
@@ -119,6 +148,7 @@ namespace EducationalCenter
             this.buttonUpdate.TabIndex = 51;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonInsert
             // 
@@ -128,6 +158,7 @@ namespace EducationalCenter
             this.buttonInsert.TabIndex = 50;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // textBoxExamID
             // 
@@ -135,6 +166,7 @@ namespace EducationalCenter
             this.textBoxExamID.Name = "textBoxExamID";
             this.textBoxExamID.Size = new System.Drawing.Size(100, 20);
             this.textBoxExamID.TabIndex = 49;
+            this.textBoxExamID.TextChanged += new System.EventHandler(this.textBoxExamID_TextChanged);
             // 
             // textBoxStudentID
             // 
@@ -151,6 +183,7 @@ namespace EducationalCenter
             this.label_Grade.Size = new System.Drawing.Size(36, 13);
             this.label_Grade.TabIndex = 58;
             this.label_Grade.Text = "Grade";
+            this.label_Grade.Click += new System.EventHandler(this.label_Grade_Click);
             // 
             // textBoxGrade
             // 
@@ -158,6 +191,7 @@ namespace EducationalCenter
             this.textBoxGrade.Name = "textBoxGrade";
             this.textBoxGrade.Size = new System.Drawing.Size(100, 20);
             this.textBoxGrade.TabIndex = 57;
+            this.textBoxGrade.TextChanged += new System.EventHandler(this.textBoxGrade_TextChanged);
             // 
             // labelDelete
             // 
@@ -167,34 +201,6 @@ namespace EducationalCenter
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 59;
             this.labelDelete.Text = "Double click on a row to delete";
-            // 
-            // ColumnStudentName
-            // 
-            this.ColumnStudentName.HeaderText = "Student ID";
-            this.ColumnStudentName.Name = "ColumnStudentName";
-            this.ColumnStudentName.ReadOnly = true;
-            // 
-            // ColumnPhoneNumber
-            // 
-            this.ColumnPhoneNumber.HeaderText = "Phone Number";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            // 
-            // ColumnParentNumber
-            // 
-            this.ColumnParentNumber.HeaderText = "Parent Number";
-            this.ColumnParentNumber.Name = "ColumnParentNumber";
-            this.ColumnParentNumber.ReadOnly = true;
-            // 
-            // ColumnExamID
-            // 
-            this.ColumnExamID.HeaderText = "Exam ID";
-            this.ColumnExamID.Name = "ColumnExamID";
-            // 
-            // ColumnGrade
-            // 
-            this.ColumnGrade.HeaderText = "Grade";
-            this.ColumnGrade.Name = "ColumnGrade";
             // 
             // Form2T_E
             // 

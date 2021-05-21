@@ -148,6 +148,7 @@ namespace EducationalCenter
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 24;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // textBoxPhoneNumber
             // 
@@ -155,6 +156,7 @@ namespace EducationalCenter
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 25;
+            this.textBoxPhoneNumber.TextChanged += new System.EventHandler(this.textBoxPhoneNumber_TextChanged);
             // 
             // textBoxID
             // 
@@ -162,6 +164,7 @@ namespace EducationalCenter
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(100, 20);
             this.textBoxID.TabIndex = 26;
+            this.textBoxID.TextChanged += new System.EventHandler(this.textBoxID_TextChanged);
             // 
             // buttonInsert
             // 
@@ -171,6 +174,7 @@ namespace EducationalCenter
             this.buttonInsert.TabIndex = 27;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // buttonUpdate
             // 
@@ -180,6 +184,7 @@ namespace EducationalCenter
             this.buttonUpdate.TabIndex = 28;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // Form2T_C
             // 

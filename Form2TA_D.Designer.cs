@@ -133,6 +133,7 @@ namespace EducationalCenter
             this.buttonInsert.TabIndex = 50;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // textBoxStudentID
             // 
@@ -149,6 +150,7 @@ namespace EducationalCenter
             this.buttonUpdate.TabIndex = 51;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // labelOldID
             // 

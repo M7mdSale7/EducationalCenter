@@ -45,16 +45,30 @@ namespace EducationalCenter
 
         }
 
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-
+            /*int result = controllerObj.InsertBookRoom(textBoxTeacher.Text, textBoxSubject.Text, textBox_Room.Text, textBox_DateAndTime.Text,comboBoxType.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("The insertion is failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is inserted successfully!");
+            }*/
         }
-
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            /*int result = controllerObj.UpdateBookRoom(textBoxTeacher.Text, textBoxSubject.Text, textBox_Room.Text, textBox_DateAndTime.Text,comboBoxType.Text , textBox_OldRoom.Text , textBoxOldDateTime.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("Update failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is updated successfully!");
+            }*/
+        }
         private void labelSlot_Click(object sender, EventArgs e)
         {
 
@@ -71,6 +85,41 @@ namespace EducationalCenter
         }
 
         private void textBoxStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Room_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxOldDateTime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTeacher_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_DateAndTime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_OldRoom_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -33,12 +33,22 @@ namespace EducationalCenter
             /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text);
             if (result == 0)
             {
-                MessageBox.Show("The insertion is failed");
+                MessageBox.Show(" Update failed");
             }
             else
             {
-                MessageBox.Show("The row is inserted successfully!");
+                MessageBox.Show("The row is Updated successfully!");
             }*/
+        }
+
+        private void textBoxStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxStudentID_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

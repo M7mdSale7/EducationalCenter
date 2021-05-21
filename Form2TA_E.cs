@@ -14,5 +14,46 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void buttonInsert_Click(object sender, EventArgs e)
+        {
+            /*int result = controllerObj.InsertGrade(textBoxStudentID.Text , textBoxExamID.Text , textBoxGrade.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("The insertion is failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is inserted successfully!");
+            }*/
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            /*int result = controllerObj.UpdateGrade(textBoxStudentID.Text , textBoxExamID.Text , textBoxGrade.Text);
+            if (result == 0)
+            {
+                MessageBox.Show("Update failed");
+            }
+            else
+            {
+                MessageBox.Show("The row is Updated successfully!");
+            }*/
+        }
+
+        private void textBoxStudentID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxExamID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxGrade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
