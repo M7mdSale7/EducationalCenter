@@ -30,13 +30,13 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
-            this.labelExamsDates = new System.Windows.Forms.Label();
-            this.labelWelcome = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.ColumnExamNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnExamType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelExamsDates = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,40 +48,11 @@ namespace EducationalCenter
             this.ColumnExamType,
             this.ColumnDate,
             this.ColumnTime});
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(19, 189);
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(16, 164);
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
             this.dataGridViewSchedule.RowTemplate.Height = 25;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(342, 183);
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(434, 159);
             this.dataGridViewSchedule.TabIndex = 20;
-            // 
-            // labelExamsDates
-            // 
-            this.labelExamsDates.AutoSize = true;
-            this.labelExamsDates.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelExamsDates.Location = new System.Drawing.Point(19, 136);
-            this.labelExamsDates.Name = "labelExamsDates";
-            this.labelExamsDates.Size = new System.Drawing.Size(110, 21);
-            this.labelExamsDates.TabIndex = 19;
-            this.labelExamsDates.Text = "Exams Dates:";
-            // 
-            // labelWelcome
-            // 
-            this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelWelcome.Location = new System.Drawing.Point(52, 81);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(78, 20);
-            this.labelWelcome.TabIndex = 18;
-            this.labelWelcome.Text = "Welcome, ";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(299, 12);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(73, 31);
-            this.buttonBack.TabIndex = 17;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // ColumnExamNumber
             // 
@@ -107,11 +78,40 @@ namespace EducationalCenter
             this.ColumnTime.Name = "ColumnTime";
             this.ColumnTime.ReadOnly = true;
             // 
+            // labelExamsDates
+            // 
+            this.labelExamsDates.AutoSize = true;
+            this.labelExamsDates.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.labelExamsDates.Location = new System.Drawing.Point(16, 118);
+            this.labelExamsDates.Name = "labelExamsDates";
+            this.labelExamsDates.Size = new System.Drawing.Size(110, 21);
+            this.labelExamsDates.TabIndex = 19;
+            this.labelExamsDates.Text = "Exams Dates:";
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.labelWelcome.Location = new System.Drawing.Point(45, 70);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(78, 20);
+            this.labelWelcome.TabIndex = 18;
+            this.labelWelcome.Text = "Welcome, ";
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(256, 10);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(63, 27);
+            this.buttonBack.TabIndex = 17;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            // 
             // Form2TA_C
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.dataGridViewSchedule);
             this.Controls.Add(this.labelExamsDates);
             this.Controls.Add(this.labelWelcome);

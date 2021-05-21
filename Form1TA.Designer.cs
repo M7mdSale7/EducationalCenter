@@ -40,54 +40,54 @@ namespace EducationalCenter
             // 
             // buttonViewSchedule
             // 
-            this.buttonViewSchedule.Location = new System.Drawing.Point(54, 152);
+            this.buttonViewSchedule.Location = new System.Drawing.Point(46, 123);
             this.buttonViewSchedule.Name = "buttonViewSchedule";
-            this.buttonViewSchedule.Size = new System.Drawing.Size(105, 55);
+            this.buttonViewSchedule.Size = new System.Drawing.Size(90, 48);
             this.buttonViewSchedule.TabIndex = 0;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
             // 
             // ButtonExamsDates
             // 
-            this.ButtonExamsDates.Location = new System.Drawing.Point(219, 152);
+            this.ButtonExamsDates.Location = new System.Drawing.Point(388, 123);
             this.ButtonExamsDates.Name = "ButtonExamsDates";
-            this.ButtonExamsDates.Size = new System.Drawing.Size(105, 55);
+            this.ButtonExamsDates.Size = new System.Drawing.Size(90, 48);
             this.ButtonExamsDates.TabIndex = 1;
             this.ButtonExamsDates.Text = "Exams Dates";
             this.ButtonExamsDates.UseVisualStyleBackColor = true;
             // 
             // buttonStudentsInfo
             // 
-            this.buttonStudentsInfo.Location = new System.Drawing.Point(54, 257);
+            this.buttonStudentsInfo.Location = new System.Drawing.Point(46, 223);
             this.buttonStudentsInfo.Name = "buttonStudentsInfo";
-            this.buttonStudentsInfo.Size = new System.Drawing.Size(105, 55);
+            this.buttonStudentsInfo.Size = new System.Drawing.Size(90, 48);
             this.buttonStudentsInfo.TabIndex = 2;
             this.buttonStudentsInfo.Text = "Students Information";
             this.buttonStudentsInfo.UseVisualStyleBackColor = true;
             // 
             // buttonAttendance
             // 
-            this.buttonAttendance.Location = new System.Drawing.Point(219, 257);
+            this.buttonAttendance.Location = new System.Drawing.Point(388, 223);
             this.buttonAttendance.Name = "buttonAttendance";
-            this.buttonAttendance.Size = new System.Drawing.Size(105, 55);
+            this.buttonAttendance.Size = new System.Drawing.Size(90, 48);
             this.buttonAttendance.TabIndex = 3;
             this.buttonAttendance.Text = "Attendance";
             this.buttonAttendance.UseVisualStyleBackColor = true;
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(299, 12);
+            this.buttonLogOut.Location = new System.Drawing.Point(494, 23);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(73, 31);
+            this.buttonLogOut.Size = new System.Drawing.Size(63, 27);
             this.buttonLogOut.TabIndex = 4;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
             // 
             // buttonGradesReports
             // 
-            this.buttonGradesReports.Location = new System.Drawing.Point(138, 348);
+            this.buttonGradesReports.Location = new System.Drawing.Point(46, 330);
             this.buttonGradesReports.Name = "buttonGradesReports";
-            this.buttonGradesReports.Size = new System.Drawing.Size(105, 55);
+            this.buttonGradesReports.Size = new System.Drawing.Size(90, 48);
             this.buttonGradesReports.TabIndex = 5;
             this.buttonGradesReports.Text = "Grades Reports";
             this.buttonGradesReports.UseVisualStyleBackColor = true;
@@ -95,8 +95,8 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelWelcome.Location = new System.Drawing.Point(54, 77);
+            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.labelWelcome.Location = new System.Drawing.Point(46, 67);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(78, 20);
             this.labelWelcome.TabIndex = 6;
@@ -104,9 +104,9 @@ namespace EducationalCenter
             // 
             // Form1TA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonGradesReports);
             this.Controls.Add(this.buttonLogOut);

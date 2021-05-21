@@ -41,9 +41,9 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(375, 37);
+            this.buttonBack.Location = new System.Drawing.Point(508, 24);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
             this.buttonBack.TabIndex = 0;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -55,10 +55,10 @@ namespace EducationalCenter
             this.ColumnSubject,
             this.ColumnDateTime,
             this.ColumnGrade});
-            this.dataGridView1.Location = new System.Drawing.Point(39, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 120);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(341, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(339, 130);
             this.dataGridView1.TabIndex = 1;
             // 
             // ColumnSubject
@@ -82,17 +82,17 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(39, 85);
+            this.labelWelcome.Location = new System.Drawing.Point(33, 45);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 2;
             this.labelWelcome.Text = "Welcome,";
             // 
             // labelGradesReport
             // 
             this.labelGradesReport.AutoSize = true;
-            this.labelGradesReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelGradesReport.Location = new System.Drawing.Point(39, 117);
+            this.labelGradesReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelGradesReport.Location = new System.Drawing.Point(33, 101);
             this.labelGradesReport.Name = "labelGradesReport";
             this.labelGradesReport.Size = new System.Drawing.Size(91, 15);
             this.labelGradesReport.TabIndex = 3;
@@ -100,9 +100,9 @@ namespace EducationalCenter
             // 
             // Form2S_B
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelGradesReport);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.dataGridView1);

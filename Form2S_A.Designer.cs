@@ -55,10 +55,10 @@ namespace EducationalCenter
             this.ColumnTeacher,
             this.ColumnDateTime,
             this.ColumnRoom});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 98);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(438, 104);
+            this.dataGridView1.Size = new System.Drawing.Size(435, 90);
             this.dataGridView1.TabIndex = 0;
             // 
             // ColumnSubject
@@ -87,9 +87,9 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(362, 32);
+            this.buttonBack.Location = new System.Drawing.Point(508, 12);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
             this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -102,10 +102,10 @@ namespace EducationalCenter
             this.ColumnTeacher2,
             this.ColumnDateTime2,
             this.ColumnRoom2});
-            this.dataGridView2.Location = new System.Drawing.Point(13, 254);
+            this.dataGridView2.Location = new System.Drawing.Point(11, 220);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(437, 113);
+            this.dataGridView2.Size = new System.Drawing.Size(434, 98);
             this.dataGridView2.TabIndex = 2;
             // 
             // ColumnSubject2
@@ -135,8 +135,8 @@ namespace EducationalCenter
             // labelLessons
             // 
             this.labelLessons.AutoSize = true;
-            this.labelLessons.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelLessons.Location = new System.Drawing.Point(13, 77);
+            this.labelLessons.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelLessons.Location = new System.Drawing.Point(11, 67);
             this.labelLessons.Name = "labelLessons";
             this.labelLessons.Size = new System.Drawing.Size(52, 15);
             this.labelLessons.TabIndex = 3;
@@ -145,8 +145,8 @@ namespace EducationalCenter
             // labelExams
             // 
             this.labelExams.AutoSize = true;
-            this.labelExams.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelExams.Location = new System.Drawing.Point(13, 233);
+            this.labelExams.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelExams.Location = new System.Drawing.Point(11, 202);
             this.labelExams.Name = "labelExams";
             this.labelExams.Size = new System.Drawing.Size(45, 15);
             this.labelExams.TabIndex = 4;
@@ -155,17 +155,17 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(13, 32);
+            this.labelWelcome.Location = new System.Drawing.Point(11, 28);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(60, 15);
+            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 5;
             this.labelWelcome.Text = "Welcome,";
             // 
             // Form2S_A
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 450);
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.labelLessons);
