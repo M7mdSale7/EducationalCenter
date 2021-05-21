@@ -125,6 +125,7 @@ namespace EducationalCenter
             // textBoxAddress
             // 
             this.textBoxAddress.Location = new System.Drawing.Point(271, 273);
+            this.textBoxAddress.MaxLength = 15;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(100, 20);
             this.textBoxAddress.TabIndex = 46;
@@ -198,6 +199,7 @@ namespace EducationalCenter
             // textBoxNID
             // 
             this.textBoxNID.Location = new System.Drawing.Point(156, 329);
+            this.textBoxNID.MaxLength = 15;
             this.textBoxNID.Name = "textBoxNID";
             this.textBoxNID.Size = new System.Drawing.Size(100, 20);
             this.textBoxNID.TabIndex = 38;
@@ -205,12 +207,15 @@ namespace EducationalCenter
             // textBoxPhoneNumber
             // 
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(156, 272);
+            this.textBoxPhoneNumber.MaxLength = 15;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 37;
+            // 
             // textBoxSalary
             // 
             this.textBoxSalary.Location = new System.Drawing.Point(24, 329);
+            this.textBoxSalary.MaxLength = 15;
             this.textBoxSalary.Name = "textBoxSalary";
             this.textBoxSalary.Size = new System.Drawing.Size(100, 20);
             this.textBoxSalary.TabIndex = 36;
@@ -218,6 +223,7 @@ namespace EducationalCenter
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(24, 273);
+            this.textBoxName.MaxLength = 15;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 35;

@@ -90,6 +90,7 @@ namespace EducationalCenter
             // textBoxDate
             // 
             this.textBoxDate.Location = new System.Drawing.Point(327, 180);
+            this.textBoxDate.MaxLength = 15;
             this.textBoxDate.Name = "textBoxDate";
             this.textBoxDate.Size = new System.Drawing.Size(86, 20);
             this.textBoxDate.TabIndex = 5;
@@ -98,6 +99,7 @@ namespace EducationalCenter
             // textBoxTime
             // 
             this.textBoxTime.Location = new System.Drawing.Point(327, 223);
+            this.textBoxTime.MaxLength = 15;
             this.textBoxTime.Name = "textBoxTime";
             this.textBoxTime.Size = new System.Drawing.Size(86, 20);
             this.textBoxTime.TabIndex = 6;

@@ -126,6 +126,7 @@ namespace EducationalCenter
             // textBoxStudentID
             // 
             this.textBoxStudentID.Location = new System.Drawing.Point(12, 302);
+            this.textBoxStudentID.MaxLength = 15;
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 9;
@@ -133,6 +134,7 @@ namespace EducationalCenter
             // textBoxTeacher
             // 
             this.textBoxTeacher.Location = new System.Drawing.Point(12, 358);
+            this.textBoxTeacher.MaxLength = 15;
             this.textBoxTeacher.Name = "textBoxTeacher";
             this.textBoxTeacher.Size = new System.Drawing.Size(100, 20);
             this.textBoxTeacher.TabIndex = 10;
@@ -140,6 +142,7 @@ namespace EducationalCenter
             // textBoxSubject
             // 
             this.textBoxSubject.Location = new System.Drawing.Point(144, 301);
+            this.textBoxSubject.MaxLength = 15;
             this.textBoxSubject.Name = "textBoxSubject";
             this.textBoxSubject.Size = new System.Drawing.Size(100, 20);
             this.textBoxSubject.TabIndex = 11;
@@ -220,6 +223,7 @@ namespace EducationalCenter
             // textBoxOldSlot
             // 
             this.textBoxOldSlot.Location = new System.Drawing.Point(144, 357);
+            this.textBoxOldSlot.MaxLength = 15;
             this.textBoxOldSlot.Name = "textBoxOldSlot";
             this.textBoxOldSlot.Size = new System.Drawing.Size(100, 20);
             this.textBoxOldSlot.TabIndex = 22;

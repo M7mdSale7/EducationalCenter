@@ -145,6 +145,7 @@ namespace EducationalCenter
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(28, 302);
+            this.textBoxName.MaxLength = 15;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 24;
@@ -152,6 +153,7 @@ namespace EducationalCenter
             // textBoxPhoneNumber
             // 
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(197, 301);
+            this.textBoxPhoneNumber.MaxLength = 15;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 25;
@@ -159,6 +161,7 @@ namespace EducationalCenter
             // textBoxID
             // 
             this.textBoxID.Location = new System.Drawing.Point(31, 355);
+            this.textBoxID.MaxLength = 15;
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(100, 20);
             this.textBoxID.TabIndex = 26;

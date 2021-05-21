@@ -176,6 +176,7 @@ namespace EducationalCenter
             // textBoxSubject
             // 
             this.textBoxSubject.Location = new System.Drawing.Point(156, 299);
+            this.textBoxSubject.MaxLength = 15;
             this.textBoxSubject.Name = "textBoxSubject";
             this.textBoxSubject.Size = new System.Drawing.Size(100, 20);
             this.textBoxSubject.TabIndex = 24;
@@ -183,6 +184,7 @@ namespace EducationalCenter
             // textBox_Room
             // 
             this.textBox_Room.Location = new System.Drawing.Point(288, 297);
+            this.textBox_Room.MaxLength = 15;
             this.textBox_Room.Name = "textBox_Room";
             this.textBox_Room.Size = new System.Drawing.Size(100, 20);
             this.textBox_Room.TabIndex = 34;
@@ -207,6 +209,7 @@ namespace EducationalCenter
             // textBoxOldDateTime
             // 
             this.textBoxOldDateTime.Location = new System.Drawing.Point(291, 355);
+            this.textBoxOldDateTime.MaxLength = 15;
             this.textBoxOldDateTime.Name = "textBoxOldDateTime";
             this.textBoxOldDateTime.Size = new System.Drawing.Size(100, 20);
             this.textBoxOldDateTime.TabIndex = 37;
@@ -241,6 +244,7 @@ namespace EducationalCenter
             // textBoxTeacher
             // 
             this.textBoxTeacher.Location = new System.Drawing.Point(28, 297);
+            this.textBoxTeacher.MaxLength = 15;
             this.textBoxTeacher.Name = "textBoxTeacher";
             this.textBoxTeacher.Size = new System.Drawing.Size(100, 20);
             this.textBoxTeacher.TabIndex = 41;
@@ -257,6 +261,7 @@ namespace EducationalCenter
             // textBox_DateAndTime
             // 
             this.textBox_DateAndTime.Location = new System.Drawing.Point(27, 354);
+            this.textBox_DateAndTime.MaxLength = 15;
             this.textBox_DateAndTime.Name = "textBox_DateAndTime";
             this.textBox_DateAndTime.Size = new System.Drawing.Size(100, 20);
             this.textBox_DateAndTime.TabIndex = 43;
@@ -264,6 +269,7 @@ namespace EducationalCenter
             // textBox_OldRoom
             // 
             this.textBox_OldRoom.Location = new System.Drawing.Point(409, 299);
+            this.textBox_OldRoom.MaxLength = 15;
             this.textBox_OldRoom.Name = "textBox_OldRoom";
             this.textBox_OldRoom.Size = new System.Drawing.Size(100, 20);
             this.textBox_OldRoom.TabIndex = 45;
