@@ -36,6 +36,15 @@ namespace EducationalCenter
             this.labelTeachingAssistants = new System.Windows.Forms.Label();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.labelDelete = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelPhoneNumber = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +106,95 @@ namespace EducationalCenter
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
             // 
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.Location = new System.Drawing.Point(209, 114);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 20;
+            this.labelDelete.Text = "Double click on a row to delete";
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(25, 285);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(35, 13);
+            this.labelName.TabIndex = 21;
+            this.labelName.Text = "Name";
+            // 
+            // labelPhoneNumber
+            // 
+            this.labelPhoneNumber.AutoSize = true;
+            this.labelPhoneNumber.Location = new System.Drawing.Point(194, 285);
+            this.labelPhoneNumber.Name = "labelPhoneNumber";
+            this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
+            this.labelPhoneNumber.TabIndex = 22;
+            this.labelPhoneNumber.Text = "Phone Number";
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(28, 338);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(18, 13);
+            this.labelID.TabIndex = 23;
+            this.labelID.Text = "ID";
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(28, 302);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.TabIndex = 24;
+            // 
+            // textBoxPhoneNumber
+            // 
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(197, 301);
+            this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
+            this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhoneNumber.TabIndex = 25;
+            // 
+            // textBoxID
+            // 
+            this.textBoxID.Location = new System.Drawing.Point(31, 355);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.TabIndex = 26;
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.Location = new System.Drawing.Point(397, 301);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.TabIndex = 27;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(397, 355);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 28;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            // 
             // Form2T_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonInsert);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.textBoxPhoneNumber);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.labelPhoneNumber);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.labelTeachingAssistants);
@@ -123,5 +216,14 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelTeachingAssistants;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Label labelDelete;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelPhoneNumber;
+        private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxPhoneNumber;
+        private System.Windows.Forms.TextBox textBoxID;
+        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }

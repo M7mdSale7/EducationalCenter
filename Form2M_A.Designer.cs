@@ -50,6 +50,7 @@ namespace EducationalCenter
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.textBoxSalary = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelDelete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,11 +221,21 @@ namespace EducationalCenter
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 35;
             // 
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.Location = new System.Drawing.Point(398, 87);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 47;
+            this.labelDelete.Text = "Double click on a row to delete";
+            // 
             // Form2M_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelNationalID);
@@ -272,5 +283,6 @@ namespace EducationalCenter
         private System.Windows.Forms.TextBox textBoxPhoneNumber;
         private System.Windows.Forms.TextBox textBoxSalary;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelDelete;
     }
 }

@@ -30,26 +30,23 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelGradesReport = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.ColumnExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
-            this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.label_ExamID = new System.Windows.Forms.Label();
-            this.labelParentNumber = new System.Windows.Forms.Label();
-            this.labelStudentName = new System.Windows.Forms.Label();
+            this.labelStudentID = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.textBoxExamID = new System.Windows.Forms.TextBox();
-            this.textBoxParentNumber = new System.Windows.Forms.TextBox();
-            this.textBoxStudentName = new System.Windows.Forms.TextBox();
+            this.textBoxStudentID = new System.Windows.Forms.TextBox();
             this.label_Grade = new System.Windows.Forms.Label();
             this.textBoxGrade = new System.Windows.Forms.TextBox();
+            this.labelDelete = new System.Windows.Forms.Label();
+            this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,24 +64,6 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(536, 130);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ColumnStudentName
-            // 
-            this.ColumnStudentName.HeaderText = "Student Name";
-            this.ColumnStudentName.Name = "ColumnStudentName";
-            this.ColumnStudentName.ReadOnly = true;
-            // 
-            // ColumnPhoneNumber
-            // 
-            this.ColumnPhoneNumber.HeaderText = "Phone Number";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            // 
-            // ColumnParentNumber
-            // 
-            this.ColumnParentNumber.HeaderText = "Parent Number";
-            this.ColumnParentNumber.Name = "ColumnParentNumber";
-            this.ColumnParentNumber.ReadOnly = true;
             // 
             // labelGradesReport
             // 
@@ -114,32 +93,6 @@ namespace EducationalCenter
             this.labelWelcome.TabIndex = 5;
             this.labelWelcome.Text = "Welcome,";
             // 
-            // ColumnExamID
-            // 
-            this.ColumnExamID.HeaderText = "Exam ID";
-            this.ColumnExamID.Name = "ColumnExamID";
-            // 
-            // ColumnGrade
-            // 
-            this.ColumnGrade.HeaderText = "Grade";
-            this.ColumnGrade.Name = "ColumnGrade";
-            // 
-            // textBoxPhoneNumber
-            // 
-            this.textBoxPhoneNumber.Location = new System.Drawing.Point(164, 296);
-            this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
-            this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPhoneNumber.TabIndex = 56;
-            // 
-            // labelPhoneNumber
-            // 
-            this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(178, 278);
-            this.labelPhoneNumber.Name = "labelPhoneNumber";
-            this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
-            this.labelPhoneNumber.TabIndex = 55;
-            this.labelPhoneNumber.Text = "Phone Number";
-            // 
             // label_ExamID
             // 
             this.label_ExamID.AutoSize = true;
@@ -149,27 +102,18 @@ namespace EducationalCenter
             this.label_ExamID.TabIndex = 54;
             this.label_ExamID.Text = "Exam ID";
             // 
-            // labelParentNumber
+            // labelStudentID
             // 
-            this.labelParentNumber.AutoSize = true;
-            this.labelParentNumber.Location = new System.Drawing.Point(304, 277);
-            this.labelParentNumber.Name = "labelParentNumber";
-            this.labelParentNumber.Size = new System.Drawing.Size(78, 13);
-            this.labelParentNumber.TabIndex = 53;
-            this.labelParentNumber.Text = "Parent Number";
-            // 
-            // labelStudentName
-            // 
-            this.labelStudentName.AutoSize = true;
-            this.labelStudentName.Location = new System.Drawing.Point(23, 280);
-            this.labelStudentName.Name = "labelStudentName";
-            this.labelStudentName.Size = new System.Drawing.Size(75, 13);
-            this.labelStudentName.TabIndex = 52;
-            this.labelStudentName.Text = "Student Name";
+            this.labelStudentID.AutoSize = true;
+            this.labelStudentID.Location = new System.Drawing.Point(23, 280);
+            this.labelStudentID.Name = "labelStudentID";
+            this.labelStudentID.Size = new System.Drawing.Size(58, 13);
+            this.labelStudentID.TabIndex = 52;
+            this.labelStudentID.Text = "Student ID";
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(461, 349);
+            this.buttonUpdate.Location = new System.Drawing.Point(324, 346);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 51;
@@ -178,7 +122,7 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
-            this.buttonInsert.Location = new System.Drawing.Point(461, 293);
+            this.buttonInsert.Location = new System.Drawing.Point(324, 295);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 50;
@@ -192,24 +136,17 @@ namespace EducationalCenter
             this.textBoxExamID.Size = new System.Drawing.Size(100, 20);
             this.textBoxExamID.TabIndex = 49;
             // 
-            // textBoxParentNumber
+            // textBoxStudentID
             // 
-            this.textBoxParentNumber.Location = new System.Drawing.Point(303, 296);
-            this.textBoxParentNumber.Name = "textBoxParentNumber";
-            this.textBoxParentNumber.Size = new System.Drawing.Size(100, 20);
-            this.textBoxParentNumber.TabIndex = 48;
-            // 
-            // textBoxStudentName
-            // 
-            this.textBoxStudentName.Location = new System.Drawing.Point(26, 296);
-            this.textBoxStudentName.Name = "textBoxStudentName";
-            this.textBoxStudentName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStudentName.TabIndex = 47;
+            this.textBoxStudentID.Location = new System.Drawing.Point(26, 296);
+            this.textBoxStudentID.Name = "textBoxStudentID";
+            this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStudentID.TabIndex = 47;
             // 
             // label_Grade
             // 
             this.label_Grade.AutoSize = true;
-            this.label_Grade.Location = new System.Drawing.Point(164, 335);
+            this.label_Grade.Location = new System.Drawing.Point(161, 280);
             this.label_Grade.Name = "label_Grade";
             this.label_Grade.Size = new System.Drawing.Size(36, 13);
             this.label_Grade.TabIndex = 58;
@@ -217,28 +154,62 @@ namespace EducationalCenter
             // 
             // textBoxGrade
             // 
-            this.textBoxGrade.Location = new System.Drawing.Point(164, 352);
+            this.textBoxGrade.Location = new System.Drawing.Point(164, 295);
             this.textBoxGrade.Name = "textBoxGrade";
             this.textBoxGrade.Size = new System.Drawing.Size(100, 20);
             this.textBoxGrade.TabIndex = 57;
+            // 
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.Location = new System.Drawing.Point(405, 117);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 59;
+            this.labelDelete.Text = "Double click on a row to delete";
+            // 
+            // ColumnStudentName
+            // 
+            this.ColumnStudentName.HeaderText = "Student ID";
+            this.ColumnStudentName.Name = "ColumnStudentName";
+            this.ColumnStudentName.ReadOnly = true;
+            // 
+            // ColumnPhoneNumber
+            // 
+            this.ColumnPhoneNumber.HeaderText = "Phone Number";
+            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
+            this.ColumnPhoneNumber.ReadOnly = true;
+            // 
+            // ColumnParentNumber
+            // 
+            this.ColumnParentNumber.HeaderText = "Parent Number";
+            this.ColumnParentNumber.Name = "ColumnParentNumber";
+            this.ColumnParentNumber.ReadOnly = true;
+            // 
+            // ColumnExamID
+            // 
+            this.ColumnExamID.HeaderText = "Exam ID";
+            this.ColumnExamID.Name = "ColumnExamID";
+            // 
+            // ColumnGrade
+            // 
+            this.ColumnGrade.HeaderText = "Grade";
+            this.ColumnGrade.Name = "ColumnGrade";
             // 
             // Form2T_E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.label_Grade);
             this.Controls.Add(this.textBoxGrade);
-            this.Controls.Add(this.textBoxPhoneNumber);
-            this.Controls.Add(this.labelPhoneNumber);
             this.Controls.Add(this.label_ExamID);
-            this.Controls.Add(this.labelParentNumber);
-            this.Controls.Add(this.labelStudentName);
+            this.Controls.Add(this.labelStudentID);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.textBoxExamID);
-            this.Controls.Add(this.textBoxParentNumber);
-            this.Controls.Add(this.textBoxStudentName);
+            this.Controls.Add(this.textBoxStudentID);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelGradesReport);
@@ -254,25 +225,22 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParentNumber;
         private System.Windows.Forms.Label labelGradesReport;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExamID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGrade;
-        private System.Windows.Forms.TextBox textBoxPhoneNumber;
-        private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.Label label_ExamID;
-        private System.Windows.Forms.Label labelParentNumber;
-        private System.Windows.Forms.Label labelStudentName;
+        private System.Windows.Forms.Label labelStudentID;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.TextBox textBoxExamID;
-        private System.Windows.Forms.TextBox textBoxParentNumber;
-        private System.Windows.Forms.TextBox textBoxStudentName;
+        private System.Windows.Forms.TextBox textBoxStudentID;
         private System.Windows.Forms.Label label_Grade;
         private System.Windows.Forms.TextBox textBoxGrade;
+        private System.Windows.Forms.Label labelDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParentNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExamID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGrade;
     }
 }

@@ -45,11 +45,16 @@ namespace EducationalCenter
             this.labelTeacher = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.textBoxType = new System.Windows.Forms.TextBox();
             this.textBoxSubject = new System.Windows.Forms.TextBox();
             this.textBoxDateAndTime = new System.Windows.Forms.TextBox();
             this.textBox_Teacher = new System.Windows.Forms.TextBox();
             this.textBox_Room = new System.Windows.Forms.TextBox();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.labelOldDateTime = new System.Windows.Forms.Label();
+            this.textBoxOldDateTime = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelOldRoom = new System.Windows.Forms.Label();
+            this.labelDelete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,7 +178,7 @@ namespace EducationalCenter
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(459, 353);
+            this.buttonUpdate.Location = new System.Drawing.Point(507, 352);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 27;
@@ -183,21 +188,13 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
-            this.buttonInsert.Location = new System.Drawing.Point(459, 297);
+            this.buttonInsert.Location = new System.Drawing.Point(507, 323);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 26;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
-            // 
-            // textBoxType
-            // 
-            this.textBoxType.Location = new System.Drawing.Point(156, 356);
-            this.textBoxType.Name = "textBoxType";
-            this.textBoxType.Size = new System.Drawing.Size(100, 20);
-            this.textBoxType.TabIndex = 25;
-            this.textBoxType.TextChanged += new System.EventHandler(this.textBoxRoom_TextChanged);
             // 
             // textBoxSubject
             // 
@@ -225,16 +222,71 @@ namespace EducationalCenter
             // 
             // textBox_Room
             // 
-            this.textBox_Room.Location = new System.Drawing.Point(271, 300);
+            this.textBox_Room.Location = new System.Drawing.Point(288, 297);
             this.textBox_Room.Name = "textBox_Room";
             this.textBox_Room.Size = new System.Drawing.Size(100, 20);
             this.textBox_Room.TabIndex = 34;
+            // 
+            // comboBoxType
+            // 
+            this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.Location = new System.Drawing.Point(156, 354);
+            this.comboBoxType.Name = "comboBoxType";
+            this.comboBoxType.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxType.TabIndex = 35;
+            // 
+            // labelOldDateTime
+            // 
+            this.labelOldDateTime.AutoSize = true;
+            this.labelOldDateTime.Location = new System.Drawing.Point(288, 337);
+            this.labelOldDateTime.Name = "labelOldDateTime";
+            this.labelOldDateTime.Size = new System.Drawing.Size(125, 13);
+            this.labelOldDateTime.TabIndex = 36;
+            this.labelOldDateTime.Text = "Old Date&Time for Update";
+            // 
+            // textBoxOldDateTime
+            // 
+            this.textBoxOldDateTime.Location = new System.Drawing.Point(291, 355);
+            this.textBoxOldDateTime.Name = "textBoxOldDateTime";
+            this.textBoxOldDateTime.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldDateTime.TabIndex = 37;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(409, 297);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 38;
+            // 
+            // labelOldRoom
+            // 
+            this.labelOldRoom.AutoSize = true;
+            this.labelOldRoom.Location = new System.Drawing.Point(406, 282);
+            this.labelOldRoom.Name = "labelOldRoom";
+            this.labelOldRoom.Size = new System.Drawing.Size(107, 13);
+            this.labelOldRoom.TabIndex = 39;
+            this.labelOldRoom.Text = "Old Room for Update";
+            // 
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.Location = new System.Drawing.Point(406, 117);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 40;
+            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // Form2E_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.labelDelete);
+            this.Controls.Add(this.labelOldRoom);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxOldDateTime);
+            this.Controls.Add(this.labelOldDateTime);
+            this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.textBox_Room);
             this.Controls.Add(this.label_Room);
             this.Controls.Add(this.labelType);
@@ -243,7 +295,6 @@ namespace EducationalCenter
             this.Controls.Add(this.labelTeacher);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.textBoxType);
             this.Controls.Add(this.textBoxSubject);
             this.Controls.Add(this.textBoxDateAndTime);
             this.Controls.Add(this.textBox_Teacher);
@@ -277,10 +328,15 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelTeacher;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.TextBox textBoxSubject;
         private System.Windows.Forms.TextBox textBoxDateAndTime;
         private System.Windows.Forms.TextBox textBox_Teacher;
         private System.Windows.Forms.TextBox textBox_Room;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.Label labelOldDateTime;
+        private System.Windows.Forms.TextBox textBoxOldDateTime;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelOldRoom;
+        private System.Windows.Forms.Label labelDelete;
     }
 }
