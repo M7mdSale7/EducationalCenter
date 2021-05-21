@@ -5,19 +5,22 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace EducationalCenter
 {
     public partial class Form2E_A : Form
     {
+        Controller controllerObj;
         public Form2E_A()
         {
             InitializeComponent();
+            controllerObj = new Controller();
         }
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text,comboBoxSlot.Text);
+            int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show("The insertion is failed");
@@ -25,12 +28,12 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is inserted successfully!");
-            }*/
+            }
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxRoom.Text, textBoxTeacher.Text);
+            int result = controllerObj.UpdateBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text,textBoxOldSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show(" Update failed");
@@ -38,17 +41,9 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is Updated successfully!");
-            }*/
+            }
         }
 
-        private void textBoxStudentID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxStudentID_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

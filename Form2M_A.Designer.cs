@@ -128,7 +128,6 @@ namespace EducationalCenter
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(100, 20);
             this.textBoxAddress.TabIndex = 46;
-            this.textBoxAddress.TextChanged += new System.EventHandler(this.textBoxAddress_TextChanged);
             // 
             // labelAddress
             // 
@@ -202,7 +201,6 @@ namespace EducationalCenter
             this.textBoxNID.Name = "textBoxNID";
             this.textBoxNID.Size = new System.Drawing.Size(100, 20);
             this.textBoxNID.TabIndex = 38;
-            this.textBoxNID.TextChanged += new System.EventHandler(this.textBoxNID_TextChanged);
             // 
             // textBoxPhoneNumber
             // 
@@ -210,15 +208,12 @@ namespace EducationalCenter
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 37;
-            this.textBoxPhoneNumber.TextChanged += new System.EventHandler(this.textBoxPhoneNumber_TextChanged);
-            // 
             // textBoxSalary
             // 
             this.textBoxSalary.Location = new System.Drawing.Point(24, 329);
             this.textBoxSalary.Name = "textBoxSalary";
             this.textBoxSalary.Size = new System.Drawing.Size(100, 20);
             this.textBoxSalary.TabIndex = 36;
-            this.textBoxSalary.TextChanged += new System.EventHandler(this.textBoxSalary_TextChanged);
             // 
             // textBoxName
             // 
@@ -226,7 +221,6 @@ namespace EducationalCenter
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 35;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // labelDelete
             // 

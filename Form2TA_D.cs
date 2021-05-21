@@ -10,24 +10,17 @@ namespace EducationalCenter
 {
     public partial class Form2TA_D : Form
     {
+        Controller controllerObj;
         public Form2TA_D()
         {
+            controllerObj = new Controller();
             InitializeComponent();
         }
 
-        private void labelAttendance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridViewSchedule_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            /*int result = controllerObj.InserAttendance(textBoxStudentID.Text);
+            int result = controllerObj.InsertAttendance(textBoxStudentID.Text);
             if (result == 0)
             {
                 MessageBox.Show("The insertion is failed");
@@ -35,12 +28,12 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is inserted successfully!");
-            }*/
+            }
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            /*int result = controllerObj.UpdateAttendance(textBoxStudentID.Text, textBoxOldID.Text);
+            int result = controllerObj.UpdateAttendance(textBoxStudentID.Text, textBoxOldID.Text);
             if (result == 0)
             {
                 MessageBox.Show("Update failed");
@@ -48,7 +41,7 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is Updated successfully!");
-            }*/
+            }
         }
     }
 }

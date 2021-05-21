@@ -60,7 +60,6 @@ namespace EducationalCenter
             this.dataGridViewSchedule.RowTemplate.Height = 25;
             this.dataGridViewSchedule.Size = new System.Drawing.Size(439, 134);
             this.dataGridViewSchedule.TabIndex = 20;
-            this.dataGridViewSchedule.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSchedule_CellContentClick);
             // 
             // ColumnStudentName
             // 
@@ -95,7 +94,6 @@ namespace EducationalCenter
             this.labelAttendance.Size = new System.Drawing.Size(102, 21);
             this.labelAttendance.TabIndex = 19;
             this.labelAttendance.Text = "Attendance:";
-            this.labelAttendance.Click += new System.EventHandler(this.labelAttendance_Click);
             // 
             // labelWelcome
             // 

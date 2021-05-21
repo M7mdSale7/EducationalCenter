@@ -49,7 +49,7 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.comboBoxSlot = new System.Windows.Forms.ComboBox();
             this.labelSlot = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxOldSlot = new System.Windows.Forms.TextBox();
             this.labelOldSlot = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +129,6 @@ namespace EducationalCenter
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 9;
-            this.textBoxStudentID.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged_1);
             // 
             // textBoxTeacher
             // 
@@ -218,12 +217,12 @@ namespace EducationalCenter
             this.labelSlot.TabIndex = 21;
             this.labelSlot.Text = "Choose Slot";
             // 
-            // textBox1
+            // textBoxOldSlot
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 357);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
+            this.textBoxOldSlot.Location = new System.Drawing.Point(144, 357);
+            this.textBoxOldSlot.Name = "textBoxOldSlot";
+            this.textBoxOldSlot.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldSlot.TabIndex = 22;
             // 
             // labelOldSlot
             // 
@@ -240,7 +239,7 @@ namespace EducationalCenter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.labelOldSlot);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxOldSlot);
             this.Controls.Add(this.labelSlot);
             this.Controls.Add(this.comboBoxSlot);
             this.Controls.Add(this.labelDelete);
@@ -286,7 +285,7 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSlot;
         private System.Windows.Forms.ComboBox comboBoxSlot;
         private System.Windows.Forms.Label labelSlot;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxOldSlot;
         private System.Windows.Forms.Label labelOldSlot;
     }
 }

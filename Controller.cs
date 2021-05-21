@@ -5,7 +5,7 @@ using System.Text;
 using System.Data;
 using System.Windows.Forms;
 
-namespace DBapplication
+namespace EducationalCenter
 {
     public class Controller
     {
@@ -15,35 +15,39 @@ namespace DBapplication
             //dbMan = new DBManager();
         }
 
-        public int InsertBookLesson(string StudentID, string Teacher, string Subject, string Room,string Slot)
+        public int InsertBookLesson(string StudentID, string Teacher, string Subject,string Slot)
         {
             int sID;
-            int roomID;
             bool resultStudent = int.TryParse(StudentID, out sID);
-            bool resultRoom = int.TryParse(StudentID, out roomID);
-            if (resultStudent && resultRoom)
+            if (resultStudent)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
 
         }
 
 
-        public int DeleteBookLesson(string SSN)
+        public int DeleteBookLesson(string StudentID, string Teacher, string Subject, string Room, string Slot)
         {
-            //string query = "DELETE FROM Employee WHERE SSN='" + SSN + "';";
+            // string query = "";
             //return dbMan.ExecuteNonQuery(query);
             return 1;
         }
 
-        public int UpdateBookLesson(string StudentID, string Teacher, string Subject, string Room, string Slot)
+        public int UpdateBookLesson(string StudentID, string Teacher, string Subject, string Slot,string OldSlot)
         {
-            //string query = "UPDATE Employee SET Super_SSN=" + Super_SSN + " ,Salary="+Salary+" , Dno=" + Dno+"WHERE SSN=" +SSN+";";
+            int sID;
+            bool resultStudent = int.TryParse(StudentID, out sID);
+            if (resultStudent)
+            {
+                return 1;
+            }
+            else return 0;
+            // string query = "";
             //return dbMan.ExecuteNonQuery(query);
-            return 1;
         }
 
         public int InsertBookRoom(string Teacher, string Subject, string Room, string DateAndTime , string Type)
@@ -52,17 +56,16 @@ namespace DBapplication
             bool resultRoom = int.TryParse(Room, out roomID);
             if (resultRoom)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
-
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
-        public int DeleteBookRoom(string SSN)
+        public int DeleteBookRoom(string Teacher, string Subject, string Room, string DateAndTime, string Type)
         {
-            //string query = "DELETE FROM Employee WHERE SSN='" + SSN + "';";
+            // string query = "";
             //return dbMan.ExecuteNonQuery(query);
             return 1;
         }
@@ -75,11 +78,11 @@ namespace DBapplication
             bool resultOldRoom = int.TryParse(oldRoom, out roomOld);
             if (resultRoom && resultOldRoom)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int InsertAttendance(string StudentID)
@@ -88,17 +91,16 @@ namespace DBapplication
             bool resultStudent = int.TryParse(StudentID, out sID);
             if (resultStudent)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
-
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
-        public int DeleteAttendance(string ID)
+        public int DeleteAttendance(string StudentID)
         {
-            //string query = "DELETE FROM Employee WHERE SSN='" + SSN + "';";
+            // string query = "";
             //return dbMan.ExecuteNonQuery(query);
             return 1;
         }
@@ -111,11 +113,11 @@ namespace DBapplication
             bool resultOldStudent = int.TryParse(StudentOldID, out sOldID);
             if (resultStudent && resultOldStudent)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int InsertGrade(string StudentID , string ExamID , string Grade)
@@ -126,17 +128,16 @@ namespace DBapplication
             bool resultExam = int.TryParse(StudentID, out EID);
             if (resultStudent && resultExam)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
-
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int DeleteGrade(string StudentID , string ExamID)
         {
-            //string query = "DELETE FROM Employee WHERE SSN='" + SSN + "';";
+            // string query = "";
             //return dbMan.ExecuteNonQuery(query);
             return 1;
         }
@@ -149,11 +150,11 @@ namespace DBapplication
             bool resultExam = int.TryParse(StudentID, out EID);
             if (resultStudent && resultExam)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int InsertEmployee(string Name, string PhoneNumber, string Salary , string Address , string NationalID)
@@ -166,12 +167,11 @@ namespace DBapplication
             bool resultNID = int.TryParse(NationalID, out NID);
             if (resultPno && resultSal && resultNID)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
-
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int DeleteEmployee(string NationalID)
@@ -191,11 +191,11 @@ namespace DBapplication
             bool resultNID = int.TryParse(NationalID, out NID);
             if (resultPno && resultSal && resultNID)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int InsertTA(string Name, string PhoneNumber, string ID)
@@ -206,12 +206,11 @@ namespace DBapplication
             bool resultNID = int.TryParse(ID, out IDTest);
             if (resultPno && resultNID)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
-
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public int DeleteTA(string ID)
@@ -229,11 +228,11 @@ namespace DBapplication
             bool resultNID = int.TryParse(ID, out IDTest);
             if (resultPno && resultNID)
             {
-                // string query = "INSERT INTO Employee " + "Values ('"  + name + "'," +SSN + ",null,'"+ Sex + "'," +Salary+ "," + Supper_SSN +"," +Dno+ ");";
-                //return dbMan.ExecuteNonQuery(query);
                 return 1;
             }
             else return 0;
+            // string query = "";
+            //return dbMan.ExecuteNonQuery(query);
         }
 
         public void TerminateConnection()

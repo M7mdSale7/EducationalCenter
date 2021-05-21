@@ -136,7 +136,6 @@ namespace EducationalCenter
             this.textBoxGrade.Name = "textBoxGrade";
             this.textBoxGrade.Size = new System.Drawing.Size(100, 20);
             this.textBoxGrade.TabIndex = 69;
-            this.textBoxGrade.TextChanged += new System.EventHandler(this.textBoxGrade_TextChanged);
             // 
             // label_ExamID
             // 
@@ -182,7 +181,6 @@ namespace EducationalCenter
             this.textBoxExamID.Name = "textBoxExamID";
             this.textBoxExamID.Size = new System.Drawing.Size(100, 20);
             this.textBoxExamID.TabIndex = 61;
-            this.textBoxExamID.TextChanged += new System.EventHandler(this.textBoxExamID_TextChanged);
             // 
             // textBoxStudentID
             // 
@@ -190,7 +188,6 @@ namespace EducationalCenter
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 59;
-            this.textBoxStudentID.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged);
             // 
             // Form2TA_E
             // 

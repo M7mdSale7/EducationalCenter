@@ -148,7 +148,6 @@ namespace EducationalCenter
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
             this.textBoxStudentID.TabIndex = 37;
-            this.textBoxStudentID.TextChanged += new System.EventHandler(this.textBoxStudentID_TextChanged);
             // 
             // labelDelete
             // 
@@ -165,7 +164,6 @@ namespace EducationalCenter
             this.textBoxOldID.Name = "textBoxOldID";
             this.textBoxOldID.Size = new System.Drawing.Size(100, 20);
             this.textBoxOldID.TabIndex = 58;
-            this.textBoxOldID.TextChanged += new System.EventHandler(this.textBoxOldID_TextChanged);
             // 
             // labelOldID
             // 
@@ -194,7 +192,6 @@ namespace EducationalCenter
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2T_D";
             this.Text = "Form2T-D";
-            this.Load += new System.EventHandler(this.Form2T_D_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

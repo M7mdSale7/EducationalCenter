@@ -134,7 +134,6 @@ namespace EducationalCenter
             this.label_Room.Size = new System.Drawing.Size(35, 13);
             this.label_Room.TabIndex = 33;
             this.label_Room.Text = "Room";
-            this.label_Room.Click += new System.EventHandler(this.labelSlot_Click);
             // 
             // labelType
             // 
@@ -144,7 +143,6 @@ namespace EducationalCenter
             this.labelType.Size = new System.Drawing.Size(31, 13);
             this.labelType.TabIndex = 31;
             this.labelType.Text = "Type";
-            this.labelType.Click += new System.EventHandler(this.labelRoom_Click);
             // 
             // labelSubject
             // 
@@ -154,7 +152,6 @@ namespace EducationalCenter
             this.labelSubject.Size = new System.Drawing.Size(43, 13);
             this.labelSubject.TabIndex = 30;
             this.labelSubject.Text = "Subject";
-            this.labelSubject.Click += new System.EventHandler(this.labelSubject_Click);
             // 
             // buttonUpdate
             // 
@@ -182,7 +179,6 @@ namespace EducationalCenter
             this.textBoxSubject.Name = "textBoxSubject";
             this.textBoxSubject.Size = new System.Drawing.Size(100, 20);
             this.textBoxSubject.TabIndex = 24;
-            this.textBoxSubject.TextChanged += new System.EventHandler(this.textBoxSubject_TextChanged);
             // 
             // textBox_Room
             // 
@@ -190,7 +186,6 @@ namespace EducationalCenter
             this.textBox_Room.Name = "textBox_Room";
             this.textBox_Room.Size = new System.Drawing.Size(100, 20);
             this.textBox_Room.TabIndex = 34;
-            this.textBox_Room.TextChanged += new System.EventHandler(this.textBox_Room_TextChanged);
             // 
             // comboBoxType
             // 
@@ -199,7 +194,6 @@ namespace EducationalCenter
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 35;
-            this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
             // 
             // labelOldDateTime
             // 
@@ -216,7 +210,6 @@ namespace EducationalCenter
             this.textBoxOldDateTime.Name = "textBoxOldDateTime";
             this.textBoxOldDateTime.Size = new System.Drawing.Size(100, 20);
             this.textBoxOldDateTime.TabIndex = 37;
-            this.textBoxOldDateTime.TextChanged += new System.EventHandler(this.textBoxOldDateTime_TextChanged);
             // 
             // labelOldRoom
             // 
@@ -251,7 +244,6 @@ namespace EducationalCenter
             this.textBoxTeacher.Name = "textBoxTeacher";
             this.textBoxTeacher.Size = new System.Drawing.Size(100, 20);
             this.textBoxTeacher.TabIndex = 41;
-            this.textBoxTeacher.TextChanged += new System.EventHandler(this.textBoxTeacher_TextChanged_1);
             // 
             // label_DateAndTime
             // 
@@ -268,7 +260,6 @@ namespace EducationalCenter
             this.textBox_DateAndTime.Name = "textBox_DateAndTime";
             this.textBox_DateAndTime.Size = new System.Drawing.Size(100, 20);
             this.textBox_DateAndTime.TabIndex = 43;
-            this.textBox_DateAndTime.TextChanged += new System.EventHandler(this.textBox_DateAndTime_TextChanged);
             // 
             // textBox_OldRoom
             // 
@@ -276,7 +267,6 @@ namespace EducationalCenter
             this.textBox_OldRoom.Name = "textBox_OldRoom";
             this.textBox_OldRoom.Size = new System.Drawing.Size(100, 20);
             this.textBox_OldRoom.TabIndex = 45;
-            this.textBox_OldRoom.TextChanged += new System.EventHandler(this.textBox_OldRoom_TextChanged);
             // 
             // Form2E_B
             // 

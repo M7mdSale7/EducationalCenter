@@ -129,7 +129,6 @@ namespace EducationalCenter
             this.label_ExamID.Size = new System.Drawing.Size(47, 13);
             this.label_ExamID.TabIndex = 54;
             this.label_ExamID.Text = "Exam ID";
-            this.label_ExamID.Click += new System.EventHandler(this.label_ExamID_Click);
             // 
             // labelStudentID
             // 
@@ -166,7 +165,6 @@ namespace EducationalCenter
             this.textBoxExamID.Name = "textBoxExamID";
             this.textBoxExamID.Size = new System.Drawing.Size(100, 20);
             this.textBoxExamID.TabIndex = 49;
-            this.textBoxExamID.TextChanged += new System.EventHandler(this.textBoxExamID_TextChanged);
             // 
             // textBoxStudentID
             // 
@@ -183,7 +181,6 @@ namespace EducationalCenter
             this.label_Grade.Size = new System.Drawing.Size(36, 13);
             this.label_Grade.TabIndex = 58;
             this.label_Grade.Text = "Grade";
-            this.label_Grade.Click += new System.EventHandler(this.label_Grade_Click);
             // 
             // textBoxGrade
             // 
@@ -191,7 +188,6 @@ namespace EducationalCenter
             this.textBoxGrade.Name = "textBoxGrade";
             this.textBoxGrade.Size = new System.Drawing.Size(100, 20);
             this.textBoxGrade.TabIndex = 57;
-            this.textBoxGrade.TextChanged += new System.EventHandler(this.textBoxGrade_TextChanged);
             // 
             // labelDelete
             // 
