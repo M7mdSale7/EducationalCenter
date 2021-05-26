@@ -48,6 +48,7 @@ namespace EducationalCenter
             this.textBoxTeacher = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
+            this.labelDelete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,10 +208,20 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // _2E_A
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.Location = new System.Drawing.Point(404, 56);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 41;
+            this.labelDelete.Text = "Double click on a row to delete";
+            // 
+            // UserControl2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelOldSlot);
@@ -225,7 +236,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelStudentID);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelBookLessons);
-            this.Name = "_2E_A";
+            this.Name = "UserControl2E_A";
             this.Size = new System.Drawing.Size(600, 350);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -254,5 +265,6 @@ namespace EducationalCenter
         private System.Windows.Forms.TextBox textBoxTeacher;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.Label labelDelete;
     }
 }

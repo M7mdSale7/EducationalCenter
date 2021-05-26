@@ -89,17 +89,11 @@
     <Compile Include="Form1TA.designer.cs">
       <DependentUpon>Form1TA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2E_A.cs">
+    <Compile Include="Form2E.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2E_A.designer.cs">
-      <DependentUpon>Form2E_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2E_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2E_B.designer.cs">
-      <DependentUpon>Form2E_B.cs</DependentUpon>
+    <Compile Include="Form2E.designer.cs">
+      <DependentUpon>Form2E.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2M_A.cs">
       <SubType>Form</SubType>
@@ -211,11 +205,8 @@
     <EmbeddedResource Include="Form1TA.resx">
       <DependentUpon>Form1TA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2E_A.resx">
-      <DependentUpon>Form2E_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2E_B.resx">
-      <DependentUpon>Form2E_B.cs</DependentUpon>
+    <EmbeddedResource Include="Form2E.resx">
+      <DependentUpon>Form2E.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2M_A.resx">
       <DependentUpon>Form2M_A.cs</DependentUpon>

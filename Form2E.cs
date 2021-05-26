@@ -9,10 +9,10 @@ using System.Linq;
 
 namespace EducationalCenter
 {
-    public partial class Form2E_A : Form
+    public partial class Form2E : Form
     {
         Controller controllerObj;
-        public Form2E_A(UserControl userControl)
+        public Form2E(UserControl userControl)
         {
             InitializeComponent(userControl);
             controllerObj = new Controller();

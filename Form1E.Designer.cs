@@ -64,6 +64,7 @@ namespace EducationalCenter
             this.buttonBookRooms.TabIndex = 2;
             this.buttonBookRooms.Text = "Book Rooms";
             this.buttonBookRooms.UseVisualStyleBackColor = true;
+            this.buttonBookRooms.Click += new System.EventHandler(this.buttonBookRooms_Click);
             // 
             // buttonSchedule
             // 

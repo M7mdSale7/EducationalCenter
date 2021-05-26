@@ -18,8 +18,15 @@ namespace EducationalCenter
         private void buttonBookLessons_Click(object sender, EventArgs e)
         {
             UserControl usercontrol = new UserControl2E_A();
-            Form FormBookLessons = new Form2E_A(usercontrol);
+            Form FormBookLessons = new Form2E(usercontrol);
             FormBookLessons.Show();
+        }
+
+        private void buttonBookRooms_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_B();
+            Form FormBookRooms = new Form2E(usercontrol);
+            FormBookRooms.Show();
         }
     }
 }

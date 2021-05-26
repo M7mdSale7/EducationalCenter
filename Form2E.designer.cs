@@ -2,7 +2,7 @@
 
 namespace EducationalCenter
 {
-    partial class Form2E_A
+    partial class Form2E
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,6 @@ namespace EducationalCenter
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelBookLessons = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
 
             this.SuspendLayout();
             //
@@ -69,22 +68,12 @@ namespace EducationalCenter
             this.labelBookLessons.TabIndex = 8;
             this.labelBookLessons.Text = "Book Lessons:";
             // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.Location = new System.Drawing.Point(418, 117);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 19;
-            this.labelDelete.Text = "Double click on a row to delete";
-            // 
             // Form2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(userControl);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelBookLessons);
@@ -104,6 +93,5 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelBookLessons;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Label labelDelete;
     }
 }
