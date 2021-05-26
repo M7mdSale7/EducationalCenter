@@ -31,38 +31,35 @@ namespace EducationalCenter
         {
             this.labelBookRooms = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelDelete = new System.Windows.Forms.Label();
+            this.label_Teacher = new System.Windows.Forms.Label();
+            this.textBoxTeacher = new System.Windows.Forms.TextBox();
+            this.label_Room = new System.Windows.Forms.Label();
+            this.labelSubject = new System.Windows.Forms.Label();
+            this.textBoxSubject = new System.Windows.Forms.TextBox();
+            this.label_Date = new System.Windows.Forms.Label();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.labelType = new System.Windows.Forms.Label();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.textBox_Date = new System.Windows.Forms.TextBox();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.comboBoxTime = new System.Windows.Forms.ComboBox();
             this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelDelete = new System.Windows.Forms.Label();
-            this.label_Teacher = new System.Windows.Forms.Label();
-            this.textBoxTeacher = new System.Windows.Forms.TextBox();
-            this.textBox_Room = new System.Windows.Forms.TextBox();
-            this.label_Room = new System.Windows.Forms.Label();
-            this.labelSubject = new System.Windows.Forms.Label();
-            this.textBoxSubject = new System.Windows.Forms.TextBox();
-            this.textBox_OldRoom = new System.Windows.Forms.TextBox();
-            this.label_DateAndTime = new System.Windows.Forms.Label();
-            this.textBox_DateAndTime = new System.Windows.Forms.TextBox();
-            this.labelOldRoom = new System.Windows.Forms.Label();
-            this.textBoxOldDateTime = new System.Windows.Forms.TextBox();
-            this.labelOldDateTime = new System.Windows.Forms.Label();
-            this.comboBoxType = new System.Windows.Forms.ComboBox();
-            this.labelType = new System.Windows.Forms.Label();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonInsert = new System.Windows.Forms.Button();
+            this.comboBoxRoom = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelBookRooms
             // 
             this.labelBookRooms.AutoSize = true;
-            this.labelBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelBookRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.labelBookRooms.Location = new System.Drawing.Point(3, 16);
             this.labelBookRooms.Name = "labelBookRooms";
-            this.labelBookRooms.Size = new System.Drawing.Size(80, 15);
+            this.labelBookRooms.Size = new System.Drawing.Size(116, 20);
             this.labelBookRooms.TabIndex = 11;
             this.labelBookRooms.Text = "Book Rooms:";
             // 
@@ -80,31 +77,6 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(539, 130);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            // 
-            // ColumnDateTime
-            // 
-            this.ColumnDateTime.HeaderText = "Date&Time";
-            this.ColumnDateTime.Name = "ColumnDateTime";
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
             // 
             // labelDelete
             // 
@@ -132,18 +104,10 @@ namespace EducationalCenter
             this.textBoxTeacher.Size = new System.Drawing.Size(100, 20);
             this.textBoxTeacher.TabIndex = 47;
             // 
-            // textBox_Room
-            // 
-            this.textBox_Room.Location = new System.Drawing.Point(266, 231);
-            this.textBox_Room.MaxLength = 15;
-            this.textBox_Room.Name = "textBox_Room";
-            this.textBox_Room.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Room.TabIndex = 46;
-            // 
             // label_Room
             // 
             this.label_Room.AutoSize = true;
-            this.label_Room.Location = new System.Drawing.Point(263, 216);
+            this.label_Room.Location = new System.Drawing.Point(266, 214);
             this.label_Room.Name = "label_Room";
             this.label_Room.Size = new System.Drawing.Size(35, 13);
             this.label_Room.TabIndex = 45;
@@ -166,61 +130,19 @@ namespace EducationalCenter
             this.textBoxSubject.Size = new System.Drawing.Size(100, 20);
             this.textBoxSubject.TabIndex = 43;
             // 
-            // textBox_OldRoom
+            // label_Date
             // 
-            this.textBox_OldRoom.Location = new System.Drawing.Point(386, 230);
-            this.textBox_OldRoom.MaxLength = 15;
-            this.textBox_OldRoom.Name = "textBox_OldRoom";
-            this.textBox_OldRoom.Size = new System.Drawing.Size(100, 20);
-            this.textBox_OldRoom.TabIndex = 56;
-            // 
-            // label_DateAndTime
-            // 
-            this.label_DateAndTime.AutoSize = true;
-            this.label_DateAndTime.Location = new System.Drawing.Point(4, 268);
-            this.label_DateAndTime.Name = "label_DateAndTime";
-            this.label_DateAndTime.Size = new System.Drawing.Size(78, 13);
-            this.label_DateAndTime.TabIndex = 55;
-            this.label_DateAndTime.Text = "Date And Time";
-            // 
-            // textBox_DateAndTime
-            // 
-            this.textBox_DateAndTime.Location = new System.Drawing.Point(4, 285);
-            this.textBox_DateAndTime.MaxLength = 15;
-            this.textBox_DateAndTime.Name = "textBox_DateAndTime";
-            this.textBox_DateAndTime.Size = new System.Drawing.Size(100, 20);
-            this.textBox_DateAndTime.TabIndex = 54;
-            // 
-            // labelOldRoom
-            // 
-            this.labelOldRoom.AutoSize = true;
-            this.labelOldRoom.Location = new System.Drawing.Point(383, 213);
-            this.labelOldRoom.Name = "labelOldRoom";
-            this.labelOldRoom.Size = new System.Drawing.Size(107, 13);
-            this.labelOldRoom.TabIndex = 53;
-            this.labelOldRoom.Text = "Old Room for Update";
-            // 
-            // textBoxOldDateTime
-            // 
-            this.textBoxOldDateTime.Location = new System.Drawing.Point(268, 286);
-            this.textBoxOldDateTime.MaxLength = 15;
-            this.textBoxOldDateTime.Name = "textBoxOldDateTime";
-            this.textBoxOldDateTime.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOldDateTime.TabIndex = 52;
-            // 
-            // labelOldDateTime
-            // 
-            this.labelOldDateTime.AutoSize = true;
-            this.labelOldDateTime.Location = new System.Drawing.Point(265, 268);
-            this.labelOldDateTime.Name = "labelOldDateTime";
-            this.labelOldDateTime.Size = new System.Drawing.Size(125, 13);
-            this.labelOldDateTime.TabIndex = 51;
-            this.labelOldDateTime.Text = "Old Date&Time for Update";
+            this.label_Date.AutoSize = true;
+            this.label_Date.Location = new System.Drawing.Point(4, 268);
+            this.label_Date.Name = "label_Date";
+            this.label_Date.Size = new System.Drawing.Size(30, 13);
+            this.label_Date.TabIndex = 55;
+            this.label_Date.Text = "Date";
             // 
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(133, 285);
+            this.comboBoxType.Location = new System.Drawing.Point(269, 284);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 50;
@@ -228,47 +150,98 @@ namespace EducationalCenter
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(133, 268);
+            this.labelType.Location = new System.Drawing.Point(266, 268);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(31, 13);
             this.labelType.TabIndex = 49;
             this.labelType.Text = "Type";
             // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(502, 284);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdate.TabIndex = 58;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            // 
             // buttonInsert
             // 
-            this.buttonInsert.Location = new System.Drawing.Point(502, 229);
+            this.buttonInsert.Location = new System.Drawing.Point(432, 282);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 57;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
             // 
+            // textBox_Date
+            // 
+            this.textBox_Date.Location = new System.Drawing.Point(4, 285);
+            this.textBox_Date.MaxLength = 15;
+            this.textBox_Date.Name = "textBox_Date";
+            this.textBox_Date.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Date.TabIndex = 54;
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Location = new System.Drawing.Point(134, 269);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(76, 13);
+            this.labelTime.TabIndex = 58;
+            this.labelTime.Text = "Available Time";
+            // 
+            // comboBoxTime
+            // 
+            this.comboBoxTime.FormattingEnabled = true;
+            this.comboBoxTime.Location = new System.Drawing.Point(134, 285);
+            this.comboBoxTime.Name = "comboBoxTime";
+            this.comboBoxTime.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTime.TabIndex = 59;
+            // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            this.ColumnTeacher.ReadOnly = true;
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            this.ColumnSubject.ReadOnly = true;
+            // 
+            // ColumnRoom
+            // 
+            this.ColumnRoom.HeaderText = "Room";
+            this.ColumnRoom.Name = "ColumnRoom";
+            this.ColumnRoom.ReadOnly = true;
+            // 
+            // ColumnDateTime
+            // 
+            this.ColumnDateTime.HeaderText = "Date&Time";
+            this.ColumnDateTime.Name = "ColumnDateTime";
+            this.ColumnDateTime.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // comboBoxRoom
+            // 
+            this.comboBoxRoom.FormattingEnabled = true;
+            this.comboBoxRoom.Location = new System.Drawing.Point(269, 231);
+            this.comboBoxRoom.Name = "comboBoxRoom";
+            this.comboBoxRoom.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRoom.TabIndex = 63;
+            // 
             // UserControl2E_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.comboBoxRoom);
+            this.Controls.Add(this.comboBoxTime);
+            this.Controls.Add(this.labelTime);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.textBox_OldRoom);
-            this.Controls.Add(this.label_DateAndTime);
-            this.Controls.Add(this.textBox_DateAndTime);
-            this.Controls.Add(this.labelOldRoom);
-            this.Controls.Add(this.textBoxOldDateTime);
-            this.Controls.Add(this.labelOldDateTime);
+            this.Controls.Add(this.label_Date);
+            this.Controls.Add(this.textBox_Date);
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.label_Teacher);
             this.Controls.Add(this.textBoxTeacher);
-            this.Controls.Add(this.textBox_Room);
             this.Controls.Add(this.label_Room);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.textBoxSubject);
@@ -287,27 +260,24 @@ namespace EducationalCenter
 
         private System.Windows.Forms.Label labelBookRooms;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelDelete;
+        private System.Windows.Forms.Label label_Teacher;
+        private System.Windows.Forms.TextBox textBoxTeacher;
+        private System.Windows.Forms.Label label_Room;
+        private System.Windows.Forms.Label labelSubject;
+        private System.Windows.Forms.TextBox textBoxSubject;
+        private System.Windows.Forms.Label label_Date;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.Label labelType;
+        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.TextBox textBox_Date;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.ComboBox comboBoxTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
-        private System.Windows.Forms.Label labelDelete;
-        private System.Windows.Forms.Label label_Teacher;
-        private System.Windows.Forms.TextBox textBoxTeacher;
-        private System.Windows.Forms.TextBox textBox_Room;
-        private System.Windows.Forms.Label label_Room;
-        private System.Windows.Forms.Label labelSubject;
-        private System.Windows.Forms.TextBox textBoxSubject;
-        private System.Windows.Forms.TextBox textBox_OldRoom;
-        private System.Windows.Forms.Label label_DateAndTime;
-        private System.Windows.Forms.TextBox textBox_DateAndTime;
-        private System.Windows.Forms.Label labelOldRoom;
-        private System.Windows.Forms.TextBox textBoxOldDateTime;
-        private System.Windows.Forms.Label labelOldDateTime;
-        private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.Label labelType;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.ComboBox comboBoxRoom;
     }
 }

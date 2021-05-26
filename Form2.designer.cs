@@ -2,7 +2,7 @@
 
 namespace EducationalCenter
 {
-    partial class Form2E
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -74,8 +74,6 @@ namespace EducationalCenter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(userControl);
-            this.Controls.Add(this.buttonUpdate);
-            this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelBookLessons);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelWelcome);
@@ -91,7 +89,5 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelBookLessons;
-        private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Button buttonUpdate;
     }
 }
