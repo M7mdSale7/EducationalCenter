@@ -20,7 +20,7 @@ namespace EducationalCenter
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text);
+            /*int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show("The insertion is failed");
@@ -28,12 +28,12 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is inserted successfully!");
-            }
+            }*/
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            int result = controllerObj.UpdateBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text,textBoxOldSlot.Text);
+            /*int result = controllerObj.UpdateBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text,textBoxOldSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show(" Update failed");
@@ -41,7 +41,7 @@ namespace EducationalCenter
             else
             {
                 MessageBox.Show("The row is Updated successfully!");
-            }
+            }*/
         }
 
         

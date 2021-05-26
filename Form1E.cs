@@ -19,6 +19,7 @@ namespace EducationalCenter
         {
             UserControl usercontrol = new UserControl2E_A();
             Form FormBookLessons = new Form2E_A(usercontrol);
+            FormBookLessons.Show();
         }
     }
 }
