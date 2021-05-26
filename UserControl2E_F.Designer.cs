@@ -43,9 +43,9 @@ namespace EducationalCenter
             this.labelYear = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
             this.labelSemester = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxYear = new System.Windows.Forms.TextBox();
+            this.comboBoxSemester = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(485, 243);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -165,35 +167,37 @@ namespace EducationalCenter
             this.labelSemester.TabIndex = 91;
             this.labelSemester.Text = "Semester";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 245);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 92;
+            this.textBoxName.Location = new System.Drawing.Point(22, 245);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.TabIndex = 92;
             // 
-            // textBox2
+            // textBoxYear
             // 
-            this.textBox2.Location = new System.Drawing.Point(25, 292);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 93;
+            this.textBoxYear.Location = new System.Drawing.Point(25, 292);
+            this.textBoxYear.Name = "textBoxYear";
+            this.textBoxYear.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYear.TabIndex = 93;
             // 
-            // comboBox2
+            // comboBoxSemester
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(186, 290);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 94;
+            this.comboBoxSemester.FormattingEnabled = true;
+            this.comboBoxSemester.Location = new System.Drawing.Point(186, 290);
+            this.comboBoxSemester.Name = "comboBoxSemester";
+            this.comboBoxSemester.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSemester.TabIndex = 94;
             // 
             // UserControl2E_F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
+            this.Controls.Add(this.comboBoxSemester);
+            this.Controls.Add(this.textBoxYear);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelSemester);
             this.Controls.Add(this.labelTeacher);
             this.Controls.Add(this.labelYear);
@@ -227,8 +231,8 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelYear;
         private System.Windows.Forms.Label labelTeacher;
         private System.Windows.Forms.Label labelSemester;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxYear;
+        private System.Windows.Forms.ComboBox comboBoxSemester;
     }
 }

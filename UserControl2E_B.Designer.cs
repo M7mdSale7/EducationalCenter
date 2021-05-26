@@ -31,6 +31,11 @@ namespace EducationalCenter
         {
             this.labelBookRooms = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelDelete = new System.Windows.Forms.Label();
             this.label_Teacher = new System.Windows.Forms.Label();
             this.textBoxTeacher = new System.Windows.Forms.TextBox();
@@ -44,11 +49,6 @@ namespace EducationalCenter
             this.textBox_Date = new System.Windows.Forms.TextBox();
             this.labelTime = new System.Windows.Forms.Label();
             this.comboBoxTime = new System.Windows.Forms.ComboBox();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,7 @@ namespace EducationalCenter
             // labelBookRooms
             // 
             this.labelBookRooms.AutoSize = true;
+            this.labelBookRooms.BackColor = System.Drawing.Color.Transparent;
             this.labelBookRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.labelBookRooms.Location = new System.Drawing.Point(3, 16);
             this.labelBookRooms.Name = "labelBookRooms";
@@ -78,9 +79,40 @@ namespace EducationalCenter
             this.dataGridView1.Size = new System.Drawing.Size(539, 130);
             this.dataGridView1.TabIndex = 10;
             // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            this.ColumnTeacher.ReadOnly = true;
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            this.ColumnSubject.ReadOnly = true;
+            // 
+            // ColumnRoom
+            // 
+            this.ColumnRoom.HeaderText = "Room";
+            this.ColumnRoom.Name = "ColumnRoom";
+            this.ColumnRoom.ReadOnly = true;
+            // 
+            // ColumnDateTime
+            // 
+            this.ColumnDateTime.HeaderText = "Date&Time";
+            this.ColumnDateTime.Name = "ColumnDateTime";
+            this.ColumnDateTime.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
             this.labelDelete.Location = new System.Drawing.Point(368, 45);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
@@ -158,6 +190,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(432, 282);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -190,36 +224,6 @@ namespace EducationalCenter
             this.comboBoxTime.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTime.TabIndex = 59;
             // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            this.ColumnTeacher.ReadOnly = true;
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            this.ColumnSubject.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.ReadOnly = true;
-            // 
-            // ColumnDateTime
-            // 
-            this.ColumnDateTime.HeaderText = "Date&Time";
-            this.ColumnDateTime.Name = "ColumnDateTime";
-            this.ColumnDateTime.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
-            // 
             // comboBoxRoom
             // 
             this.comboBoxRoom.FormattingEnabled = true;
@@ -232,6 +236,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.comboBoxRoom);
             this.Controls.Add(this.comboBoxTime);
             this.Controls.Add(this.labelTime);

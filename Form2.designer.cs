@@ -32,7 +32,6 @@ namespace EducationalCenter
         {
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.labelBookLessons = new System.Windows.Forms.Label();
 
             this.SuspendLayout();
             //
@@ -43,7 +42,9 @@ namespace EducationalCenter
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(26, 30);
+            this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Location = new System.Drawing.Point(26, 20);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(55, 13);
             this.labelWelcome.TabIndex = 5;
@@ -51,34 +52,26 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(494, 24);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(494, 10);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(64, 20);
+            this.buttonBack.Size = new System.Drawing.Size(70, 30);
             this.buttonBack.TabIndex = 6;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // labelBookLessons
-            // 
-            this.labelBookLessons.AutoSize = true;
-            this.labelBookLessons.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.labelBookLessons.Location = new System.Drawing.Point(26, 98);
-            this.labelBookLessons.Name = "labelBookLessons";
-            this.labelBookLessons.Size = new System.Drawing.Size(84, 15);
-            this.labelBookLessons.TabIndex = 8;
-            this.labelBookLessons.Text = "Book Lessons:";
             // 
             // Form2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(userControl);
-            this.Controls.Add(this.labelBookLessons);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelWelcome);
-            this.Name = "Form2E_A";
-            this.Text = "Form2E_A";
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,6 +81,5 @@ namespace EducationalCenter
 
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Label labelBookLessons;
     }
 }

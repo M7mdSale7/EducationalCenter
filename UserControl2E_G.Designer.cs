@@ -32,6 +32,11 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelNumber = new System.Windows.Forms.Label();
             this.labelSubjectName = new System.Windows.Forms.Label();
@@ -39,22 +44,18 @@ namespace EducationalCenter
             this.labelSemester = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
             this.comboBoxSemester = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxYear = new System.Windows.Forms.TextBox();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
+            this.textBoxSubjectName = new System.Windows.Forms.TextBox();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
-            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
-            this.labelDelete.Location = new System.Drawing.Point(431, 62);
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
+            this.labelDelete.Location = new System.Drawing.Point(389, 62);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 96;
@@ -63,6 +64,7 @@ namespace EducationalCenter
             // labelExams
             // 
             this.labelExams.AutoSize = true;
+            this.labelExams.BackColor = System.Drawing.Color.Transparent;
             this.labelExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExams.Location = new System.Drawing.Point(3, 29);
             this.labelExams.Name = "labelExams";
@@ -81,12 +83,44 @@ namespace EducationalCenter
             this.ColumnSemester});
             this.dataGridView1.Location = new System.Drawing.Point(3, 78);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(582, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 150);
             this.dataGridView1.TabIndex = 97;
+            // 
+            // ColumnNumber
+            // 
+            this.ColumnNumber.HeaderText = "Number";
+            this.ColumnNumber.Name = "ColumnNumber";
+            this.ColumnNumber.ReadOnly = true;
+            // 
+            // ColumnSubjectName
+            // 
+            this.ColumnSubjectName.HeaderText = "Subject name";
+            this.ColumnSubjectName.Name = "ColumnSubjectName";
+            this.ColumnSubjectName.ReadOnly = true;
+            // 
+            // ColumnTeacherName
+            // 
+            this.ColumnTeacherName.HeaderText = "Teacher name";
+            this.ColumnTeacherName.Name = "ColumnTeacherName";
+            this.ColumnTeacherName.ReadOnly = true;
+            // 
+            // ColumnYear
+            // 
+            this.ColumnYear.HeaderText = "Year";
+            this.ColumnYear.Name = "ColumnYear";
+            this.ColumnYear.ReadOnly = true;
+            // 
+            // ColumnSemester
+            // 
+            this.ColumnSemester.HeaderText = "Semester";
+            this.ColumnSemester.Name = "ColumnSemester";
+            this.ColumnSemester.ReadOnly = true;
             // 
             // buttonInsert
             // 
-            this.buttonInsert.Location = new System.Drawing.Point(510, 310);
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonInsert.Location = new System.Drawing.Point(468, 310);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 98;
@@ -146,26 +180,26 @@ namespace EducationalCenter
             this.comboBoxSemester.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSemester.TabIndex = 105;
             // 
-            // textBox1
+            // textBoxYear
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 263);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 106;
+            this.textBoxYear.Location = new System.Drawing.Point(168, 263);
+            this.textBoxYear.Name = "textBoxYear";
+            this.textBoxYear.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYear.TabIndex = 106;
             // 
-            // textBox2
+            // textBoxNumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 263);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 107;
+            this.textBoxNumber.Location = new System.Drawing.Point(20, 263);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber.TabIndex = 107;
             // 
-            // textBox3
+            // textBoxSubjectName
             // 
-            this.textBox3.Location = new System.Drawing.Point(20, 313);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 108;
+            this.textBoxSubjectName.Location = new System.Drawing.Point(20, 313);
+            this.textBoxSubjectName.Name = "textBoxSubjectName";
+            this.textBoxSubjectName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSubjectName.TabIndex = 108;
             // 
             // comboBoxTeacher
             // 
@@ -175,45 +209,15 @@ namespace EducationalCenter
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 110;
             // 
-            // ColumnNumber
-            // 
-            this.ColumnNumber.HeaderText = "Number";
-            this.ColumnNumber.Name = "ColumnNumber";
-            this.ColumnNumber.ReadOnly = true;
-            // 
-            // ColumnSubjectName
-            // 
-            this.ColumnSubjectName.HeaderText = "Subject name";
-            this.ColumnSubjectName.Name = "ColumnSubjectName";
-            this.ColumnSubjectName.ReadOnly = true;
-            // 
-            // ColumnTeacherName
-            // 
-            this.ColumnTeacherName.HeaderText = "Teacher name";
-            this.ColumnTeacherName.Name = "ColumnTeacherName";
-            this.ColumnTeacherName.ReadOnly = true;
-            // 
-            // ColumnYear
-            // 
-            this.ColumnYear.HeaderText = "Year";
-            this.ColumnYear.Name = "ColumnYear";
-            this.ColumnYear.ReadOnly = true;
-            this.ColumnYear.Width = 50;
-            // 
-            // ColumnSemester
-            // 
-            this.ColumnSemester.HeaderText = "Semester";
-            this.ColumnSemester.Name = "ColumnSemester";
-            this.ColumnSemester.ReadOnly = true;
-            // 
             // UserControl2E_G
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.comboBoxTeacher);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSubjectName);
+            this.Controls.Add(this.textBoxNumber);
+            this.Controls.Add(this.textBoxYear);
             this.Controls.Add(this.comboBoxSemester);
             this.Controls.Add(this.labelTeacher);
             this.Controls.Add(this.labelSemester);
@@ -244,9 +248,9 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelSemester;
         private System.Windows.Forms.Label labelTeacher;
         private System.Windows.Forms.ComboBox comboBoxSemester;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxYear;
+        private System.Windows.Forms.TextBox textBoxNumber;
+        private System.Windows.Forms.TextBox textBoxSubjectName;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubjectName;

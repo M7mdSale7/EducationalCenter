@@ -44,7 +44,7 @@ namespace EducationalCenter
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelTeacherID = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonTA = new System.Windows.Forms.Button();
             this.comboBoxTeacherID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,7 @@ namespace EducationalCenter
             // labelTeachers
             // 
             this.labelTeachers.AutoSize = true;
+            this.labelTeachers.BackColor = System.Drawing.Color.Transparent;
             this.labelTeachers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTeachers.Location = new System.Drawing.Point(17, 24);
             this.labelTeachers.Name = "labelTeachers";
@@ -148,6 +149,8 @@ namespace EducationalCenter
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUpdate.Location = new System.Drawing.Point(502, 278);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
@@ -157,6 +160,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(389, 278);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -167,20 +172,23 @@ namespace EducationalCenter
             // labelTeacherID
             // 
             this.labelTeacherID.AutoSize = true;
+            this.labelTeacherID.BackColor = System.Drawing.Color.Transparent;
             this.labelTeacherID.Location = new System.Drawing.Point(386, 122);
             this.labelTeacherID.Name = "labelTeacherID";
             this.labelTeacherID.Size = new System.Drawing.Size(61, 13);
             this.labelTeacherID.TabIndex = 91;
             this.labelTeacherID.Text = "Teacher ID";
             // 
-            // button1
+            // buttonTA
             // 
-            this.button1.Location = new System.Drawing.Point(389, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 42);
-            this.button1.TabIndex = 92;
-            this.button1.Text = "View Teaching Assistants";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonTA.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonTA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTA.Location = new System.Drawing.Point(389, 176);
+            this.buttonTA.Name = "buttonTA";
+            this.buttonTA.Size = new System.Drawing.Size(121, 42);
+            this.buttonTA.TabIndex = 92;
+            this.buttonTA.Text = "View Teaching Assistants";
+            this.buttonTA.UseVisualStyleBackColor = true;
             // 
             // comboBoxTeacherID
             // 
@@ -194,8 +202,9 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.comboBoxTeacherID);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonTA);
             this.Controls.Add(this.labelTeacherID);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
@@ -233,7 +242,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Label labelTeacherID;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonTA;
         private System.Windows.Forms.ComboBox comboBoxTeacherID;
     }
 }

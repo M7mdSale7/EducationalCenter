@@ -64,6 +64,8 @@ namespace EducationalCenter
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUpdate.Location = new System.Drawing.Point(482, 297);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
@@ -73,6 +75,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(482, 251);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -162,6 +166,7 @@ namespace EducationalCenter
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
             this.labelDelete.Location = new System.Drawing.Point(403, 57);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
@@ -171,6 +176,7 @@ namespace EducationalCenter
             // labelParents
             // 
             this.labelParents.AutoSize = true;
+            this.labelParents.BackColor = System.Drawing.Color.Transparent;
             this.labelParents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelParents.Location = new System.Drawing.Point(13, 22);
             this.labelParents.Name = "labelParents";
@@ -182,6 +188,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.labelParents);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelPhoneNumber);

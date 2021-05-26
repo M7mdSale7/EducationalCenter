@@ -19,14 +19,5 @@ namespace EducationalCenter
             controllerObj= new Controller();
         }
 
-        private void buttonInsert_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

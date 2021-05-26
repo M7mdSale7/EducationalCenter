@@ -33,7 +33,7 @@ namespace EducationalCenter
             this.labelRooms = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.labelNumber = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -42,6 +42,7 @@ namespace EducationalCenter
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
             this.labelDelete.Location = new System.Drawing.Point(23, 67);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
@@ -51,6 +52,7 @@ namespace EducationalCenter
             // labelRooms
             // 
             this.labelRooms.AutoSize = true;
+            this.labelRooms.BackColor = System.Drawing.Color.Transparent;
             this.labelRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRooms.Location = new System.Drawing.Point(22, 11);
             this.labelRooms.Name = "labelRooms";
@@ -74,12 +76,12 @@ namespace EducationalCenter
             this.ColumnNumber.Name = "ColumnNumber";
             this.ColumnNumber.ReadOnly = true;
             // 
-            // textBox1
+            // textBoxNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 284);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 100;
+            this.textBoxNumber.Location = new System.Drawing.Point(26, 284);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber.TabIndex = 100;
             // 
             // labelNumber
             // 
@@ -92,6 +94,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(225, 284);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -103,9 +107,10 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelNumber);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNumber);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelRooms);
@@ -123,7 +128,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelRooms;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumber;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxNumber;
         private System.Windows.Forms.Label labelNumber;
         private System.Windows.Forms.Button buttonInsert;
     }

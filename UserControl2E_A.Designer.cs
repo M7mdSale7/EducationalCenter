@@ -31,6 +31,13 @@ namespace EducationalCenter
         {
             this.labelBookLessonsExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelStudentID = new System.Windows.Forms.Label();
             this.textBoxStudentID = new System.Windows.Forms.TextBox();
             this.labelSlot = new System.Windows.Forms.Label();
@@ -42,13 +49,6 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelSemester = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
@@ -58,6 +58,7 @@ namespace EducationalCenter
             // labelBookLessonsExams
             // 
             this.labelBookLessonsExams.AutoSize = true;
+            this.labelBookLessonsExams.BackColor = System.Drawing.Color.Transparent;
             this.labelBookLessonsExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.labelBookLessonsExams.Location = new System.Drawing.Point(12, 25);
             this.labelBookLessonsExams.Name = "labelBookLessonsExams";
@@ -81,6 +82,45 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(543, 130);
             this.dataGridView1.TabIndex = 10;
+            // 
+            // ColumnStudentID
+            // 
+            this.ColumnStudentID.HeaderText = "Student ID";
+            this.ColumnStudentID.Name = "ColumnStudentID";
+            // 
+            // ColumnSemester
+            // 
+            this.ColumnSemester.HeaderText = "Semester";
+            this.ColumnSemester.Name = "ColumnSemester";
+            this.ColumnSemester.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            // 
+            // ColumnSlot
+            // 
+            this.ColumnSlot.HeaderText = "Slot";
+            this.ColumnSlot.Name = "ColumnSlot";
+            this.ColumnSlot.ReadOnly = true;
+            // 
+            // ColumnRoom
+            // 
+            this.ColumnRoom.HeaderText = "Room";
+            this.ColumnRoom.Name = "ColumnRoom";
+            this.ColumnRoom.Width = 50;
             // 
             // labelStudentID
             // 
@@ -144,17 +184,19 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(483, 303);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 30;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
-            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
             this.labelDelete.Location = new System.Drawing.Point(404, 56);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
@@ -176,45 +218,6 @@ namespace EducationalCenter
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 43;
-            // 
-            // ColumnStudentID
-            // 
-            this.ColumnStudentID.HeaderText = "Student ID";
-            this.ColumnStudentID.Name = "ColumnStudentID";
-            // 
-            // ColumnSemester
-            // 
-            this.ColumnSemester.HeaderText = "Semester";
-            this.ColumnSemester.Name = "ColumnSemester";
-            this.ColumnSemester.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            // 
-            // ColumnSlot
-            // 
-            this.ColumnSlot.HeaderText = "Slot";
-            this.ColumnSlot.Name = "ColumnSlot";
-            this.ColumnSlot.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.Width = 50;
             // 
             // labelSemester
             // 
@@ -246,6 +249,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.labelSemester);

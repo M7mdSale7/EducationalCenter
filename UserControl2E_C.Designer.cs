@@ -89,6 +89,7 @@ namespace EducationalCenter
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
             this.labelDelete.Location = new System.Drawing.Point(298, 56);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
@@ -97,6 +98,8 @@ namespace EducationalCenter
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUpdate.Location = new System.Drawing.Point(496, 297);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
@@ -106,6 +109,8 @@ namespace EducationalCenter
             // 
             // buttonInsert
             // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsert.Location = new System.Drawing.Point(496, 251);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
@@ -116,6 +121,7 @@ namespace EducationalCenter
             // labelStudents
             // 
             this.labelStudents.AutoSize = true;
+            this.labelStudents.BackColor = System.Drawing.Color.Transparent;
             this.labelStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudents.Location = new System.Drawing.Point(13, 21);
             this.labelStudents.Name = "labelStudents";
@@ -191,6 +197,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.textBoxPhoneNumber);
             this.Controls.Add(this.textBoxStudyYear);
             this.Controls.Add(this.textBoxID);
