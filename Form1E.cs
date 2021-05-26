@@ -14,5 +14,11 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void buttonBookLessons_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_A();
+            Form FormBookLessons = new Form2E_A(usercontrol);
+        }
     }
 }

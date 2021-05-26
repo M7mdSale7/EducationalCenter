@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace EducationalCenter
 {
     partial class Form2E_A
@@ -27,10 +28,10 @@ namespace EducationalCenter
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(UserControl userControl)
         {
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.buttonLogOut = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +54,8 @@ namespace EducationalCenter
             this.labelOldSlot = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+
+            userControl.Location= new System.Drawing.Point(100, 10);
             // 
             // labelWelcome
             // 
@@ -63,14 +66,14 @@ namespace EducationalCenter
             this.labelWelcome.TabIndex = 5;
             this.labelWelcome.Text = "Welcome,";
             // 
-            // buttonLogOut
+            // buttonBack
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(494, 24);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
-            this.buttonLogOut.TabIndex = 6;
-            this.buttonLogOut.Text = "Log Out";
-            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonBack.Location = new System.Drawing.Point(494, 24);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(64, 20);
+            this.buttonBack.TabIndex = 6;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -197,7 +200,7 @@ namespace EducationalCenter
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
-            this.labelDelete.Location = new System.Drawing.Point(308, 117);
+            this.labelDelete.Location = new System.Drawing.Point(418, 117);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 19;
@@ -257,7 +260,7 @@ namespace EducationalCenter
             this.Controls.Add(this.textBoxStudentID);
             this.Controls.Add(this.labelBookLessons);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonLogOut);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelWelcome);
             this.Name = "Form2E_A";
             this.Text = "Form2E_A";
@@ -270,7 +273,7 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label labelBookLessons;
         private System.Windows.Forms.TextBox textBoxStudentID;

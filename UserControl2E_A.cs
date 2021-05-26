@@ -3,24 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class Form2E_A : Form
+    public partial class UserControl2E_A : UserControl
     {
         Controller controllerObj;
-        public Form2E_A(UserControl userControl)
+        public UserControl2E_A()
         {
-            InitializeComponent(userControl);
-            controllerObj = new Controller();
+            InitializeComponent();
+            controllerObj= new Controller();
         }
 
         private void buttonInsert_Click(object sender, EventArgs e)
         {
-            int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text);
+            int result = controllerObj.InsertBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text, comboBoxSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show("The insertion is failed");
@@ -33,7 +34,7 @@ namespace EducationalCenter
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            int result = controllerObj.UpdateBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text,comboBoxSlot.Text,textBoxOldSlot.Text);
+            int result = controllerObj.UpdateBookLesson(textBoxStudentID.Text, textBoxSubject.Text, textBoxTeacher.Text, comboBoxSlot.Text, textBoxOldSlot.Text);
             if (result == 0)
             {
                 MessageBox.Show(" Update failed");
@@ -43,9 +44,5 @@ namespace EducationalCenter
                 MessageBox.Show("The row is Updated successfully!");
             }
         }
-
-        
-
-       
     }
 }
