@@ -228,6 +228,42 @@
     <Compile Include="UserControl2E_H.Designer.cs">
       <DependentUpon>UserControl2E_H.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl2T_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_A.Designer.cs">
+      <DependentUpon>UserControl2T_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_B.Designer.cs">
+      <DependentUpon>UserControl2T_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_C.Designer.cs">
+      <DependentUpon>UserControl2T_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_D.Designer.cs">
+      <DependentUpon>UserControl2T_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_E.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_E.Designer.cs">
+      <DependentUpon>UserControl2T_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_F.Designer.cs">
+      <DependentUpon>UserControl2T_F.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form0.resx">
       <DependentUpon>Form0.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +355,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_H.resx">
       <DependentUpon>UserControl2E_H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_A.resx">
+      <DependentUpon>UserControl2T_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_B.resx">
+      <DependentUpon>UserControl2T_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_C.resx">
+      <DependentUpon>UserControl2T_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_D.resx">
+      <DependentUpon>UserControl2T_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_E.resx">
+      <DependentUpon>UserControl2T_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_F.resx">
+      <DependentUpon>UserControl2T_F.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
