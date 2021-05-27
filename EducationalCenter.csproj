@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBManager.cs" />
     <Compile Include="UserControl2E_A.cs">
       <SubType>UserControl</SubType>
     </Compile>
