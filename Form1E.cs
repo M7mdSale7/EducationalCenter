@@ -18,8 +18,57 @@ namespace EducationalCenter
         private void buttonBookLessons_Click(object sender, EventArgs e)
         {
             UserControl usercontrol = new UserControl2E_A();
-            Form FormBookLessons = new Form2E_A(usercontrol);
+            Form FormBookLessons = new Form2(usercontrol);
             FormBookLessons.Show();
+        }
+
+        private void buttonBookRooms_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_B();
+            Form FormBookRooms = new Form2(usercontrol);
+            FormBookRooms.Show();
+        }
+
+        private void buttonStudents_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_C();
+            Form FormStudents = new Form2(usercontrol);
+            FormStudents.Show();
+        }
+
+        private void buttonParents_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_D();
+            Form FormParents = new Form2(usercontrol);
+            FormParents.Show();
+        }
+
+        private void buttonTeachers_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_E();
+            Form FormTeachers = new Form2(usercontrol);
+            FormTeachers.Show();
+        }
+
+        private void buttonRooms_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_H();
+            Form FormRooms = new Form2(usercontrol);
+            FormRooms.Show();
+        }
+
+        private void buttonExams_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_G();
+            Form FormExams = new Form2(usercontrol);
+            FormExams.Show();
+        }
+
+        private void buttonSubjects_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2E_F();
+            Form FormSubjects = new Form2(usercontrol);
+            FormSubjects.Show();
         }
     }
 }

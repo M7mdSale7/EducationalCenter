@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace EducationalCenter
 {
-    public partial class UserControl2E_A : UserControl
+    public partial class Form2 : Form
     {
         Controller controllerObj;
-        public UserControl2E_A()
+        public Form2(UserControl userControl)
         {
-            InitializeComponent();
-            controllerObj= new Controller();
+            InitializeComponent(userControl);
+            controllerObj = new Controller();
         }
-
     }
 }

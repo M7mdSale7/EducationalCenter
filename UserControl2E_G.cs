@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl2E_A : UserControl
+    public partial class UserControl2E_G : UserControl
     {
-        Controller controllerObj;
-        public UserControl2E_A()
+        public UserControl2E_G()
         {
             InitializeComponent();
-            controllerObj= new Controller();
         }
-
     }
 }

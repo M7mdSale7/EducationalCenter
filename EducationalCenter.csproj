@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl2E_A.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,101 +95,17 @@
     <Compile Include="Form1TA.designer.cs">
       <DependentUpon>Form1TA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2E_A.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2E_A.designer.cs">
-      <DependentUpon>Form2E_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2E_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2E_B.designer.cs">
-      <DependentUpon>Form2E_B.cs</DependentUpon>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2M_A.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2M_A.designer.cs">
       <DependentUpon>Form2M_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2S_A.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2S_A.designer.cs">
-      <DependentUpon>Form2S_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2S_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2S_B.designer.cs">
-      <DependentUpon>Form2S_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2S_C.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2S_C.designer.cs">
-      <DependentUpon>Form2S_C.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_A.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_A.Designer.cs">
-      <DependentUpon>Form2TA_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_B.Designer.cs">
-      <DependentUpon>Form2TA_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_C.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_C.Designer.cs">
-      <DependentUpon>Form2TA_C.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_D.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_D.Designer.cs">
-      <DependentUpon>Form2TA_D.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_E.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_E.Designer.cs">
-      <DependentUpon>Form2TA_E.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_A.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_A.designer.cs">
-      <DependentUpon>Form2T_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_B.designer.cs">
-      <DependentUpon>Form2T_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_C.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_C.designer.cs">
-      <DependentUpon>Form2T_C.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_D.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_D.designer.cs">
-      <DependentUpon>Form2T_D.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_E.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_E.designer.cs">
-      <DependentUpon>Form2T_E.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,6 +114,108 @@
     </Compile>
     <Compile Include="UserControl2E_B.Designer.cs">
       <DependentUpon>UserControl2E_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_C.Designer.cs">
+      <DependentUpon>UserControl2E_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_D.Designer.cs">
+      <DependentUpon>UserControl2E_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_E.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_E.Designer.cs">
+      <DependentUpon>UserControl2E_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_F.Designer.cs">
+      <DependentUpon>UserControl2E_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_G.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_G.Designer.cs">
+      <DependentUpon>UserControl2E_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2E_H.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_H.Designer.cs">
+      <DependentUpon>UserControl2E_H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2M_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2M_A.Designer.cs">
+      <DependentUpon>UserControl2M_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2M_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2M_B.Designer.cs">
+      <DependentUpon>UserControl2M_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2S_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2S_B.Designer.cs">
+      <DependentUpon>UserControl2S_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2S_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2S_C.Designer.cs">
+      <DependentUpon>UserControl2S_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_A.Designer.cs">
+      <DependentUpon>UserControl2T_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_B.Designer.cs">
+      <DependentUpon>UserControl2T_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_C.Designer.cs">
+      <DependentUpon>UserControl2T_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_D.Designer.cs">
+      <DependentUpon>UserControl2T_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_E.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_E.Designer.cs">
+      <DependentUpon>UserControl2T_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2T_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2T_F.Designer.cs">
+      <DependentUpon>UserControl2T_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2S_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2S_A.Designer.cs">
+      <DependentUpon>UserControl2S_A.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form0.resx">
       <DependentUpon>Form0.cs</DependentUpon>
@@ -212,68 +235,73 @@
     <EmbeddedResource Include="Form1TA.resx">
       <DependentUpon>Form1TA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2E_A.resx">
-      <DependentUpon>Form2E_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2E_B.resx">
-      <DependentUpon>Form2E_B.cs</DependentUpon>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2M_A.resx">
       <DependentUpon>Form2M_A.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2S_A.resx">
-      <DependentUpon>Form2S_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2S_B.resx">
-      <DependentUpon>Form2S_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2S_C.resx">
-      <DependentUpon>Form2S_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_A.resx">
-      <DependentUpon>Form2TA_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_B.resx">
-      <DependentUpon>Form2TA_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_C.resx">
-      <DependentUpon>Form2TA_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_D.resx">
-      <DependentUpon>Form2TA_D.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_E.resx">
-      <DependentUpon>Form2TA_E.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_A.resx">
-      <DependentUpon>Form2T_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_B.resx">
-      <DependentUpon>Form2T_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_C.resx">
-      <DependentUpon>Form2T_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_D.resx">
-      <DependentUpon>Form2T_D.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_E.resx">
-      <DependentUpon>Form2T_E.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UserControl2E_A.resx">
       <DependentUpon>UserControl2E_A.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_B.resx">
       <DependentUpon>UserControl2E_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_C.resx">
+      <DependentUpon>UserControl2E_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_D.resx">
+      <DependentUpon>UserControl2E_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_E.resx">
+      <DependentUpon>UserControl2E_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_F.resx">
+      <DependentUpon>UserControl2E_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_G.resx">
+      <DependentUpon>UserControl2E_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_H.resx">
+      <DependentUpon>UserControl2E_H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2M_A.resx">
+      <DependentUpon>UserControl2M_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2M_B.resx">
+      <DependentUpon>UserControl2M_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2S_A.resx">
+      <DependentUpon>UserControl2S_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2S_B.resx">
+      <DependentUpon>UserControl2S_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2S_C.resx">
+      <DependentUpon>UserControl2S_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_A.resx">
+      <DependentUpon>UserControl2T_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_B.resx">
+      <DependentUpon>UserControl2T_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_C.resx">
+      <DependentUpon>UserControl2T_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_D.resx">
+      <DependentUpon>UserControl2T_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_E.resx">
+      <DependentUpon>UserControl2T_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2T_F.resx">
+      <DependentUpon>UserControl2T_F.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -287,6 +315,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52cf2839-f541-4fe6-b077-385373bd2004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-mesh-wire-digital-technology-background_1017-27428.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
