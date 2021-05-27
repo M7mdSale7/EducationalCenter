@@ -49,5 +49,6 @@ namespace EducationalCenter
             Form FormAttendance = new Form2(usercontrol);
             FormAttendance.Show();
         }
+        
     }
 }

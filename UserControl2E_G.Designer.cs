@@ -32,22 +32,19 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelNumber = new System.Windows.Forms.Label();
             this.labelSubjectName = new System.Windows.Forms.Label();
             this.labelYear = new System.Windows.Forms.Label();
-            this.labelSemester = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
-            this.comboBoxSemester = new System.Windows.Forms.ComboBox();
             this.textBoxYear = new System.Windows.Forms.TextBox();
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.textBoxSubjectName = new System.Windows.Forms.TextBox();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
+            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +52,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(389, 62);
+            this.labelDelete.Location = new System.Drawing.Point(324, 62);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 96;
@@ -66,7 +63,7 @@ namespace EducationalCenter
             this.labelExams.AutoSize = true;
             this.labelExams.BackColor = System.Drawing.Color.Transparent;
             this.labelExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExams.Location = new System.Drawing.Point(3, 29);
+            this.labelExams.Location = new System.Drawing.Point(39, 29);
             this.labelExams.Name = "labelExams";
             this.labelExams.Size = new System.Drawing.Size(67, 20);
             this.labelExams.TabIndex = 95;
@@ -79,12 +76,87 @@ namespace EducationalCenter
             this.ColumnNumber,
             this.ColumnSubjectName,
             this.ColumnTeacherName,
-            this.ColumnYear,
-            this.ColumnSemester});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 78);
+            this.ColumnYear});
+            this.dataGridView1.Location = new System.Drawing.Point(39, 78);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(439, 150);
             this.dataGridView1.TabIndex = 97;
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonInsert.Location = new System.Drawing.Point(403, 261);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.TabIndex = 98;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            // 
+            // labelNumber
+            // 
+            this.labelNumber.AutoSize = true;
+            this.labelNumber.Location = new System.Drawing.Point(53, 247);
+            this.labelNumber.Name = "labelNumber";
+            this.labelNumber.Size = new System.Drawing.Size(44, 13);
+            this.labelNumber.TabIndex = 99;
+            this.labelNumber.Text = "Number";
+            // 
+            // labelSubjectName
+            // 
+            this.labelSubjectName.AutoSize = true;
+            this.labelSubjectName.Location = new System.Drawing.Point(53, 296);
+            this.labelSubjectName.Name = "labelSubjectName";
+            this.labelSubjectName.Size = new System.Drawing.Size(72, 13);
+            this.labelSubjectName.TabIndex = 100;
+            this.labelSubjectName.Text = "Subject name";
+            // 
+            // labelYear
+            // 
+            this.labelYear.AutoSize = true;
+            this.labelYear.Location = new System.Drawing.Point(201, 246);
+            this.labelYear.Name = "labelYear";
+            this.labelYear.Size = new System.Drawing.Size(29, 13);
+            this.labelYear.TabIndex = 102;
+            this.labelYear.Text = "Year";
+            // 
+            // labelTeacher
+            // 
+            this.labelTeacher.AutoSize = true;
+            this.labelTeacher.Location = new System.Drawing.Point(201, 296);
+            this.labelTeacher.Name = "labelTeacher";
+            this.labelTeacher.Size = new System.Drawing.Size(47, 13);
+            this.labelTeacher.TabIndex = 104;
+            this.labelTeacher.Text = "Teacher";
+            // 
+            // textBoxYear
+            // 
+            this.textBoxYear.Location = new System.Drawing.Point(204, 263);
+            this.textBoxYear.Name = "textBoxYear";
+            this.textBoxYear.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYear.TabIndex = 106;
+            // 
+            // textBoxNumber
+            // 
+            this.textBoxNumber.Location = new System.Drawing.Point(56, 263);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber.TabIndex = 107;
+            // 
+            // textBoxSubjectName
+            // 
+            this.textBoxSubjectName.Location = new System.Drawing.Point(56, 313);
+            this.textBoxSubjectName.Name = "textBoxSubjectName";
+            this.textBoxSubjectName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSubjectName.TabIndex = 108;
+            // 
+            // comboBoxTeacher
+            // 
+            this.comboBoxTeacher.FormattingEnabled = true;
+            this.comboBoxTeacher.Location = new System.Drawing.Point(204, 312);
+            this.comboBoxTeacher.Name = "comboBoxTeacher";
+            this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTeacher.TabIndex = 110;
             // 
             // ColumnNumber
             // 
@@ -110,105 +182,6 @@ namespace EducationalCenter
             this.ColumnYear.Name = "ColumnYear";
             this.ColumnYear.ReadOnly = true;
             // 
-            // ColumnSemester
-            // 
-            this.ColumnSemester.HeaderText = "Semester";
-            this.ColumnSemester.Name = "ColumnSemester";
-            this.ColumnSemester.ReadOnly = true;
-            // 
-            // buttonInsert
-            // 
-            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(468, 310);
-            this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
-            this.buttonInsert.TabIndex = 98;
-            this.buttonInsert.Text = "Insert";
-            this.buttonInsert.UseVisualStyleBackColor = true;
-            // 
-            // labelNumber
-            // 
-            this.labelNumber.AutoSize = true;
-            this.labelNumber.Location = new System.Drawing.Point(17, 247);
-            this.labelNumber.Name = "labelNumber";
-            this.labelNumber.Size = new System.Drawing.Size(44, 13);
-            this.labelNumber.TabIndex = 99;
-            this.labelNumber.Text = "Number";
-            // 
-            // labelSubjectName
-            // 
-            this.labelSubjectName.AutoSize = true;
-            this.labelSubjectName.Location = new System.Drawing.Point(17, 296);
-            this.labelSubjectName.Name = "labelSubjectName";
-            this.labelSubjectName.Size = new System.Drawing.Size(72, 13);
-            this.labelSubjectName.TabIndex = 100;
-            this.labelSubjectName.Text = "Subject name";
-            // 
-            // labelYear
-            // 
-            this.labelYear.AutoSize = true;
-            this.labelYear.Location = new System.Drawing.Point(165, 246);
-            this.labelYear.Name = "labelYear";
-            this.labelYear.Size = new System.Drawing.Size(29, 13);
-            this.labelYear.TabIndex = 102;
-            this.labelYear.Text = "Year";
-            // 
-            // labelSemester
-            // 
-            this.labelSemester.AutoSize = true;
-            this.labelSemester.Location = new System.Drawing.Point(325, 246);
-            this.labelSemester.Name = "labelSemester";
-            this.labelSemester.Size = new System.Drawing.Size(51, 13);
-            this.labelSemester.TabIndex = 103;
-            this.labelSemester.Text = "Semester";
-            // 
-            // labelTeacher
-            // 
-            this.labelTeacher.AutoSize = true;
-            this.labelTeacher.Location = new System.Drawing.Point(165, 296);
-            this.labelTeacher.Name = "labelTeacher";
-            this.labelTeacher.Size = new System.Drawing.Size(47, 13);
-            this.labelTeacher.TabIndex = 104;
-            this.labelTeacher.Text = "Teacher";
-            // 
-            // comboBoxSemester
-            // 
-            this.comboBoxSemester.FormattingEnabled = true;
-            this.comboBoxSemester.Location = new System.Drawing.Point(328, 263);
-            this.comboBoxSemester.Name = "comboBoxSemester";
-            this.comboBoxSemester.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSemester.TabIndex = 105;
-            // 
-            // textBoxYear
-            // 
-            this.textBoxYear.Location = new System.Drawing.Point(168, 263);
-            this.textBoxYear.Name = "textBoxYear";
-            this.textBoxYear.Size = new System.Drawing.Size(100, 20);
-            this.textBoxYear.TabIndex = 106;
-            // 
-            // textBoxNumber
-            // 
-            this.textBoxNumber.Location = new System.Drawing.Point(20, 263);
-            this.textBoxNumber.Name = "textBoxNumber";
-            this.textBoxNumber.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumber.TabIndex = 107;
-            // 
-            // textBoxSubjectName
-            // 
-            this.textBoxSubjectName.Location = new System.Drawing.Point(20, 313);
-            this.textBoxSubjectName.Name = "textBoxSubjectName";
-            this.textBoxSubjectName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSubjectName.TabIndex = 108;
-            // 
-            // comboBoxTeacher
-            // 
-            this.comboBoxTeacher.FormattingEnabled = true;
-            this.comboBoxTeacher.Location = new System.Drawing.Point(168, 312);
-            this.comboBoxTeacher.Name = "comboBoxTeacher";
-            this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxTeacher.TabIndex = 110;
-            // 
             // UserControl2E_G
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,9 +191,7 @@ namespace EducationalCenter
             this.Controls.Add(this.textBoxSubjectName);
             this.Controls.Add(this.textBoxNumber);
             this.Controls.Add(this.textBoxYear);
-            this.Controls.Add(this.comboBoxSemester);
             this.Controls.Add(this.labelTeacher);
-            this.Controls.Add(this.labelSemester);
             this.Controls.Add(this.labelYear);
             this.Controls.Add(this.labelSubjectName);
             this.Controls.Add(this.labelNumber);
@@ -245,9 +216,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelNumber;
         private System.Windows.Forms.Label labelSubjectName;
         private System.Windows.Forms.Label labelYear;
-        private System.Windows.Forms.Label labelSemester;
         private System.Windows.Forms.Label labelTeacher;
-        private System.Windows.Forms.ComboBox comboBoxSemester;
         private System.Windows.Forms.TextBox textBoxYear;
         private System.Windows.Forms.TextBox textBoxNumber;
         private System.Windows.Forms.TextBox textBoxSubjectName;
@@ -256,6 +225,5 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubjectName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacherName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnYear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSemester;
     }
 }

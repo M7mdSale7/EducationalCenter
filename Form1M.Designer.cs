@@ -30,9 +30,9 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.buttonLogOut = new System.Windows.Forms.Button();
-            this.buttonHireEmployees = new System.Windows.Forms.Button();
+            this.buttonEmployees = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.buttonMakeAccounts = new System.Windows.Forms.Button();
+            this.buttonAccounts = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLogOut
@@ -46,16 +46,17 @@ namespace EducationalCenter
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
-            // buttonHireEmployees
+            // buttonEmployees
             // 
-            this.buttonHireEmployees.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonHireEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHireEmployees.Location = new System.Drawing.Point(50, 202);
-            this.buttonHireEmployees.Name = "buttonHireEmployees";
-            this.buttonHireEmployees.Size = new System.Drawing.Size(86, 43);
-            this.buttonHireEmployees.TabIndex = 1;
-            this.buttonHireEmployees.Text = "Hire Employees";
-            this.buttonHireEmployees.UseVisualStyleBackColor = false;
+            this.buttonEmployees.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEmployees.Location = new System.Drawing.Point(50, 202);
+            this.buttonEmployees.Name = "buttonEmployees";
+            this.buttonEmployees.Size = new System.Drawing.Size(86, 43);
+            this.buttonEmployees.TabIndex = 1;
+            this.buttonEmployees.Text = "Employees";
+            this.buttonEmployees.UseVisualStyleBackColor = false;
+            this.buttonEmployees.Click += new System.EventHandler(this.buttonHireEmployees_Click);
             // 
             // labelWelcome
             // 
@@ -68,16 +69,17 @@ namespace EducationalCenter
             this.labelWelcome.TabIndex = 3;
             this.labelWelcome.Text = "Welcome,";
             // 
-            // buttonMakeAccounts
+            // buttonAccounts
             // 
-            this.buttonMakeAccounts.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonMakeAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonMakeAccounts.Location = new System.Drawing.Point(276, 202);
-            this.buttonMakeAccounts.Name = "buttonMakeAccounts";
-            this.buttonMakeAccounts.Size = new System.Drawing.Size(86, 43);
-            this.buttonMakeAccounts.TabIndex = 4;
-            this.buttonMakeAccounts.Text = "Make Accounts";
-            this.buttonMakeAccounts.UseVisualStyleBackColor = false;
+            this.buttonAccounts.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAccounts.Location = new System.Drawing.Point(276, 202);
+            this.buttonAccounts.Name = "buttonAccounts";
+            this.buttonAccounts.Size = new System.Drawing.Size(86, 43);
+            this.buttonAccounts.TabIndex = 4;
+            this.buttonAccounts.Text = "Accounts";
+            this.buttonAccounts.UseVisualStyleBackColor = false;
+            this.buttonAccounts.Click += new System.EventHandler(this.buttonMakeAccounts_Click);
             // 
             // Form1M
             // 
@@ -85,9 +87,9 @@ namespace EducationalCenter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.ClientSize = new System.Drawing.Size(584, 411);
-            this.Controls.Add(this.buttonMakeAccounts);
+            this.Controls.Add(this.buttonAccounts);
             this.Controls.Add(this.labelWelcome);
-            this.Controls.Add(this.buttonHireEmployees);
+            this.Controls.Add(this.buttonEmployees);
             this.Controls.Add(this.buttonLogOut);
             this.Name = "Form1M";
             this.Text = "Form1M";
@@ -99,8 +101,8 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.Button buttonLogOut;
-        private System.Windows.Forms.Button buttonHireEmployees;
+        private System.Windows.Forms.Button buttonEmployees;
         private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Button buttonMakeAccounts;
+        private System.Windows.Forms.Button buttonAccounts;
     }
 }

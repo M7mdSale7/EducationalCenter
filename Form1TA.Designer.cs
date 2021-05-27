@@ -34,7 +34,7 @@ namespace EducationalCenter
             this.buttonGradesReport = new System.Windows.Forms.Button();
             this.buttonStudents = new System.Windows.Forms.Button();
             this.buttonViewSchedule = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,6 +48,7 @@ namespace EducationalCenter
             this.buttonExams.TabIndex = 16;
             this.buttonExams.Text = "Exams";
             this.buttonExams.UseVisualStyleBackColor = true;
+            this.buttonExams.Click += new System.EventHandler(this.buttonExams_Click);
             // 
             // buttonAttendance
             // 
@@ -59,6 +60,7 @@ namespace EducationalCenter
             this.buttonAttendance.TabIndex = 15;
             this.buttonAttendance.Text = "Attendance";
             this.buttonAttendance.UseVisualStyleBackColor = true;
+            this.buttonAttendance.Click += new System.EventHandler(this.buttonAttendance_Click);
             // 
             // buttonGradesReport
             // 
@@ -70,6 +72,7 @@ namespace EducationalCenter
             this.buttonGradesReport.TabIndex = 14;
             this.buttonGradesReport.Text = "Grades Report";
             this.buttonGradesReport.UseVisualStyleBackColor = true;
+            this.buttonGradesReport.Click += new System.EventHandler(this.buttonGradesReport_Click);
             // 
             // buttonStudents
             // 
@@ -81,6 +84,7 @@ namespace EducationalCenter
             this.buttonStudents.TabIndex = 13;
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = true;
+            this.buttonStudents.Click += new System.EventHandler(this.buttonStudents_Click);
             // 
             // buttonViewSchedule
             // 
@@ -92,17 +96,18 @@ namespace EducationalCenter
             this.buttonViewSchedule.TabIndex = 12;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
+            this.buttonViewSchedule.Click += new System.EventHandler(this.buttonViewSchedule_Click);
             // 
-            // button1
+            // buttonLogOut
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(502, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 30);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonLogOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogOut.Location = new System.Drawing.Point(502, 14);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(70, 30);
+            this.buttonLogOut.TabIndex = 22;
+            this.buttonLogOut.Text = "Log Out";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
             // labelWelcome
             // 
@@ -121,7 +126,7 @@ namespace EducationalCenter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.ClientSize = new System.Drawing.Size(584, 411);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonExams);
             this.Controls.Add(this.buttonAttendance);
@@ -142,7 +147,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonGradesReport;
         private System.Windows.Forms.Button buttonStudents;
         private System.Windows.Forms.Button buttonViewSchedule;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Label labelWelcome;
     }
 }

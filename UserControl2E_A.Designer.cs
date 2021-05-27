@@ -31,13 +31,6 @@ namespace EducationalCenter
         {
             this.labelBookLessonsExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSemester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelStudentID = new System.Windows.Forms.Label();
             this.textBoxStudentID = new System.Windows.Forms.TextBox();
             this.labelSlot = new System.Windows.Forms.Label();
@@ -48,10 +41,14 @@ namespace EducationalCenter
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelDelete = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.labelSemester = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +68,6 @@ namespace EducationalCenter
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnStudentID,
-            this.ColumnSemester,
             this.ColumnType,
             this.ColumnTeacher,
             this.ColumnSubject,
@@ -82,45 +78,6 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(543, 130);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // ColumnStudentID
-            // 
-            this.ColumnStudentID.HeaderText = "Student ID";
-            this.ColumnStudentID.Name = "ColumnStudentID";
-            // 
-            // ColumnSemester
-            // 
-            this.ColumnSemester.HeaderText = "Semester";
-            this.ColumnSemester.Name = "ColumnSemester";
-            this.ColumnSemester.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            // 
-            // ColumnSlot
-            // 
-            this.ColumnSlot.HeaderText = "Slot";
-            this.ColumnSlot.Name = "ColumnSlot";
-            this.ColumnSlot.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.Width = 50;
             // 
             // labelStudentID
             // 
@@ -142,7 +99,7 @@ namespace EducationalCenter
             // labelSlot
             // 
             this.labelSlot.AutoSize = true;
-            this.labelSlot.Location = new System.Drawing.Point(297, 291);
+            this.labelSlot.Location = new System.Drawing.Point(166, 289);
             this.labelSlot.Name = "labelSlot";
             this.labelSlot.Size = new System.Drawing.Size(64, 13);
             this.labelSlot.TabIndex = 25;
@@ -151,7 +108,7 @@ namespace EducationalCenter
             // comboBoxSlot
             // 
             this.comboBoxSlot.FormattingEnabled = true;
-            this.comboBoxSlot.Location = new System.Drawing.Point(300, 305);
+            this.comboBoxSlot.Location = new System.Drawing.Point(169, 303);
             this.comboBoxSlot.Name = "comboBoxSlot";
             this.comboBoxSlot.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSlot.TabIndex = 24;
@@ -176,7 +133,7 @@ namespace EducationalCenter
             // labelTeacher
             // 
             this.labelTeacher.AutoSize = true;
-            this.labelTeacher.Location = new System.Drawing.Point(13, 291);
+            this.labelTeacher.Location = new System.Drawing.Point(304, 236);
             this.labelTeacher.Name = "labelTeacher";
             this.labelTeacher.Size = new System.Drawing.Size(47, 13);
             this.labelTeacher.TabIndex = 27;
@@ -206,32 +163,15 @@ namespace EducationalCenter
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 305);
+            this.comboBox1.Location = new System.Drawing.Point(306, 250);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 42;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(300, 249);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 43;
-            // 
-            // labelSemester
-            // 
-            this.labelSemester.AutoSize = true;
-            this.labelSemester.Location = new System.Drawing.Point(300, 230);
-            this.labelSemester.Name = "labelSemester";
-            this.labelSemester.Size = new System.Drawing.Size(51, 13);
-            this.labelSemester.TabIndex = 44;
-            this.labelSemester.Text = "Semester";
-            // 
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(149, 291);
+            this.labelType.Location = new System.Drawing.Point(12, 289);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(31, 13);
             this.labelType.TabIndex = 45;
@@ -240,10 +180,43 @@ namespace EducationalCenter
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(152, 307);
+            this.comboBoxType.Location = new System.Drawing.Point(15, 305);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 46;
+            // 
+            // ColumnStudentID
+            // 
+            this.ColumnStudentID.HeaderText = "Student ID";
+            this.ColumnStudentID.Name = "ColumnStudentID";
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            // 
+            // ColumnSlot
+            // 
+            this.ColumnSlot.HeaderText = "Slot";
+            this.ColumnSlot.Name = "ColumnSlot";
+            this.ColumnSlot.ReadOnly = true;
+            // 
+            // ColumnRoom
+            // 
+            this.ColumnRoom.HeaderText = "Room";
+            this.ColumnRoom.Name = "ColumnRoom";
+            this.ColumnRoom.Width = 50;
             // 
             // UserControl2E_A
             // 
@@ -252,8 +225,6 @@ namespace EducationalCenter
             this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.labelType);
-            this.Controls.Add(this.labelSemester);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonInsert);
@@ -288,16 +259,13 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label labelType;
+        private System.Windows.Forms.ComboBox comboBoxType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSemester;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSlot;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label labelSemester;
-        private System.Windows.Forms.Label labelType;
-        private System.Windows.Forms.ComboBox comboBoxType;
     }
 }

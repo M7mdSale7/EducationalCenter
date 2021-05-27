@@ -14,5 +14,19 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void buttonHireEmployees_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2M_A();
+            Form FormEmployees = new Form2(usercontrol);
+            FormEmployees.Show();
+        }
+
+        private void buttonMakeAccounts_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2M_B();
+            Form FormAccounts = new Form2(usercontrol);
+            FormAccounts.Show();
+        }
     }
 }
