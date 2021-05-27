@@ -14,5 +14,26 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void buttonViewSchedule_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2S_A();
+            Form FormViewSchedule = new Form2(usercontrol);
+            FormViewSchedule.Show();
+        }
+
+        private void buttonAvailableLessons_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2S_C();
+            Form FormAvailableLessons = new Form2(usercontrol);
+            FormAvailableLessons.Show();
+        }
+
+        private void buttonGradesReport_Click(object sender, EventArgs e)
+        {
+            UserControl usercontrol = new UserControl2S_B();
+            Form FormGradesReport = new Form2(usercontrol);
+            FormGradesReport.Show();
+        }
     }
 }

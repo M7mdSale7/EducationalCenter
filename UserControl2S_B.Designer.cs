@@ -1,14 +1,14 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class Form2S_B
+    partial class UserControl2S_B
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,32 +21,22 @@ namespace EducationalCenter
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelGradesReport = new System.Windows.Forms.Label();
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnExam1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelWelcome = new System.Windows.Forms.Label();
-            this.labelGradesReport = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(508, 24);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(64, 20);
-            this.buttonBack.TabIndex = 0;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -54,12 +44,24 @@ namespace EducationalCenter
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnSubject,
             this.ColumnDateTime,
+            this.ColumnExam1,
             this.ColumnGrade});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(339, 130);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.Size = new System.Drawing.Size(441, 187);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // labelGradesReport
+            // 
+            this.labelGradesReport.AutoSize = true;
+            this.labelGradesReport.BackColor = System.Drawing.Color.Transparent;
+            this.labelGradesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGradesReport.Location = new System.Drawing.Point(22, 40);
+            this.labelGradesReport.Name = "labelGradesReport";
+            this.labelGradesReport.Size = new System.Drawing.Size(133, 20);
+            this.labelGradesReport.TabIndex = 90;
+            this.labelGradesReport.Text = "Grades Report:";
             // 
             // ColumnSubject
             // 
@@ -73,42 +75,27 @@ namespace EducationalCenter
             this.ColumnDateTime.Name = "ColumnDateTime";
             this.ColumnDateTime.ReadOnly = true;
             // 
+            // ColumnExam1
+            // 
+            this.ColumnExam1.HeaderText = "Exam 1";
+            this.ColumnExam1.Name = "ColumnExam1";
+            this.ColumnExam1.ReadOnly = true;
+            // 
             // ColumnGrade
             // 
             this.ColumnGrade.HeaderText = "Grade";
             this.ColumnGrade.Name = "ColumnGrade";
             this.ColumnGrade.ReadOnly = true;
             // 
-            // labelWelcome
-            // 
-            this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(33, 45);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
-            this.labelWelcome.TabIndex = 2;
-            this.labelWelcome.Text = "Welcome,";
-            // 
-            // labelGradesReport
-            // 
-            this.labelGradesReport.AutoSize = true;
-            this.labelGradesReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.labelGradesReport.Location = new System.Drawing.Point(33, 101);
-            this.labelGradesReport.Name = "labelGradesReport";
-            this.labelGradesReport.Size = new System.Drawing.Size(91, 15);
-            this.labelGradesReport.TabIndex = 3;
-            this.labelGradesReport.Text = "Grades Report:";
-            // 
-            // Form2S_B
+            // UserControl2S_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.Controls.Add(this.labelGradesReport);
-            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonBack);
-            this.Name = "Form2S_B";
-            this.Text = "Form2S_B";
+            this.Name = "UserControl2S_B";
+            this.Size = new System.Drawing.Size(600, 350);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,12 +104,11 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExam1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGrade;
-        private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Label labelGradesReport;
     }
 }

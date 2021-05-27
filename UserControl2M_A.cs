@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class Form2S_B : Form
+    public partial class UserControl2M_A : UserControl
     {
-        public Form2S_B()
+        public UserControl2M_A()
         {
             InitializeComponent();
         }

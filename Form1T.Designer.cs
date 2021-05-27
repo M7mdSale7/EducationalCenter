@@ -34,123 +34,114 @@ namespace EducationalCenter
             this.buttonGradesReport = new System.Windows.Forms.Button();
             this.buttonTeachingAssistants = new System.Windows.Forms.Button();
             this.buttonAttendance = new System.Windows.Forms.Button();
-            this.textBoxDate = new System.Windows.Forms.TextBox();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.buttonLogOut = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
+            this.buttonExams = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonViewSchedule
             // 
-            this.buttonViewSchedule.Location = new System.Drawing.Point(75, 92);
+            this.buttonViewSchedule.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonViewSchedule.Location = new System.Drawing.Point(41, 94);
             this.buttonViewSchedule.Name = "buttonViewSchedule";
             this.buttonViewSchedule.Size = new System.Drawing.Size(86, 43);
             this.buttonViewSchedule.TabIndex = 0;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
+            this.buttonViewSchedule.Click += new System.EventHandler(this.buttonViewSchedule_Click);
             // 
             // buttonStudents
             // 
-            this.buttonStudents.Location = new System.Drawing.Point(75, 192);
+            this.buttonStudents.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonStudents.Location = new System.Drawing.Point(41, 246);
             this.buttonStudents.Name = "buttonStudents";
             this.buttonStudents.Size = new System.Drawing.Size(86, 43);
             this.buttonStudents.TabIndex = 1;
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = true;
+            this.buttonStudents.Click += new System.EventHandler(this.buttonStudents_Click);
             // 
             // buttonGradesReport
             // 
-            this.buttonGradesReport.Location = new System.Drawing.Point(75, 289);
+            this.buttonGradesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonGradesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGradesReport.Location = new System.Drawing.Point(223, 94);
             this.buttonGradesReport.Name = "buttonGradesReport";
             this.buttonGradesReport.Size = new System.Drawing.Size(86, 43);
             this.buttonGradesReport.TabIndex = 2;
             this.buttonGradesReport.Text = "Grades Report";
             this.buttonGradesReport.UseVisualStyleBackColor = true;
+            this.buttonGradesReport.Click += new System.EventHandler(this.buttonGradesReport_Click);
             // 
             // buttonTeachingAssistants
             // 
-            this.buttonTeachingAssistants.Location = new System.Drawing.Point(448, 92);
+            this.buttonTeachingAssistants.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonTeachingAssistants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTeachingAssistants.Location = new System.Drawing.Point(223, 246);
             this.buttonTeachingAssistants.Name = "buttonTeachingAssistants";
             this.buttonTeachingAssistants.Size = new System.Drawing.Size(86, 43);
             this.buttonTeachingAssistants.TabIndex = 3;
             this.buttonTeachingAssistants.Text = "Teaching Assistants";
             this.buttonTeachingAssistants.UseVisualStyleBackColor = true;
+            this.buttonTeachingAssistants.Click += new System.EventHandler(this.buttonTeachingAssistants_Click);
             // 
             // buttonAttendance
             // 
-            this.buttonAttendance.Location = new System.Drawing.Point(448, 192);
+            this.buttonAttendance.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAttendance.Location = new System.Drawing.Point(437, 246);
             this.buttonAttendance.Name = "buttonAttendance";
             this.buttonAttendance.Size = new System.Drawing.Size(86, 43);
             this.buttonAttendance.TabIndex = 4;
             this.buttonAttendance.Text = "Attendance";
             this.buttonAttendance.UseVisualStyleBackColor = true;
+            this.buttonAttendance.Click += new System.EventHandler(this.buttonAttendance_Click);
             // 
-            // textBoxDate
+            // button1
             // 
-            this.textBoxDate.Location = new System.Drawing.Point(327, 180);
-            this.textBoxDate.MaxLength = 15;
-            this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(86, 20);
-            this.textBoxDate.TabIndex = 5;
-            this.textBoxDate.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBoxTime
-            // 
-            this.textBoxTime.Location = new System.Drawing.Point(327, 223);
-            this.textBoxTime.MaxLength = 15;
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(86, 20);
-            this.textBoxTime.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(324, 164);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Enter Date";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(324, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Enter Time";
-            // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.Location = new System.Drawing.Point(498, 12);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(64, 20);
-            this.buttonLogOut.TabIndex = 9;
-            this.buttonLogOut.Text = "Log Out";
-            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(502, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 30);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Log Out";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Location = new System.Drawing.Point(23, 34);
+            this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.Location = new System.Drawing.Point(12, 22);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(55, 13);
-            this.labelWelcome.TabIndex = 10;
+            this.labelWelcome.Size = new System.Drawing.Size(115, 25);
+            this.labelWelcome.TabIndex = 9;
             this.labelWelcome.Text = "Welcome,";
+            // 
+            // buttonExams
+            // 
+            this.buttonExams.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonExams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonExams.Location = new System.Drawing.Point(437, 94);
+            this.buttonExams.Name = "buttonExams";
+            this.buttonExams.Size = new System.Drawing.Size(86, 43);
+            this.buttonExams.TabIndex = 11;
+            this.buttonExams.Text = "Exams";
+            this.buttonExams.UseVisualStyleBackColor = true;
+            this.buttonExams.Click += new System.EventHandler(this.buttonExams_Click);
             // 
             // Form1T
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.buttonExams);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWelcome);
-            this.Controls.Add(this.buttonLogOut);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxTime);
-            this.Controls.Add(this.textBoxDate);
             this.Controls.Add(this.buttonAttendance);
             this.Controls.Add(this.buttonTeachingAssistants);
             this.Controls.Add(this.buttonGradesReport);
@@ -170,11 +161,8 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonGradesReport;
         private System.Windows.Forms.Button buttonTeachingAssistants;
         private System.Windows.Forms.Button buttonAttendance;
-        private System.Windows.Forms.TextBox textBoxDate;
-        private System.Windows.Forms.TextBox textBoxTime;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Button buttonExams;
     }
 }
