@@ -124,66 +124,6 @@
     <Compile Include="Form2S_C.designer.cs">
       <DependentUpon>Form2S_C.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2TA_A.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_A.Designer.cs">
-      <DependentUpon>Form2TA_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_B.Designer.cs">
-      <DependentUpon>Form2TA_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_C.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_C.Designer.cs">
-      <DependentUpon>Form2TA_C.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_D.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_D.Designer.cs">
-      <DependentUpon>Form2TA_D.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2TA_E.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2TA_E.Designer.cs">
-      <DependentUpon>Form2TA_E.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_A.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_A.designer.cs">
-      <DependentUpon>Form2T_A.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_B.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_B.designer.cs">
-      <DependentUpon>Form2T_B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_C.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_C.designer.cs">
-      <DependentUpon>Form2T_C.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_D.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_D.designer.cs">
-      <DependentUpon>Form2T_D.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2T_E.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2T_E.designer.cs">
-      <DependentUpon>Form2T_E.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl2E_B.cs">
@@ -296,36 +236,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2S_C.resx">
       <DependentUpon>Form2S_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_A.resx">
-      <DependentUpon>Form2TA_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_B.resx">
-      <DependentUpon>Form2TA_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_C.resx">
-      <DependentUpon>Form2TA_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_D.resx">
-      <DependentUpon>Form2TA_D.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2TA_E.resx">
-      <DependentUpon>Form2TA_E.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_A.resx">
-      <DependentUpon>Form2T_A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_B.resx">
-      <DependentUpon>Form2T_B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_C.resx">
-      <DependentUpon>Form2T_C.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_D.resx">
-      <DependentUpon>Form2T_D.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2T_E.resx">
-      <DependentUpon>Form2T_E.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
