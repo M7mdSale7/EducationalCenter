@@ -16,7 +16,7 @@ namespace EducationalCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1TA());
+            Application.Run(new Form0());
         }
     }
 }
