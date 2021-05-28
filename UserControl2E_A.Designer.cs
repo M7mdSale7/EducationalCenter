@@ -49,6 +49,8 @@ namespace EducationalCenter
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonPrice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +74,8 @@ namespace EducationalCenter
             this.ColumnTeacher,
             this.ColumnSubject,
             this.ColumnSlot,
-            this.ColumnRoom});
+            this.ColumnRoom,
+            this.ColumnPrice});
             this.dataGridView1.Location = new System.Drawing.Point(15, 72);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
@@ -99,7 +102,7 @@ namespace EducationalCenter
             // labelSlot
             // 
             this.labelSlot.AutoSize = true;
-            this.labelSlot.Location = new System.Drawing.Point(166, 289);
+            this.labelSlot.Location = new System.Drawing.Point(149, 289);
             this.labelSlot.Name = "labelSlot";
             this.labelSlot.Size = new System.Drawing.Size(64, 13);
             this.labelSlot.TabIndex = 25;
@@ -108,7 +111,7 @@ namespace EducationalCenter
             // comboBoxSlot
             // 
             this.comboBoxSlot.FormattingEnabled = true;
-            this.comboBoxSlot.Location = new System.Drawing.Point(169, 303);
+            this.comboBoxSlot.Location = new System.Drawing.Point(152, 303);
             this.comboBoxSlot.Name = "comboBoxSlot";
             this.comboBoxSlot.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSlot.TabIndex = 24;
@@ -143,7 +146,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(483, 303);
+            this.buttonInsert.Location = new System.Drawing.Point(464, 301);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 30;
@@ -218,11 +221,29 @@ namespace EducationalCenter
             this.ColumnRoom.Name = "ColumnRoom";
             this.ColumnRoom.Width = 50;
             // 
+            // ColumnPrice
+            // 
+            this.ColumnPrice.HeaderText = "Price";
+            this.ColumnPrice.Name = "ColumnPrice";
+            this.ColumnPrice.ReadOnly = true;
+            // 
+            // buttonPrice
+            // 
+            this.buttonPrice.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPrice.Location = new System.Drawing.Point(464, 247);
+            this.buttonPrice.Name = "buttonPrice";
+            this.buttonPrice.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrice.TabIndex = 47;
+            this.buttonPrice.Text = "Price";
+            this.buttonPrice.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.buttonPrice);
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.comboBox1);
@@ -267,5 +288,7 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSlot;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
+        private System.Windows.Forms.Button buttonPrice;
     }
 }

@@ -31,11 +31,6 @@ namespace EducationalCenter
         {
             this.labelBookRooms = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelDelete = new System.Windows.Forms.Label();
             this.label_Teacher = new System.Windows.Forms.Label();
             this.textBoxTeacher = new System.Windows.Forms.TextBox();
@@ -50,6 +45,14 @@ namespace EducationalCenter
             this.labelTime = new System.Windows.Forms.Label();
             this.comboBoxTime = new System.Windows.Forms.ComboBox();
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
+            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.labelPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +72,7 @@ namespace EducationalCenter
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnTeacher,
+            this.ColumnPrice,
             this.ColumnSubject,
             this.ColumnRoom,
             this.ColumnDateTime,
@@ -78,36 +82,6 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(539, 130);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            this.ColumnTeacher.ReadOnly = true;
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            this.ColumnSubject.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.ReadOnly = true;
-            // 
-            // ColumnDateTime
-            // 
-            this.ColumnDateTime.HeaderText = "Date&Time";
-            this.ColumnDateTime.Name = "ColumnDateTime";
-            this.ColumnDateTime.ReadOnly = true;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
             // 
             // labelDelete
             // 
@@ -232,11 +206,66 @@ namespace EducationalCenter
             this.comboBoxRoom.Size = new System.Drawing.Size(121, 21);
             this.comboBoxRoom.TabIndex = 63;
             // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            this.ColumnTeacher.ReadOnly = true;
+            // 
+            // ColumnPrice
+            // 
+            this.ColumnPrice.HeaderText = "Price";
+            this.ColumnPrice.Name = "ColumnPrice";
+            this.ColumnPrice.ReadOnly = true;
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            this.ColumnSubject.ReadOnly = true;
+            // 
+            // ColumnRoom
+            // 
+            this.ColumnRoom.HeaderText = "Room";
+            this.ColumnRoom.Name = "ColumnRoom";
+            this.ColumnRoom.ReadOnly = true;
+            // 
+            // ColumnDateTime
+            // 
+            this.ColumnDateTime.HeaderText = "Date&Time";
+            this.ColumnDateTime.Name = "ColumnDateTime";
+            this.ColumnDateTime.ReadOnly = true;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            this.ColumnType.ReadOnly = true;
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Location = new System.Drawing.Point(432, 231);
+            this.textBoxPrice.MaxLength = 15;
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrice.TabIndex = 64;
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Location = new System.Drawing.Point(429, 216);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(31, 13);
+            this.labelPrice.TabIndex = 65;
+            this.labelPrice.Text = "Price";
+            // 
             // UserControl2E_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.labelPrice);
+            this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.comboBoxRoom);
             this.Controls.Add(this.comboBoxTime);
             this.Controls.Add(this.labelTime);
@@ -278,11 +307,14 @@ namespace EducationalCenter
         private System.Windows.Forms.TextBox textBox_Date;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.ComboBox comboBoxTime;
+        private System.Windows.Forms.ComboBox comboBoxRoom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
-        private System.Windows.Forms.ComboBox comboBoxRoom;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.Label labelPrice;
     }
 }
