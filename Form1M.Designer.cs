@@ -33,6 +33,8 @@ namespace EducationalCenter
             this.buttonEmployees = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonAccounts = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonLogOut
@@ -81,18 +83,30 @@ namespace EducationalCenter
             this.buttonAccounts.UseVisualStyleBackColor = false;
             this.buttonAccounts.Click += new System.EventHandler(this.buttonMakeAccounts_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::EducationalCenter.Properties.Resources.Manager;
+            this.pictureBox1.Location = new System.Drawing.Point(388, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 104);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonAccounts);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonEmployees);
             this.Controls.Add(this.buttonLogOut);
             this.Name = "Form1M";
             this.Text = "Form1M";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +118,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonEmployees;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonAccounts;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

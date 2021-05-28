@@ -316,5 +316,17 @@
   <ItemGroup>
     <None Include="Resources\network-mesh-wire-digital-technology-background_1017-27428.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3132-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manager.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

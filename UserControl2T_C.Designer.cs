@@ -185,7 +185,7 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources._52cf2839_f541_4fe6_b077_385373bd2004;
+            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.buttonView);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelDate);

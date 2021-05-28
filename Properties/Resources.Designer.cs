@@ -63,9 +63,19 @@ namespace EducationalCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _52cf2839_f541_4fe6_b077_385373bd2004 {
+        internal static System.Drawing.Bitmap Background {
             get {
-                object obj = ResourceManager.GetObject("52cf2839-f541-4fe6-b077-385373bd2004", resourceCulture);
+                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Manager {
+            get {
+                object obj = ResourceManager.GetObject("Manager", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
