@@ -39,13 +39,15 @@ namespace EducationalCenter
             this.buttonParents = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonLogOut = new System.Windows.Forms.Button();
+            this.pictureBoxEmployee = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonBookLessons
             // 
             this.buttonBookLessons.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonBookLessons.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBookLessons.Location = new System.Drawing.Point(24, 111);
+            this.buttonBookLessons.Location = new System.Drawing.Point(24, 142);
             this.buttonBookLessons.Name = "buttonBookLessons";
             this.buttonBookLessons.Size = new System.Drawing.Size(86, 43);
             this.buttonBookLessons.TabIndex = 1;
@@ -58,7 +60,7 @@ namespace EducationalCenter
             this.buttonBookRooms.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonBookRooms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonBookRooms.Location = new System.Drawing.Point(172, 111);
+            this.buttonBookRooms.Location = new System.Drawing.Point(172, 142);
             this.buttonBookRooms.Name = "buttonBookRooms";
             this.buttonBookRooms.Size = new System.Drawing.Size(86, 43);
             this.buttonBookRooms.TabIndex = 2;
@@ -70,7 +72,7 @@ namespace EducationalCenter
             // 
             this.buttonStudents.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonStudents.Location = new System.Drawing.Point(24, 230);
+            this.buttonStudents.Location = new System.Drawing.Point(24, 261);
             this.buttonStudents.Name = "buttonStudents";
             this.buttonStudents.Size = new System.Drawing.Size(86, 43);
             this.buttonStudents.TabIndex = 5;
@@ -82,7 +84,7 @@ namespace EducationalCenter
             // 
             this.buttonTeachers.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonTeachers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTeachers.Location = new System.Drawing.Point(316, 230);
+            this.buttonTeachers.Location = new System.Drawing.Point(316, 261);
             this.buttonTeachers.Name = "buttonTeachers";
             this.buttonTeachers.Size = new System.Drawing.Size(86, 43);
             this.buttonTeachers.TabIndex = 6;
@@ -94,7 +96,7 @@ namespace EducationalCenter
             // 
             this.buttonRooms.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonRooms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRooms.Location = new System.Drawing.Point(172, 230);
+            this.buttonRooms.Location = new System.Drawing.Point(172, 261);
             this.buttonRooms.Name = "buttonRooms";
             this.buttonRooms.Size = new System.Drawing.Size(86, 43);
             this.buttonRooms.TabIndex = 7;
@@ -106,7 +108,7 @@ namespace EducationalCenter
             // 
             this.buttonSubjects.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSubjects.Location = new System.Drawing.Point(470, 111);
+            this.buttonSubjects.Location = new System.Drawing.Point(470, 142);
             this.buttonSubjects.Name = "buttonSubjects";
             this.buttonSubjects.Size = new System.Drawing.Size(86, 43);
             this.buttonSubjects.TabIndex = 8;
@@ -118,7 +120,7 @@ namespace EducationalCenter
             // 
             this.buttonExams.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonExams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonExams.Location = new System.Drawing.Point(316, 111);
+            this.buttonExams.Location = new System.Drawing.Point(316, 142);
             this.buttonExams.Name = "buttonExams";
             this.buttonExams.Size = new System.Drawing.Size(86, 43);
             this.buttonExams.TabIndex = 9;
@@ -130,7 +132,7 @@ namespace EducationalCenter
             // 
             this.buttonParents.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonParents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonParents.Location = new System.Drawing.Point(470, 230);
+            this.buttonParents.Location = new System.Drawing.Point(470, 261);
             this.buttonParents.Name = "buttonParents";
             this.buttonParents.Size = new System.Drawing.Size(86, 43);
             this.buttonParents.TabIndex = 10;
@@ -160,12 +162,23 @@ namespace EducationalCenter
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
+            // pictureBoxEmployee
+            // 
+            this.pictureBoxEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxEmployee.Image = global::EducationalCenter.Properties.Resources.Employee;
+            this.pictureBoxEmployee.Location = new System.Drawing.Point(392, 21);
+            this.pictureBoxEmployee.Name = "pictureBoxEmployee";
+            this.pictureBoxEmployee.Size = new System.Drawing.Size(98, 104);
+            this.pictureBoxEmployee.TabIndex = 13;
+            this.pictureBoxEmployee.TabStop = false;
+            // 
             // Form1E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.pictureBoxEmployee);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonParents);
@@ -178,6 +191,7 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonBookLessons);
             this.Name = "Form1E";
             this.Text = "Form1E";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +208,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonParents;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.PictureBox pictureBoxEmployee;
     }
 }

@@ -29,6 +29,7 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1T));
             this.buttonViewSchedule = new System.Windows.Forms.Button();
             this.buttonStudents = new System.Windows.Forms.Button();
             this.buttonGradesReport = new System.Windows.Forms.Button();
@@ -37,13 +38,15 @@ namespace EducationalCenter
             this.button1 = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonExams = new System.Windows.Forms.Button();
+            this.pictureBoxTeacher = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeacher)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonViewSchedule
             // 
             this.buttonViewSchedule.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonViewSchedule.Location = new System.Drawing.Point(41, 94);
+            this.buttonViewSchedule.Location = new System.Drawing.Point(45, 148);
             this.buttonViewSchedule.Name = "buttonViewSchedule";
             this.buttonViewSchedule.Size = new System.Drawing.Size(86, 43);
             this.buttonViewSchedule.TabIndex = 0;
@@ -55,7 +58,7 @@ namespace EducationalCenter
             // 
             this.buttonStudents.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonStudents.Location = new System.Drawing.Point(41, 246);
+            this.buttonStudents.Location = new System.Drawing.Point(45, 300);
             this.buttonStudents.Name = "buttonStudents";
             this.buttonStudents.Size = new System.Drawing.Size(86, 43);
             this.buttonStudents.TabIndex = 1;
@@ -67,7 +70,7 @@ namespace EducationalCenter
             // 
             this.buttonGradesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonGradesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonGradesReport.Location = new System.Drawing.Point(223, 94);
+            this.buttonGradesReport.Location = new System.Drawing.Point(227, 148);
             this.buttonGradesReport.Name = "buttonGradesReport";
             this.buttonGradesReport.Size = new System.Drawing.Size(86, 43);
             this.buttonGradesReport.TabIndex = 2;
@@ -79,7 +82,7 @@ namespace EducationalCenter
             // 
             this.buttonTeachingAssistants.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonTeachingAssistants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTeachingAssistants.Location = new System.Drawing.Point(223, 246);
+            this.buttonTeachingAssistants.Location = new System.Drawing.Point(227, 300);
             this.buttonTeachingAssistants.Name = "buttonTeachingAssistants";
             this.buttonTeachingAssistants.Size = new System.Drawing.Size(86, 43);
             this.buttonTeachingAssistants.TabIndex = 3;
@@ -91,7 +94,7 @@ namespace EducationalCenter
             // 
             this.buttonAttendance.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAttendance.Location = new System.Drawing.Point(437, 246);
+            this.buttonAttendance.Location = new System.Drawing.Point(441, 300);
             this.buttonAttendance.Name = "buttonAttendance";
             this.buttonAttendance.Size = new System.Drawing.Size(86, 43);
             this.buttonAttendance.TabIndex = 4;
@@ -125,7 +128,7 @@ namespace EducationalCenter
             // 
             this.buttonExams.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonExams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonExams.Location = new System.Drawing.Point(437, 94);
+            this.buttonExams.Location = new System.Drawing.Point(441, 148);
             this.buttonExams.Name = "buttonExams";
             this.buttonExams.Size = new System.Drawing.Size(86, 43);
             this.buttonExams.TabIndex = 11;
@@ -133,12 +136,23 @@ namespace EducationalCenter
             this.buttonExams.UseVisualStyleBackColor = true;
             this.buttonExams.Click += new System.EventHandler(this.buttonExams_Click);
             // 
+            // pictureBoxTeacher
+            // 
+            this.pictureBoxTeacher.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxTeacher.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTeacher.Image")));
+            this.pictureBoxTeacher.Location = new System.Drawing.Point(376, 22);
+            this.pictureBoxTeacher.Name = "pictureBoxTeacher";
+            this.pictureBoxTeacher.Size = new System.Drawing.Size(98, 104);
+            this.pictureBoxTeacher.TabIndex = 12;
+            this.pictureBoxTeacher.TabStop = false;
+            // 
             // Form1T
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.pictureBoxTeacher);
             this.Controls.Add(this.buttonExams);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWelcome);
@@ -149,6 +163,7 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonViewSchedule);
             this.Name = "Form1T";
             this.Text = "Form1T";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeacher)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +179,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonExams;
+        private System.Windows.Forms.PictureBox pictureBoxTeacher;
     }
 }

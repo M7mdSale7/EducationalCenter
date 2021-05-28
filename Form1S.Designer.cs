@@ -34,13 +34,15 @@ namespace EducationalCenter
             this.buttonAvailableLessons = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBoxStudent = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonViewSchedule
             // 
             this.buttonViewSchedule.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonViewSchedule.Location = new System.Drawing.Point(75, 127);
+            this.buttonViewSchedule.Location = new System.Drawing.Point(99, 114);
             this.buttonViewSchedule.Name = "buttonViewSchedule";
             this.buttonViewSchedule.Size = new System.Drawing.Size(86, 43);
             this.buttonViewSchedule.TabIndex = 1;
@@ -52,7 +54,7 @@ namespace EducationalCenter
             // 
             this.buttonGradesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonGradesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonGradesReport.Location = new System.Drawing.Point(75, 226);
+            this.buttonGradesReport.Location = new System.Drawing.Point(99, 213);
             this.buttonGradesReport.Name = "buttonGradesReport";
             this.buttonGradesReport.Size = new System.Drawing.Size(86, 43);
             this.buttonGradesReport.TabIndex = 2;
@@ -64,7 +66,7 @@ namespace EducationalCenter
             // 
             this.buttonAvailableLessons.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonAvailableLessons.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAvailableLessons.Location = new System.Drawing.Point(378, 127);
+            this.buttonAvailableLessons.Location = new System.Drawing.Point(99, 319);
             this.buttonAvailableLessons.Name = "buttonAvailableLessons";
             this.buttonAvailableLessons.Size = new System.Drawing.Size(86, 43);
             this.buttonAvailableLessons.TabIndex = 3;
@@ -77,7 +79,7 @@ namespace EducationalCenter
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(12, 27);
+            this.labelWelcome.Location = new System.Drawing.Point(31, 40);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(115, 25);
             this.labelWelcome.TabIndex = 7;
@@ -94,12 +96,23 @@ namespace EducationalCenter
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // pictureBoxStudent
+            // 
+            this.pictureBoxStudent.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxStudent.Image = global::EducationalCenter.Properties.Resources.Student;
+            this.pictureBoxStudent.Location = new System.Drawing.Point(355, 82);
+            this.pictureBoxStudent.Name = "pictureBoxStudent";
+            this.pictureBoxStudent.Size = new System.Drawing.Size(154, 158);
+            this.pictureBoxStudent.TabIndex = 9;
+            this.pictureBoxStudent.TabStop = false;
+            // 
             // Form1S
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 411);
+            this.Controls.Add(this.pictureBoxStudent);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonAvailableLessons);
@@ -107,6 +120,7 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonViewSchedule);
             this.Name = "Form1S";
             this.Text = "Form1S";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +132,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonAvailableLessons;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBoxStudent;
     }
 }
