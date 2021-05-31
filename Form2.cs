@@ -15,7 +15,7 @@ namespace EducationalCenter
         public Form2(UserControl userControl)
         {
             InitializeComponent(userControl);
-            controllerObj = new Controller();
+            controllerObj = Controller.Instance;
         }
     }
 }

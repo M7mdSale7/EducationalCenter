@@ -33,16 +33,16 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
             this.labelName = new System.Windows.Forms.Label();
             this.labelYear = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxYear = new System.Windows.Forms.TextBox();
-            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +88,30 @@ namespace EducationalCenter
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(440, 150);
             this.dataGridView1.TabIndex = 86;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            // 
+            // ColumnYear
+            // 
+            this.ColumnYear.HeaderText = "Year";
+            this.ColumnYear.Name = "ColumnYear";
+            this.ColumnYear.ReadOnly = true;
+            // 
+            // ColumnTeacherName
+            // 
+            this.ColumnTeacherName.HeaderText = "Teacher name";
+            this.ColumnTeacherName.Name = "ColumnTeacherName";
+            this.ColumnTeacherName.ReadOnly = true;
+            // 
+            // ColumnTeacherID
+            // 
+            this.ColumnTeacherID.HeaderText = "Teacher ID";
+            this.ColumnTeacherID.Name = "ColumnTeacherID";
+            this.ColumnTeacherID.ReadOnly = true;
             // 
             // comboBoxTeacher
             // 
@@ -138,30 +162,6 @@ namespace EducationalCenter
             this.textBoxYear.Size = new System.Drawing.Size(100, 20);
             this.textBoxYear.TabIndex = 93;
             // 
-            // ColumnName
-            // 
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.ReadOnly = true;
-            // 
-            // ColumnYear
-            // 
-            this.ColumnYear.HeaderText = "Year";
-            this.ColumnYear.Name = "ColumnYear";
-            this.ColumnYear.ReadOnly = true;
-            // 
-            // ColumnTeacherName
-            // 
-            this.ColumnTeacherName.HeaderText = "Teacher name";
-            this.ColumnTeacherName.Name = "ColumnTeacherName";
-            this.ColumnTeacherName.ReadOnly = true;
-            // 
-            // ColumnTeacherID
-            // 
-            this.ColumnTeacherID.HeaderText = "Teacher ID";
-            this.ColumnTeacherID.Name = "ColumnTeacherID";
-            this.ColumnTeacherID.ReadOnly = true;
-            // 
             // UserControl2E_F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,7 +179,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelSubjects);
             this.Name = "UserControl2E_F";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

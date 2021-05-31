@@ -95,7 +95,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.dataGridViewSchedule);
             this.Name = "UserControl2T_E";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

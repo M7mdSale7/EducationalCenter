@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl2E_A : UserControl
+    public partial class UserControl1T : UserControl
     {
-        public UserControl2E_A()
+        public UserControl1T()
         {
             InitializeComponent();
-        }
-
-        private void buttonInsert_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
         }
     }
 }

@@ -30,14 +30,14 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelAvailableLessons = new System.Windows.Forms.Label();
-            this.labelSubject = new System.Windows.Forms.Label();
-            this.comboBoxSubject = new System.Windows.Forms.ComboBox();
-            this.buttonGet = new System.Windows.Forms.Button();
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSlot1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelAvailableLessons = new System.Windows.Forms.Label();
+            this.labelSubject = new System.Windows.Forms.Label();
+            this.comboBoxSubject = new System.Windows.Forms.ComboBox();
+            this.buttonGet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,29 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(442, 130);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // ColumnSubject
+            // 
+            this.ColumnSubject.HeaderText = "Subject";
+            this.ColumnSubject.Name = "ColumnSubject";
+            this.ColumnSubject.ReadOnly = true;
+            // 
+            // ColumnTeacher
+            // 
+            this.ColumnTeacher.HeaderText = "Teacher";
+            this.ColumnTeacher.Name = "ColumnTeacher";
+            this.ColumnTeacher.ReadOnly = true;
+            // 
+            // ColumnPrice
+            // 
+            this.ColumnPrice.HeaderText = "Price";
+            this.ColumnPrice.Name = "ColumnPrice";
+            this.ColumnPrice.ReadOnly = true;
+            // 
+            // ColumnSlot1
+            // 
+            this.ColumnSlot1.HeaderText = "Slot 1";
+            this.ColumnSlot1.Name = "ColumnSlot1";
             // 
             // labelAvailableLessons
             // 
@@ -95,29 +118,6 @@ namespace EducationalCenter
             this.buttonGet.Text = "Get Available Lessons";
             this.buttonGet.UseVisualStyleBackColor = true;
             // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            this.ColumnSubject.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            this.ColumnTeacher.ReadOnly = true;
-            // 
-            // ColumnPrice
-            // 
-            this.ColumnPrice.HeaderText = "Price";
-            this.ColumnPrice.Name = "ColumnPrice";
-            this.ColumnPrice.ReadOnly = true;
-            // 
-            // ColumnSlot1
-            // 
-            this.ColumnSlot1.HeaderText = "Slot 1";
-            this.ColumnSlot1.Name = "ColumnSlot1";
-            // 
             // UserControl2S_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,7 +129,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelAvailableLessons);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2S_C";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

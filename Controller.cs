@@ -4,15 +4,302 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace EducationalCenter
 {
     public class Controller
     {
-        //DBManager dbMan;
-        public Controller()
+
+        DBManager dbMan;
+        private static Controller _instance;
+        public static Controller Instance
         {
-            //dbMan = new DBManager();
+            get
+            {
+                if (_instance == null)
+                    _instance = new Controller();
+                return _instance;
+            }
+        }
+        private Controller()
+        {
+            dbMan = new DBManager();
+        }
+
+        private bool insertUser(string username, string password, string usertype) //uses sp query
+        {
+            if (checkUser(username))
+                return false;
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterPass = new SqlParameter
+            {
+                ParameterName = "@password",
+                SqlDbType = SqlDbType.VarChar,
+                Value = password,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterType = new SqlParameter
+            {
+                ParameterName = "@usertype",
+                SqlDbType = SqlDbType.VarChar,
+                Value = usertype,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+            parameters.Add(parameterPass);
+            parameters.Add(parameterType);
+
+            return Convert.ToBoolean(dbMan.ExecuteScalar("insertUser", "sp", parameters));
+        }
+        public bool checkUser(string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+
+            return Convert.ToBoolean(dbMan.ExecuteScalar("checkUser", "sp", parameters));
+        }
+
+        public string checkUserPassword(string username, string password)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterPass = new SqlParameter
+            {
+                ParameterName = "@password",
+                SqlDbType = SqlDbType.VarChar,
+                Value = password,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterUser);
+            parameters.Add(parameterPass);
+
+            
+            return Convert.ToString(dbMan.ExecuteScalar("checkUserPassword", "sp", parameters));
+        }
+        public bool changePassword(string username, string oldPass, string newPass)
+        {
+            if (checkUserPassword(username, oldPass) == "")
+                return false;
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterPass = new SqlParameter
+            {
+                ParameterName = "@password",
+                SqlDbType = SqlDbType.VarChar,
+                Value = newPass,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterUser);
+            parameters.Add(parameterPass);
+
+
+            dbMan.ExecuteNonQuery("changePassword", "sp", parameters);
+            return true;
+        }
+
+        public DataTable getAllAccounts(string username, string password, string usertype)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            if(username != "")
+            {
+                SqlParameter parameterUser = new SqlParameter
+                {
+                    ParameterName = "@username",
+                    SqlDbType = SqlDbType.VarChar,
+                    Value = username,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameterUser);
+            }
+
+            if (password != "")
+            {
+                SqlParameter parameterPass = new SqlParameter
+                {
+                    ParameterName = "@password",
+                    SqlDbType = SqlDbType.VarChar,
+                    Value = password,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameterPass);
+            }
+
+            if (usertype != "")
+            {
+                SqlParameter parameterType = new SqlParameter
+                {
+                    ParameterName = "@usertype",
+                    SqlDbType = SqlDbType.VarChar,
+                    Value = usertype,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameterType);
+            }
+
+            return dbMan.ExecuteReader("GetAllUsers", "sp", parameters);
+        }
+        public string[] getNonUserEmployees()
+        {
+            DataTable data = dbMan.ExecuteReader("getNonUserEmployees", "sp");
+            string[] items = { };
+            if (data != null)
+                items = data.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+            return items;
+        }
+        public string[] getNonUserTeachers()
+        {
+            DataTable data = dbMan.ExecuteReader("getNonUserTeachers", "sp");
+            string[] items = { };
+            if (data != null)
+                items = data.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+            return items;
+        }
+        public string[] getNonUserStudents()
+        {
+            DataTable data = dbMan.ExecuteReader("getNonUserStudents", "sp");
+            string[] items = { };
+            if (data != null)
+                items = data.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+            return items;
+        }
+        public string[] getNonUserTAs()
+        {
+            DataTable data = dbMan.ExecuteReader("getNonUserTAs", "sp");
+            string[] items = { };
+            if (data != null)
+                items = data.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+            return items;
+        }
+
+        public void insertEmployeUser(string nationalId, string username, string password)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            SqlParameter parameterID = new SqlParameter
+            {
+                ParameterName = "@national_id",
+                SqlDbType = SqlDbType.VarChar,
+                Value = nationalId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+            parameters.Add(parameterID);
+            dbMan.ExecuteNonQuery("udpateEmployeeUser", "sp", parameters);
+            insertUser(username, password, "employee");
+        }
+
+        public void insertTeacherUser(string nationalId, string username, string password)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            SqlParameter parameterID = new SqlParameter
+            {
+                ParameterName = "@national_id",
+                SqlDbType = SqlDbType.VarChar,
+                Value = nationalId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+            parameters.Add(parameterID);
+            dbMan.ExecuteNonQuery("updateTeacherUser", "sp", parameters);
+            insertUser(username, password, "teacher");
+        }
+
+        public void insertTAUser(string nationalId, string username, string password)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            SqlParameter parameterID = new SqlParameter
+            {
+                ParameterName = "@national_id",
+                SqlDbType = SqlDbType.VarChar,
+                Value = nationalId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+            parameters.Add(parameterID);
+            dbMan.ExecuteNonQuery("updateTAUser", "sp", parameters);
+            insertUser(username, password, "TA");
+        }
+
+        public void insertStudentUser(int ID, string username, string password)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            SqlParameter parameterID = new SqlParameter
+            {
+                ParameterName = "@national_id",
+                SqlDbType = SqlDbType.Int,
+                Value = ID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+            parameters.Add(parameterID);
+            dbMan.ExecuteNonQuery("updateStudentUser", "sp", parameters);
+            insertUser(username, password, "student");
         }
 
         public int InsertBookLesson(string StudentID, string Teacher, string Subject,string Slot)
@@ -28,6 +315,7 @@ namespace EducationalCenter
             //return dbMan.ExecuteNonQuery(query);
 
         }
+
 
 
         public int DeleteBookLesson(string StudentID, string Teacher, string Subject, string Room, string Slot)

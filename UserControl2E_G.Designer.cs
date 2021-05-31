@@ -32,6 +32,10 @@ namespace EducationalCenter
             this.labelDelete = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelNumber = new System.Windows.Forms.Label();
             this.labelSubjectName = new System.Windows.Forms.Label();
@@ -41,10 +45,6 @@ namespace EducationalCenter
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.textBoxSubjectName = new System.Windows.Forms.TextBox();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
-            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,30 @@ namespace EducationalCenter
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(439, 150);
             this.dataGridView1.TabIndex = 97;
+            // 
+            // ColumnNumber
+            // 
+            this.ColumnNumber.HeaderText = "Number";
+            this.ColumnNumber.Name = "ColumnNumber";
+            this.ColumnNumber.ReadOnly = true;
+            // 
+            // ColumnSubjectName
+            // 
+            this.ColumnSubjectName.HeaderText = "Subject name";
+            this.ColumnSubjectName.Name = "ColumnSubjectName";
+            this.ColumnSubjectName.ReadOnly = true;
+            // 
+            // ColumnTeacherName
+            // 
+            this.ColumnTeacherName.HeaderText = "Teacher name";
+            this.ColumnTeacherName.Name = "ColumnTeacherName";
+            this.ColumnTeacherName.ReadOnly = true;
+            // 
+            // ColumnYear
+            // 
+            this.ColumnYear.HeaderText = "Year";
+            this.ColumnYear.Name = "ColumnYear";
+            this.ColumnYear.ReadOnly = true;
             // 
             // buttonInsert
             // 
@@ -158,30 +182,6 @@ namespace EducationalCenter
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 110;
             // 
-            // ColumnNumber
-            // 
-            this.ColumnNumber.HeaderText = "Number";
-            this.ColumnNumber.Name = "ColumnNumber";
-            this.ColumnNumber.ReadOnly = true;
-            // 
-            // ColumnSubjectName
-            // 
-            this.ColumnSubjectName.HeaderText = "Subject name";
-            this.ColumnSubjectName.Name = "ColumnSubjectName";
-            this.ColumnSubjectName.ReadOnly = true;
-            // 
-            // ColumnTeacherName
-            // 
-            this.ColumnTeacherName.HeaderText = "Teacher name";
-            this.ColumnTeacherName.Name = "ColumnTeacherName";
-            this.ColumnTeacherName.ReadOnly = true;
-            // 
-            // ColumnYear
-            // 
-            this.ColumnYear.HeaderText = "Year";
-            this.ColumnYear.Name = "ColumnYear";
-            this.ColumnYear.ReadOnly = true;
-            // 
             // UserControl2E_G
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,7 +200,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelExams);
             this.Name = "UserControl2E_G";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

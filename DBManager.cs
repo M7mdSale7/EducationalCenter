@@ -13,7 +13,7 @@ namespace EducationalCenter
     public class DBManager
     {
 
-        string DB_Connection_String = @"Data Source=.;Initial Catalog=EducationalCenter;Integrated Security=True";
+        string DB_Connection_String = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
         SqlConnection myConnection = null;
 
 
@@ -32,38 +32,70 @@ namespace EducationalCenter
             }
         }
 
-        public int ExecuteNonQuery(string query)
+
+        public int ExecuteNonQuery(string query, string s = "t", List<SqlParameter> parameters = null)
         {
             try
             {
-                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                SqlCommand myCommand = null;
+                if (s == "t")
+                {
+                    myCommand = new SqlCommand(query, myConnection);
+                }
+                else if(s == "sp")
+                {
+                    myCommand = new SqlCommand(query, myConnection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+                    if(parameters != null)
+                    {
+                        foreach (SqlParameter parameter in parameters)
+                        {
+                            myCommand.Parameters.Add(parameter);
+                        }
+                    }
+                }
+
                 return myCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
                 return 0;
             }
         }
 
-        public DataTable ExecuteReader(string query)
+        public DataTable ExecuteReader(string query, string s = "t", List<SqlParameter> parameters = null)
         {
             try
             {
-                SqlCommand myCommand = new SqlCommand(query, myConnection);
-                SqlDataReader reader = myCommand.ExecuteReader();
-                if (reader.HasRows)
+
+                SqlCommand myCommand = null;
+                if (s == "t")
                 {
+                    myCommand = new SqlCommand(query, myConnection);
+                }
+                else if (s == "sp")
+                {
+                    myCommand = new SqlCommand(query, myConnection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+                    if(parameters != null)
+                    {
+                        foreach (SqlParameter parameter in parameters)
+                        {
+                            myCommand.Parameters.Add(parameter);
+                        }
+                    }
+
+                }
+                SqlDataReader reader = myCommand.ExecuteReader();
                     DataTable dt = new DataTable();
                     dt.Load(reader);
                     reader.Close();
                     return dt;
-                }
-                else
-                {
-                    reader.Close();
-                    return null;
-                }
             }
             catch (Exception ex)
             {
@@ -72,11 +104,26 @@ namespace EducationalCenter
             }
         }
 
-        public object ExecuteScalar(string query)
+        public object ExecuteScalar(string query, string s = "t", List<SqlParameter> parameters = null)
         {
             try
             {
-                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                SqlCommand myCommand = null;
+                if (s == "t")
+                {
+                    myCommand = new SqlCommand(query, myConnection);
+                }
+                else if (s == "sp")
+                {
+                    myCommand = new SqlCommand(query, myConnection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+                    foreach (SqlParameter parameter in parameters)
+                    {
+                        myCommand.Parameters.Add(parameter);
+                    }
+                }
                 return myCommand.ExecuteScalar();
             }
             catch (Exception ex)
@@ -97,8 +144,6 @@ namespace EducationalCenter
                 MessageBox.Show(e.Message);
             }
         }
-
-
     }
 }
 ;

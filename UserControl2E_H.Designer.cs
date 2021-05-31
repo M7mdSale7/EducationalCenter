@@ -33,10 +33,10 @@ namespace EducationalCenter
             this.labelRooms = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.labelNumber = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.ColumnCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxCapacity = new System.Windows.Forms.TextBox();
             this.labelCapacity = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -80,6 +80,12 @@ namespace EducationalCenter
             this.ColumnNumber.Name = "ColumnNumber";
             this.ColumnNumber.ReadOnly = true;
             // 
+            // ColumnCapacity
+            // 
+            this.ColumnCapacity.HeaderText = "Capacity";
+            this.ColumnCapacity.Name = "ColumnCapacity";
+            this.ColumnCapacity.ReadOnly = true;
+            // 
             // textBoxNumber
             // 
             this.textBoxNumber.Location = new System.Drawing.Point(350, 99);
@@ -106,12 +112,6 @@ namespace EducationalCenter
             this.buttonInsert.TabIndex = 102;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
-            // 
-            // ColumnCapacity
-            // 
-            this.ColumnCapacity.HeaderText = "Capacity";
-            this.ColumnCapacity.Name = "ColumnCapacity";
-            this.ColumnCapacity.ReadOnly = true;
             // 
             // textBoxCapacity
             // 
@@ -143,7 +143,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelRooms);
             this.Name = "UserControl2E_H";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

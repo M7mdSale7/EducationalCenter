@@ -30,11 +30,11 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelGradesReport = new System.Windows.Forms.Label();
             this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnExam1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelGradesReport = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,17 +51,6 @@ namespace EducationalCenter
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(441, 187);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // labelGradesReport
-            // 
-            this.labelGradesReport.AutoSize = true;
-            this.labelGradesReport.BackColor = System.Drawing.Color.Transparent;
-            this.labelGradesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGradesReport.Location = new System.Drawing.Point(22, 40);
-            this.labelGradesReport.Name = "labelGradesReport";
-            this.labelGradesReport.Size = new System.Drawing.Size(133, 20);
-            this.labelGradesReport.TabIndex = 90;
-            this.labelGradesReport.Text = "Grades Report:";
             // 
             // ColumnSubject
             // 
@@ -87,6 +76,17 @@ namespace EducationalCenter
             this.ColumnGrade.Name = "ColumnGrade";
             this.ColumnGrade.ReadOnly = true;
             // 
+            // labelGradesReport
+            // 
+            this.labelGradesReport.AutoSize = true;
+            this.labelGradesReport.BackColor = System.Drawing.Color.Transparent;
+            this.labelGradesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGradesReport.Location = new System.Drawing.Point(22, 40);
+            this.labelGradesReport.Name = "labelGradesReport";
+            this.labelGradesReport.Size = new System.Drawing.Size(133, 20);
+            this.labelGradesReport.TabIndex = 90;
+            this.labelGradesReport.Text = "Grades Report:";
+            // 
             // UserControl2S_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,7 +95,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelGradesReport);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2S_B";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,10 +48,46 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBManager.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1E.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1E.Designer.cs">
+      <DependentUpon>UserControl1E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1M.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1M.Designer.cs">
+      <DependentUpon>UserControl1M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1S.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1S.Designer.cs">
+      <DependentUpon>UserControl1S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1T.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1T.Designer.cs">
+      <DependentUpon>UserControl1T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1TA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1TA.Designer.cs">
+      <DependentUpon>UserControl1TA.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl2E_A.cs">
       <SubType>UserControl</SubType>
@@ -71,12 +108,6 @@
     <Compile Include="Form1E.designer.cs">
       <DependentUpon>Form1E.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1M.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1M.designer.cs">
-      <DependentUpon>Form1M.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1S.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +125,6 @@
     </Compile>
     <Compile Include="Form1TA.designer.cs">
       <DependentUpon>Form1TA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,14 +236,17 @@
     <Compile Include="UserControl2S_A.Designer.cs">
       <DependentUpon>UserControl2S_A.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLogin.Designer.cs">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form0.resx">
       <DependentUpon>Form0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1E.resx">
       <DependentUpon>Form1E.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1M.resx">
-      <DependentUpon>Form1M.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1S.resx">
       <DependentUpon>Form1S.cs</DependentUpon>
@@ -236,6 +264,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1E.resx">
+      <DependentUpon>UserControl1E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1M.resx">
+      <DependentUpon>UserControl1M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1S.resx">
+      <DependentUpon>UserControl1S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1T.resx">
+      <DependentUpon>UserControl1T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1TA.resx">
+      <DependentUpon>UserControl1TA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_A.resx">
       <DependentUpon>UserControl2E_A.cs</DependentUpon>
@@ -293,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2T_F.resx">
       <DependentUpon>UserControl2T_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLogin.resx">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

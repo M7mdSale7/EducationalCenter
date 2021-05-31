@@ -198,7 +198,7 @@ namespace EducationalCenter
             this.Controls.Add(this.textBoxStudentID);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2T_C";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

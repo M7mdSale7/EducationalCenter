@@ -34,17 +34,17 @@ namespace EducationalCenter
             this.label_ExamID = new System.Windows.Forms.Label();
             this.labelStudent = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelGradesReport = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
-            this.buttonInsert = new System.Windows.Forms.Button();
-            this.comboBoxStudent = new System.Windows.Forms.ComboBox();
-            this.comboBoxExamID = new System.Windows.Forms.ComboBox();
             this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelGradesReport = new System.Windows.Forms.Label();
+            this.labelDelete = new System.Windows.Forms.Label();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.comboBoxStudent = new System.Windows.Forms.ComboBox();
+            this.comboBoxExamID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +99,42 @@ namespace EducationalCenter
             this.dataGridView1.Size = new System.Drawing.Size(536, 130);
             this.dataGridView1.TabIndex = 60;
             // 
+            // ColumnStudentID
+            // 
+            this.ColumnStudentID.HeaderText = "Student ID";
+            this.ColumnStudentID.Name = "ColumnStudentID";
+            this.ColumnStudentID.ReadOnly = true;
+            // 
+            // ColumnStudentName
+            // 
+            this.ColumnStudentName.HeaderText = "Student name";
+            this.ColumnStudentName.Name = "ColumnStudentName";
+            this.ColumnStudentName.ReadOnly = true;
+            // 
+            // ColumnPhoneNumber
+            // 
+            this.ColumnPhoneNumber.HeaderText = "Phone Number";
+            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
+            this.ColumnPhoneNumber.ReadOnly = true;
+            // 
+            // ColumnParentNumber
+            // 
+            this.ColumnParentNumber.HeaderText = "Parent Number";
+            this.ColumnParentNumber.Name = "ColumnParentNumber";
+            this.ColumnParentNumber.ReadOnly = true;
+            // 
+            // ColumnExamID
+            // 
+            this.ColumnExamID.HeaderText = "Exam ID";
+            this.ColumnExamID.Name = "ColumnExamID";
+            this.ColumnExamID.ReadOnly = true;
+            // 
+            // ColumnGrade
+            // 
+            this.ColumnGrade.HeaderText = "Grade";
+            this.ColumnGrade.Name = "ColumnGrade";
+            this.ColumnGrade.ReadOnly = true;
+            // 
             // labelGradesReport
             // 
             this.labelGradesReport.AutoSize = true;
@@ -147,42 +183,6 @@ namespace EducationalCenter
             this.comboBoxExamID.Size = new System.Drawing.Size(121, 21);
             this.comboBoxExamID.TabIndex = 91;
             // 
-            // ColumnStudentID
-            // 
-            this.ColumnStudentID.HeaderText = "Student ID";
-            this.ColumnStudentID.Name = "ColumnStudentID";
-            this.ColumnStudentID.ReadOnly = true;
-            // 
-            // ColumnStudentName
-            // 
-            this.ColumnStudentName.HeaderText = "Student name";
-            this.ColumnStudentName.Name = "ColumnStudentName";
-            this.ColumnStudentName.ReadOnly = true;
-            // 
-            // ColumnPhoneNumber
-            // 
-            this.ColumnPhoneNumber.HeaderText = "Phone Number";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            // 
-            // ColumnParentNumber
-            // 
-            this.ColumnParentNumber.HeaderText = "Parent Number";
-            this.ColumnParentNumber.Name = "ColumnParentNumber";
-            this.ColumnParentNumber.ReadOnly = true;
-            // 
-            // ColumnExamID
-            // 
-            this.ColumnExamID.HeaderText = "Exam ID";
-            this.ColumnExamID.Name = "ColumnExamID";
-            this.ColumnExamID.ReadOnly = true;
-            // 
-            // ColumnGrade
-            // 
-            this.ColumnGrade.HeaderText = "Grade";
-            this.ColumnGrade.Name = "ColumnGrade";
-            this.ColumnGrade.ReadOnly = true;
-            // 
             // UserControl2T_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,7 +199,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelStudent);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2T_D";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

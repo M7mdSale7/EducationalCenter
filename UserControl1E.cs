@@ -10,25 +10,21 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class Form0 : Form
+    public partial class UserControl1E : UserControl
     {
-        //start of singelton pattern code
-        private static Form0 _instance;
-        public static Form0 Instance
+        private static UserControl1E _instance;
+        public static UserControl1E Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Form0();
+                    _instance = new UserControl1E();
                 return _instance;
             }
         }
-        //end of singelton pattern code
-        private Form0() //make this private
+        private UserControl1E()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
-            this.Controls.Add(new UserControlLogin());
         }
     }
 }

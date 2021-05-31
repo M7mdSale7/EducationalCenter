@@ -50,14 +50,14 @@ namespace EducationalCenter
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 255);
+            this.textBox1.Location = new System.Drawing.Point(14, 296);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(17, 308);
+            this.textBox2.Location = new System.Drawing.Point(14, 349);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace EducationalCenter
             // 
             this.buttonUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonUpdate.Location = new System.Drawing.Point(482, 297);
+            this.buttonUpdate.Location = new System.Drawing.Point(479, 338);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 72;
@@ -77,7 +77,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(482, 251);
+            this.buttonInsert.Location = new System.Drawing.Point(479, 292);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 71;
@@ -87,7 +87,7 @@ namespace EducationalCenter
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(17, 236);
+            this.labelName.Location = new System.Drawing.Point(14, 277);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(35, 13);
             this.labelName.TabIndex = 73;
@@ -96,7 +96,7 @@ namespace EducationalCenter
             // labelStudentID
             // 
             this.labelStudentID.AutoSize = true;
-            this.labelStudentID.Location = new System.Drawing.Point(175, 236);
+            this.labelStudentID.Location = new System.Drawing.Point(172, 277);
             this.labelStudentID.Name = "labelStudentID";
             this.labelStudentID.Size = new System.Drawing.Size(58, 13);
             this.labelStudentID.TabIndex = 74;
@@ -105,7 +105,7 @@ namespace EducationalCenter
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(178, 253);
+            this.comboBox1.Location = new System.Drawing.Point(175, 294);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 75;
@@ -119,7 +119,7 @@ namespace EducationalCenter
             this.ColumnStudentName,
             this.ColumnStudentID,
             this.ColumnStudentStudyYear});
-            this.dataGridView1.Location = new System.Drawing.Point(17, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 114);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(540, 150);
             this.dataGridView1.TabIndex = 76;
@@ -157,7 +157,7 @@ namespace EducationalCenter
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(17, 289);
+            this.labelPhoneNumber.Location = new System.Drawing.Point(14, 330);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
             this.labelPhoneNumber.Size = new System.Drawing.Size(76, 13);
             this.labelPhoneNumber.TabIndex = 77;
@@ -167,7 +167,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(403, 57);
+            this.labelDelete.Location = new System.Drawing.Point(400, 98);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 78;
@@ -178,7 +178,7 @@ namespace EducationalCenter
             this.labelParents.AutoSize = true;
             this.labelParents.BackColor = System.Drawing.Color.Transparent;
             this.labelParents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelParents.Location = new System.Drawing.Point(13, 22);
+            this.labelParents.Location = new System.Drawing.Point(10, 63);
             this.labelParents.Name = "labelParents";
             this.labelParents.Size = new System.Drawing.Size(76, 20);
             this.labelParents.TabIndex = 79;
@@ -201,7 +201,7 @@ namespace EducationalCenter
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "UserControl2E_D";
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

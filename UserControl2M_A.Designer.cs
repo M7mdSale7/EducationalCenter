@@ -123,7 +123,7 @@ namespace EducationalCenter
             // 
             // textBoxNID
             // 
-            this.textBoxNID.Location = new System.Drawing.Point(177, 320);
+            this.textBoxNID.Location = new System.Drawing.Point(177, 332);
             this.textBoxNID.MaxLength = 15;
             this.textBoxNID.Name = "textBoxNID";
             this.textBoxNID.Size = new System.Drawing.Size(100, 20);
@@ -139,7 +139,7 @@ namespace EducationalCenter
             // 
             // textBoxSalary
             // 
-            this.textBoxSalary.Location = new System.Drawing.Point(29, 320);
+            this.textBoxSalary.Location = new System.Drawing.Point(29, 332);
             this.textBoxSalary.MaxLength = 15;
             this.textBoxSalary.Name = "textBoxSalary";
             this.textBoxSalary.Size = new System.Drawing.Size(100, 20);
@@ -242,7 +242,7 @@ namespace EducationalCenter
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2M_A";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(600, 350);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
