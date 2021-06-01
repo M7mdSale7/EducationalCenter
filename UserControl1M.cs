@@ -13,13 +13,20 @@ namespace EducationalCenter
     public partial class UserControl1M : UserControl
     {
         //using singelton pattern
-        string username;
+        private static UserControl1M _instance;
+        public static UserControl1M Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserControl1M();
+                return _instance;
+            }
+        }
 
-        public UserControl1M(string username)
+        private UserControl1M()
         {
             InitializeComponent();
-            this.username = username;
-            //labelWelcome.Text += " " + username;
         }
 
         private void buttonEmployees_Click(object sender, EventArgs e)
@@ -31,13 +38,13 @@ namespace EducationalCenter
         private void buttonAccounts_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2M_B(username));
+            Form0.Instance.Controls.Add(UserControl2M_B.Instance);
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
+            Form0.Instance.Controls.Add(UserControlLogin.Instance);
         }
     }
 }

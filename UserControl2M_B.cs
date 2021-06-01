@@ -12,12 +12,19 @@ namespace EducationalCenter
 {
     public partial class UserControl2M_B : UserControl
     {
-        string username;
-        public UserControl2M_B(string username)
+        private static UserControl2M_B _instance;
+        public static UserControl2M_B Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserControl2M_B();
+                return _instance;
+            }
+        }
+        private UserControl2M_B()
         {
             InitializeComponent();
-            this.username = username;
-            displayData();
         }
 
         private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,7 +59,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1M(username));
+            Form0.Instance.Controls.Add(UserControl1M.Instance);
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
