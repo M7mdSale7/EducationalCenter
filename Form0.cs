@@ -28,7 +28,7 @@ namespace EducationalCenter
         {
             InitializeComponent();
             this.DoubleBuffered = true;
-            this.Controls.Add(UserControlLogin.Instance);
+            this.Controls.Add(new UserControlLogin());
         }
     }
 }

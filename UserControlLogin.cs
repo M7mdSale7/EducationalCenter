@@ -12,21 +12,11 @@ namespace EducationalCenter
 {
     public partial class UserControlLogin : UserControl
     {
-        private static UserControlLogin _instance;
-        public static UserControlLogin Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControlLogin();
-                return _instance;
-            }
-        }
-        private UserControlLogin()
+        public UserControlLogin()
         {
             InitializeComponent();
         }
-            
+
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
             if (textBoxUser.Text == "" || textBoxPass.Text == "")
@@ -40,7 +30,7 @@ namespace EducationalCenter
                 {
 
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(UserControl1M.Instance);
+                    Form0.Instance.Controls.Add(new UserControl1M());
                 }
                 else if (type == "employee")
                 {
@@ -70,7 +60,7 @@ namespace EducationalCenter
         private void linkLabelChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControlChangePass.Instance);
+            Form0.Instance.Controls.Add(new UserControlChangePass());
         }
     }
 }

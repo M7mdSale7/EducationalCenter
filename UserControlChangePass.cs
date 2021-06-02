@@ -12,17 +12,8 @@ namespace EducationalCenter
 {
     public partial class UserControlChangePass : UserControl
     {
-        private static UserControlChangePass _instance;
-        public static UserControlChangePass Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControlChangePass();
-                return _instance;
-            }
-        }
-        private UserControlChangePass()
+
+        public UserControlChangePass()
         {
             InitializeComponent();
         }
@@ -57,7 +48,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControlLogin.Instance);
+            Form0.Instance.Controls.Add(new UserControlLogin());
         }
     }
 }
