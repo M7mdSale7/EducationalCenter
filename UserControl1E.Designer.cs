@@ -38,7 +38,6 @@ namespace EducationalCenter
             this.buttonRooms = new System.Windows.Forms.Button();
             this.buttonTeachers = new System.Windows.Forms.Button();
             this.buttonStudents = new System.Windows.Forms.Button();
-            this.buttonBookRooms = new System.Windows.Forms.Button();
             this.buttonBookLessons = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +46,7 @@ namespace EducationalCenter
             // 
             this.pictureBoxEmployee.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxEmployee.Image = global::EducationalCenter.Properties.Resources.Employee;
-            this.pictureBoxEmployee.Location = new System.Drawing.Point(400, 88);
+            this.pictureBoxEmployee.Location = new System.Drawing.Point(478, 17);
             this.pictureBoxEmployee.Name = "pictureBoxEmployee";
             this.pictureBoxEmployee.Size = new System.Drawing.Size(98, 104);
             this.pictureBoxEmployee.TabIndex = 24;
@@ -57,7 +56,7 @@ namespace EducationalCenter
             // 
             this.buttonLogOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLogOut.Location = new System.Drawing.Point(504, 79);
+            this.buttonLogOut.Location = new System.Drawing.Point(14, 17);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(70, 30);
             this.buttonLogOut.TabIndex = 23;
@@ -79,7 +78,7 @@ namespace EducationalCenter
             // 
             this.buttonParents.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonParents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonParents.Location = new System.Drawing.Point(478, 328);
+            this.buttonParents.Location = new System.Drawing.Point(324, 328);
             this.buttonParents.Name = "buttonParents";
             this.buttonParents.Size = new System.Drawing.Size(86, 43);
             this.buttonParents.TabIndex = 21;
@@ -90,18 +89,19 @@ namespace EducationalCenter
             // 
             this.buttonExams.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonExams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonExams.Location = new System.Drawing.Point(324, 209);
+            this.buttonExams.Location = new System.Drawing.Point(180, 209);
             this.buttonExams.Name = "buttonExams";
             this.buttonExams.Size = new System.Drawing.Size(86, 43);
             this.buttonExams.TabIndex = 20;
             this.buttonExams.Text = "Exams";
             this.buttonExams.UseVisualStyleBackColor = true;
+            this.buttonExams.Click += new System.EventHandler(this.buttonExams_Click);
             // 
             // buttonSubjects
             // 
             this.buttonSubjects.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSubjects.Location = new System.Drawing.Point(478, 209);
+            this.buttonSubjects.Location = new System.Drawing.Point(324, 209);
             this.buttonSubjects.Name = "buttonSubjects";
             this.buttonSubjects.Size = new System.Drawing.Size(86, 43);
             this.buttonSubjects.TabIndex = 19;
@@ -118,12 +118,13 @@ namespace EducationalCenter
             this.buttonRooms.TabIndex = 18;
             this.buttonRooms.Text = "Rooms";
             this.buttonRooms.UseVisualStyleBackColor = true;
+            this.buttonRooms.Click += new System.EventHandler(this.buttonRooms_Click_1);
             // 
             // buttonTeachers
             // 
             this.buttonTeachers.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonTeachers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTeachers.Location = new System.Drawing.Point(324, 328);
+            this.buttonTeachers.Location = new System.Drawing.Point(478, 209);
             this.buttonTeachers.Name = "buttonTeachers";
             this.buttonTeachers.Size = new System.Drawing.Size(86, 43);
             this.buttonTeachers.TabIndex = 17;
@@ -141,18 +142,6 @@ namespace EducationalCenter
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = true;
             // 
-            // buttonBookRooms
-            // 
-            this.buttonBookRooms.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBookRooms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBookRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonBookRooms.Location = new System.Drawing.Point(180, 209);
-            this.buttonBookRooms.Name = "buttonBookRooms";
-            this.buttonBookRooms.Size = new System.Drawing.Size(86, 43);
-            this.buttonBookRooms.TabIndex = 15;
-            this.buttonBookRooms.Text = "Book Rooms";
-            this.buttonBookRooms.UseVisualStyleBackColor = true;
-            // 
             // buttonBookLessons
             // 
             this.buttonBookLessons.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -161,7 +150,7 @@ namespace EducationalCenter
             this.buttonBookLessons.Name = "buttonBookLessons";
             this.buttonBookLessons.Size = new System.Drawing.Size(86, 43);
             this.buttonBookLessons.TabIndex = 14;
-            this.buttonBookLessons.Text = "Book Lessons";
+            this.buttonBookLessons.Text = "Lessons";
             this.buttonBookLessons.UseVisualStyleBackColor = false;
             // 
             // UserControl1E
@@ -178,7 +167,6 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonRooms);
             this.Controls.Add(this.buttonTeachers);
             this.Controls.Add(this.buttonStudents);
-            this.Controls.Add(this.buttonBookRooms);
             this.Controls.Add(this.buttonBookLessons);
             this.Name = "UserControl1E";
             this.Size = new System.Drawing.Size(600, 450);
@@ -199,7 +187,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonRooms;
         private System.Windows.Forms.Button buttonTeachers;
         private System.Windows.Forms.Button buttonStudents;
-        private System.Windows.Forms.Button buttonBookRooms;
         private System.Windows.Forms.Button buttonBookLessons;
     }
 }

@@ -31,13 +31,6 @@ namespace EducationalCenter
         {
             this.labelBookLessonsExams = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelStudentID = new System.Windows.Forms.Label();
             this.textBoxStudentID = new System.Windows.Forms.TextBox();
             this.labelSlot = new System.Windows.Forms.Label();
@@ -60,7 +53,7 @@ namespace EducationalCenter
             this.labelBookLessonsExams.AutoSize = true;
             this.labelBookLessonsExams.BackColor = System.Drawing.Color.Transparent;
             this.labelBookLessonsExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.labelBookLessonsExams.Location = new System.Drawing.Point(12, 25);
+            this.labelBookLessonsExams.Location = new System.Drawing.Point(26, 61);
             this.labelBookLessonsExams.Name = "labelBookLessonsExams";
             this.labelBookLessonsExams.Size = new System.Drawing.Size(220, 20);
             this.labelBookLessonsExams.TabIndex = 9;
@@ -69,63 +62,16 @@ namespace EducationalCenter
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnStudentID,
-            this.ColumnType,
-            this.ColumnTeacher,
-            this.ColumnSubject,
-            this.ColumnSlot,
-            this.ColumnRoom,
-            this.ColumnPrice});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(543, 130);
             this.dataGridView1.TabIndex = 10;
             // 
-            // ColumnStudentID
-            // 
-            this.ColumnStudentID.HeaderText = "Student ID";
-            this.ColumnStudentID.Name = "ColumnStudentID";
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            this.ColumnType.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            // 
-            // ColumnSlot
-            // 
-            this.ColumnSlot.HeaderText = "Slot";
-            this.ColumnSlot.Name = "ColumnSlot";
-            this.ColumnSlot.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.Width = 50;
-            // 
-            // ColumnPrice
-            // 
-            this.ColumnPrice.HeaderText = "Price";
-            this.ColumnPrice.Name = "ColumnPrice";
-            this.ColumnPrice.ReadOnly = true;
-            // 
             // labelStudentID
             // 
             this.labelStudentID.AutoSize = true;
-            this.labelStudentID.Location = new System.Drawing.Point(12, 225);
+            this.labelStudentID.Location = new System.Drawing.Point(26, 261);
             this.labelStudentID.Name = "labelStudentID";
             this.labelStudentID.Size = new System.Drawing.Size(58, 13);
             this.labelStudentID.TabIndex = 16;
@@ -133,7 +79,7 @@ namespace EducationalCenter
             // 
             // textBoxStudentID
             // 
-            this.textBoxStudentID.Location = new System.Drawing.Point(15, 250);
+            this.textBoxStudentID.Location = new System.Drawing.Point(29, 286);
             this.textBoxStudentID.MaxLength = 15;
             this.textBoxStudentID.Name = "textBoxStudentID";
             this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
@@ -142,7 +88,7 @@ namespace EducationalCenter
             // labelSlot
             // 
             this.labelSlot.AutoSize = true;
-            this.labelSlot.Location = new System.Drawing.Point(149, 291);
+            this.labelSlot.Location = new System.Drawing.Point(163, 327);
             this.labelSlot.Name = "labelSlot";
             this.labelSlot.Size = new System.Drawing.Size(64, 13);
             this.labelSlot.TabIndex = 25;
@@ -151,7 +97,7 @@ namespace EducationalCenter
             // comboBoxSlot
             // 
             this.comboBoxSlot.FormattingEnabled = true;
-            this.comboBoxSlot.Location = new System.Drawing.Point(152, 316);
+            this.comboBoxSlot.Location = new System.Drawing.Point(166, 352);
             this.comboBoxSlot.Name = "comboBoxSlot";
             this.comboBoxSlot.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSlot.TabIndex = 24;
@@ -159,7 +105,7 @@ namespace EducationalCenter
             // labelSubject
             // 
             this.labelSubject.AutoSize = true;
-            this.labelSubject.Location = new System.Drawing.Point(149, 225);
+            this.labelSubject.Location = new System.Drawing.Point(163, 261);
             this.labelSubject.Name = "labelSubject";
             this.labelSubject.Size = new System.Drawing.Size(43, 13);
             this.labelSubject.TabIndex = 23;
@@ -168,7 +114,7 @@ namespace EducationalCenter
             // labelTeacher
             // 
             this.labelTeacher.AutoSize = true;
-            this.labelTeacher.Location = new System.Drawing.Point(301, 225);
+            this.labelTeacher.Location = new System.Drawing.Point(315, 261);
             this.labelTeacher.Name = "labelTeacher";
             this.labelTeacher.Size = new System.Drawing.Size(47, 13);
             this.labelTeacher.TabIndex = 27;
@@ -178,7 +124,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(464, 301);
+            this.buttonInsert.Location = new System.Drawing.Point(478, 337);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 30;
@@ -190,7 +136,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(404, 56);
+            this.labelDelete.Location = new System.Drawing.Point(418, 92);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 41;
@@ -199,7 +145,7 @@ namespace EducationalCenter
             // comboBoxTeacher
             // 
             this.comboBoxTeacher.FormattingEnabled = true;
-            this.comboBoxTeacher.Location = new System.Drawing.Point(304, 250);
+            this.comboBoxTeacher.Location = new System.Drawing.Point(318, 286);
             this.comboBoxTeacher.Name = "comboBoxTeacher";
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 42;
@@ -207,7 +153,7 @@ namespace EducationalCenter
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(13, 291);
+            this.labelType.Location = new System.Drawing.Point(27, 327);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(31, 13);
             this.labelType.TabIndex = 45;
@@ -216,7 +162,10 @@ namespace EducationalCenter
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(16, 316);
+            this.comboBoxType.Items.AddRange(new object[] {
+            "lesson",
+            "exam"});
+            this.comboBoxType.Location = new System.Drawing.Point(30, 352);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 21);
             this.comboBoxType.TabIndex = 46;
@@ -225,7 +174,7 @@ namespace EducationalCenter
             // 
             this.buttonPrice.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPrice.Location = new System.Drawing.Point(464, 247);
+            this.buttonPrice.Location = new System.Drawing.Point(478, 283);
             this.buttonPrice.Name = "buttonPrice";
             this.buttonPrice.Size = new System.Drawing.Size(75, 23);
             this.buttonPrice.TabIndex = 47;
@@ -235,7 +184,7 @@ namespace EducationalCenter
             // comboBoxSubject
             // 
             this.comboBoxSubject.FormattingEnabled = true;
-            this.comboBoxSubject.Location = new System.Drawing.Point(152, 250);
+            this.comboBoxSubject.Location = new System.Drawing.Point(166, 286);
             this.comboBoxSubject.Name = "comboBoxSubject";
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 48;
@@ -244,11 +193,11 @@ namespace EducationalCenter
             // 
             this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(483, 13);
+            this.buttonBack.Location = new System.Drawing.Point(9, 15);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 49;
-            this.buttonBack.Text = "Insert";
+            this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
@@ -296,13 +245,6 @@ namespace EducationalCenter
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.Label labelType;
         private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSlot;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
         private System.Windows.Forms.Button buttonPrice;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.Button buttonBack;

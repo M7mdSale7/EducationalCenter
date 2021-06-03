@@ -34,7 +34,8 @@ namespace EducationalCenter
                 }
                 else if (type == "employee")
                 {
-
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1E());
                 }
                 else if (type == "teacher")
                 {

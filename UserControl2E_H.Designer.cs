@@ -31,22 +31,23 @@ namespace EducationalCenter
         {
             this.labelDelete = new System.Windows.Forms.Label();
             this.labelRooms = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBoxNumber = new System.Windows.Forms.TextBox();
+            this.dataGridViewRooms = new System.Windows.Forms.DataGridView();
             this.labelNumber = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.textBoxCapacity = new System.Windows.Forms.TextBox();
             this.labelCapacity = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.numericUpDownNumber = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCapacity = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCapacity)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(114, 67);
+            this.labelDelete.Location = new System.Drawing.Point(138, 110);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 98;
@@ -57,46 +58,27 @@ namespace EducationalCenter
             this.labelRooms.AutoSize = true;
             this.labelRooms.BackColor = System.Drawing.Color.Transparent;
             this.labelRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRooms.Location = new System.Drawing.Point(22, 11);
+            this.labelRooms.Location = new System.Drawing.Point(46, 65);
             this.labelRooms.Name = "labelRooms";
             this.labelRooms.Size = new System.Drawing.Size(70, 20);
             this.labelRooms.TabIndex = 97;
             this.labelRooms.Text = "Rooms:";
             // 
-            // dataGridView1
+            // dataGridViewRooms
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnNumber,
-            this.ColumnCapacity});
-            this.dataGridView1.Location = new System.Drawing.Point(26, 83);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(242, 150);
-            this.dataGridView1.TabIndex = 99;
-            // 
-            // ColumnNumber
-            // 
-            this.ColumnNumber.HeaderText = "Number";
-            this.ColumnNumber.Name = "ColumnNumber";
-            this.ColumnNumber.ReadOnly = true;
-            // 
-            // ColumnCapacity
-            // 
-            this.ColumnCapacity.HeaderText = "Capacity";
-            this.ColumnCapacity.Name = "ColumnCapacity";
-            this.ColumnCapacity.ReadOnly = true;
-            // 
-            // textBoxNumber
-            // 
-            this.textBoxNumber.Location = new System.Drawing.Point(350, 99);
-            this.textBoxNumber.Name = "textBoxNumber";
-            this.textBoxNumber.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumber.TabIndex = 100;
+            this.dataGridViewRooms.AllowUserToAddRows = false;
+            this.dataGridViewRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRooms.Location = new System.Drawing.Point(50, 126);
+            this.dataGridViewRooms.Name = "dataGridViewRooms";
+            this.dataGridViewRooms.ReadOnly = true;
+            this.dataGridViewRooms.Size = new System.Drawing.Size(242, 283);
+            this.dataGridViewRooms.TabIndex = 99;
+            this.dataGridViewRooms.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRooms_CellDoubleClick);
             // 
             // labelNumber
             // 
             this.labelNumber.AutoSize = true;
-            this.labelNumber.Location = new System.Drawing.Point(347, 83);
+            this.labelNumber.Location = new System.Drawing.Point(370, 154);
             this.labelNumber.Name = "labelNumber";
             this.labelNumber.Size = new System.Drawing.Size(44, 13);
             this.labelNumber.TabIndex = 101;
@@ -106,45 +88,68 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(350, 210);
+            this.buttonInsert.Location = new System.Drawing.Point(373, 281);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 102;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
-            // 
-            // textBoxCapacity
-            // 
-            this.textBoxCapacity.Location = new System.Drawing.Point(350, 154);
-            this.textBoxCapacity.Name = "textBoxCapacity";
-            this.textBoxCapacity.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCapacity.TabIndex = 103;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // labelCapacity
             // 
             this.labelCapacity.AutoSize = true;
-            this.labelCapacity.Location = new System.Drawing.Point(347, 138);
+            this.labelCapacity.Location = new System.Drawing.Point(370, 209);
             this.labelCapacity.Name = "labelCapacity";
             this.labelCapacity.Size = new System.Drawing.Size(48, 13);
             this.labelCapacity.TabIndex = 104;
             this.labelCapacity.Text = "Capacity";
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(14, 20);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 105;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // numericUpDownNumber
+            // 
+            this.numericUpDownNumber.Location = new System.Drawing.Point(373, 170);
+            this.numericUpDownNumber.Name = "numericUpDownNumber";
+            this.numericUpDownNumber.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownNumber.TabIndex = 106;
+            // 
+            // numericUpDownCapacity
+            // 
+            this.numericUpDownCapacity.Location = new System.Drawing.Point(373, 225);
+            this.numericUpDownCapacity.Name = "numericUpDownCapacity";
+            this.numericUpDownCapacity.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownCapacity.TabIndex = 107;
             // 
             // UserControl2E_H
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.numericUpDownCapacity);
+            this.Controls.Add(this.numericUpDownNumber);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelCapacity);
-            this.Controls.Add(this.textBoxCapacity);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelNumber);
-            this.Controls.Add(this.textBoxNumber);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewRooms);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelRooms);
             this.Name = "UserControl2E_H";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,13 +159,12 @@ namespace EducationalCenter
 
         private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelRooms;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumber;
-        private System.Windows.Forms.TextBox textBoxNumber;
+        private System.Windows.Forms.DataGridView dataGridViewRooms;
         private System.Windows.Forms.Label labelNumber;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCapacity;
-        private System.Windows.Forms.TextBox textBoxCapacity;
         private System.Windows.Forms.Label labelCapacity;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.NumericUpDown numericUpDownNumber;
+        private System.Windows.Forms.NumericUpDown numericUpDownCapacity;
     }
 }

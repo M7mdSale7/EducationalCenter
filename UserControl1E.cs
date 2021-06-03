@@ -12,19 +12,34 @@ namespace EducationalCenter
 {
     public partial class UserControl1E : UserControl
     {
-        private static UserControl1E _instance;
-        public static UserControl1E Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControl1E();
-                return _instance;
-            }
-        }
-        private UserControl1E()
+
+        public UserControl1E()
         {
             InitializeComponent();
+        }
+
+        private void buttonRooms_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_H());
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControlLogin());
+        }
+
+        private void buttonRooms_Click_1(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_H());
+        }
+
+        private void buttonExams_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_G());
         }
     }
 }

@@ -322,7 +322,87 @@ namespace EducationalCenter
                 Direction = ParameterDirection.Input
             };
             parameters.Add(parameter);
-            dbMan.ExecuteNonQuery("deleteEmployee", "sp", parameters);
+            dbMan.ExecuteNonQuery("deleteRoom", "sp", parameters);
+        }
+
+        public void deleteRoom(int roomId)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameter = new SqlParameter
+            {
+                ParameterName = "@room_id",
+                SqlDbType = SqlDbType.Int,
+                Value = roomId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameter);
+            dbMan.ExecuteNonQuery("deleteRoom", "sp", parameters);
+        }
+
+        public DataTable getAllExams(string subject, string teacher, int year, int roomNum, decimal price)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            if (subject != "")
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@subject_name",
+                    SqlDbType = SqlDbType.NVarChar,
+                    Value = subject,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+
+            if (teacher != "")
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@teacher_name",
+                    SqlDbType = SqlDbType.NVarChar,
+                    Value = teacher,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+
+            if (year != 0)
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@study_grade",
+                    SqlDbType = SqlDbType.Int,
+                    Value = year,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+
+            if (roomNum != 0)
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@room_number",
+                    SqlDbType = SqlDbType.Int,
+                    Value = roomNum,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+
+            if (price != 0)
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@price",
+                    SqlDbType = SqlDbType.Decimal,
+                    Value = price,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+            
+            return dbMan.ExecuteReader("getAllExams", "sp", parameters);
         }
 
         public string[] getNonUserEmployees()
@@ -479,18 +559,51 @@ namespace EducationalCenter
 
         }
 
-        public int InsertBookLesson(string StudentID, string Teacher, string Subject,string Slot)
+        public DataTable getRooms()
         {
-            int sID;
-            bool resultStudent = int.TryParse(StudentID, out sID);
-            if (resultStudent)
-            {
-                return 1;
-            }
-            else return 0;
-            // string query = "";
-            //return dbMan.ExecuteNonQuery(query);
+            return dbMan.ExecuteReader("getAllRooms", "sp");
+        }
 
+        public bool RoomExists(int roomId)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameter = new SqlParameter
+            {
+                ParameterName = "@room_ID",
+                SqlDbType = SqlDbType.Int,
+                Value = roomId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameter);
+            return Convert.ToBoolean(dbMan.ExecuteScalar("roomExists", "sp", parameters));
+        }
+
+        public bool insertRoom(int roomId, int capacity)
+        {
+            if (RoomExists(roomId))
+                return false;
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterID = new SqlParameter
+            {
+                ParameterName = "@room_ID",
+                SqlDbType = SqlDbType.Int,
+                Value = roomId,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterID);
+
+            SqlParameter parameterCap = new SqlParameter
+            {
+                ParameterName = "@max_capacity",
+                SqlDbType = SqlDbType.Int,
+                Value = capacity,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterCap);
+            dbMan.ExecuteScalar("insertRoom", "sp", parameters);
+            return true;
         }
 
 
