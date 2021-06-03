@@ -16,5 +16,13 @@ namespace EducationalCenter
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.username = "";
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(UserControlLogin.Instance);
+
+        }
     }
 }

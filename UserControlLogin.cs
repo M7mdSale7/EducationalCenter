@@ -12,7 +12,17 @@ namespace EducationalCenter
 {
     public partial class UserControlLogin : UserControl
     {
-        public UserControlLogin()
+        private static UserControlLogin _instance;
+        public static UserControlLogin Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserControlLogin();
+                return _instance;
+            }
+        }
+        private UserControlLogin()
         {
             InitializeComponent();
         }
@@ -25,16 +35,19 @@ namespace EducationalCenter
             }
             else
             {
+                
                 string type = Controller.Instance.checkUserPassword(textBoxUser.Text, textBoxPass.Text);
                 if (type == "manager")
                 {
-
-                    this.Controls.Clear();
-                    this.Controls.Add(new UserControl1M(textBoxUser.Text));
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(UserControl1M.Instance);
+                    UserControl1M.Instance.setUsername(textBoxUser.Text);
                 }
                 else if (type == "employee")
                 {
-
+                    Form0.Instance.username = textBoxUser.Text;
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
                 }
                 else if (type == "teacher")
                 {
@@ -46,7 +59,9 @@ namespace EducationalCenter
                 }
                 else if (type == "student" || type == "parent")
                 {
-
+                    Form0.Instance.username = textBoxUser.Text;
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1S(Form0.Instance.username));
                 }
                 else
                 {

@@ -12,16 +12,29 @@ namespace EducationalCenter
 {
     public partial class UserControl1M : UserControl
     {
+        private static UserControl1M _instance;
+        public static UserControl1M Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserControl1M();
+                return _instance;
+            }
+        }
         //using singelton pattern
         string username;
 
-        public UserControl1M(string username)
+        private UserControl1M()
         {
             InitializeComponent();
-            this.username = username;
             //labelWelcome.Text += " " + username;
         }
 
+        public void setUsername(string username)
+        {
+            this.username = username;
+        }
         private void buttonEmployees_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
@@ -36,8 +49,9 @@ namespace EducationalCenter
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
+            Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
+            Form0.Instance.Controls.Add(UserControlLogin.Instance);
         }
     }
 }

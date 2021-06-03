@@ -63,6 +63,7 @@ namespace EducationalCenter
             this.buttonLogOut.TabIndex = 23;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // labelWelcome
             // 
@@ -85,6 +86,7 @@ namespace EducationalCenter
             this.buttonParents.TabIndex = 21;
             this.buttonParents.Text = "Parents";
             this.buttonParents.UseVisualStyleBackColor = true;
+            this.buttonParents.Click += new System.EventHandler(this.buttonParents_Click);
             // 
             // buttonExams
             // 
@@ -129,6 +131,7 @@ namespace EducationalCenter
             this.buttonTeachers.TabIndex = 17;
             this.buttonTeachers.Text = "Teachers";
             this.buttonTeachers.UseVisualStyleBackColor = true;
+            this.buttonTeachers.Click += new System.EventHandler(this.buttonTeachers_Click);
             // 
             // buttonStudents
             // 
@@ -140,6 +143,7 @@ namespace EducationalCenter
             this.buttonStudents.TabIndex = 16;
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = true;
+            this.buttonStudents.Click += new System.EventHandler(this.buttonStudents_Click);
             // 
             // buttonBookRooms
             // 

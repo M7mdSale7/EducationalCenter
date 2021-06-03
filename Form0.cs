@@ -12,6 +12,7 @@ namespace EducationalCenter
 {
     public partial class Form0 : Form
     {
+        public string username;
         //start of singelton pattern code
         private static Form0 _instance;
         public static Form0 Instance
@@ -28,7 +29,7 @@ namespace EducationalCenter
         {
             InitializeComponent();
             this.DoubleBuffered = true;
-            this.Controls.Add(new UserControlLogin());
+            this.Controls.Add(UserControlLogin.Instance);
         }
     }
 }

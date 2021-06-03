@@ -52,7 +52,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1M(username));
+            Form0.Instance.Controls.Add(UserControl1M.Instance);
         }
 
         private void buttonClear_Click(object sender, EventArgs e)

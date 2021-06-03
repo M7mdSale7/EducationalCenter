@@ -32,7 +32,7 @@ namespace EducationalCenter
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1TA));
             this.pictureBoxTeacher = new System.Windows.Forms.PictureBox();
             this.buttonExams = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonAttendance = new System.Windows.Forms.Button();
             this.buttonTeachingAssistants = new System.Windows.Forms.Button();
@@ -63,16 +63,17 @@ namespace EducationalCenter
             this.buttonExams.Text = "Exams";
             this.buttonExams.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonLogOut
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(510, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 30);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonLogOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogOut.Location = new System.Drawing.Point(510, 62);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(70, 30);
+            this.buttonLogOut.TabIndex = 19;
+            this.buttonLogOut.Text = "Log Out";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelWelcome
             // 
@@ -147,7 +148,7 @@ namespace EducationalCenter
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.pictureBoxTeacher);
             this.Controls.Add(this.buttonExams);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.buttonAttendance);
             this.Controls.Add(this.buttonTeachingAssistants);
@@ -166,7 +167,7 @@ namespace EducationalCenter
 
         private System.Windows.Forms.PictureBox pictureBoxTeacher;
         private System.Windows.Forms.Button buttonExams;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonAttendance;
         private System.Windows.Forms.Button buttonTeachingAssistants;
