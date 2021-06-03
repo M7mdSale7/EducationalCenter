@@ -51,7 +51,6 @@ namespace EducationalCenter
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.buttonPrice = new System.Windows.Forms.Button();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -240,24 +239,11 @@ namespace EducationalCenter
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 48;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(483, 13);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 49;
-            this.buttonBack.Text = "Insert";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.buttonPrice);
             this.Controls.Add(this.comboBoxType);
@@ -305,6 +291,5 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
         private System.Windows.Forms.Button buttonPrice;
         private System.Windows.Forms.ComboBox comboBoxSubject;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

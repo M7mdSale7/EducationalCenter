@@ -12,21 +12,12 @@ namespace EducationalCenter
 {
     public partial class UserControlLogin : UserControl
     {
-        private static UserControlLogin _instance;
-        public static UserControlLogin Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControlLogin();
-                return _instance;
-            }
-        }
-        private UserControlLogin()
+
+       public UserControlLogin()
         {
             InitializeComponent();
         }
-            
+
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
             if (textBoxUser.Text == "" || textBoxPass.Text == "")
@@ -35,22 +26,26 @@ namespace EducationalCenter
             }
             else
             {
+                Form0.Instance.username = textBoxUser.Text;
+
                 string type = Controller.Instance.checkUserPassword(textBoxUser.Text, textBoxPass.Text);
 
                 if (type == "manager")
                 {
 
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(UserControl1M.Instance);
+                    Form0.Instance.Controls.Add(new UserControl1M());
                 }
                 else if (type == "employee")
                 {
-
+                    Form0.Instance.username = textBoxUser.Text;
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
                 }
                 else if (type == "teacher")
                 {
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(UserControl1T.Instance);
+                    Form0.Instance.Controls.Add(new UserControl1T());
                 }
                 else if (type == "TA")
                 {
@@ -58,7 +53,9 @@ namespace EducationalCenter
                 }
                 else if (type == "student" || type == "parent")
                 {
-
+                    Form0.Instance.username = textBoxUser.Text;
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1S(Form0.Instance.username));
                 }
                 else
                 {
@@ -72,7 +69,7 @@ namespace EducationalCenter
         private void linkLabelChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControlChangePass.Instance);
+            Form0.Instance.Controls.Add(new UserControlChangePass());
         }
 
         private void UserControlLogin_Load(object sender, EventArgs e)

@@ -12,20 +12,10 @@ namespace EducationalCenter
 {
     public partial class UserControl2T_D : UserControl
     {
-        private static UserControl2T_D _instance;
-        public static UserControl2T_D Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControl2T_D();
-                return _instance;
-            }
-        }
         public UserControl2T_D()
         {
             InitializeComponent();
-            DataTable dt = Controller.Instance.getTeacherGradesReport(12345678);
+            DataTable dt = Controller.Instance.getTeacherGradesReport(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherGradesReport.DataSource = dt.DefaultView;
         }
 
@@ -37,9 +27,9 @@ namespace EducationalCenter
                 return;
             }
 
-            Controller.Instance.insertTeacherGradeReport(12345678, Convert.ToInt32(textBoxStudentID.Text),
+            Controller.Instance.insertTeacherGradeReport(Controller.Instance.getTeacherID(Form0.Instance.username), Convert.ToInt32(textBoxStudentID.Text),
                                                             Convert.ToInt32(textBoxExamID.Text), textBoxGrade.Text);
-            DataTable dt = Controller.Instance.getTeacherGradesReport(12345678);
+            DataTable dt = Controller.Instance.getTeacherGradesReport(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherGradesReport.DataSource = dt.DefaultView;
 
         }
@@ -47,7 +37,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControl1T.Instance);
+            Form0.Instance.Controls.Add(new UserControl1T());
         }
 
         private void dataGridViewTeacherGradesReport_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

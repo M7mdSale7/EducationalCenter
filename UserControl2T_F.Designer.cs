@@ -96,9 +96,13 @@ namespace EducationalCenter
             // 
             // dataGridViewTeacherAssistants
             // 
+            this.dataGridViewTeacherAssistants.AllowUserToAddRows = false;
+            this.dataGridViewTeacherAssistants.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherAssistants.AllowUserToOrderColumns = true;
             this.dataGridViewTeacherAssistants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeacherAssistants.Location = new System.Drawing.Point(15, 81);
             this.dataGridViewTeacherAssistants.Name = "dataGridViewTeacherAssistants";
+            this.dataGridViewTeacherAssistants.ReadOnly = true;
             this.dataGridViewTeacherAssistants.RowTemplate.Height = 25;
             this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(565, 130);
             this.dataGridViewTeacherAssistants.TabIndex = 27;

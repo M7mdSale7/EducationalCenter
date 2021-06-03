@@ -58,6 +58,7 @@ namespace EducationalCenter
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.Size = new System.Drawing.Size(344, 150);
             this.dataGridViewUsers.TabIndex = 0;
+            this.dataGridViewUsers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellDoubleClick);
             // 
             // labelDelete
             // 

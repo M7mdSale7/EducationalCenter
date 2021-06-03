@@ -80,9 +80,13 @@ namespace EducationalCenter
             // 
             // dataGridViewTeacherGradesReport
             // 
+            this.dataGridViewTeacherGradesReport.AllowUserToAddRows = false;
+            this.dataGridViewTeacherGradesReport.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherGradesReport.AllowUserToOrderColumns = true;
             this.dataGridViewTeacherGradesReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeacherGradesReport.Location = new System.Drawing.Point(32, 87);
             this.dataGridViewTeacherGradesReport.Name = "dataGridViewTeacherGradesReport";
+            this.dataGridViewTeacherGradesReport.ReadOnly = true;
             this.dataGridViewTeacherGradesReport.RowTemplate.Height = 25;
             this.dataGridViewTeacherGradesReport.Size = new System.Drawing.Size(637, 130);
             this.dataGridViewTeacherGradesReport.TabIndex = 60;

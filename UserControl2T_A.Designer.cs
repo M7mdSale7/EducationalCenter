@@ -48,9 +48,13 @@ namespace EducationalCenter
             // 
             // dataGridViewTeacherSchedule
             // 
+            this.dataGridViewTeacherSchedule.AllowUserToAddRows = false;
+            this.dataGridViewTeacherSchedule.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherSchedule.AllowUserToOrderColumns = true;
             this.dataGridViewTeacherSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeacherSchedule.Location = new System.Drawing.Point(31, 115);
             this.dataGridViewTeacherSchedule.Name = "dataGridViewTeacherSchedule";
+            this.dataGridViewTeacherSchedule.ReadOnly = true;
             this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(528, 150);
             this.dataGridViewTeacherSchedule.TabIndex = 45;
             // 

@@ -37,9 +37,13 @@ namespace EducationalCenter
             // 
             // dataGridViewTeacherStudents
             // 
+            this.dataGridViewTeacherStudents.AllowUserToAddRows = false;
+            this.dataGridViewTeacherStudents.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherStudents.AllowUserToOrderColumns = true;
             this.dataGridViewTeacherStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeacherStudents.Location = new System.Drawing.Point(24, 91);
             this.dataGridViewTeacherStudents.Name = "dataGridViewTeacherStudents";
+            this.dataGridViewTeacherStudents.ReadOnly = true;
             this.dataGridViewTeacherStudents.RowTemplate.Height = 25;
             this.dataGridViewTeacherStudents.Size = new System.Drawing.Size(542, 130);
             this.dataGridViewTeacherStudents.TabIndex = 2;
