@@ -36,6 +36,7 @@ namespace EducationalCenter
             else
             {
                 string type = Controller.Instance.checkUserPassword(textBoxUser.Text, textBoxPass.Text);
+
                 if (type == "manager")
                 {
 
@@ -48,7 +49,8 @@ namespace EducationalCenter
                 }
                 else if (type == "teacher")
                 {
-
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(UserControl1T.Instance);
                 }
                 else if (type == "TA")
                 {
@@ -71,6 +73,11 @@ namespace EducationalCenter
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(UserControlChangePass.Instance);
+        }
+
+        private void UserControlLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

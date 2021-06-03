@@ -30,10 +30,9 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.labelSchedule = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridViewTeacherSchedule = new System.Windows.Forms.DataGridView();
+            this.buttonBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // labelSchedule
@@ -41,45 +40,41 @@ namespace EducationalCenter
             this.labelSchedule.AutoSize = true;
             this.labelSchedule.BackColor = System.Drawing.Color.Transparent;
             this.labelSchedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.labelSchedule.Location = new System.Drawing.Point(27, 25);
+            this.labelSchedule.Location = new System.Drawing.Point(27, 66);
             this.labelSchedule.Name = "labelSchedule";
             this.labelSchedule.Size = new System.Drawing.Size(89, 20);
             this.labelSchedule.TabIndex = 42;
             this.labelSchedule.Text = "Schedule:";
             // 
-            // dataGridView1
+            // dataGridViewTeacherSchedule
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnDateTime,
-            this.ColumnRoom});
-            this.dataGridView1.Location = new System.Drawing.Point(31, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 45;
+            this.dataGridViewTeacherSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTeacherSchedule.Location = new System.Drawing.Point(31, 115);
+            this.dataGridViewTeacherSchedule.Name = "dataGridViewTeacherSchedule";
+            this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(528, 150);
+            this.dataGridViewTeacherSchedule.TabIndex = 45;
             // 
-            // ColumnDateTime
+            // buttonBack
             // 
-            this.ColumnDateTime.HeaderText = "Date & Time";
-            this.ColumnDateTime.Name = "ColumnDateTime";
-            this.ColumnDateTime.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.ReadOnly = true;
+            this.buttonBack.Location = new System.Drawing.Point(484, 66);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 46;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // UserControl2T_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.dataGridViewTeacherSchedule);
             this.Controls.Add(this.labelSchedule);
             this.Name = "UserControl2T_A";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherSchedule)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,8 +82,7 @@ namespace EducationalCenter
 
         #endregion
         private System.Windows.Forms.Label labelSchedule;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
+        private System.Windows.Forms.DataGridView dataGridViewTeacherSchedule;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

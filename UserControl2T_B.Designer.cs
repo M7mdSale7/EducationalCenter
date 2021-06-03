@@ -29,60 +29,20 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnStudyYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTeacherStudents = new System.Windows.Forms.DataGridView();
             this.labelStudents = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.buttonBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherStudents)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewTeacherStudents
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnName,
-            this.ColumnID,
-            this.ColumnPhoneNumber,
-            this.ColumnParentNumber,
-            this.ColumnStudyYear});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(542, 130);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // ColumnName
-            // 
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.ReadOnly = true;
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            // 
-            // ColumnPhoneNumber
-            // 
-            this.ColumnPhoneNumber.HeaderText = "Phone Number";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            // 
-            // ColumnParentNumber
-            // 
-            this.ColumnParentNumber.HeaderText = "Parent Number";
-            this.ColumnParentNumber.Name = "ColumnParentNumber";
-            this.ColumnParentNumber.ReadOnly = true;
-            // 
-            // ColumnStudyYear
-            // 
-            this.ColumnStudyYear.HeaderText = "Study Year";
-            this.ColumnStudyYear.Name = "ColumnStudyYear";
-            this.ColumnStudyYear.ReadOnly = true;
+            this.dataGridViewTeacherStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTeacherStudents.Location = new System.Drawing.Point(24, 91);
+            this.dataGridViewTeacherStudents.Name = "dataGridViewTeacherStudents";
+            this.dataGridViewTeacherStudents.RowTemplate.Height = 25;
+            this.dataGridViewTeacherStudents.Size = new System.Drawing.Size(542, 130);
+            this.dataGridViewTeacherStudents.TabIndex = 2;
             // 
             // labelStudents
             // 
@@ -95,16 +55,27 @@ namespace EducationalCenter
             this.labelStudents.TabIndex = 43;
             this.labelStudents.Text = "Students:";
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(491, 54);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 44;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // UserControl2T_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelStudents);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewTeacherStudents);
             this.Name = "UserControl2T_B";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,12 +83,8 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParentNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudyYear;
+        private System.Windows.Forms.DataGridView dataGridViewTeacherStudents;
         private System.Windows.Forms.Label labelStudents;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

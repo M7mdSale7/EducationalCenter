@@ -62,6 +62,7 @@ namespace EducationalCenter
             this.buttonExams.TabIndex = 20;
             this.buttonExams.Text = "Exams";
             this.buttonExams.UseVisualStyleBackColor = true;
+            this.buttonExams.Click += new System.EventHandler(this.buttonExams_Click);
             // 
             // button1
             // 
@@ -73,6 +74,7 @@ namespace EducationalCenter
             this.button1.TabIndex = 19;
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelWelcome
             // 
@@ -100,23 +102,25 @@ namespace EducationalCenter
             // 
             this.buttonTeachingAssistants.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonTeachingAssistants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTeachingAssistants.Location = new System.Drawing.Point(235, 345);
+            this.buttonTeachingAssistants.Location = new System.Drawing.Point(251, 345);
             this.buttonTeachingAssistants.Name = "buttonTeachingAssistants";
             this.buttonTeachingAssistants.Size = new System.Drawing.Size(86, 43);
             this.buttonTeachingAssistants.TabIndex = 16;
             this.buttonTeachingAssistants.Text = "Teaching Assistants";
             this.buttonTeachingAssistants.UseVisualStyleBackColor = true;
+            this.buttonTeachingAssistants.Click += new System.EventHandler(this.buttonTeachingAssistants_Click);
             // 
             // buttonGradesReport
             // 
             this.buttonGradesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonGradesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonGradesReport.Location = new System.Drawing.Point(235, 193);
+            this.buttonGradesReport.Location = new System.Drawing.Point(251, 193);
             this.buttonGradesReport.Name = "buttonGradesReport";
             this.buttonGradesReport.Size = new System.Drawing.Size(86, 43);
             this.buttonGradesReport.TabIndex = 15;
             this.buttonGradesReport.Text = "Grades Report";
             this.buttonGradesReport.UseVisualStyleBackColor = true;
+            this.buttonGradesReport.Click += new System.EventHandler(this.buttonGradesReport_Click);
             // 
             // buttonStudents
             // 
@@ -128,6 +132,7 @@ namespace EducationalCenter
             this.buttonStudents.TabIndex = 14;
             this.buttonStudents.Text = "Students";
             this.buttonStudents.UseVisualStyleBackColor = true;
+            this.buttonStudents.Click += new System.EventHandler(this.buttonStudents_Click);
             // 
             // buttonViewSchedule
             // 
@@ -139,6 +144,7 @@ namespace EducationalCenter
             this.buttonViewSchedule.TabIndex = 13;
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
+            this.buttonViewSchedule.Click += new System.EventHandler(this.buttonViewSchedule_Click);
             // 
             // UserControl1T
             // 
