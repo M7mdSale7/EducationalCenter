@@ -12,17 +12,7 @@ namespace EducationalCenter
 {
     public partial class UserControlLogin : UserControl
     {
-        private static UserControlLogin _instance;
-        public static UserControlLogin Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControlLogin();
-                return _instance;
-            }
-        }
-        private UserControlLogin()
+       public UserControlLogin()
         {
             InitializeComponent();
         }
@@ -39,9 +29,9 @@ namespace EducationalCenter
                 string type = Controller.Instance.checkUserPassword(textBoxUser.Text, textBoxPass.Text);
                 if (type == "manager")
                 {
+
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(UserControl1M.Instance);
-                    UserControl1M.Instance.setUsername(textBoxUser.Text);
+                    Form0.Instance.Controls.Add(new UserControl1M());
                 }
                 else if (type == "employee")
                 {
@@ -67,7 +57,15 @@ namespace EducationalCenter
                 {
                     MessageBox.Show("Incorrect username or password");
                 }
+                textBoxUser.Text = "";
+                textBoxPass.Text = "";
             }
+        }
+
+        private void linkLabelChange_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControlChangePass());
         }
     }
 }

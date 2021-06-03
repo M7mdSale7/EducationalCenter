@@ -206,6 +206,12 @@
     <Compile Include="UserControl2S_A.Designer.cs">
       <DependentUpon>UserControl2S_A.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlChangePass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlChangePass.Designer.cs">
+      <DependentUpon>UserControlChangePass.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2T_F.resx">
       <DependentUpon>UserControl2T_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlChangePass.resx">
+      <DependentUpon>UserControlChangePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlLogin.resx">
       <DependentUpon>UserControlLogin.cs</DependentUpon>

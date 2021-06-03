@@ -136,6 +136,7 @@ namespace EducationalCenter
             this.linkLabelChange.TabIndex = 24;
             this.linkLabelChange.TabStop = true;
             this.linkLabelChange.Text = "Change password";
+            this.linkLabelChange.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelChange_LinkClicked);
             // 
             // UserControlLogin
             // 

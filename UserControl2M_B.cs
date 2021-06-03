@@ -12,11 +12,19 @@ namespace EducationalCenter
 {
     public partial class UserControl2M_B : UserControl
     {
-        string username;
-        public UserControl2M_B(string username)
+        private static UserControl2M_B _instance;
+        public static UserControl2M_B Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserControl2M_B();
+                return _instance;
+            }
+        }
+        private UserControl2M_B()
         {
             InitializeComponent();
-            this.username = username;
             displayData();
         }
 
@@ -52,7 +60,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControl1M.Instance);
+            Form0.Instance.Controls.Add(new UserControl1M());
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
@@ -154,6 +162,18 @@ namespace EducationalCenter
                 MessageBox.Show("Please fill all necessary fields");
             }
             
+        }
+
+        private void dataGridViewUsers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete User", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Controller.Instance.deleteUser(dataGridViewUsers.Rows[e.RowIndex].Cells[0].Value.ToString(), dataGridViewUsers.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    dataGridViewUsers.Rows.RemoveAt(e.RowIndex);
+                }
+            }
         }
     }
 }

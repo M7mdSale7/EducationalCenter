@@ -23,7 +23,7 @@ namespace EducationalCenter
         {
             Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(UserControlLogin.Instance);
+            Form0.Instance.Controls.Add(new UserControlLogin());
         }
 
         private void buttonStudents_Click(object sender, EventArgs e)
