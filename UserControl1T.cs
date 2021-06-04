@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl1T : UserControl
+    public partial class UserControl1TA : UserControl
     {
-        public UserControl1T()
+        public UserControl1TA()
         {
             InitializeComponent();
         }
@@ -22,7 +22,6 @@ namespace EducationalCenter
             Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlLogin());
-
         }
     }
 }

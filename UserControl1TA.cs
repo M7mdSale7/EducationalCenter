@@ -10,11 +10,42 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl1TA : UserControl
+    public partial class UserControl1T : UserControl
     {
-        public UserControl1TA()
+        public UserControl1T()
         {
             InitializeComponent();
+            labelWelcome.Text += Form0.Instance.username;
+        }
+
+        private void buttonViewSchedule_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_A());
+        }
+
+        private void buttonStudents_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_B());
+        }
+
+        private void buttonGradesReport_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_D());
+        }
+
+        private void buttonExams_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_E());
+        }
+
+        private void buttonTeachingAssistants_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_F());
         }
 
         private void button1_Click(object sender, EventArgs e)

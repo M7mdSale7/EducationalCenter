@@ -1,7 +1,7 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class UserControl2T_C
+    partial class UserControl2T_D
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,177 +29,147 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelID = new System.Windows.Forms.Label();
-            this.textBoxStudentID = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnParentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelAttendance = new System.Windows.Forms.Label();
+            this.label_Grade = new System.Windows.Forms.Label();
+            this.textBoxGrade = new System.Windows.Forms.TextBox();
+            this.label_ExamID = new System.Windows.Forms.Label();
+            this.labelStudentID = new System.Windows.Forms.Label();
+            this.dataGridViewTeacherGradesReport = new System.Windows.Forms.DataGridView();
+            this.labelGradesReport = new System.Windows.Forms.Label();
             this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.labelDate = new System.Windows.Forms.Label();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
-            this.textBoxDate = new System.Windows.Forms.TextBox();
-            this.buttonView = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.textBoxStudentID = new System.Windows.Forms.TextBox();
+            this.textBoxExamID = new System.Windows.Forms.TextBox();
+            this.buttonBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherGradesReport)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelID
+            // label_Grade
             // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(16, 286);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(18, 13);
-            this.labelID.TabIndex = 46;
-            this.labelID.Text = "ID";
+            this.label_Grade.AutoSize = true;
+            this.label_Grade.Location = new System.Drawing.Point(170, 234);
+            this.label_Grade.Name = "label_Grade";
+            this.label_Grade.Size = new System.Drawing.Size(36, 13);
+            this.label_Grade.TabIndex = 66;
+            this.label_Grade.Text = "Grade";
             // 
-            // textBoxStudentID
+            // textBoxGrade
             // 
-            this.textBoxStudentID.Location = new System.Drawing.Point(19, 302);
-            this.textBoxStudentID.MaxLength = 15;
-            this.textBoxStudentID.Name = "textBoxStudentID";
-            this.textBoxStudentID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStudentID.TabIndex = 45;
+            this.textBoxGrade.Location = new System.Drawing.Point(173, 249);
+            this.textBoxGrade.MaxLength = 15;
+            this.textBoxGrade.Name = "textBoxGrade";
+            this.textBoxGrade.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGrade.TabIndex = 65;
             // 
-            // dataGridView1
+            // label_ExamID
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnStudentName,
-            this.ColumnID,
-            this.ColumnPhoneNumber,
-            this.ColumnParentNumber});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(443, 130);
-            this.dataGridView1.TabIndex = 44;
+            this.label_ExamID.AutoSize = true;
+            this.label_ExamID.Location = new System.Drawing.Point(31, 286);
+            this.label_ExamID.Name = "label_ExamID";
+            this.label_ExamID.Size = new System.Drawing.Size(47, 13);
+            this.label_ExamID.TabIndex = 64;
+            this.label_ExamID.Text = "Exam ID";
             // 
-            // ColumnStudentName
+            // labelStudentID
             // 
-            this.ColumnStudentName.HeaderText = "Student Name";
-            this.ColumnStudentName.Name = "ColumnStudentName";
-            this.ColumnStudentName.ReadOnly = true;
+            this.labelStudentID.AutoSize = true;
+            this.labelStudentID.Location = new System.Drawing.Point(31, 234);
+            this.labelStudentID.Name = "labelStudentID";
+            this.labelStudentID.Size = new System.Drawing.Size(55, 13);
+            this.labelStudentID.TabIndex = 63;
+            this.labelStudentID.Text = "StudentID";
             // 
-            // ColumnID
+            // dataGridViewTeacherGradesReport
             // 
-            this.ColumnID.HeaderText = "ID";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
+            this.dataGridViewTeacherGradesReport.AllowUserToAddRows = false;
+            this.dataGridViewTeacherGradesReport.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherGradesReport.AllowUserToOrderColumns = true;
+            this.dataGridViewTeacherGradesReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTeacherGradesReport.Location = new System.Drawing.Point(32, 87);
+            this.dataGridViewTeacherGradesReport.Name = "dataGridViewTeacherGradesReport";
+            this.dataGridViewTeacherGradesReport.ReadOnly = true;
+            this.dataGridViewTeacherGradesReport.RowTemplate.Height = 25;
+            this.dataGridViewTeacherGradesReport.Size = new System.Drawing.Size(637, 130);
+            this.dataGridViewTeacherGradesReport.TabIndex = 60;
+            this.dataGridViewTeacherGradesReport.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeacherGradesReport_CellMouseDoubleClick);
             // 
-            // ColumnPhoneNumber
+            // labelGradesReport
             // 
-            this.ColumnPhoneNumber.HeaderText = "Phone Number";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            // 
-            // ColumnParentNumber
-            // 
-            this.ColumnParentNumber.HeaderText = "Parent Number";
-            this.ColumnParentNumber.Name = "ColumnParentNumber";
-            this.ColumnParentNumber.ReadOnly = true;
-            // 
-            // labelAttendance
-            // 
-            this.labelAttendance.AutoSize = true;
-            this.labelAttendance.BackColor = System.Drawing.Color.Transparent;
-            this.labelAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAttendance.Location = new System.Drawing.Point(12, 88);
-            this.labelAttendance.Name = "labelAttendance";
-            this.labelAttendance.Size = new System.Drawing.Size(107, 20);
-            this.labelAttendance.TabIndex = 86;
-            this.labelAttendance.Text = "Attendance:";
+            this.labelGradesReport.AutoSize = true;
+            this.labelGradesReport.BackColor = System.Drawing.Color.Transparent;
+            this.labelGradesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGradesReport.Location = new System.Drawing.Point(29, 50);
+            this.labelGradesReport.Name = "labelGradesReport";
+            this.labelGradesReport.Size = new System.Drawing.Size(133, 20);
+            this.labelGradesReport.TabIndex = 89;
+            this.labelGradesReport.Text = "Grades Report:";
             // 
             // labelDelete
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(305, 125);
+            this.labelDelete.Location = new System.Drawing.Point(414, 71);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 85;
+            this.labelDelete.TabIndex = 88;
             this.labelDelete.Text = "Double click on a row to delete";
             // 
             // buttonInsert
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(175, 299);
+            this.buttonInsert.Location = new System.Drawing.Point(332, 246);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
-            this.buttonInsert.TabIndex = 84;
+            this.buttonInsert.TabIndex = 87;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // labelTime
+            // textBoxStudentID
             // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.Transparent;
-            this.labelTime.Location = new System.Drawing.Point(127, 28);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(58, 13);
-            this.labelTime.TabIndex = 90;
-            this.labelTime.Text = "Enter Time";
+            this.textBoxStudentID.Location = new System.Drawing.Point(32, 250);
+            this.textBoxStudentID.MaxLength = 15;
+            this.textBoxStudentID.Name = "textBoxStudentID";
+            this.textBoxStudentID.Size = new System.Drawing.Size(124, 20);
+            this.textBoxStudentID.TabIndex = 92;
             // 
-            // labelDate
+            // textBoxExamID
             // 
-            this.labelDate.AutoSize = true;
-            this.labelDate.BackColor = System.Drawing.Color.Transparent;
-            this.labelDate.Location = new System.Drawing.Point(13, 28);
-            this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(58, 13);
-            this.labelDate.TabIndex = 89;
-            this.labelDate.Text = "Enter Date";
+            this.textBoxExamID.Location = new System.Drawing.Point(33, 302);
+            this.textBoxExamID.MaxLength = 15;
+            this.textBoxExamID.Name = "textBoxExamID";
+            this.textBoxExamID.Size = new System.Drawing.Size(124, 20);
+            this.textBoxExamID.TabIndex = 93;
             // 
-            // textBoxTime
+            // buttonBack
             // 
-            this.textBoxTime.Location = new System.Drawing.Point(130, 44);
-            this.textBoxTime.MaxLength = 15;
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.Size = new System.Drawing.Size(86, 20);
-            this.textBoxTime.TabIndex = 88;
+            this.buttonBack.Location = new System.Drawing.Point(594, 50);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 94;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // textBoxDate
-            // 
-            this.textBoxDate.Location = new System.Drawing.Point(16, 44);
-            this.textBoxDate.MaxLength = 15;
-            this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(86, 20);
-            this.textBoxDate.TabIndex = 87;
-            // 
-            // buttonView
-            // 
-            this.buttonView.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonView.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonView.Location = new System.Drawing.Point(272, 41);
-            this.buttonView.Name = "buttonView";
-            this.buttonView.Size = new System.Drawing.Size(75, 23);
-            this.buttonView.TabIndex = 91;
-            this.buttonView.Text = "View";
-            this.buttonView.UseVisualStyleBackColor = true;
-            // 
-            // UserControl2T_C
+            // UserControl2T_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonView);
-            this.Controls.Add(this.labelTime);
-            this.Controls.Add(this.labelDate);
-            this.Controls.Add(this.textBoxTime);
-            this.Controls.Add(this.textBoxDate);
-            this.Controls.Add(this.labelAttendance);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.textBoxExamID);
+            this.Controls.Add(this.textBoxStudentID);
+            this.Controls.Add(this.labelGradesReport);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.labelID);
-            this.Controls.Add(this.textBoxStudentID);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "UserControl2T_C";
-            this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.Add(this.label_Grade);
+            this.Controls.Add(this.textBoxGrade);
+            this.Controls.Add(this.label_ExamID);
+            this.Controls.Add(this.labelStudentID);
+            this.Controls.Add(this.dataGridViewTeacherGradesReport);
+            this.Name = "UserControl2T_D";
+            this.Size = new System.Drawing.Size(685, 450);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherGradesReport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,20 +177,16 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.TextBox textBoxStudentID;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnParentNumber;
-        private System.Windows.Forms.Label labelAttendance;
+        private System.Windows.Forms.Label label_Grade;
+        private System.Windows.Forms.TextBox textBoxGrade;
+        private System.Windows.Forms.Label label_ExamID;
+        private System.Windows.Forms.Label labelStudentID;
+        private System.Windows.Forms.DataGridView dataGridViewTeacherGradesReport;
+        private System.Windows.Forms.Label labelGradesReport;
         private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Label labelTime;
-        private System.Windows.Forms.Label labelDate;
-        private System.Windows.Forms.TextBox textBoxTime;
-        private System.Windows.Forms.TextBox textBoxDate;
-        private System.Windows.Forms.Button buttonView;
+        private System.Windows.Forms.TextBox textBoxStudentID;
+        private System.Windows.Forms.TextBox textBoxExamID;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

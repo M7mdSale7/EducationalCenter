@@ -13,17 +13,10 @@ namespace EducationalCenter
     public partial class UserControl1E : UserControl
     {
         string username;
-        public UserControl1E(string username)
+        public UserControl1E(string name)
         {
             InitializeComponent();
             this.username = username;
-        }
-
-        private void buttonLogOut_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.username = "";
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
         }
 
         private void buttonStudents_Click(object sender, EventArgs e)
@@ -36,12 +29,38 @@ namespace EducationalCenter
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2E_D());
+            InitializeComponent();
         }
 
-        private void buttonTeachers_Click(object sender, EventArgs e)
+        private void buttonRooms_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2E_E());
+            Form0.Instance.Controls.Add(new UserControl2E_H());
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControlLogin());
+        }
+
+        private void buttonRooms_Click_1(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_H());
+        }
+
+
+        private void buttonExams_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_G());
+        }
+
+        private void buttonBookLessons_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_B());
         }
 
         private void buttonSubjects_Click(object sender, EventArgs e)
@@ -56,7 +75,7 @@ namespace EducationalCenter
             Form0.Instance.Controls.Add(new UserControl2E_I());
         }
 
-        private void buttonBookLessons_Click(object sender, EventArgs e)
+        private void buttonAttend_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2E_A());

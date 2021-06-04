@@ -38,7 +38,7 @@ namespace EducationalCenter
                     MessageBox.Show("Error!!");
             }
         }
-        private void displayData(string subject="")
+        private void displayData(string subject="") 
         {
             DataTable dt= Controller.Instance.getAllTeachers(subject);
             dataGridViewTeachers.DataSource = dt.DefaultView;

@@ -1,7 +1,7 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class UserControl1T
+    partial class UserControl1TA
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1T));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1TA));
             this.pictureBoxTeacher = new System.Windows.Forms.PictureBox();
             this.buttonExams = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
@@ -141,7 +141,7 @@ namespace EducationalCenter
             this.buttonViewSchedule.Text = "View Schedule";
             this.buttonViewSchedule.UseVisualStyleBackColor = true;
             // 
-            // UserControl1T
+            // UserControl1TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,7 +155,7 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonGradesReport);
             this.Controls.Add(this.buttonStudents);
             this.Controls.Add(this.buttonViewSchedule);
-            this.Name = "UserControl1T";
+            this.Name = "UserControl1TA";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeacher)).EndInit();
             this.ResumeLayout(false);

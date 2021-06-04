@@ -1,7 +1,7 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class UserControl2T_E
+    partial class UserControl2T_F
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,74 +29,147 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
-            this.ColumnExamNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelExams = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelID = new System.Windows.Forms.Label();
+            this.labelPhoneNumber = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.dataGridViewTeacherAssistants = new System.Windows.Forms.DataGridView();
+            this.labelTA = new System.Windows.Forms.Label();
+            this.labelDelete = new System.Windows.Forms.Label();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAssistants)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridViewSchedule
+            // textBoxID
             // 
-            this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSchedule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnExamNumber,
-            this.ColumnDate,
-            this.ColumnTime,
-            this.ColumnRoom});
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(27, 72);
-            this.dataGridViewSchedule.Name = "dataGridViewSchedule";
-            this.dataGridViewSchedule.RowTemplate.Height = 25;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(434, 159);
-            this.dataGridViewSchedule.TabIndex = 21;
+            this.textBoxID.Location = new System.Drawing.Point(21, 305);
+            this.textBoxID.MaxLength = 15;
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.TabIndex = 33;
             // 
-            // ColumnExamNumber
+            // textBoxPhoneNumber
             // 
-            this.ColumnExamNumber.HeaderText = "Exam Number";
-            this.ColumnExamNumber.Name = "ColumnExamNumber";
-            this.ColumnExamNumber.ReadOnly = true;
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(190, 252);
+            this.textBoxPhoneNumber.MaxLength = 15;
+            this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
+            this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhoneNumber.TabIndex = 32;
             // 
-            // ColumnDate
+            // textBoxName
             // 
-            this.ColumnDate.HeaderText = "Date";
-            this.ColumnDate.Name = "ColumnDate";
-            this.ColumnDate.ReadOnly = true;
+            this.textBoxName.Location = new System.Drawing.Point(21, 253);
+            this.textBoxName.MaxLength = 15;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.TabIndex = 31;
             // 
-            // ColumnTime
+            // labelID
             // 
-            this.ColumnTime.HeaderText = "Time";
-            this.ColumnTime.Name = "ColumnTime";
-            this.ColumnTime.ReadOnly = true;
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(21, 289);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(18, 13);
+            this.labelID.TabIndex = 30;
+            this.labelID.Text = "ID";
             // 
-            // ColumnRoom
+            // labelPhoneNumber
             // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.ReadOnly = true;
+            this.labelPhoneNumber.AutoSize = true;
+            this.labelPhoneNumber.Location = new System.Drawing.Point(187, 236);
+            this.labelPhoneNumber.Name = "labelPhoneNumber";
+            this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
+            this.labelPhoneNumber.TabIndex = 29;
+            this.labelPhoneNumber.Text = "Phone Number";
             // 
-            // labelExams
+            // labelName
             // 
-            this.labelExams.AutoSize = true;
-            this.labelExams.BackColor = System.Drawing.Color.Transparent;
-            this.labelExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExams.Location = new System.Drawing.Point(23, 35);
-            this.labelExams.Name = "labelExams";
-            this.labelExams.Size = new System.Drawing.Size(67, 20);
-            this.labelExams.TabIndex = 92;
-            this.labelExams.Text = "Exams:";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(18, 236);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(35, 13);
+            this.labelName.TabIndex = 28;
+            this.labelName.Text = "Name";
             // 
-            // UserControl2T_E
+            // dataGridViewTeacherAssistants
+            // 
+            this.dataGridViewTeacherAssistants.AllowUserToAddRows = false;
+            this.dataGridViewTeacherAssistants.AllowUserToDeleteRows = false;
+            this.dataGridViewTeacherAssistants.AllowUserToOrderColumns = true;
+            this.dataGridViewTeacherAssistants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTeacherAssistants.Location = new System.Drawing.Point(15, 81);
+            this.dataGridViewTeacherAssistants.Name = "dataGridViewTeacherAssistants";
+            this.dataGridViewTeacherAssistants.ReadOnly = true;
+            this.dataGridViewTeacherAssistants.RowTemplate.Height = 25;
+            this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(565, 130);
+            this.dataGridViewTeacherAssistants.TabIndex = 27;
+            this.dataGridViewTeacherAssistants.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeacherAssistants_CellMouseDoubleClick);
+            // 
+            // labelTA
+            // 
+            this.labelTA.AutoSize = true;
+            this.labelTA.BackColor = System.Drawing.Color.Transparent;
+            this.labelTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTA.Location = new System.Drawing.Point(11, 44);
+            this.labelTA.Name = "labelTA";
+            this.labelTA.Size = new System.Drawing.Size(176, 20);
+            this.labelTA.TabIndex = 83;
+            this.labelTA.Text = "Teaching Assistants:";
+            // 
+            // labelDelete
+            // 
+            this.labelDelete.AutoSize = true;
+            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
+            this.labelDelete.Location = new System.Drawing.Point(202, 65);
+            this.labelDelete.Name = "labelDelete";
+            this.labelDelete.Size = new System.Drawing.Size(154, 13);
+            this.labelDelete.TabIndex = 82;
+            this.labelDelete.Text = "Double click on a row to delete";
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonInsert.Location = new System.Drawing.Point(370, 252);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsert.TabIndex = 80;
+            this.buttonInsert.Text = "Insert";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(505, 44);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 84;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // UserControl2T_F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.labelExams);
-            this.Controls.Add(this.dataGridViewSchedule);
-            this.Name = "UserControl2T_E";
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.labelTA);
+            this.Controls.Add(this.labelDelete);
+            this.Controls.Add(this.buttonInsert);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.textBoxPhoneNumber);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.labelPhoneNumber);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.dataGridViewTeacherAssistants);
+            this.Name = "UserControl2T_F";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAssistants)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,11 +177,16 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewSchedule;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExamNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
-        private System.Windows.Forms.Label labelExams;
+        private System.Windows.Forms.TextBox textBoxID;
+        private System.Windows.Forms.TextBox textBoxPhoneNumber;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.Label labelPhoneNumber;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.DataGridView dataGridViewTeacherAssistants;
+        private System.Windows.Forms.Label labelTA;
+        private System.Windows.Forms.Label labelDelete;
+        private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
