@@ -1,7 +1,7 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class UserControl2T_E
+    partial class UserControl2T_D
     {
         /// <summary> 
         /// Required designer variable.
@@ -71,7 +71,7 @@ namespace EducationalCenter
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // UserControl2T_E
+            // UserControl2T_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@ namespace EducationalCenter
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.dataGridViewSchedule);
-            this.Name = "UserControl2T_E";
+            this.Name = "UserControl2T_D";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl2T_E : UserControl
+    public partial class UserControl2T_D : UserControl
     {
-        public UserControl2T_E()
+        public UserControl2T_D()
         {
             InitializeComponent();
             DataTable dt = Controller.Instance.getTeacherExams(Controller.Instance.getTeacherID(Form0.Instance.username));

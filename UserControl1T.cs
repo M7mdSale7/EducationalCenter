@@ -38,19 +38,19 @@ namespace EducationalCenter
         private void buttonGradesReport_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2T_D());
+            Form0.Instance.Controls.Add(new UserControl2T_C());
         }
 
         private void buttonExams_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2T_E());
+            Form0.Instance.Controls.Add(new UserControl2T_D());
         }
 
         private void buttonTeachingAssistants_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2T_F());
+            Form0.Instance.Controls.Add(new UserControl2T_E());
         }
 
     }
