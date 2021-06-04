@@ -60,6 +60,7 @@ namespace EducationalCenter
             this.dataGridViewStudents.ReadOnly = true;
             this.dataGridViewStudents.Size = new System.Drawing.Size(439, 150);
             this.dataGridViewStudents.TabIndex = 0;
+            this.dataGridViewStudents.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewStudents_CellMouseDoubleClick);
             // 
             // labelDelete
             // 
@@ -189,7 +190,6 @@ namespace EducationalCenter
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 110;
             this.comboBoxTeacher.SelectedIndexChanged += new System.EventHandler(this.comboBoxTeacher_SelectedIndexChanged);
-
             // 
             // labelTeacherName
             // 
@@ -209,7 +209,6 @@ namespace EducationalCenter
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 108;
             this.comboBoxSubject.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubject_SelectedIndexChanged);
-
             // 
             // labelSubject
             // 

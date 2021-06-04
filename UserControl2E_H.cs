@@ -47,7 +47,7 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E());
+            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void dataGridViewRooms_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

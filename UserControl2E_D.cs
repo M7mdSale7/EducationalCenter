@@ -30,27 +30,31 @@ namespace EducationalCenter
             }
             else
             {
-                Controller.Instance.insertParent(textBoxName.Text, Convert.ToInt32(comboBoxStudentID.Text), textBoxPhoneNumber.Text);
-                MessageBox.Show("user added successfully!");
-                displayData();
+                if (Controller.Instance.insertParent(textBoxName.Text, Convert.ToInt32(comboBoxStudentID.Text), textBoxPhoneNumber.Text))
+                {
+                    MessageBox.Show("Parent added successfully!");
+                    displayData();
+                }
+                else
+                    MessageBox.Show("Error!!");
             }
-            comboBoxFilterName.Items.Clear();
+            comboBoxFilterStudentID.Items.Clear();
             comboBoxFilterStudentID.Items.Add("");
             comboBoxFilterStudentID.Items.AddRange(Controller.Instance.getAllStudentID());
-            comboBoxFilterStudentID.Items.Clear();
+            comboBoxFilterName.Items.Clear();
             comboBoxFilterName.Items.Add("");
             comboBoxFilterName.Items.AddRange(Controller.Instance.getAllParentsname());
         }
         private void displayData(string parentname = "", string studentID = "")
         {
-            DataTable dt_Lessons = Controller.Instance.getAllParents(parentname, studentID);
-            dataGridViewParents.DataSource = dt_Lessons.DefaultView;
+            DataTable dt = Controller.Instance.getAllParents(parentname, studentID);
+            dataGridViewParents.DataSource = dt.DefaultView;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E());
+            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)
@@ -58,6 +62,19 @@ namespace EducationalCenter
             displayData(comboBoxFilterName.Text, comboBoxFilterStudentID.Text);
             comboBoxFilterName.Text = "";
             comboBoxFilterStudentID.Text = "";
+        }
+
+        private void dataGridViewParents_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete Parent", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Controller.Instance.deleteParent(dataGridViewParents.Rows[e.RowIndex].Cells[0].Value.ToString(),dataGridViewParents.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    displayData();
+                }
+
+            }
         }
     }
 }

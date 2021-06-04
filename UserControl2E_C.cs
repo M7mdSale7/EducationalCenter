@@ -19,7 +19,7 @@ namespace EducationalCenter
             comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxTeacher.Items.Add("");
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersname());
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersname());
         }
 
         private void buttonInsert_Click(object sender, EventArgs e)
@@ -30,46 +30,63 @@ namespace EducationalCenter
             }
             else
             {
-                Controller.Instance.insertStudent(textBoxName.Text, Convert.ToInt32(numericUpDownStudyYear.Value), textBoxPhoneNumber.Text);
-                MessageBox.Show("user added successfully!");
-                displayData();
+                if(Controller.Instance.insertStudent(textBoxName.Text, Convert.ToInt32(numericUpDownStudyYear.Value), textBoxPhoneNumber.Text))
+                {
+                    MessageBox.Show("Student added successfully!");
+                    displayData();
+                }
+                else
+                    MessageBox.Show("Error!!");
             }
             comboBoxTeacher.Items.Clear();
             comboBoxTeacher.Items.Add("");
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersname());
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersname());
             comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.Clear();
-            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname(""));
+            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
         }
         private void displayData(int grade=0, string subjectname="", string teachername="")
         {
-            DataTable dt_Lessons = Controller.Instance.getAllStudents(grade, subjectname, teachername);
-            dataGridViewStudents.DataSource = dt_Lessons.DefaultView;
+            DataTable dt = Controller.Instance.getAllStudents(grade, subjectname, teachername);
+            dataGridViewStudents.DataSource = dt.DefaultView;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E());
+            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
         private void comboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxTeacher.Items.Clear();
             comboBoxTeacher.Items.Add("");
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersname(comboBoxSubject.Text));
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersname(comboBoxSubject.Text));
         }
 
         private void comboBoxTeacher_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.Clear();
-            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname(comboBoxTeacher.Text));
+            comboBoxSubject.Items.Add("");
+            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname(0,comboBoxTeacher.Text));
         }
         private void buttonFilter_Click(object sender, EventArgs e)
         {
             displayData(Convert.ToInt32(numericUpDownYearFilter.Value), comboBoxSubject.Text, comboBoxTeacher.Text);
             comboBoxSubject.Text = "";
             comboBoxTeacher.Text = "";
+        }
+
+        private void dataGridViewStudents_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete Student", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Controller.Instance.deleteStudent(dataGridViewStudents.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    displayData();
+                }
+
+            }
         }
     }
 }

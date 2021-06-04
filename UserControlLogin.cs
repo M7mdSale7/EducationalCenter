@@ -39,10 +39,10 @@ namespace EducationalCenter
                 else if (type == "employee")
                 {
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(new UserControl1E());
+                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
                     Form0.Instance.username = textBoxUser.Text;
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(new UserControl1E());
+                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
                 }
                 else if (type == "teacher")
                 {
