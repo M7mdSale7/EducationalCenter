@@ -47,8 +47,7 @@ namespace EducationalCenter
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2T_F());
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogOut_Click(object sender, EventArgs e)
         {
             Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();

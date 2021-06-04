@@ -45,7 +45,7 @@ namespace EducationalCenter
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(21, 305);
+            this.textBoxID.Location = new System.Drawing.Point(21, 318);
             this.textBoxID.MaxLength = 15;
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(100, 20);
@@ -53,7 +53,7 @@ namespace EducationalCenter
             // 
             // textBoxPhoneNumber
             // 
-            this.textBoxPhoneNumber.Location = new System.Drawing.Point(190, 252);
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(190, 265);
             this.textBoxPhoneNumber.MaxLength = 15;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
@@ -61,7 +61,7 @@ namespace EducationalCenter
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(21, 253);
+            this.textBoxName.Location = new System.Drawing.Point(21, 266);
             this.textBoxName.MaxLength = 15;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
@@ -79,7 +79,7 @@ namespace EducationalCenter
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(187, 236);
+            this.labelPhoneNumber.Location = new System.Drawing.Point(187, 249);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
             this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
             this.labelPhoneNumber.TabIndex = 29;
@@ -88,7 +88,7 @@ namespace EducationalCenter
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(18, 236);
+            this.labelName.Location = new System.Drawing.Point(18, 249);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(35, 13);
             this.labelName.TabIndex = 28;
@@ -100,7 +100,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherAssistants.AllowUserToDeleteRows = false;
             this.dataGridViewTeacherAssistants.AllowUserToOrderColumns = true;
             this.dataGridViewTeacherAssistants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTeacherAssistants.Location = new System.Drawing.Point(15, 81);
+            this.dataGridViewTeacherAssistants.Location = new System.Drawing.Point(15, 94);
             this.dataGridViewTeacherAssistants.Name = "dataGridViewTeacherAssistants";
             this.dataGridViewTeacherAssistants.ReadOnly = true;
             this.dataGridViewTeacherAssistants.RowTemplate.Height = 25;
@@ -113,7 +113,7 @@ namespace EducationalCenter
             this.labelTA.AutoSize = true;
             this.labelTA.BackColor = System.Drawing.Color.Transparent;
             this.labelTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTA.Location = new System.Drawing.Point(11, 44);
+            this.labelTA.Location = new System.Drawing.Point(11, 57);
             this.labelTA.Name = "labelTA";
             this.labelTA.Size = new System.Drawing.Size(176, 20);
             this.labelTA.TabIndex = 83;
@@ -123,7 +123,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(202, 65);
+            this.labelDelete.Location = new System.Drawing.Point(426, 78);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 82;
@@ -133,7 +133,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(370, 252);
+            this.buttonInsert.Location = new System.Drawing.Point(370, 265);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 80;
@@ -143,13 +143,15 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(505, 44);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(15, 18);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 84;
+            this.buttonBack.TabIndex = 104;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
             // 
             // UserControl2T_F
             // 

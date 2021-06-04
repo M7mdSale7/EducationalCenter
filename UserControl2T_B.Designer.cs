@@ -61,13 +61,15 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(491, 54);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(24, 14);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 44;
+            this.buttonBack.TabIndex = 104;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
             // 
             // UserControl2T_B
             // 

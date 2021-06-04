@@ -88,7 +88,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherGradesReport.Name = "dataGridViewTeacherGradesReport";
             this.dataGridViewTeacherGradesReport.ReadOnly = true;
             this.dataGridViewTeacherGradesReport.RowTemplate.Height = 25;
-            this.dataGridViewTeacherGradesReport.Size = new System.Drawing.Size(637, 130);
+            this.dataGridViewTeacherGradesReport.Size = new System.Drawing.Size(536, 130);
             this.dataGridViewTeacherGradesReport.TabIndex = 60;
             this.dataGridViewTeacherGradesReport.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeacherGradesReport_CellMouseDoubleClick);
             // 
@@ -143,13 +143,15 @@ namespace EducationalCenter
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(594, 50);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(34, 12);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 94;
+            this.buttonBack.TabIndex = 104;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
             // 
             // UserControl2T_D
             // 
@@ -168,7 +170,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelStudentID);
             this.Controls.Add(this.dataGridViewTeacherGradesReport);
             this.Name = "UserControl2T_D";
-            this.Size = new System.Drawing.Size(685, 450);
+            this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherGradesReport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

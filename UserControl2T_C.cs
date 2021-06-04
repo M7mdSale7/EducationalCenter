@@ -52,5 +52,11 @@ namespace EducationalCenter
 
             }
         }
+
+        private void buttonBack_Click_1(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControlLogin());
+        }
     }
 }
