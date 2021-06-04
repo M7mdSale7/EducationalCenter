@@ -15,6 +15,37 @@ namespace EducationalCenter
         public UserControl1T()
         {
             InitializeComponent();
+            labelWelcome.Text += Form0.Instance.username;
+        }
+
+        private void buttonViewSchedule_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_A());
+        }
+
+        private void buttonStudents_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_B());
+        }
+
+        private void buttonGradesReport_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_D());
+        }
+
+        private void buttonExams_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_E());
+        }
+
+        private void buttonTeachingAssistants_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2T_F());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,7 +53,6 @@ namespace EducationalCenter
             Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlLogin());
-
         }
     }
 }

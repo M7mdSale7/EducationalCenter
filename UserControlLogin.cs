@@ -12,6 +12,7 @@ namespace EducationalCenter
 {
     public partial class UserControlLogin : UserControl
     {
+
        public UserControlLogin()
         {
             InitializeComponent();
@@ -25,8 +26,10 @@ namespace EducationalCenter
             }
             else
             {
-                
+                Form0.Instance.username = textBoxUser.Text;
+
                 string type = Controller.Instance.checkUserPassword(textBoxUser.Text, textBoxPass.Text);
+
                 if (type == "manager")
                 {
 
@@ -43,7 +46,8 @@ namespace EducationalCenter
                 }
                 else if (type == "teacher")
                 {
-
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1T());
                 }
                 else if (type == "TA")
                 {
@@ -68,6 +72,11 @@ namespace EducationalCenter
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlChangePass());
+        }
+
+        private void UserControlLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

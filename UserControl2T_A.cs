@@ -15,8 +15,14 @@ namespace EducationalCenter
         public UserControl2T_A()
         {
             InitializeComponent();
+            DataTable dt = Controller.Instance.getTeacherSchedule(Controller.Instance.getTeacherID(Form0.Instance.username));
+            dataGridViewTeacherSchedule.DataSource = dt.DefaultView;
         }
 
-        
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl1T());
+        }
     }
 }

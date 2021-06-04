@@ -1218,6 +1218,312 @@ namespace EducationalCenter
             }
             return Convert.ToBoolean(dbMan.ExecuteScalar("insertParent", "sp", parameters));
         }
+
+        public DataTable getTeacherSchedule(int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+
+            return dbMan.ExecuteReader("getTeacherSchedule", "sp", parameters);
+        }
+
+        public DataTable getTeacherStudents(int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+
+            return dbMan.ExecuteReader("getTeacherStudents", "sp", parameters);
+        }
+
+        public DataTable getTeacherGradesReport(int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+
+            return dbMan.ExecuteReader("getTeacherGradesReport", "sp", parameters);
+        }
+
+        public bool checkStudentID(int TeacherID, int StudentID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterTeacherID = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterStudentID = new SqlParameter
+            {
+                ParameterName = "@StudentID",
+                SqlDbType = SqlDbType.Int,
+                Value = StudentID,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterTeacherID);
+            parameters.Add(parameterStudentID);
+
+            return Convert.ToBoolean(dbMan.ExecuteScalar("checkStudentID", "sp", parameters));
+
+        }
+
+        public bool checkExamID(int TeacherID, int ExamID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterTeacherID = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterExamID = new SqlParameter
+            {
+                ParameterName = "@ExamID",
+                SqlDbType = SqlDbType.Int,
+                Value = ExamID,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterTeacherID);
+            parameters.Add(parameterExamID);
+
+            return Convert.ToBoolean(dbMan.ExecuteScalar("checkExamID", "sp", parameters));
+
+        }
+
+        public void insertTeacherGradeReport(int TeacherID, int StudentID, int ExamID, string Grade)
+        {
+            if (!checkStudentID(TeacherID, StudentID))
+            {
+                MessageBox.Show("Invalid Student ID.");
+                return;
+            }
+            if (!checkExamID(TeacherID, ExamID))
+            {
+                MessageBox.Show("Invalid Exam ID.");
+                return;
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterStudentID = new SqlParameter
+            {
+                ParameterName = "@StudentID",
+                SqlDbType = SqlDbType.Int,
+                Value = StudentID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterExamID = new SqlParameter
+            {
+                ParameterName = "@ExamID",
+                SqlDbType = SqlDbType.Int,
+                Value = ExamID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterGrade = new SqlParameter
+            {
+                ParameterName = "@Grade",
+                SqlDbType = SqlDbType.VarChar,
+                Value = Grade,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterStudentID);
+            parameters.Add(parameterExamID);
+            parameters.Add(parameterGrade);
+
+
+            dbMan.ExecuteNonQuery("insertTeacherGradeReport", "sp", parameters);
+        }
+
+        public DataTable getTeacherExams(int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterUser = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterUser);
+
+            return dbMan.ExecuteReader("TeacherExams", "sp", parameters);
+        }
+
+        public DataTable getTeacherAssistants(int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterTeacher = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterTeacher);
+
+            return dbMan.ExecuteReader("getTeacherAssistants", "sp", parameters);
+        }
+
+        public bool insertTeacherAssistant(string AssistantName, int AssistantID, int PhoneNumber, int TeacherID,
+                                            string username = "")
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterAssistantName = new SqlParameter
+            {
+                ParameterName = "@AssistantName",
+                SqlDbType = SqlDbType.NVarChar,
+                Value = AssistantName,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterAssistantID = new SqlParameter
+            {
+                ParameterName = "@AssistantID",
+                SqlDbType = SqlDbType.Int,
+                Value = AssistantID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterPhoneNumber = new SqlParameter
+            {
+                ParameterName = "@PhoneNumber",
+                SqlDbType = SqlDbType.Int,
+                Value = PhoneNumber,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterTeacherID = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterAssistantName);
+            parameters.Add(parameterAssistantID);
+            parameters.Add(parameterPhoneNumber);
+            parameters.Add(parameterTeacherID);
+
+            if (username != "")
+            {
+                SqlParameter parameterusername = new SqlParameter
+                {
+                    ParameterName = "@username",
+                    SqlDbType = SqlDbType.VarChar,
+                    Value = username,
+                    Direction = ParameterDirection.Input
+                };
+
+                parameters.Add(parameterusername);
+            }
+
+            return Convert.ToBoolean(dbMan.ExecuteNonQuery("insertTeacherAssistant", "sp", parameters));
+        }
+
+        public void deleteGradeReport(int StudentID, int ExamID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterStudentID = new SqlParameter
+            {
+                ParameterName = "@StudentID",
+                SqlDbType = SqlDbType.Int,
+                Value = StudentID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterExamID = new SqlParameter
+            {
+                ParameterName = "@ExamID",
+                SqlDbType = SqlDbType.Int,
+                Value = ExamID,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterStudentID);
+            parameters.Add(parameterExamID);
+            dbMan.ExecuteNonQuery("deleteGradeReport", "sp", parameters);
+        }
+
+        public void deleteTeachingAssistant(int TeachingAssistantID, int TeacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterTeachingAssistantID = new SqlParameter
+            {
+                ParameterName = "@TeachingAssistantID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeachingAssistantID,
+                Direction = ParameterDirection.Input
+            };
+
+            SqlParameter parameterTeacherID = new SqlParameter
+            {
+                ParameterName = "@TeacherID",
+                SqlDbType = SqlDbType.Int,
+                Value = TeacherID,
+                Direction = ParameterDirection.Input
+            };
+
+            parameters.Add(parameterTeachingAssistantID);
+            parameters.Add(parameterTeacherID);
+            dbMan.ExecuteNonQuery("deleteTeachingAssistant", "sp", parameters);
+        }
+
+        public int getTeacherID(string TeacherUserName)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter parameterTeacherUserName = new SqlParameter
+            {
+                ParameterName = "@TeacherUserName",
+                SqlDbType = SqlDbType.VarChar,
+                Value = TeacherUserName,
+                Direction = ParameterDirection.Input
+            };
+
+
+            return Convert.ToInt32(dbMan.ExecuteScalar("getTeacherID", "sp", parameters));
+        }
+
         public bool insertTeacher(string name, string ID, string phonenumber) //uses sp query
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
@@ -1250,171 +1556,11 @@ namespace EducationalCenter
             }
             return Convert.ToBoolean(dbMan.ExecuteScalar("insertTeacher", "sp", parameters));
         }
-        
-        public int getSubjectID(string subjectName, int studyGrade, string teacherID)
+
+        public void TerminateConnection()
         {
-            List<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter parameterName = new SqlParameter
-            {
-                ParameterName = "@subject_name",
-                SqlDbType = SqlDbType.NVarChar,
-                Value = subjectName,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterName);
-            SqlParameter parameterGrade = new SqlParameter
-            {
-                ParameterName = "@study_grade",
-                SqlDbType = SqlDbType.Int,
-                Value = studyGrade,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterGrade);
-            SqlParameter parameterteacherID = new SqlParameter
-            {
-                ParameterName = "@TID",
-                SqlDbType = SqlDbType.Char,
-                Value = teacherID,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterteacherID);
-            return Convert.ToInt32(dbMan.ExecuteScalar("getSubjectID", "sp", parameters));
+            //dbMan.CloseConnection();
         }
 
-        public bool reservationExists(DateTime start, DateTime end, int roomNumber)
-        {
-            List<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter parameterStart = new SqlParameter
-            {
-                ParameterName = "@start_datetime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = start,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterStart);
-
-            SqlParameter parameterEnd = new SqlParameter
-            {
-                ParameterName = "@end_datetime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = end,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterEnd);
-
-            SqlParameter parameterRoom = new SqlParameter
-            {
-                ParameterName = "@room_number",
-                SqlDbType = SqlDbType.Int,
-                Value = roomNumber,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterRoom);
-
-            return Convert.ToBoolean(dbMan.ExecuteScalar("reservationExists", "sp", parameters));
-
-        }
-
-        public bool insertReservation(string subjectName, int studyGrade, string teacherID, DateTime start, DateTime end, int roomNumber, decimal price, string type)
-        {
-            int subjectID = getSubjectID(subjectName, studyGrade, teacherID);
-            if (subjectID == 0)
-                return false;
-            if(reservationExists(start, end, roomNumber))
-                return false;
-
-            List<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter parameterStart = new SqlParameter
-            {
-                ParameterName = "@startDateTime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = start,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterStart);
-
-            SqlParameter parameterEnd = new SqlParameter
-            {
-                ParameterName = "@endDateTime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = end,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterEnd);
-
-            SqlParameter parameterRoom = new SqlParameter
-            {
-                ParameterName = "@room_number",
-                SqlDbType = SqlDbType.Int,
-                Value = roomNumber,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterRoom);
-
-            SqlParameter parameterSubjectID = new SqlParameter
-            {
-                ParameterName = "@subject_ID",
-                SqlDbType = SqlDbType.Int,
-                Value = subjectID,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterSubjectID);
-
-            SqlParameter parameterPrice = new SqlParameter
-            {
-                ParameterName = "@price",
-                SqlDbType = SqlDbType.Decimal,
-                Value = price,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterPrice);
-
-            SqlParameter parameterType= new SqlParameter
-            {
-                ParameterName = "@type",
-                SqlDbType = SqlDbType.VarChar,
-                Value = type,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterType);
-
-            dbMan.ExecuteNonQuery("insertReservation", "sp", parameters);
-
-            return true;
-        }
-
-        public void deleteReservation(DateTime start, DateTime end, int roomNumber)
-        {
-            List<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter parameterStart = new SqlParameter
-            {
-                ParameterName = "@startDateTime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = start,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterStart);
-
-            SqlParameter parameterEnd = new SqlParameter
-            {
-                ParameterName = "@endDateTime",
-                SqlDbType = SqlDbType.DateTime,
-                Value = end,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterEnd);
-
-            SqlParameter parameterRoom = new SqlParameter
-            {
-                ParameterName = "@room_number",
-                SqlDbType = SqlDbType.Int,
-                Value = roomNumber,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameterRoom);
-
-            dbMan.ExecuteNonQuery("deleteReservation", "sp", parameters);
-        }
-        
     }
 }
