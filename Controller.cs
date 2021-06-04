@@ -1568,11 +1568,6 @@ namespace EducationalCenter
             return Convert.ToBoolean(dbMan.ExecuteNonQuery("insertTeacher", "sp", parameters));
         }
 
-        public void TerminateConnection()
-        {
-            //dbMan.CloseConnection();
-        }
-
         public int getSubjectID(string subjectName, int studyGrade, string teacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
