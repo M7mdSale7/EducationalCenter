@@ -1589,7 +1589,7 @@ namespace EducationalCenter
                 Direction = ParameterDirection.Input
             };
             parameters.Add(parameterteacherID);
-            return Convert.ToInt32(dbMan.ExecuteScalar("getSubjectID", "sp", parameters));
+            return Convert.ToInt32(dbMan.ExecuteScalar("getSubjectID2", "sp", parameters));
         }
 
 
