@@ -12,9 +12,22 @@ namespace EducationalCenter
 {
     public partial class UserControl1E : UserControl
     {
-
+        string username;
         public UserControl1E()
         {
+            InitializeComponent();
+        }
+
+        private void buttonStudents_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_C());
+        }
+
+        private void buttonParents_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_D());
             InitializeComponent();
         }
 
@@ -36,10 +49,22 @@ namespace EducationalCenter
             Form0.Instance.Controls.Add(new UserControl2E_H());
         }
 
+
         private void buttonExams_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2E_G());
+        }
+
+        private void buttonBookLessons_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_B());
+        }
+
+        private void buttonSubjects_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

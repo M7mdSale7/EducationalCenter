@@ -29,61 +29,33 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSlot1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewAvailableLessons = new System.Windows.Forms.DataGridView();
             this.labelAvailableLessons = new System.Windows.Forms.Label();
             this.labelSubject = new System.Windows.Forms.Label();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.buttonGet = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
+            this.labelTeacherName = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailableLessons)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewAvailableLessons
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnSubject,
-            this.ColumnTeacher,
-            this.ColumnPrice,
-            this.ColumnSlot1});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 199);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(442, 130);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            this.ColumnSubject.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            this.ColumnTeacher.ReadOnly = true;
-            // 
-            // ColumnPrice
-            // 
-            this.ColumnPrice.HeaderText = "Price";
-            this.ColumnPrice.Name = "ColumnPrice";
-            this.ColumnPrice.ReadOnly = true;
-            // 
-            // ColumnSlot1
-            // 
-            this.ColumnSlot1.HeaderText = "Slot 1";
-            this.ColumnSlot1.Name = "ColumnSlot1";
+            this.dataGridViewAvailableLessons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAvailableLessons.Location = new System.Drawing.Point(16, 262);
+            this.dataGridViewAvailableLessons.Name = "dataGridViewAvailableLessons";
+            this.dataGridViewAvailableLessons.ReadOnly = true;
+            this.dataGridViewAvailableLessons.RowTemplate.Height = 25;
+            this.dataGridViewAvailableLessons.Size = new System.Drawing.Size(442, 130);
+            this.dataGridViewAvailableLessons.TabIndex = 3;
             // 
             // labelAvailableLessons
             // 
             this.labelAvailableLessons.AutoSize = true;
             this.labelAvailableLessons.BackColor = System.Drawing.Color.Transparent;
             this.labelAvailableLessons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAvailableLessons.Location = new System.Drawing.Point(20, 146);
+            this.labelAvailableLessons.Location = new System.Drawing.Point(12, 209);
             this.labelAvailableLessons.Name = "labelAvailableLessons";
             this.labelAvailableLessons.Size = new System.Drawing.Size(158, 20);
             this.labelAvailableLessons.TabIndex = 99;
@@ -93,7 +65,7 @@ namespace EducationalCenter
             // 
             this.labelSubject.AutoSize = true;
             this.labelSubject.BackColor = System.Drawing.Color.Transparent;
-            this.labelSubject.Location = new System.Drawing.Point(21, 41);
+            this.labelSubject.Location = new System.Drawing.Point(12, 76);
             this.labelSubject.Name = "labelSubject";
             this.labelSubject.Size = new System.Drawing.Size(72, 13);
             this.labelSubject.TabIndex = 100;
@@ -102,35 +74,70 @@ namespace EducationalCenter
             // comboBoxSubject
             // 
             this.comboBoxSubject.FormattingEnabled = true;
-            this.comboBoxSubject.Location = new System.Drawing.Point(24, 69);
+            this.comboBoxSubject.Location = new System.Drawing.Point(15, 104);
             this.comboBoxSubject.Name = "comboBoxSubject";
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 101;
+            this.comboBoxSubject.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubject_SelectedIndexChanged);
             // 
             // buttonGet
             // 
             this.buttonGet.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonGet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonGet.Location = new System.Drawing.Point(215, 69);
+            this.buttonGet.Location = new System.Drawing.Point(206, 114);
             this.buttonGet.Name = "buttonGet";
             this.buttonGet.Size = new System.Drawing.Size(99, 45);
             this.buttonGet.TabIndex = 102;
             this.buttonGet.Text = "Get Available Lessons";
             this.buttonGet.UseVisualStyleBackColor = true;
+            this.buttonGet.Click += new System.EventHandler(this.buttonGet_Click);
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(16, 16);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 103;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // comboBoxTeacher
+            // 
+            this.comboBoxTeacher.FormattingEnabled = true;
+            this.comboBoxTeacher.Location = new System.Drawing.Point(15, 167);
+            this.comboBoxTeacher.Name = "comboBoxTeacher";
+            this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTeacher.TabIndex = 105;
+            // 
+            // labelTeacherName
+            // 
+            this.labelTeacherName.AutoSize = true;
+            this.labelTeacherName.BackColor = System.Drawing.Color.Transparent;
+            this.labelTeacherName.Location = new System.Drawing.Point(12, 139);
+            this.labelTeacherName.Name = "labelTeacherName";
+            this.labelTeacherName.Size = new System.Drawing.Size(76, 13);
+            this.labelTeacherName.TabIndex = 104;
+            this.labelTeacherName.Text = "Teacher name";
             // 
             // UserControl2S_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.comboBoxTeacher);
+            this.Controls.Add(this.labelTeacherName);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonGet);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.labelAvailableLessons);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewAvailableLessons);
             this.Name = "UserControl2S_C";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailableLessons)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,14 +145,13 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAvailableLessons;
         private System.Windows.Forms.Label labelAvailableLessons;
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.Button buttonGet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSlot1;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.ComboBox comboBoxTeacher;
+        private System.Windows.Forms.Label labelTeacherName;
     }
 }

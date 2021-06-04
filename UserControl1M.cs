@@ -12,12 +12,16 @@ namespace EducationalCenter
 {
     public partial class UserControl1M : UserControl
     {
-
+        string username;
         public UserControl1M()
         {
             InitializeComponent();
         }
 
+        public void setUsername(string username)
+        {
+            this.username = username;
+        }
         private void buttonEmployees_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
@@ -32,6 +36,7 @@ namespace EducationalCenter
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
+            Form0.Instance.username = "";
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlLogin());
         }

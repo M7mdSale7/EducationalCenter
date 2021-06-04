@@ -33,7 +33,6 @@ namespace EducationalCenter
             this.labelExams = new System.Windows.Forms.Label();
             this.dataGridViewExams = new System.Windows.Forms.DataGridView();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.labelSubjectName = new System.Windows.Forms.Label();
             this.labelYear = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
@@ -46,6 +45,13 @@ namespace EducationalCenter
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownPrice = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelSubjectName = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePickerDay = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
@@ -55,7 +61,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(403, 96);
+            this.labelDelete.Location = new System.Drawing.Point(403, 74);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 96;
@@ -66,7 +72,7 @@ namespace EducationalCenter
             this.labelExams.AutoSize = true;
             this.labelExams.BackColor = System.Drawing.Color.Transparent;
             this.labelExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExams.Location = new System.Drawing.Point(29, 73);
+            this.labelExams.Location = new System.Drawing.Point(29, 51);
             this.labelExams.Name = "labelExams";
             this.labelExams.Size = new System.Drawing.Size(67, 20);
             this.labelExams.TabIndex = 95;
@@ -75,16 +81,17 @@ namespace EducationalCenter
             // dataGridViewExams
             // 
             this.dataGridViewExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewExams.Location = new System.Drawing.Point(29, 112);
+            this.dataGridViewExams.Location = new System.Drawing.Point(29, 90);
             this.dataGridViewExams.Name = "dataGridViewExams";
             this.dataGridViewExams.Size = new System.Drawing.Size(528, 150);
             this.dataGridViewExams.TabIndex = 97;
+            this.dataGridViewExams.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewExams_CellMouseDoubleClick);
             // 
             // buttonInsert
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(482, 280);
+            this.buttonInsert.Location = new System.Drawing.Point(482, 258);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 98;
@@ -92,19 +99,10 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // labelSubjectName
-            // 
-            this.labelSubjectName.AutoSize = true;
-            this.labelSubjectName.Location = new System.Drawing.Point(44, 340);
-            this.labelSubjectName.Name = "labelSubjectName";
-            this.labelSubjectName.Size = new System.Drawing.Size(43, 13);
-            this.labelSubjectName.TabIndex = 100;
-            this.labelSubjectName.Text = "Subject";
-            // 
             // labelYear
             // 
             this.labelYear.AutoSize = true;
-            this.labelYear.Location = new System.Drawing.Point(43, 285);
+            this.labelYear.Location = new System.Drawing.Point(43, 263);
             this.labelYear.Name = "labelYear";
             this.labelYear.Size = new System.Drawing.Size(29, 13);
             this.labelYear.TabIndex = 102;
@@ -113,7 +111,7 @@ namespace EducationalCenter
             // labelTeacher
             // 
             this.labelTeacher.AutoSize = true;
-            this.labelTeacher.Location = new System.Drawing.Point(192, 284);
+            this.labelTeacher.Location = new System.Drawing.Point(192, 262);
             this.labelTeacher.Name = "labelTeacher";
             this.labelTeacher.Size = new System.Drawing.Size(47, 13);
             this.labelTeacher.TabIndex = 104;
@@ -122,16 +120,17 @@ namespace EducationalCenter
             // comboBoxTeacher
             // 
             this.comboBoxTeacher.FormattingEnabled = true;
-            this.comboBoxTeacher.Location = new System.Drawing.Point(195, 300);
+            this.comboBoxTeacher.Location = new System.Drawing.Point(195, 278);
             this.comboBoxTeacher.Name = "comboBoxTeacher";
             this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTeacher.TabIndex = 110;
+            this.comboBoxTeacher.SelectedIndexChanged += new System.EventHandler(this.comboBoxTeacher_SelectedIndexChanged);
             // 
             // buttonFilter
             // 
             this.buttonFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFilter.Location = new System.Drawing.Point(482, 320);
+            this.buttonFilter.Location = new System.Drawing.Point(482, 298);
             this.buttonFilter.Name = "buttonFilter";
             this.buttonFilter.Size = new System.Drawing.Size(75, 23);
             this.buttonFilter.TabIndex = 111;
@@ -143,7 +142,7 @@ namespace EducationalCenter
             // 
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClear.Location = new System.Drawing.Point(482, 357);
+            this.buttonClear.Location = new System.Drawing.Point(482, 335);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 112;
@@ -166,14 +165,15 @@ namespace EducationalCenter
             // comboBoxSubject
             // 
             this.comboBoxSubject.FormattingEnabled = true;
-            this.comboBoxSubject.Location = new System.Drawing.Point(47, 359);
+            this.comboBoxSubject.Location = new System.Drawing.Point(47, 337);
             this.comboBoxSubject.Name = "comboBoxSubject";
             this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSubject.TabIndex = 114;
+            this.comboBoxSubject.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubject_SelectedIndexChanged);
             // 
             // numericUpDownYear
             // 
-            this.numericUpDownYear.Location = new System.Drawing.Point(48, 301);
+            this.numericUpDownYear.Location = new System.Drawing.Point(48, 279);
             this.numericUpDownYear.Maximum = new decimal(new int[] {
             12,
             0,
@@ -186,7 +186,7 @@ namespace EducationalCenter
             // comboBoxRoom
             // 
             this.comboBoxRoom.FormattingEnabled = true;
-            this.comboBoxRoom.Location = new System.Drawing.Point(195, 359);
+            this.comboBoxRoom.Location = new System.Drawing.Point(195, 337);
             this.comboBoxRoom.Name = "comboBoxRoom";
             this.comboBoxRoom.Size = new System.Drawing.Size(121, 21);
             this.comboBoxRoom.TabIndex = 116;
@@ -194,7 +194,7 @@ namespace EducationalCenter
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(196, 343);
+            this.label1.Location = new System.Drawing.Point(196, 321);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 117;
@@ -203,7 +203,7 @@ namespace EducationalCenter
             // numericUpDownPrice
             // 
             this.numericUpDownPrice.DecimalPlaces = 2;
-            this.numericUpDownPrice.Location = new System.Drawing.Point(340, 301);
+            this.numericUpDownPrice.Location = new System.Drawing.Point(340, 279);
             this.numericUpDownPrice.Maximum = new decimal(new int[] {
             200,
             0,
@@ -216,17 +216,85 @@ namespace EducationalCenter
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(337, 284);
+            this.label2.Location = new System.Drawing.Point(337, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 118;
             this.label2.Text = "Price";
+            // 
+            // labelSubjectName
+            // 
+            this.labelSubjectName.AutoSize = true;
+            this.labelSubjectName.Location = new System.Drawing.Point(44, 318);
+            this.labelSubjectName.Name = "labelSubjectName";
+            this.labelSubjectName.Size = new System.Drawing.Size(43, 13);
+            this.labelSubjectName.TabIndex = 100;
+            this.labelSubjectName.Text = "Subject";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(196, 366);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 122;
+            this.label3.Text = "From";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(349, 366);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.TabIndex = 123;
+            this.label4.Text = "To";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(49, 366);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.TabIndex = 125;
+            this.label5.Text = "Day";
+            // 
+            // dateTimePickerDay
+            // 
+            this.dateTimePickerDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerDay.Location = new System.Drawing.Point(52, 382);
+            this.dateTimePickerDay.Name = "dateTimePickerDay";
+            this.dateTimePickerDay.Size = new System.Drawing.Size(82, 20);
+            this.dateTimePickerDay.TabIndex = 126;
+            // 
+            // dateTimePickerFrom
+            // 
+            this.dateTimePickerFrom.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dateTimePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerFrom.Location = new System.Drawing.Point(199, 382);
+            this.dateTimePickerFrom.Name = "dateTimePickerFrom";
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(82, 20);
+            this.dateTimePickerFrom.TabIndex = 127;
+            // 
+            // dateTimePickerTo
+            // 
+            this.dateTimePickerTo.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dateTimePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerTo.Location = new System.Drawing.Point(352, 382);
+            this.dateTimePickerTo.Name = "dateTimePickerTo";
+            this.dateTimePickerTo.Size = new System.Drawing.Size(82, 20);
+            this.dateTimePickerTo.TabIndex = 128;
             // 
             // UserControl2E_G
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.dateTimePickerTo);
+            this.Controls.Add(this.dateTimePickerFrom);
+            this.Controls.Add(this.dateTimePickerDay);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDownPrice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -260,7 +328,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelExams;
         private System.Windows.Forms.DataGridView dataGridViewExams;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Label labelSubjectName;
         private System.Windows.Forms.Label labelYear;
         private System.Windows.Forms.Label labelTeacher;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
@@ -273,5 +340,12 @@ namespace EducationalCenter
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownPrice;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSubjectName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDay;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTo;
     }
 }

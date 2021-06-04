@@ -29,105 +29,46 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.ColumnSubject2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDateTime2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTeacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewExams = new System.Windows.Forms.DataGridView();
+            this.dataGridViewLessons = new System.Windows.Forms.DataGridView();
             this.labelLessons = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
-            this.labelTA = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonFilter = new System.Windows.Forms.Button();
+            this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
+            this.labelTeacherName = new System.Windows.Forms.Label();
+            this.comboBoxSubject = new System.Windows.Forms.ComboBox();
+            this.labelSubject = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLessons)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView2
+            // dataGridViewExams
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnSubject2,
-            this.ColumnTeacher2,
-            this.ColumnDateTime2,
-            this.ColumnRoom2});
-            this.dataGridView2.Location = new System.Drawing.Point(23, 222);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(434, 98);
-            this.dataGridView2.TabIndex = 3;
+            this.dataGridViewExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewExams.Location = new System.Drawing.Point(14, 218);
+            this.dataGridViewExams.Name = "dataGridViewExams";
+            this.dataGridViewExams.ReadOnly = true;
+            this.dataGridViewExams.RowTemplate.Height = 25;
+            this.dataGridViewExams.Size = new System.Drawing.Size(434, 98);
+            this.dataGridViewExams.TabIndex = 3;
             // 
-            // ColumnSubject2
+            // dataGridViewLessons
             // 
-            this.ColumnSubject2.HeaderText = "Subject";
-            this.ColumnSubject2.Name = "ColumnSubject2";
-            this.ColumnSubject2.ReadOnly = true;
-            // 
-            // ColumnTeacher2
-            // 
-            this.ColumnTeacher2.HeaderText = "Teacher";
-            this.ColumnTeacher2.Name = "ColumnTeacher2";
-            this.ColumnTeacher2.ReadOnly = true;
-            // 
-            // ColumnDateTime2
-            // 
-            this.ColumnDateTime2.HeaderText = "Date&Time";
-            this.ColumnDateTime2.Name = "ColumnDateTime2";
-            this.ColumnDateTime2.ReadOnly = true;
-            // 
-            // ColumnRoom2
-            // 
-            this.ColumnRoom2.HeaderText = "Room";
-            this.ColumnRoom2.Name = "ColumnRoom2";
-            this.ColumnRoom2.ReadOnly = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnSubject,
-            this.ColumnTeacher,
-            this.ColumnDateTime,
-            this.ColumnRoom});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(435, 90);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // ColumnSubject
-            // 
-            this.ColumnSubject.HeaderText = "Subject";
-            this.ColumnSubject.Name = "ColumnSubject";
-            this.ColumnSubject.ReadOnly = true;
-            // 
-            // ColumnTeacher
-            // 
-            this.ColumnTeacher.HeaderText = "Teacher";
-            this.ColumnTeacher.Name = "ColumnTeacher";
-            this.ColumnTeacher.ReadOnly = true;
-            // 
-            // ColumnDateTime
-            // 
-            this.ColumnDateTime.HeaderText = "Date&Time";
-            this.ColumnDateTime.Name = "ColumnDateTime";
-            this.ColumnDateTime.ReadOnly = true;
-            // 
-            // ColumnRoom
-            // 
-            this.ColumnRoom.HeaderText = "Room";
-            this.ColumnRoom.Name = "ColumnRoom";
-            this.ColumnRoom.ReadOnly = true;
+            this.dataGridViewLessons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLessons.Location = new System.Drawing.Point(13, 83);
+            this.dataGridViewLessons.Name = "dataGridViewLessons";
+            this.dataGridViewLessons.ReadOnly = true;
+            this.dataGridViewLessons.RowTemplate.Height = 25;
+            this.dataGridViewLessons.Size = new System.Drawing.Size(435, 90);
+            this.dataGridViewLessons.TabIndex = 4;
             // 
             // labelLessons
             // 
             this.labelLessons.AutoSize = true;
             this.labelLessons.BackColor = System.Drawing.Color.Transparent;
             this.labelLessons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLessons.Location = new System.Drawing.Point(18, 31);
+            this.labelLessons.Location = new System.Drawing.Point(9, 48);
             this.labelLessons.Name = "labelLessons";
             this.labelLessons.Size = new System.Drawing.Size(81, 20);
             this.labelLessons.TabIndex = 98;
@@ -138,36 +79,93 @@ namespace EducationalCenter
             this.labelExams.AutoSize = true;
             this.labelExams.BackColor = System.Drawing.Color.Transparent;
             this.labelExams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExams.Location = new System.Drawing.Point(19, 187);
+            this.labelExams.Location = new System.Drawing.Point(10, 183);
             this.labelExams.Name = "labelExams";
             this.labelExams.Size = new System.Drawing.Size(67, 20);
             this.labelExams.TabIndex = 99;
             this.labelExams.Text = "Exams:";
             // 
-            // labelTA
+            // buttonBack
             // 
-            this.labelTA.AutoSize = true;
-            this.labelTA.BackColor = System.Drawing.Color.Transparent;
-            this.labelTA.Location = new System.Drawing.Point(263, 50);
-            this.labelTA.Name = "labelTA";
-            this.labelTA.Size = new System.Drawing.Size(194, 13);
-            this.labelTA.TabIndex = 100;
-            this.labelTA.Text = "Double Click on a Row to Contact a TA";
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(14, 7);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 101;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // buttonFilter
+            // 
+            this.buttonFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonFilter.Location = new System.Drawing.Point(342, 352);
+            this.buttonFilter.Name = "buttonFilter";
+            this.buttonFilter.Size = new System.Drawing.Size(75, 23);
+            this.buttonFilter.TabIndex = 112;
+            this.buttonFilter.Text = "Filter";
+            this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
+            // 
+            // comboBoxTeacher
+            // 
+            this.comboBoxTeacher.FormattingEnabled = true;
+            this.comboBoxTeacher.Location = new System.Drawing.Point(159, 354);
+            this.comboBoxTeacher.Name = "comboBoxTeacher";
+            this.comboBoxTeacher.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTeacher.TabIndex = 111;
+            this.comboBoxTeacher.SelectedIndexChanged += new System.EventHandler(this.comboBoxTeacher_SelectedIndexChanged);
+            // 
+            // labelTeacherName
+            // 
+            this.labelTeacherName.AutoSize = true;
+            this.labelTeacherName.BackColor = System.Drawing.Color.Transparent;
+            this.labelTeacherName.Location = new System.Drawing.Point(156, 336);
+            this.labelTeacherName.Name = "labelTeacherName";
+            this.labelTeacherName.Size = new System.Drawing.Size(76, 13);
+            this.labelTeacherName.TabIndex = 110;
+            this.labelTeacherName.Text = "Teacher name";
+            // 
+            // comboBoxSubject
+            // 
+            this.comboBoxSubject.FormattingEnabled = true;
+            this.comboBoxSubject.Location = new System.Drawing.Point(16, 354);
+            this.comboBoxSubject.Name = "comboBoxSubject";
+            this.comboBoxSubject.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSubject.TabIndex = 109;
+            this.comboBoxSubject.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubject_SelectedIndexChanged);
+            // 
+            // labelSubject
+            // 
+            this.labelSubject.AutoSize = true;
+            this.labelSubject.BackColor = System.Drawing.Color.Transparent;
+            this.labelSubject.Location = new System.Drawing.Point(14, 338);
+            this.labelSubject.Name = "labelSubject";
+            this.labelSubject.Size = new System.Drawing.Size(72, 13);
+            this.labelSubject.TabIndex = 108;
+            this.labelSubject.Text = "Subject name";
             // 
             // UserControl2S_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.labelTA);
+            this.Controls.Add(this.buttonFilter);
+            this.Controls.Add(this.comboBoxTeacher);
+            this.Controls.Add(this.labelTeacherName);
+            this.Controls.Add(this.comboBoxSubject);
+            this.Controls.Add(this.labelSubject);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.labelLessons);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridViewLessons);
+            this.Controls.Add(this.dataGridViewExams);
             this.Name = "UserControl2S_A";
             this.Size = new System.Drawing.Size(600, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLessons)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,18 +173,15 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSubject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTeacher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDateTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRoom;
+        private System.Windows.Forms.DataGridView dataGridViewExams;
+        private System.Windows.Forms.DataGridView dataGridViewLessons;
         private System.Windows.Forms.Label labelLessons;
         private System.Windows.Forms.Label labelExams;
-        private System.Windows.Forms.Label labelTA;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonFilter;
+        private System.Windows.Forms.ComboBox comboBoxTeacher;
+        private System.Windows.Forms.Label labelTeacherName;
+        private System.Windows.Forms.ComboBox comboBoxSubject;
+        private System.Windows.Forms.Label labelSubject;
     }
 }
