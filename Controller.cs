@@ -1562,5 +1562,176 @@ namespace EducationalCenter
             //dbMan.CloseConnection();
         }
 
+        public int getSubjectID(string subjectName, int studyGrade, string teacherID)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterName = new SqlParameter
+            {
+                ParameterName = "@subject_name",
+                SqlDbType = SqlDbType.NVarChar,
+                Value = subjectName,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterName);
+            SqlParameter parameterGrade = new SqlParameter
+            {
+                ParameterName = "@study_grade",
+                SqlDbType = SqlDbType.Int,
+                Value = studyGrade,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterGrade);
+            SqlParameter parameterteacherID = new SqlParameter
+            {
+                ParameterName = "@TID",
+                SqlDbType = SqlDbType.Char,
+                Value = teacherID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterteacherID);
+            return Convert.ToInt32(dbMan.ExecuteScalar("getSubjectID", "sp", parameters));
+        }
+
+
+
+        public bool reservationExists(DateTime start, DateTime end, int roomNumber)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterStart = new SqlParameter
+            {
+                ParameterName = "@start_datetime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = start,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterStart);
+
+            SqlParameter parameterEnd = new SqlParameter
+            {
+                ParameterName = "@end_datetime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = end,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterEnd);
+
+            SqlParameter parameterRoom = new SqlParameter
+            {
+                ParameterName = "@room_number",
+                SqlDbType = SqlDbType.Int,
+                Value = roomNumber,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterRoom);
+
+            return Convert.ToBoolean(dbMan.ExecuteScalar("reservationExists", "sp", parameters));
+
+        }
+
+
+
+        public bool insertReservation(string subjectName, int studyGrade, string teacherID, DateTime start, DateTime end, int roomNumber, decimal price, string type)
+        {
+            int subjectID = getSubjectID(subjectName, studyGrade, teacherID);
+            if (subjectID == 0)
+                return false;
+            if (reservationExists(start, end, roomNumber))
+                return false;
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterStart = new SqlParameter
+            {
+                ParameterName = "@startDateTime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = start,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterStart);
+
+            SqlParameter parameterEnd = new SqlParameter
+            {
+                ParameterName = "@endDateTime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = end,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterEnd);
+
+            SqlParameter parameterRoom = new SqlParameter
+            {
+                ParameterName = "@room_number",
+                SqlDbType = SqlDbType.Int,
+                Value = roomNumber,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterRoom);
+
+            SqlParameter parameterSubjectID = new SqlParameter
+            {
+                ParameterName = "@subject_ID",
+                SqlDbType = SqlDbType.Int,
+                Value = subjectID,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterSubjectID);
+
+            SqlParameter parameterPrice = new SqlParameter
+            {
+                ParameterName = "@price",
+                SqlDbType = SqlDbType.Decimal,
+                Value = price,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterPrice);
+
+            SqlParameter parameterType = new SqlParameter
+            {
+                ParameterName = "@type",
+                SqlDbType = SqlDbType.VarChar,
+                Value = type,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterType);
+
+            dbMan.ExecuteNonQuery("insertReservation", "sp", parameters);
+
+            return true;
+        }
+
+
+
+
+        public void deleteReservation(DateTime start, DateTime end, int roomNumber)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterStart = new SqlParameter
+            {
+                ParameterName = "@startDateTime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = start,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterStart);
+
+            SqlParameter parameterEnd = new SqlParameter
+            {
+                ParameterName = "@endDateTime",
+                SqlDbType = SqlDbType.DateTime,
+                Value = end,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterEnd);
+
+            SqlParameter parameterRoom = new SqlParameter
+            {
+                ParameterName = "@room_number",
+                SqlDbType = SqlDbType.Int,
+                Value = roomNumber,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterRoom);
+
+            dbMan.ExecuteNonQuery("deleteReservation", "sp", parameters);
+        }
     }
 }
