@@ -29,15 +29,19 @@ namespace EducationalCenter
             }
             else
             {
-                Controller.Instance.insertTeacher(textBoxName.Text, textBoxNationalID.Text, textBoxPhoneNumber.Text);
-                MessageBox.Show("user added successfully!");
-                displayData();
+                if (Controller.Instance.insertTeacher(textBoxName.Text, textBoxNationalID.Text, textBoxPhoneNumber.Text))
+                {
+                    MessageBox.Show("Teacher added successfully!");
+                    displayData();
+                }
+                else
+                    MessageBox.Show("Error!!");
             }
         }
         private void displayData(string subject="")
         {
-            DataTable dt_Lessons = Controller.Instance.getAllTeachers(subject);
-            dataGridViewTeachers.DataSource = dt_Lessons.DefaultView;
+            DataTable dt= Controller.Instance.getAllTeachers(subject);
+            dataGridViewTeachers.DataSource = dt.DefaultView;
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)
@@ -50,6 +54,19 @@ namespace EducationalCenter
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
+        }
+
+        private void dataGridViewTeachers_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete Teacher", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Controller.Instance.deleteTeacher(dataGridViewTeachers.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    displayData();
+                }
+
+            }
         }
     }
 }

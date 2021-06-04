@@ -58,6 +58,7 @@ namespace EducationalCenter
             // textBoxPhoneNumber
             // 
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(12, 320);
+            this.textBoxPhoneNumber.MaxLength = 11;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 1;
@@ -105,8 +106,10 @@ namespace EducationalCenter
             this.dataGridViewParents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewParents.Location = new System.Drawing.Point(12, 85);
             this.dataGridViewParents.Name = "dataGridViewParents";
+            this.dataGridViewParents.ReadOnly = true;
             this.dataGridViewParents.Size = new System.Drawing.Size(540, 150);
             this.dataGridViewParents.TabIndex = 76;
+            this.dataGridViewParents.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewParents_CellMouseDoubleClick);
             // 
             // labelPhoneNumber
             // 

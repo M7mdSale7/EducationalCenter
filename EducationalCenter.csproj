@@ -140,6 +140,12 @@
     <Compile Include="UserControl2E_H.Designer.cs">
       <DependentUpon>UserControl2E_H.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl2E_I.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_I.Designer.cs">
+      <DependentUpon>UserControl2E_I.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl2M_A.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_H.resx">
       <DependentUpon>UserControl2E_H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_I.resx">
+      <DependentUpon>UserControl2E_I.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2M_A.resx">
       <DependentUpon>UserControl2M_A.cs</DependentUpon>

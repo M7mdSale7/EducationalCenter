@@ -43,5 +43,23 @@ namespace EducationalCenter
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2E_E());
         }
+
+        private void buttonSubjects_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_F());
+        }
+
+        private void buttonStudies_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_I());
+        }
+
+        private void buttonBookLessons_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_A());
+        }
     }
 }

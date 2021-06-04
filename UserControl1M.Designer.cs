@@ -54,7 +54,7 @@ namespace EducationalCenter
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(128, 69);
+            this.labelWelcome.Location = new System.Drawing.Point(42, 94);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(115, 25);
             this.labelWelcome.TabIndex = 8;
@@ -88,7 +88,7 @@ namespace EducationalCenter
             // 
             this.pictureBoxManager.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxManager.Image = global::EducationalCenter.Properties.Resources.Manager;
-            this.pictureBoxManager.Location = new System.Drawing.Point(487, 15);
+            this.pictureBoxManager.Location = new System.Drawing.Point(465, 56);
             this.pictureBoxManager.Name = "pictureBoxManager";
             this.pictureBoxManager.Size = new System.Drawing.Size(98, 104);
             this.pictureBoxManager.TabIndex = 10;

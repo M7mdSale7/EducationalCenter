@@ -74,8 +74,10 @@ namespace EducationalCenter
             this.dataGridViewTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeachers.Location = new System.Drawing.Point(21, 92);
             this.dataGridViewTeachers.Name = "dataGridViewTeachers";
+            this.dataGridViewTeachers.ReadOnly = true;
             this.dataGridViewTeachers.Size = new System.Drawing.Size(342, 150);
             this.dataGridViewTeachers.TabIndex = 82;
+            this.dataGridViewTeachers.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeachers_CellMouseDoubleClick);
             // 
             // labelName
             // 
@@ -114,6 +116,7 @@ namespace EducationalCenter
             // textBoxNationalID
             // 
             this.textBoxNationalID.Location = new System.Drawing.Point(145, 278);
+            this.textBoxNationalID.MaxLength = 14;
             this.textBoxNationalID.Name = "textBoxNationalID";
             this.textBoxNationalID.Size = new System.Drawing.Size(100, 20);
             this.textBoxNationalID.TabIndex = 87;
@@ -121,6 +124,7 @@ namespace EducationalCenter
             // textBoxPhoneNumber
             // 
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(263, 278);
+            this.textBoxPhoneNumber.MaxLength = 11;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber.TabIndex = 88;

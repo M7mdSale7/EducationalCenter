@@ -40,6 +40,7 @@ namespace EducationalCenter
             this.buttonStudents = new System.Windows.Forms.Button();
             this.buttonBookRooms = new System.Windows.Forms.Button();
             this.buttonBookLessons = new System.Windows.Forms.Button();
+            this.buttonStudies = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@ namespace EducationalCenter
             // 
             this.pictureBoxEmployee.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxEmployee.Image = global::EducationalCenter.Properties.Resources.Employee;
-            this.pictureBoxEmployee.Location = new System.Drawing.Point(400, 88);
+            this.pictureBoxEmployee.Location = new System.Drawing.Point(454, 52);
             this.pictureBoxEmployee.Name = "pictureBoxEmployee";
             this.pictureBoxEmployee.Size = new System.Drawing.Size(98, 104);
             this.pictureBoxEmployee.TabIndex = 24;
@@ -57,7 +58,7 @@ namespace EducationalCenter
             // 
             this.buttonLogOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLogOut.Location = new System.Drawing.Point(504, 79);
+            this.buttonLogOut.Location = new System.Drawing.Point(32, 24);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(70, 30);
             this.buttonLogOut.TabIndex = 23;
@@ -109,6 +110,7 @@ namespace EducationalCenter
             this.buttonSubjects.TabIndex = 19;
             this.buttonSubjects.Text = "Subjects";
             this.buttonSubjects.UseVisualStyleBackColor = true;
+            this.buttonSubjects.Click += new System.EventHandler(this.buttonSubjects_Click);
             // 
             // buttonRooms
             // 
@@ -167,12 +169,27 @@ namespace EducationalCenter
             this.buttonBookLessons.TabIndex = 14;
             this.buttonBookLessons.Text = "Book Lessons";
             this.buttonBookLessons.UseVisualStyleBackColor = false;
+            this.buttonBookLessons.Click += new System.EventHandler(this.buttonBookLessons_Click);
+            // 
+            // buttonStudies
+            // 
+            this.buttonStudies.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonStudies.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonStudies.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonStudies.Location = new System.Drawing.Point(233, 73);
+            this.buttonStudies.Name = "buttonStudies";
+            this.buttonStudies.Size = new System.Drawing.Size(86, 43);
+            this.buttonStudies.TabIndex = 25;
+            this.buttonStudies.Text = "Studies";
+            this.buttonStudies.UseVisualStyleBackColor = true;
+            this.buttonStudies.Click += new System.EventHandler(this.buttonStudies_Click);
             // 
             // UserControl1E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.buttonStudies);
             this.Controls.Add(this.pictureBoxEmployee);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.labelWelcome);
@@ -205,5 +222,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonStudents;
         private System.Windows.Forms.Button buttonBookRooms;
         private System.Windows.Forms.Button buttonBookLessons;
+        private System.Windows.Forms.Button buttonStudies;
     }
 }
