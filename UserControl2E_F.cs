@@ -16,7 +16,7 @@ namespace EducationalCenter
         {
             InitializeComponent();
             displayData();
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersID());
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxFilterSubject.Items.Add("");
             comboBoxFilterSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxFilterTeacher.Items.Add("");

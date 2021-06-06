@@ -135,6 +135,7 @@ namespace EducationalCenter
             this.buttonTeachers.TabIndex = 17;
             this.buttonTeachers.Text = "Teachers";
             this.buttonTeachers.UseVisualStyleBackColor = true;
+            this.buttonTeachers.Click += new System.EventHandler(this.buttonTeachers_Click);
             // 
             // buttonStudents
             // 

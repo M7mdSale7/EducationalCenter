@@ -1,7 +1,7 @@
 ﻿
 namespace EducationalCenter
 {
-    partial class UserControl1T
+    partial class UserControl1TA
     {
         /// <summary> 
         /// Required designer variable.
@@ -120,7 +120,7 @@ namespace EducationalCenter
             this.buttonLogOut.UseVisualStyleBackColor = false;
             this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
-            // UserControl1T
+            // UserControl1TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonGradesReport);
             this.Controls.Add(this.buttonStudents);
             this.Controls.Add(this.buttonViewSchedule);
-            this.Name = "UserControl1T";
+            this.Name = "UserControl1TA";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeacher)).EndInit();
             this.ResumeLayout(false);

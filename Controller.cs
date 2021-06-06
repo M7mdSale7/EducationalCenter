@@ -1082,7 +1082,7 @@ namespace EducationalCenter
                 items = data.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
             return items;
         }
-        public string[] getAllTeahcersID(string subject = "")
+        public string[] getAllTeachersID(string subject = "")
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
             if (subject != "")
@@ -1230,14 +1230,14 @@ namespace EducationalCenter
             return Convert.ToBoolean(dbMan.ExecuteNonQuery("insertParent", "sp", parameters));
         }
 
-        public DataTable getTeacherSchedule(int TeacherID)
+        public DataTable getTeacherSchedule(string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterUser = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1246,14 +1246,14 @@ namespace EducationalCenter
             return dbMan.ExecuteReader("getTeacherSchedule", "sp", parameters);
         }
 
-        public DataTable getTeacherStudents(int TeacherID)
+        public DataTable getTeacherStudents(string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterUser = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1262,14 +1262,14 @@ namespace EducationalCenter
             return dbMan.ExecuteReader("getTeacherStudents", "sp", parameters);
         }
 
-        public DataTable getTeacherGradesReport(int TeacherID)
+        public DataTable getTeacherGradesReport(string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterUser = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1278,7 +1278,7 @@ namespace EducationalCenter
             return dbMan.ExecuteReader("getTeacherGradesReport", "sp", parameters);
         }
 
-        public bool checkStudentID(int TeacherID, int StudentID)
+        public bool checkStudentID(string TeacherID, int StudentID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
@@ -1305,7 +1305,7 @@ namespace EducationalCenter
 
         }
 
-        public bool checkExamID(int TeacherID, int ExamID)
+        public bool checkExamID(string TeacherID, int ExamID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
@@ -1332,7 +1332,7 @@ namespace EducationalCenter
 
         }
 
-        public void insertTeacherGradeReport(int TeacherID, int StudentID, int ExamID, string Grade)
+        public void insertTeacherGradeReport(string TeacherID, int StudentID, int ExamID, string Grade)
         {
             if (!checkStudentID(TeacherID, StudentID))
             {
@@ -1379,14 +1379,14 @@ namespace EducationalCenter
             dbMan.ExecuteNonQuery("insertTeacherGradeReport", "sp", parameters);
         }
 
-        public DataTable getTeacherExams(int TeacherID)
+        public DataTable getTeacherExams(string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterUser = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1395,14 +1395,14 @@ namespace EducationalCenter
             return dbMan.ExecuteReader("TeacherExams", "sp", parameters);
         }
 
-        public DataTable getTeacherAssistants(int TeacherID)
+        public DataTable getTeacherAssistants(string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterTeacher = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1411,7 +1411,7 @@ namespace EducationalCenter
             return dbMan.ExecuteReader("getTeacherAssistants", "sp", parameters);
         }
 
-        public bool insertTeacherAssistant(string AssistantName, int AssistantID, int PhoneNumber, int TeacherID,
+        public bool insertTeacherAssistant(string AssistantName, int AssistantID, int PhoneNumber, string TeacherID,
                                             string username = "")
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
@@ -1427,7 +1427,7 @@ namespace EducationalCenter
             SqlParameter parameterAssistantID = new SqlParameter
             {
                 ParameterName = "@AssistantID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = AssistantID,
                 Direction = ParameterDirection.Input
             };
@@ -1443,7 +1443,7 @@ namespace EducationalCenter
             SqlParameter parameterTeacherID = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1494,14 +1494,14 @@ namespace EducationalCenter
             dbMan.ExecuteNonQuery("deleteGradeReport", "sp", parameters);
         }
 
-        public void deleteTeachingAssistant(int TeachingAssistantID, int TeacherID)
+        public void deleteTeachingAssistant(int TeachingAssistantID, string TeacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             SqlParameter parameterTeachingAssistantID = new SqlParameter
             {
                 ParameterName = "@TeachingAssistantID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeachingAssistantID,
                 Direction = ParameterDirection.Input
             };
@@ -1509,7 +1509,7 @@ namespace EducationalCenter
             SqlParameter parameterTeacherID = new SqlParameter
             {
                 ParameterName = "@TeacherID",
-                SqlDbType = SqlDbType.Int,
+                SqlDbType = SqlDbType.Char,
                 Value = TeacherID,
                 Direction = ParameterDirection.Input
             };
@@ -1519,7 +1519,7 @@ namespace EducationalCenter
             dbMan.ExecuteNonQuery("deleteTeachingAssistant", "sp", parameters);
         }
 
-        public int getTeacherID(string TeacherUserName)
+        public string getTeacherID(string TeacherUserName)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
 
@@ -1530,9 +1530,9 @@ namespace EducationalCenter
                 Value = TeacherUserName,
                 Direction = ParameterDirection.Input
             };
+            parameters.Add(parameterTeacherUserName);
 
-
-            return Convert.ToInt32(dbMan.ExecuteScalar("getTeacherID", "sp", parameters));
+            return (dbMan.ExecuteScalar("getTeacherID", "sp", parameters).ToString());
         }
 
         public bool insertTeacher(string name, string ID, string phonenumber) //uses sp query
@@ -2182,6 +2182,19 @@ namespace EducationalCenter
             };
             parameters.Add(parameterreservation);
             dbMan.ExecuteNonQuery("deleteAttend", "sp", parameters);
+        }
+        public string getTusername(string TAusername)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterTAusername = new SqlParameter
+            {
+                ParameterName = "@TAusername",
+                SqlDbType = SqlDbType.VarChar,
+                Value = TAusername,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterTAusername);
+            return (dbMan.ExecuteScalar("getTusername", "sp", parameters).ToString());
         }
     }
 }

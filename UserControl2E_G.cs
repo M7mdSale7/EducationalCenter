@@ -16,7 +16,7 @@ namespace EducationalCenter
         {
             InitializeComponent();
             displayData();
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersID());
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxRoom.Items.AddRange(Controller.Instance.getRoomsNumbers());
         }
@@ -104,7 +104,7 @@ namespace EducationalCenter
         private void comboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxTeacher.Items.Clear();
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersID(Convert.ToString(comboBoxSubject.SelectedItem)));
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID(Convert.ToString(comboBoxSubject.SelectedItem)));
         }
 
         private void clearData()
@@ -120,7 +120,7 @@ namespace EducationalCenter
             comboBoxTeacher.Items.Clear();
             comboBoxSubject.Items.Clear();
             comboBoxRoom.Items.Clear();
-            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeahcersID());
+            comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxRoom.Items.AddRange(Controller.Instance.getRoomsNumbers());
 

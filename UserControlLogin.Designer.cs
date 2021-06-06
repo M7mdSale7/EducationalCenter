@@ -154,7 +154,6 @@ namespace EducationalCenter
             this.Controls.Add(this.textBoxUser);
             this.Name = "UserControlLogin";
             this.Size = new System.Drawing.Size(600, 450);
-            this.Load += new System.EventHandler(this.UserControlLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogIn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogIn)).EndInit();
             this.ResumeLayout(false);
