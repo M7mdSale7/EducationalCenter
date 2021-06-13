@@ -15,9 +15,23 @@ namespace EducationalCenter
         public UserControl2M_A()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelEmployees.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void displayData(string ID = "", string name = "", string address = "", decimal salary = 0, string phoneNumber = "")
         {
             DataTable dt = Controller.Instance.getAllEmployees(ID, name, address, salary, phoneNumber);
@@ -108,6 +122,7 @@ namespace EducationalCenter
         private void buttonClear_Click(object sender, EventArgs e)
         {
             clearInputs();
+            displayData();
         }
 
         private void dataGridViewEmployees_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

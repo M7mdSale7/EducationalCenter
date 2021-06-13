@@ -12,22 +12,26 @@ namespace EducationalCenter
 {
     public partial class UserControl2M_B : UserControl
     {
-        private static UserControl2M_B _instance;
-        public static UserControl2M_B Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UserControl2M_B();
-                return _instance;
-            }
-        }
-        private UserControl2M_B()
+        public UserControl2M_B()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelAccounts.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(comboBoxType.Text == "manager")
@@ -66,6 +70,7 @@ namespace EducationalCenter
         private void buttonClear_Click(object sender, EventArgs e)
         {
             clearInputs();
+            displayData();
         }
 
         private void clearInputs()

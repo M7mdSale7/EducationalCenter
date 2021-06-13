@@ -15,9 +15,24 @@ namespace EducationalCenter
         public UserControl2E_A()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxStudentID.Items.Add("");
             comboBoxStudentID.Items.AddRange(Controller.Instance.getAllStudentID());
+        }
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelBookLessonsExams.ForeColor = ThemeColor.PrimaryColor;
         }
         private void displayData()
         {
@@ -77,12 +92,6 @@ namespace EducationalCenter
             int subjectID = Controller.Instance.getSubjectID(comboBoxSubject.Text, comboBoxTeacher.Text);
             string price = Controller.Instance.getPrice(subjectID, comboBoxType.Text, comboBoxSlot.Text);
             MessageBox.Show(price);
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

@@ -16,8 +16,23 @@ namespace EducationalCenter
        public UserControlLogin()
         {
             InitializeComponent();
+            LoadTheme();
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelUsername.ForeColor = ThemeColor.PrimaryColor;
+            labelPassword.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
             if (textBoxUser.Text == "" || textBoxPass.Text == "")
@@ -38,10 +53,10 @@ namespace EducationalCenter
                 else if (type == "employee")
                 {
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
+                    Form0.Instance.Controls.Add(new UserControl1E());
                     Form0.Instance.username = textBoxUser.Text;
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
+                    Form0.Instance.Controls.Add(new UserControl1E());
                 }
                 else if (type == "teacher")
                 {
@@ -50,15 +65,18 @@ namespace EducationalCenter
                 }
                 else if (type == "TA")
                 {
+                    Form0.Instance.TA = Form0.Instance.username;
                     Form0.Instance.username = Controller.Instance.getTusername(Form0.Instance.username);
                     Form0.Instance.Controls.Clear();
                     Form0.Instance.Controls.Add(new UserControl1TA());
                 }
                 else if (type == "student" || type == "parent")
                 {
+                    UserControl student = new UserControl1S();
                     Form0.Instance.username = textBoxUser.Text;
                     Form0.Instance.Controls.Clear();
-                    Form0.Instance.Controls.Add(new UserControl1S(Form0.Instance.username));
+                    Form0.Instance.Controls.Add(student);
+                    student.Location = new System.Drawing.Point(0, 0);
                 }
                 else
                 {
@@ -75,6 +93,5 @@ namespace EducationalCenter
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlChangePass());
         }
-
     }
 }

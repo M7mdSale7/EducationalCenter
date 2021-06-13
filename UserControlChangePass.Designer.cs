@@ -36,9 +36,8 @@ namespace EducationalCenter
             this.labelOldPass = new System.Windows.Forms.Label();
             this.labelNewPass = new System.Windows.Forms.Label();
             this.buttonChangePass = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCNewPass = new System.Windows.Forms.Label();
             this.textBoxConfirmNewPass = new System.Windows.Forms.TextBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxUsername
@@ -107,15 +106,15 @@ namespace EducationalCenter
             this.buttonChangePass.UseVisualStyleBackColor = false;
             this.buttonChangePass.Click += new System.EventHandler(this.buttonChangePass_Click);
             // 
-            // label1
+            // labelCNewPass
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 235);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 20);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Confirm new password";
+            this.labelCNewPass.AutoSize = true;
+            this.labelCNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCNewPass.Location = new System.Drawing.Point(87, 235);
+            this.labelCNewPass.Name = "labelCNewPass";
+            this.labelCNewPass.Size = new System.Drawing.Size(169, 20);
+            this.labelCNewPass.TabIndex = 24;
+            this.labelCNewPass.Text = "Confirm new password";
             // 
             // textBoxConfirmNewPass
             // 
@@ -125,26 +124,12 @@ namespace EducationalCenter
             this.textBoxConfirmNewPass.Size = new System.Drawing.Size(146, 26);
             this.textBoxConfirmNewPass.TabIndex = 23;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(15, 14);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 96;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControlChangePass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCNewPass);
             this.Controls.Add(this.textBoxConfirmNewPass);
             this.Controls.Add(this.buttonChangePass);
             this.Controls.Add(this.labelNewPass);
@@ -169,8 +154,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelOldPass;
         private System.Windows.Forms.Label labelNewPass;
         private System.Windows.Forms.Button buttonChangePass;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCNewPass;
         private System.Windows.Forms.TextBox textBoxConfirmNewPass;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

@@ -84,23 +84,24 @@
     <Compile Include="RoomsReport.Designer.cs">
       <DependentUpon>RoomsReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1E.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl1E.Designer.cs">
       <DependentUpon>UserControl1E.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1M.cs">
+    <Compile Include="UserControl1TA.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1M.Designer.cs">
-      <DependentUpon>UserControl1M.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl1S.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1S.Designer.cs">
-      <DependentUpon>UserControl1S.cs</DependentUpon>
+    <Compile Include="UserControl1TA.Designer.cs">
+      <DependentUpon>UserControl1TA.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1T.cs">
       <SubType>UserControl</SubType>
@@ -108,11 +109,17 @@
     <Compile Include="UserControl1T.Designer.cs">
       <DependentUpon>UserControl1T.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1TA.cs">
+    <Compile Include="UserControl1S.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1TA.Designer.cs">
-      <DependentUpon>UserControl1TA.cs</DependentUpon>
+    <Compile Include="UserControl1S.Designer.cs">
+      <DependentUpon>UserControl1S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1M.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1M.Designer.cs">
+      <DependentUpon>UserControl1M.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl2E_A.cs">
       <SubType>UserControl</SubType>
@@ -277,20 +284,23 @@
     <EmbeddedResource Include="RoomsReport.resx">
       <DependentUpon>RoomsReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1E.resx">
       <DependentUpon>UserControl1E.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1M.resx">
-      <DependentUpon>UserControl1M.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1S.resx">
-      <DependentUpon>UserControl1S.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl1TA.resx">
+      <DependentUpon>UserControl1TA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1T.resx">
       <DependentUpon>UserControl1T.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1TA.resx">
-      <DependentUpon>UserControl1TA.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl1S.resx">
+      <DependentUpon>UserControl1S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1M.resx">
+      <DependentUpon>UserControl1M.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_A.resx">
       <DependentUpon>UserControl2E_A.cs</DependentUpon>
@@ -412,6 +422,48 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\055-whiteboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\071-biology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\085-human resources.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\090-entrepeneur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\065-warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-flasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-dna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\040-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\041-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\044-plumbing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZC.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

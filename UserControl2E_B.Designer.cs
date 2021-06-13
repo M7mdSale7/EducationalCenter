@@ -29,10 +29,9 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelBookRooms = new System.Windows.Forms.Label();
+            this.labelLessons = new System.Windows.Forms.Label();
             this.dataGridViewLessons = new System.Windows.Forms.DataGridView();
             this.labelDelete = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerDay = new System.Windows.Forms.DateTimePicker();
@@ -57,16 +56,16 @@ namespace EducationalCenter
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelBookRooms
+            // labelLessons
             // 
-            this.labelBookRooms.AutoSize = true;
-            this.labelBookRooms.BackColor = System.Drawing.Color.Transparent;
-            this.labelBookRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.labelBookRooms.Location = new System.Drawing.Point(19, 63);
-            this.labelBookRooms.Name = "labelBookRooms";
-            this.labelBookRooms.Size = new System.Drawing.Size(76, 20);
-            this.labelBookRooms.TabIndex = 11;
-            this.labelBookRooms.Text = "Lessons";
+            this.labelLessons.AutoSize = true;
+            this.labelLessons.BackColor = System.Drawing.Color.Transparent;
+            this.labelLessons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.labelLessons.Location = new System.Drawing.Point(19, 63);
+            this.labelLessons.Name = "labelLessons";
+            this.labelLessons.Size = new System.Drawing.Size(76, 20);
+            this.labelLessons.TabIndex = 11;
+            this.labelLessons.Text = "Lessons";
             // 
             // dataGridViewLessons
             // 
@@ -87,18 +86,6 @@ namespace EducationalCenter
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 42;
             this.labelDelete.Text = "Double click on a row to delete";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(3, 17);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 66;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // dateTimePickerTo
             // 
@@ -289,7 +276,6 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.dateTimePickerTo);
             this.Controls.Add(this.dateTimePickerFrom);
             this.Controls.Add(this.dateTimePickerDay);
@@ -309,9 +295,8 @@ namespace EducationalCenter
             this.Controls.Add(this.labelYear);
             this.Controls.Add(this.labelSubjectName);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelDelete);
-            this.Controls.Add(this.labelBookRooms);
+            this.Controls.Add(this.labelLessons);
             this.Controls.Add(this.dataGridViewLessons);
             this.Name = "UserControl2E_B";
             this.Size = new System.Drawing.Size(600, 450);
@@ -325,10 +310,9 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.Label labelBookRooms;
+        private System.Windows.Forms.Label labelLessons;
         private System.Windows.Forms.DataGridView dataGridViewLessons;
         private System.Windows.Forms.Label labelDelete;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.DateTimePicker dateTimePickerTo;
         private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
         private System.Windows.Forms.DateTimePicker dateTimePickerDay;

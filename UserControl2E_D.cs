@@ -15,12 +15,27 @@ namespace EducationalCenter
         public UserControl2E_D()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxStudentID.Items.AddRange(Controller.Instance.getAllStudentID());
             comboBoxFilterStudentID.Items.Add("");
             comboBoxFilterStudentID.Items.AddRange(Controller.Instance.getAllStudentID());
             comboBoxFilterName.Items.Add("");
             comboBoxFilterName.Items.AddRange(Controller.Instance.getAllParentsname());
+        }
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelParents.ForeColor = ThemeColor.PrimaryColor;
         }
         private void buttonInsert_Click(object sender, EventArgs e)
         {
@@ -49,12 +64,6 @@ namespace EducationalCenter
         {
             DataTable dt = Controller.Instance.getAllParents(parentname, studentID);
             dataGridViewParents.DataSource = dt.DefaultView;
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)

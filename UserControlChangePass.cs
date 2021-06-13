@@ -16,8 +16,25 @@ namespace EducationalCenter
         public UserControlChangePass()
         {
             InitializeComponent();
+            LoadTheme();
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelNewPass.ForeColor = ThemeColor.PrimaryColor;
+            labelOldPass.ForeColor = ThemeColor.PrimaryColor;
+            labelUsername.ForeColor = ThemeColor.PrimaryColor;
+            labelCNewPass.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void buttonChangePass_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrEmpty(textBoxUsername.Text) || String.IsNullOrEmpty(textBoxOldPass.Text)
@@ -43,12 +60,6 @@ namespace EducationalCenter
                     }
                 }
             }
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
         }
     }
 }

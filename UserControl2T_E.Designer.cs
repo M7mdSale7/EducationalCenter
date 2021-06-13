@@ -39,7 +39,6 @@ namespace EducationalCenter
             this.labelTA = new System.Windows.Forms.Label();
             this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAssistants)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +103,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherAssistants.Name = "dataGridViewTeacherAssistants";
             this.dataGridViewTeacherAssistants.ReadOnly = true;
             this.dataGridViewTeacherAssistants.RowTemplate.Height = 25;
-            this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(565, 130);
+            this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(473, 130);
             this.dataGridViewTeacherAssistants.TabIndex = 27;
             this.dataGridViewTeacherAssistants.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeacherAssistants_CellMouseDoubleClick);
             // 
@@ -123,7 +122,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(426, 78);
+            this.labelDelete.Location = new System.Drawing.Point(334, 78);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 82;
@@ -141,24 +140,10 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(15, 18);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 104;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2T_E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTA);
             this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonInsert);
@@ -189,6 +174,5 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelTA;
         private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

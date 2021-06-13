@@ -12,15 +12,31 @@ namespace EducationalCenter
 {
     public partial class UserControl2E_E : UserControl
     {
-        public UserControl2E_E()
+        UserControl1E usercontrol1E;
+        public UserControl2E_E(UserControl1E usercontrol1E)
         {
+            this.usercontrol1E = usercontrol1E;
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxTeacherID.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelTeachers.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void buttonInsert_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(textBoxName.Text)|| String.IsNullOrWhiteSpace(textBoxNationalID.Text))
@@ -50,12 +66,6 @@ namespace EducationalCenter
             comboBoxSubject.Text = "";
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
-        }
-
         private void dataGridViewTeachers_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -71,8 +81,7 @@ namespace EducationalCenter
 
         private void buttonTA_Click(object sender, EventArgs e)
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2E_J(comboBoxTeacherID.Text));
+            usercontrol1E.OpenChildForm(new UserControl2E_J(comboBoxTeacherID.Text));
         }
     }
 }

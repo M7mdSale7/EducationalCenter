@@ -35,10 +35,9 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(584, 411);
+            this.ClientSize = new System.Drawing.Size(799, 611);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form0";
-            this.Text = "Educational Center";
             this.ResumeLayout(false);
 
         }

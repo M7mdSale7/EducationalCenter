@@ -44,7 +44,6 @@ namespace EducationalCenter
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.labelType = new System.Windows.Forms.Label();
             this.comboBoxStudentID = new System.Windows.Forms.ComboBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,24 +191,10 @@ namespace EducationalCenter
             this.comboBoxStudentID.TabIndex = 49;
             this.comboBoxStudentID.SelectedIndexChanged += new System.EventHandler(this.comboBoxStudentID_SelectedIndexChanged);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(15, 17);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 107;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.comboBoxStudentID);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.buttonPrice);
@@ -250,6 +235,5 @@ namespace EducationalCenter
         private System.Windows.Forms.ComboBox comboBoxType;
         private System.Windows.Forms.Label labelType;
         private System.Windows.Forms.ComboBox comboBoxStudentID;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

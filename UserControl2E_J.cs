@@ -15,14 +15,23 @@ namespace EducationalCenter
         public UserControl2E_J(string TID)
         {
             InitializeComponent();
+            LoadTheme();
             DataTable dt = Controller.Instance.getTeacherAssistants(TID);
             dataGridViewTA.DataSource = dt.DefaultView;
         }
-
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl2E_E());
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelTA.ForeColor = ThemeColor.PrimaryColor;
         }
     }
 }

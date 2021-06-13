@@ -15,12 +15,26 @@ namespace EducationalCenter
         public UserControl2E_B()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxRoom.Items.AddRange(Controller.Instance.getRoomsNumbers());
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelLessons.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void buttonClear_Click(object sender, EventArgs e)
         {
             clearData();
@@ -58,7 +72,7 @@ namespace EducationalCenter
         private void comboBoxTeacher_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxSubject.Items.Clear();
-            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname(0,Controller.Instance.getTeacherName(Convert.ToString(comboBoxTeacher.SelectedItem))));
+            comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname(0,Controller.Instance.getTeacherName("",Convert.ToString(comboBoxTeacher.SelectedItem))));
         }
 
         private void comboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
@@ -83,12 +97,6 @@ namespace EducationalCenter
             comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxRoom.Items.AddRange(Controller.Instance.getRoomsNumbers());
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void buttonInsert_Click(object sender, EventArgs e)

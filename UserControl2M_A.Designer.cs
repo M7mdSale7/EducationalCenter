@@ -42,7 +42,6 @@ namespace EducationalCenter
             this.labelSalary = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.numericUpDownSalary = new System.Windows.Forms.NumericUpDown();
@@ -172,18 +171,6 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(12, 12);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 96;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // buttonClear
             // 
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -225,11 +212,9 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.numericUpDownSalary);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonFilter);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelNationalID);
@@ -268,7 +253,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelSalary;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.NumericUpDown numericUpDownSalary;

@@ -1027,17 +1027,31 @@ namespace EducationalCenter
             return items;
         }
 
-        public string getTeacherName(string teacherID)
+        public string getTeacherName(string username,string teacherID)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter parameter = new SqlParameter
+            if (username != "")
             {
-                ParameterName = "@national_id",
-                SqlDbType = SqlDbType.NVarChar,
-                Value = teacherID,
-                Direction = ParameterDirection.Input
-            };
-            parameters.Add(parameter);
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@username",
+                    SqlDbType = SqlDbType.VarChar,
+                    Value = username,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
+            if (teacherID!="")
+            {
+                SqlParameter parameter = new SqlParameter
+                {
+                    ParameterName = "@national_id",
+                    SqlDbType = SqlDbType.NVarChar,
+                    Value = teacherID,
+                    Direction = ParameterDirection.Input
+                };
+                parameters.Add(parameter);
+            }
             string temp  = Convert.ToString(dbMan.ExecuteScalar("getTeacherName", "sp", parameters));
             if (temp == null)
                 return "";
@@ -2195,6 +2209,45 @@ namespace EducationalCenter
             };
             parameters.Add(parameterTAusername);
             return (dbMan.ExecuteScalar("getTusername", "sp", parameters).ToString());
+        }
+        public string getStudentname(string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterusername = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterusername);
+            return (dbMan.ExecuteScalar("getStudentname", "sp", parameters).ToString());
+        }
+        public string getTAname(string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterusername = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterusername);
+            return (dbMan.ExecuteScalar("getTAname", "sp", parameters).ToString());
+        }
+        public string getEmployeename(string username)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            SqlParameter parameterusername = new SqlParameter
+            {
+                ParameterName = "@username",
+                SqlDbType = SqlDbType.VarChar,
+                Value = username,
+                Direction = ParameterDirection.Input
+            };
+            parameters.Add(parameterusername);
+            return (dbMan.ExecuteScalar("getEmployeename", "sp", parameters).ToString());
         }
     }
 }

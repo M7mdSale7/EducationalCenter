@@ -39,7 +39,6 @@ namespace EducationalCenter
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.numericUpDownStudyYear = new System.Windows.Forms.NumericUpDown();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
             this.labelTeacherName = new System.Windows.Forms.Label();
@@ -158,18 +157,6 @@ namespace EducationalCenter
             0,
             0});
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(12, 19);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 97;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // buttonFilter
             // 
             this.buttonFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -245,7 +232,6 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.numericUpDownYearFilter);
             this.Controls.Add(this.labelFilterYear);
             this.Controls.Add(this.comboBoxTeacher);
@@ -253,7 +239,6 @@ namespace EducationalCenter
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.buttonFilter);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.numericUpDownStudyYear);
             this.Controls.Add(this.textBoxPhoneNumber);
             this.Controls.Add(this.textBoxName);
@@ -286,7 +271,6 @@ namespace EducationalCenter
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxPhoneNumber;
         private System.Windows.Forms.NumericUpDown numericUpDownStudyYear;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.Label labelTeacherName;
