@@ -31,7 +31,6 @@ namespace EducationalCenter
         {
             this.labelSchedule = new System.Windows.Forms.Label();
             this.dataGridViewTeacherSchedule = new System.Windows.Forms.DataGridView();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherSchedule)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,24 +57,10 @@ namespace EducationalCenter
             this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(260, 150);
             this.dataGridViewTeacherSchedule.TabIndex = 45;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(31, 23);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 104;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2T_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.dataGridViewTeacherSchedule);
             this.Controls.Add(this.labelSchedule);
             this.Name = "UserControl2T_A";
@@ -89,6 +74,5 @@ namespace EducationalCenter
         #endregion
         private System.Windows.Forms.Label labelSchedule;
         private System.Windows.Forms.DataGridView dataGridViewTeacherSchedule;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

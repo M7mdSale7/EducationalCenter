@@ -33,7 +33,6 @@ namespace EducationalCenter
             this.dataGridViewLessons = new System.Windows.Forms.DataGridView();
             this.labelLessons = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
             this.labelTeacherName = new System.Windows.Forms.Label();
@@ -84,18 +83,6 @@ namespace EducationalCenter
             this.labelExams.Size = new System.Drawing.Size(67, 20);
             this.labelExams.TabIndex = 99;
             this.labelExams.Text = "Exams:";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(14, 7);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 101;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonFilter
             // 
@@ -151,13 +138,11 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.comboBoxTeacher);
             this.Controls.Add(this.labelTeacherName);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.labelSubject);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.labelLessons);
             this.Controls.Add(this.dataGridViewLessons);
@@ -177,7 +162,6 @@ namespace EducationalCenter
         private System.Windows.Forms.DataGridView dataGridViewLessons;
         private System.Windows.Forms.Label labelLessons;
         private System.Windows.Forms.Label labelExams;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.Label labelTeacherName;

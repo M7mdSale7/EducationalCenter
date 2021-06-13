@@ -15,8 +15,24 @@ namespace EducationalCenter
         public UserControl2T_C()
         {
             InitializeComponent();
+            LoadTheme();
             DataTable dt = Controller.Instance.getTeacherGradesReport(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherGradesReport.DataSource = dt.DefaultView;
+        }
+
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelGradesReport.ForeColor = ThemeColor.PrimaryColor;
         }
 
         private void buttonInsert_Click(object sender, EventArgs e)
@@ -32,14 +48,6 @@ namespace EducationalCenter
             DataTable dt = Controller.Instance.getTeacherGradesReport(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherGradesReport.DataSource = dt.DefaultView;
 
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            if (Form0.Instance.type == "teacher")
-                Form0.Instance.Controls.Add(new UserControl1T());
-            else Form0.Instance.Controls.Add(new UserControl1TA());
         }
 
         private void dataGridViewTeacherGradesReport_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

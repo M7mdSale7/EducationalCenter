@@ -29,8 +29,7 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelStudies = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
+            this.labelStudy = new System.Windows.Forms.Label();
             this.labelDelete = new System.Windows.Forms.Label();
             this.dataGridViewStudies = new System.Windows.Forms.DataGridView();
             this.comboBoxStudentID = new System.Windows.Forms.ComboBox();
@@ -50,28 +49,16 @@ namespace EducationalCenter
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudies)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelStudies
+            // labelStudy
             // 
-            this.labelStudies.AutoSize = true;
-            this.labelStudies.BackColor = System.Drawing.Color.Transparent;
-            this.labelStudies.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.labelStudies.Location = new System.Drawing.Point(22, 55);
-            this.labelStudies.Name = "labelStudies";
-            this.labelStudies.Size = new System.Drawing.Size(75, 20);
-            this.labelStudies.TabIndex = 10;
-            this.labelStudies.Text = "Studies:";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(22, 16);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 107;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.labelStudy.AutoSize = true;
+            this.labelStudy.BackColor = System.Drawing.Color.Transparent;
+            this.labelStudy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.labelStudy.Location = new System.Drawing.Point(22, 55);
+            this.labelStudy.Name = "labelStudy";
+            this.labelStudy.Size = new System.Drawing.Size(60, 20);
+            this.labelStudy.TabIndex = 10;
+            this.labelStudy.Text = "Study:";
             // 
             // labelDelete
             // 
@@ -224,7 +211,6 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.comboBoxFilterSubject);
             this.Controls.Add(this.comboBoxFilterTeacher);
             this.Controls.Add(this.label1);
@@ -241,8 +227,7 @@ namespace EducationalCenter
             this.Controls.Add(this.labelStudentID);
             this.Controls.Add(this.dataGridViewStudies);
             this.Controls.Add(this.labelDelete);
-            this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.labelStudies);
+            this.Controls.Add(this.labelStudy);
             this.Name = "UserControl2E_I";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudies)).EndInit();
@@ -253,8 +238,7 @@ namespace EducationalCenter
 
         #endregion
 
-        private System.Windows.Forms.Label labelStudies;
-        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Label labelStudy;
         private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.DataGridView dataGridViewStudies;
         private System.Windows.Forms.ComboBox comboBoxStudentID;

@@ -44,7 +44,6 @@ namespace EducationalCenter
             this.numericUpDownFilterYear = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonFilter = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.labelSubject = new System.Windows.Forms.Label();
             this.comboBoxFilterSubject = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).BeginInit();
@@ -207,18 +206,6 @@ namespace EducationalCenter
             this.buttonFilter.UseVisualStyleBackColor = true;
             this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(19, 19);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 106;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // labelSubject
             // 
             this.labelSubject.AutoSize = true;
@@ -240,11 +227,9 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.comboBoxFilterSubject);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.numericUpDownFilterYear);
             this.Controls.Add(this.label2);
@@ -287,7 +272,6 @@ namespace EducationalCenter
         private System.Windows.Forms.NumericUpDown numericUpDownFilterYear;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonFilter;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.ComboBox comboBoxFilterSubject;
     }

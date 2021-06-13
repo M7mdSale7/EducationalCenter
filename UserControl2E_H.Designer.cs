@@ -35,7 +35,6 @@ namespace EducationalCenter
             this.labelNumber = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelCapacity = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.numericUpDownNumber = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCapacity = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).BeginInit();
@@ -105,18 +104,6 @@ namespace EducationalCenter
             this.labelCapacity.TabIndex = 104;
             this.labelCapacity.Text = "Capacity";
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(14, 20);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 105;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // numericUpDownNumber
             // 
             this.numericUpDownNumber.Location = new System.Drawing.Point(373, 170);
@@ -135,10 +122,8 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.numericUpDownCapacity);
             this.Controls.Add(this.numericUpDownNumber);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelCapacity);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelNumber);
@@ -163,7 +148,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelNumber;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Label labelCapacity;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.NumericUpDown numericUpDownNumber;
         private System.Windows.Forms.NumericUpDown numericUpDownCapacity;
     }

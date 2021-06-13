@@ -15,6 +15,7 @@ namespace EducationalCenter
         public UserControl2T_E()
         {
             InitializeComponent();
+            LoadTheme();
             DataTable dt = Controller.Instance.getTeacherAssistants(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherAssistants.DataSource = dt.DefaultView;
         }
@@ -28,14 +29,20 @@ namespace EducationalCenter
             dataGridViewTeacherAssistants.DataSource = dt.DefaultView;
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            if (Form0.Instance.type == "teacher")
-                Form0.Instance.Controls.Add(new UserControl1T());
-            else Form0.Instance.Controls.Add(new UserControl1TA());
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelTA.ForeColor = ThemeColor.PrimaryColor;
         }
-
         private void dataGridViewTeacherAssistants_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)

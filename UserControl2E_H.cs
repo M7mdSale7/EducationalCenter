@@ -15,9 +15,24 @@ namespace EducationalCenter
         public UserControl2E_H()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
         }
-        
+
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelRooms.ForeColor = ThemeColor.PrimaryColor;
+        }
         public void displayData()
         {
             DataTable dt = Controller.Instance.getRooms();
@@ -42,12 +57,6 @@ namespace EducationalCenter
                     MessageBox.Show("Room already exists");
                 }
             }
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
         }
 
         private void dataGridViewRooms_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

@@ -15,6 +15,7 @@ namespace EducationalCenter
         public UserControl2E_F()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxFilterSubject.Items.Add("");
@@ -22,11 +23,19 @@ namespace EducationalCenter
             comboBoxFilterTeacher.Items.Add("");
             comboBoxFilterTeacher.Items.AddRange(Controller.Instance.getAllTeachersname());
         }
-
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelSubjects.ForeColor = ThemeColor.PrimaryColor;
         }
         private void displayData(string teacher = "", int year = 0,string subject="")
         {

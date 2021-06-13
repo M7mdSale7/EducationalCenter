@@ -42,7 +42,6 @@ namespace EducationalCenter
             this.label1 = new System.Windows.Forms.Label();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.comboBoxUsers = new System.Windows.Forms.ComboBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.labelNonUsernames = new System.Windows.Forms.Label();
             this.textBoxNewPassword = new System.Windows.Forms.TextBox();
@@ -54,7 +53,7 @@ namespace EducationalCenter
             // 
             this.dataGridViewUsers.AllowUserToAddRows = false;
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(102, 108);
+            this.dataGridViewUsers.Location = new System.Drawing.Point(32, 108);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.Size = new System.Drawing.Size(344, 150);
             this.dataGridViewUsers.TabIndex = 0;
@@ -64,7 +63,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(99, 92);
+            this.labelDelete.Location = new System.Drawing.Point(222, 92);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 45;
@@ -97,7 +96,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(495, 235);
+            this.buttonInsert.Location = new System.Drawing.Point(327, 354);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 84;
@@ -180,18 +179,6 @@ namespace EducationalCenter
             this.comboBoxUsers.Size = new System.Drawing.Size(121, 21);
             this.comboBoxUsers.TabIndex = 94;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(10, 19);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 95;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // buttonClear
             // 
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -233,12 +220,10 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.labelnewPass);
             this.Controls.Add(this.textBoxNewPassword);
             this.Controls.Add(this.labelNonUsernames);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.comboBoxUsers);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.label1);
@@ -275,7 +260,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.ComboBox comboBoxUsers;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Label labelNonUsernames;
         private System.Windows.Forms.TextBox textBoxNewPassword;

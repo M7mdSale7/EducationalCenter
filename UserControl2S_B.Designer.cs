@@ -31,7 +31,6 @@ namespace EducationalCenter
         {
             this.dataGridViewGradesReport = new System.Windows.Forms.DataGridView();
             this.labelGradesReport = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.labelSubject = new System.Windows.Forms.Label();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.labelTeacherName = new System.Windows.Forms.Label();
@@ -60,18 +59,6 @@ namespace EducationalCenter
             this.labelGradesReport.Size = new System.Drawing.Size(133, 20);
             this.labelGradesReport.TabIndex = 90;
             this.labelGradesReport.Text = "Grades Report:";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(15, 16);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 96;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // labelSubject
             // 
@@ -127,13 +114,11 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.comboBoxTeacher);
             this.Controls.Add(this.labelTeacherName);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.labelSubject);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelGradesReport);
             this.Controls.Add(this.dataGridViewGradesReport);
             this.Name = "UserControl2S_B";
@@ -148,7 +133,6 @@ namespace EducationalCenter
 
         private System.Windows.Forms.DataGridView dataGridViewGradesReport;
         private System.Windows.Forms.Label labelGradesReport;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.Label labelTeacherName;

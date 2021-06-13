@@ -23,8 +23,6 @@ namespace EducationalCenter
             try
             {
                 myConnection.Open(); //Open a connection with the DB
-                //just for illustration when the database is opened, this should not be shown in GUI to the user
-                MessageBox.Show("Successfully connected to the database!");
             }
             catch (Exception e)
             {

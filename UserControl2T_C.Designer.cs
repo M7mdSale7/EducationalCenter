@@ -39,7 +39,6 @@ namespace EducationalCenter
             this.buttonInsert = new System.Windows.Forms.Button();
             this.textBoxStudentID = new System.Windows.Forms.TextBox();
             this.textBoxExamID = new System.Windows.Forms.TextBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherGradesReport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,24 +140,10 @@ namespace EducationalCenter
             this.textBoxExamID.Size = new System.Drawing.Size(124, 20);
             this.textBoxExamID.TabIndex = 93;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(34, 12);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 104;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2T_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.textBoxExamID);
             this.Controls.Add(this.textBoxStudentID);
             this.Controls.Add(this.labelGradesReport);
@@ -189,6 +174,5 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.TextBox textBoxStudentID;
         private System.Windows.Forms.TextBox textBoxExamID;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

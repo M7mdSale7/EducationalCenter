@@ -15,13 +15,23 @@ namespace EducationalCenter
        public UserControl2S_C()
         {
             InitializeComponent();
+            LoadTheme();
             comboBoxSubject.Items.AddRange(Controller.Instance.getAvaliableSubjects(Form0.Instance.username));
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1S(Form0.Instance.username));
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelAvailableLessons.ForeColor = ThemeColor.PrimaryColor;
         }
         private void displayData(string username, string subjectname = "", string Teacher = "")
         {

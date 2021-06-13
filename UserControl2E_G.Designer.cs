@@ -38,7 +38,6 @@ namespace EducationalCenter
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.numericUpDownYear = new System.Windows.Forms.NumericUpDown();
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
@@ -149,18 +148,6 @@ namespace EducationalCenter
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(12, 15);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 113;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // comboBoxSubject
             // 
@@ -288,7 +275,6 @@ namespace EducationalCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.dateTimePickerTo);
             this.Controls.Add(this.dateTimePickerFrom);
             this.Controls.Add(this.dateTimePickerDay);
@@ -301,7 +287,6 @@ namespace EducationalCenter
             this.Controls.Add(this.comboBoxRoom);
             this.Controls.Add(this.numericUpDownYear);
             this.Controls.Add(this.comboBoxSubject);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.comboBoxTeacher);
@@ -333,7 +318,6 @@ namespace EducationalCenter
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.NumericUpDown numericUpDownYear;
         private System.Windows.Forms.ComboBox comboBoxRoom;

@@ -16,16 +16,27 @@ namespace EducationalCenter
         public UserControl2S_A()
         {
             InitializeComponent();
+            LoadTheme();
             displayData(Form0.Instance.username);
             comboBoxSubject.Items.AddRange(Controller.Instance.getExams_Subjects(Form0.Instance.username));
             comboBoxTeacher.Items.AddRange(Controller.Instance.getExams_Teachers(Form0.Instance.username));
         }
-
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1S(Form0.Instance.username));
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelExams.ForeColor = ThemeColor.PrimaryColor;
+            labelLessons.ForeColor = ThemeColor.PrimaryColor;
         }
+       
         private void displayData(string username,string type="",  string subjectname="", string Teacher="", string roomnum="", string start_datetime="", string end_datetime="")
         {
             DataTable dt_Lessons = Controller.Instance.Student_getAllLessonsOrExams( username,"subject", subjectname, Teacher, roomnum, start_datetime, end_datetime);

@@ -15,6 +15,7 @@ namespace EducationalCenter
         public UserControl2E_I()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxStudentID.Items.AddRange(Controller.Instance.getAllStudentID());
             comboBoxFilterStudentID.Items.Add("");
@@ -24,13 +25,20 @@ namespace EducationalCenter
             comboBoxFilterSubject.Items.Add("");
             comboBoxFilterSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
         }
-
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void LoadTheme()
         {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelStudy.ForeColor = ThemeColor.PrimaryColor;
         }
-
         private void buttonInsert_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(comboBoxStudentID.Text)|| String.IsNullOrWhiteSpace(comboBoxSubject.Text)

@@ -31,7 +31,6 @@ namespace EducationalCenter
         {
             this.dataGridViewTA = new System.Windows.Forms.DataGridView();
             this.labelTA = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,24 +54,10 @@ namespace EducationalCenter
             this.labelTA.TabIndex = 11;
             this.labelTA.Text = "Teaching Assistants:";
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBack.Location = new System.Drawing.Point(34, 25);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
-            this.buttonBack.TabIndex = 108;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // UserControl2E_J
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTA);
             this.Controls.Add(this.dataGridViewTA);
             this.Name = "UserControl2E_J";
@@ -87,6 +72,5 @@ namespace EducationalCenter
 
         private System.Windows.Forms.DataGridView dataGridViewTA;
         private System.Windows.Forms.Label labelTA;
-        private System.Windows.Forms.Button buttonBack;
     }
 }

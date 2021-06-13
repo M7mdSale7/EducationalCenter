@@ -15,13 +15,27 @@ namespace EducationalCenter
         public UserControl2E_C()
         {
             InitializeComponent();
+            LoadTheme();
             displayData();
             comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
             comboBoxTeacher.Items.Add("");
             comboBoxTeacher.Items.AddRange(Controller.Instance.getAllTeachersname());
         }
-
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+            labelStudents.ForeColor = ThemeColor.PrimaryColor;
+        }
         private void buttonInsert_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(textBoxName.Text) )
@@ -51,11 +65,6 @@ namespace EducationalCenter
             dataGridViewStudents.DataSource = dt.DefaultView;
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1E(Form0.Instance.username));
-        }
         private void comboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxTeacher.Items.Clear();
