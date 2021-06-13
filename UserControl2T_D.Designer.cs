@@ -31,7 +31,7 @@ namespace EducationalCenter
         {
             this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
             this.labelExams = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@ namespace EducationalCenter
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
             this.dataGridViewSchedule.ReadOnly = true;
             this.dataGridViewSchedule.RowTemplate.Height = 25;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(535, 159);
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(238, 159);
             this.dataGridViewSchedule.TabIndex = 21;
             // 
             // labelExams
@@ -59,24 +59,24 @@ namespace EducationalCenter
             this.labelExams.TabIndex = 92;
             this.labelExams.Text = "Exams:";
             // 
-            // button1
+            // buttonBack
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(27, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 104;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBack.Location = new System.Drawing.Point(27, 20);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 104;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // UserControl2T_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelExams);
             this.Controls.Add(this.dataGridViewSchedule);
             this.Name = "UserControl2T_D";
@@ -91,6 +91,6 @@ namespace EducationalCenter
 
         private System.Windows.Forms.DataGridView dataGridViewSchedule;
         private System.Windows.Forms.Label labelExams;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

@@ -34,6 +34,7 @@ namespace EducationalCenter
             this.buttonEmployees = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.pictureBoxManager = new System.Windows.Forms.PictureBox();
+            this.buttonEmployeesReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManager)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +95,24 @@ namespace EducationalCenter
             this.pictureBoxManager.TabIndex = 10;
             this.pictureBoxManager.TabStop = false;
             // 
+            // buttonEmployeesReport
+            // 
+            this.buttonEmployeesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonEmployeesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEmployeesReport.Location = new System.Drawing.Point(273, 318);
+            this.buttonEmployeesReport.Name = "buttonEmployeesReport";
+            this.buttonEmployeesReport.Size = new System.Drawing.Size(86, 43);
+            this.buttonEmployeesReport.TabIndex = 11;
+            this.buttonEmployeesReport.Text = "Employees Report";
+            this.buttonEmployeesReport.UseVisualStyleBackColor = false;
+            this.buttonEmployeesReport.Click += new System.EventHandler(this.buttonEmployeesReport_Click);
+            // 
             // UserControl1M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.buttonEmployeesReport);
             this.Controls.Add(this.pictureBoxManager);
             this.Controls.Add(this.buttonAccounts);
             this.Controls.Add(this.labelWelcome);
@@ -119,5 +133,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Button buttonEmployees;
         private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.Button buttonEmployeesReport;
     }
 }

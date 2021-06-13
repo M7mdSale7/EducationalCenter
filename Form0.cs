@@ -12,7 +12,7 @@ namespace EducationalCenter
 {
     public partial class Form0 : Form
     {
-        public string username;
+        public string username, type;
         //start of singelton pattern code
         private static Form0 _instance;
         public static Form0 Instance

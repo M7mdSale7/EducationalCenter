@@ -32,7 +32,6 @@ namespace EducationalCenter
 
                 if (type == "manager")
                 {
-
                     Form0.Instance.Controls.Clear();
                     Form0.Instance.Controls.Add(new UserControl1M());
                 }
@@ -51,7 +50,9 @@ namespace EducationalCenter
                 }
                 else if (type == "TA")
                 {
-
+                    Form0.Instance.username = Controller.Instance.getTusername(Form0.Instance.username);
+                    Form0.Instance.Controls.Clear();
+                    Form0.Instance.Controls.Add(new UserControl1TA());
                 }
                 else if (type == "student" || type == "parent")
                 {
@@ -63,6 +64,7 @@ namespace EducationalCenter
                 {
                     MessageBox.Show("Incorrect username or password");
                 }
+                Form0.Instance.type = type;
                 textBoxUser.Text = "";
                 textBoxPass.Text = "";
             }
@@ -74,9 +76,5 @@ namespace EducationalCenter
             Form0.Instance.Controls.Add(new UserControlChangePass());
         }
 
-        private void UserControlLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

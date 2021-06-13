@@ -33,9 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,10 +55,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBManager.cs" />
+    <Compile Include="Employees.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeesReport.Designer.cs">
+      <DependentUpon>EmployeesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rooms.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoomsReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoomsReport.Designer.cs">
+      <DependentUpon>RoomsReport.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1E.cs">
       <SubType>UserControl</SubType>
@@ -146,6 +177,12 @@
     <Compile Include="UserControl2E_I.Designer.cs">
       <DependentUpon>UserControl2E_I.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl2E_J.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2E_J.Designer.cs">
+      <DependentUpon>UserControl2E_J.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl2M_A.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +255,13 @@
     <Compile Include="UserControlLogin.Designer.cs">
       <DependentUpon>UserControlLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Employees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Employees.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesReport.resx">
+      <DependentUpon>EmployeesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form0.resx">
       <DependentUpon>Form0.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +269,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rooms.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomsReport.resx">
+      <DependentUpon>RoomsReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1E.resx">
       <DependentUpon>UserControl1E.cs</DependentUpon>
@@ -267,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2E_I.resx">
       <DependentUpon>UserControl2E_I.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2E_J.resx">
+      <DependentUpon>UserControl2E_J.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2M_A.resx">
       <DependentUpon>UserControl2M_A.cs</DependentUpon>
@@ -355,6 +409,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Education2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,5 +40,11 @@ namespace EducationalCenter
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControlLogin());
         }
+
+        private void buttonEmployeesReport_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new EmployeesReport());
+        }
     }
 }

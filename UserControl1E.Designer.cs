@@ -41,6 +41,7 @@ namespace EducationalCenter
             this.buttonBookLessons = new System.Windows.Forms.Button();
             this.buttonStudies = new System.Windows.Forms.Button();
             this.buttonAttend = new System.Windows.Forms.Button();
+            this.buttonRoomsReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@ namespace EducationalCenter
             // 
             this.buttonParents.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonParents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonParents.Location = new System.Drawing.Point(241, 353);
+            this.buttonParents.Location = new System.Drawing.Point(316, 353);
             this.buttonParents.Name = "buttonParents";
             this.buttonParents.Size = new System.Drawing.Size(86, 43);
             this.buttonParents.TabIndex = 21;
@@ -135,6 +136,7 @@ namespace EducationalCenter
             this.buttonTeachers.TabIndex = 17;
             this.buttonTeachers.Text = "Teachers";
             this.buttonTeachers.UseVisualStyleBackColor = true;
+            this.buttonTeachers.Click += new System.EventHandler(this.buttonTeachers_Click);
             // 
             // buttonStudents
             // 
@@ -186,11 +188,24 @@ namespace EducationalCenter
             this.buttonAttend.UseVisualStyleBackColor = true;
             this.buttonAttend.Click += new System.EventHandler(this.buttonAttend_Click);
             // 
+            // buttonRoomsReport
+            // 
+            this.buttonRoomsReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonRoomsReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonRoomsReport.Location = new System.Drawing.Point(171, 353);
+            this.buttonRoomsReport.Name = "buttonRoomsReport";
+            this.buttonRoomsReport.Size = new System.Drawing.Size(86, 43);
+            this.buttonRoomsReport.TabIndex = 27;
+            this.buttonRoomsReport.Text = "Rooms Report";
+            this.buttonRoomsReport.UseVisualStyleBackColor = true;
+            this.buttonRoomsReport.Click += new System.EventHandler(this.buttonRoomsReport_Click);
+            // 
             // UserControl1E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
+            this.Controls.Add(this.buttonRoomsReport);
             this.Controls.Add(this.buttonAttend);
             this.Controls.Add(this.buttonStudies);
             this.Controls.Add(this.pictureBoxEmployee);
@@ -225,5 +240,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonBookLessons;
         private System.Windows.Forms.Button buttonStudies;
         private System.Windows.Forms.Button buttonAttend;
+        private System.Windows.Forms.Button buttonRoomsReport;
     }
 }

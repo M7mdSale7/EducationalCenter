@@ -18,17 +18,12 @@ namespace EducationalCenter
             DataTable dt = Controller.Instance.getTeacherSchedule(Controller.Instance.getTeacherID(Form0.Instance.username));
             dataGridViewTeacherSchedule.DataSource = dt.DefaultView;
         }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1T());
-        }
-
-        private void buttonBack_Click_1(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
+            if(Form0.Instance.type=="teacher")
+                Form0.Instance.Controls.Add(new UserControl1T());
+            else Form0.Instance.Controls.Add(new UserControl1TA());
         }
     }
 }

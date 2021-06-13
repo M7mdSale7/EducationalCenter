@@ -161,6 +161,7 @@ namespace EducationalCenter
             this.buttonTA.TabIndex = 92;
             this.buttonTA.Text = "View Teaching Assistants";
             this.buttonTA.UseVisualStyleBackColor = true;
+            this.buttonTA.Click += new System.EventHandler(this.buttonTA_Click);
             // 
             // comboBoxTeacherID
             // 

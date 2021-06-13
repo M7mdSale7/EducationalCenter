@@ -55,7 +55,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherSchedule.Location = new System.Drawing.Point(31, 115);
             this.dataGridViewTeacherSchedule.Name = "dataGridViewTeacherSchedule";
             this.dataGridViewTeacherSchedule.ReadOnly = true;
-            this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(528, 150);
+            this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(260, 150);
             this.dataGridViewTeacherSchedule.TabIndex = 45;
             // 
             // buttonBack
@@ -68,7 +68,7 @@ namespace EducationalCenter
             this.buttonBack.TabIndex = 104;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // UserControl2T_A
             // 

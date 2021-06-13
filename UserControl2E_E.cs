@@ -16,7 +16,7 @@ namespace EducationalCenter
         {
             InitializeComponent();
             displayData();
-            comboBoxTeacherID.Items.AddRange(Controller.Instance.getAllTeahcersID());
+            comboBoxTeacherID.Items.AddRange(Controller.Instance.getAllTeachersID());
             comboBoxSubject.Items.Add("");
             comboBoxSubject.Items.AddRange(Controller.Instance.getAllSubjectsname());
         }
@@ -67,6 +67,12 @@ namespace EducationalCenter
                 }
 
             }
+        }
+
+        private void buttonTA_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_J(comboBoxTeacherID.Text));
         }
     }
 }

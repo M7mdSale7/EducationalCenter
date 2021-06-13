@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EducationalCenter
 {
-    public partial class UserControl1TA : UserControl
+    public partial class UserControl1T : UserControl
     {
-        public UserControl1TA()
+        public UserControl1T()
         {
             InitializeComponent();
         }

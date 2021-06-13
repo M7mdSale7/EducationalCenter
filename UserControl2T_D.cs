@@ -22,13 +22,10 @@ namespace EducationalCenter
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControl1T());
+            if (Form0.Instance.type == "teacher")
+                Form0.Instance.Controls.Add(new UserControl1T());
+            else Form0.Instance.Controls.Add(new UserControl1TA());
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form0.Instance.Controls.Clear();
-            Form0.Instance.Controls.Add(new UserControlLogin());
-        }
     }
 }

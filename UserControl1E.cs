@@ -16,7 +16,6 @@ namespace EducationalCenter
         public UserControl1E(string name)
         {
             InitializeComponent();
-            this.username = username;
         }
 
         private void buttonStudents_Click(object sender, EventArgs e)
@@ -79,6 +78,18 @@ namespace EducationalCenter
         {
             Form0.Instance.Controls.Clear();
             Form0.Instance.Controls.Add(new UserControl2E_A());
+        }
+
+        private void buttonTeachers_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl2E_E());
+        }
+
+        private void buttonRoomsReport_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new RoomsReport());
         }
     }
 }

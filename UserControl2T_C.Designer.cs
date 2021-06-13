@@ -151,7 +151,7 @@ namespace EducationalCenter
             this.buttonBack.TabIndex = 104;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click_1);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // UserControl2T_C
             // 
