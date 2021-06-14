@@ -46,6 +46,7 @@ namespace EducationalCenter
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelZC = new System.Windows.Forms.Label();
+            this.labelLogOut = new System.Windows.Forms.Label();
             this.panelDesktopPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTA)).BeginInit();
             this.panelTitleBar.SuspendLayout();
@@ -89,6 +90,7 @@ namespace EducationalCenter
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.labelLogOut);
             this.panelTitleBar.Controls.Add(this.buttonMinimize);
             this.panelTitleBar.Controls.Add(this.buttonMaximize);
             this.panelTitleBar.Controls.Add(this.buttonClose);
@@ -156,7 +158,7 @@ namespace EducationalCenter
             this.buttonCloseChildForm.FlatAppearance.BorderSize = 0;
             this.buttonCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCloseChildForm.Image = global::EducationalCenter.Properties.Resources.x;
-            this.buttonCloseChildForm.Location = new System.Drawing.Point(6, 14);
+            this.buttonCloseChildForm.Location = new System.Drawing.Point(0, 35);
             this.buttonCloseChildForm.Name = "buttonCloseChildForm";
             this.buttonCloseChildForm.Size = new System.Drawing.Size(54, 45);
             this.buttonCloseChildForm.TabIndex = 1;
@@ -296,6 +298,19 @@ namespace EducationalCenter
             this.labelZC.TabIndex = 4;
             this.labelZC.Text = "Zewail City";
             // 
+            // labelLogOut
+            // 
+            this.labelLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelLogOut.AutoSize = true;
+            this.labelLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogOut.ForeColor = System.Drawing.Color.White;
+            this.labelLogOut.Location = new System.Drawing.Point(6, 12);
+            this.labelLogOut.Name = "labelLogOut";
+            this.labelLogOut.Size = new System.Drawing.Size(63, 20);
+            this.labelLogOut.TabIndex = 20;
+            this.labelLogOut.Text = "Log out";
+            this.labelLogOut.Click += new System.EventHandler(this.labelLogOut_Click);
+            // 
             // UserControl1TA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,5 +353,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label labelZC;
+        private System.Windows.Forms.Label labelLogOut;
     }
 }

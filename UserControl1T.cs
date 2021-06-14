@@ -178,5 +178,11 @@ namespace EducationalCenter
                 Form0.Instance.WindowState = FormWindowState.Normal;
             }
         }
+
+        private void labelLogOut_Click(object sender, EventArgs e)
+        {
+            Form0.Instance.Controls.Clear();
+            Form0.Instance.Controls.Add(new UserControl1());
+        }
     }
 }

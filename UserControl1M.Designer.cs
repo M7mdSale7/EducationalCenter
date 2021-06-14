@@ -42,11 +42,16 @@ namespace EducationalCenter
             this.buttonAccounts = new System.Windows.Forms.Button();
             this.buttonEmployees = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.buttonEmployeesReport = new System.Windows.Forms.Button();
+            this.labelLogOut = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelZC = new System.Windows.Forms.Label();
             this.panelDesktopPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudent)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
-            this.buttonEmployeesReport = new System.Windows.Forms.Button();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDesktopPane
@@ -84,6 +89,7 @@ namespace EducationalCenter
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.labelLogOut);
             this.panelTitleBar.Controls.Add(this.buttonMinimize);
             this.panelTitleBar.Controls.Add(this.buttonMaximize);
             this.panelTitleBar.Controls.Add(this.buttonClose);
@@ -151,7 +157,7 @@ namespace EducationalCenter
             this.buttonCloseChildForm.FlatAppearance.BorderSize = 0;
             this.buttonCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCloseChildForm.Image = global::EducationalCenter.Properties.Resources.x;
-            this.buttonCloseChildForm.Location = new System.Drawing.Point(6, 14);
+            this.buttonCloseChildForm.Location = new System.Drawing.Point(3, 35);
             this.buttonCloseChildForm.Name = "buttonCloseChildForm";
             this.buttonCloseChildForm.Size = new System.Drawing.Size(54, 45);
             this.buttonCloseChildForm.TabIndex = 1;
@@ -223,6 +229,8 @@ namespace EducationalCenter
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.pictureBoxLogo);
+            this.panelLogo.Controls.Add(this.labelZC);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
@@ -239,7 +247,39 @@ namespace EducationalCenter
             this.buttonEmployeesReport.TabIndex = 11;
             this.buttonEmployeesReport.Text = "Employees Report";
             this.buttonEmployeesReport.UseVisualStyleBackColor = false;
-            //this.buttonEmployeesReport.Click += new System.EventHandler(this.buttonEmployeesReport_Click);
+            // 
+            // labelLogOut
+            // 
+            this.labelLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelLogOut.AutoSize = true;
+            this.labelLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogOut.ForeColor = System.Drawing.Color.White;
+            this.labelLogOut.Location = new System.Drawing.Point(6, 12);
+            this.labelLogOut.Name = "labelLogOut";
+            this.labelLogOut.Size = new System.Drawing.Size(63, 20);
+            this.labelLogOut.TabIndex = 19;
+            this.labelLogOut.Text = "Log out";
+            this.labelLogOut.Click += new System.EventHandler(this.labelLogOut_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = global::EducationalCenter.Properties.Resources.ZC;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(0, -3);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(80, 80);
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // labelZC
+            // 
+            this.labelZC.AutoSize = true;
+            this.labelZC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelZC.ForeColor = System.Drawing.Color.White;
+            this.labelZC.Location = new System.Drawing.Point(86, 24);
+            this.labelZC.Name = "labelZC";
+            this.labelZC.Size = new System.Drawing.Size(111, 24);
+            this.labelZC.TabIndex = 4;
+            this.labelZC.Text = "Zewail City";
             // 
             // UserControl1M
             // 
@@ -257,6 +297,9 @@ namespace EducationalCenter
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +320,8 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonEmployeesReport;
         private System.Windows.Forms.Button buttonEmployees;
         private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Label labelLogOut;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Label labelZC;
     }
 }
