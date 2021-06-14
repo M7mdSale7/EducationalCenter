@@ -30,7 +30,6 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.labelEmployees = new System.Windows.Forms.Label();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.textBoxNID = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace EducationalCenter
             this.buttonFilter = new System.Windows.Forms.Button();
             this.numericUpDownSalary = new System.Windows.Forms.NumericUpDown();
             this.buttonReport = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSalary)).BeginInit();
             this.SuspendLayout();
@@ -60,17 +60,7 @@ namespace EducationalCenter
             this.dataGridViewEmployees.RowTemplate.Height = 25;
             this.dataGridViewEmployees.Size = new System.Drawing.Size(557, 130);
             this.dataGridViewEmployees.TabIndex = 3;
-            this.dataGridViewEmployees.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployees_CellDoubleClick);
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(400, 84);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 43;
-            this.labelDelete.Text = "Double click on a row to delete";
+            this.dataGridViewEmployees.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewEmployees_CellMouseClick);
             // 
             // labelEmployees
             // 
@@ -221,10 +211,23 @@ namespace EducationalCenter
             this.buttonReport.UseVisualStyleBackColor = true;
             this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(541, 68);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 110;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
             // UserControl2M_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.numericUpDownSalary);
             this.Controls.Add(this.buttonClear);
@@ -239,7 +242,6 @@ namespace EducationalCenter
             this.Controls.Add(this.textBoxNID);
             this.Controls.Add(this.textBoxPhoneNumber);
             this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelEmployees);
             this.Controls.Add(this.dataGridViewEmployees);
             this.Name = "UserControl2M_A";
@@ -255,7 +257,6 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewEmployees;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelEmployees;
         private System.Windows.Forms.TextBox textBoxAddress;
         private System.Windows.Forms.TextBox textBoxNID;
@@ -271,5 +272,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.NumericUpDown numericUpDownSalary;
         private System.Windows.Forms.Button buttonReport;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

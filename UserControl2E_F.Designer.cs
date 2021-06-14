@@ -30,7 +30,6 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.labelSubjects = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.dataGridViewSubjects = new System.Windows.Forms.DataGridView();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
@@ -46,6 +45,7 @@ namespace EducationalCenter
             this.buttonFilter = new System.Windows.Forms.Button();
             this.labelSubject = new System.Windows.Forms.Label();
             this.comboBoxFilterSubject = new System.Windows.Forms.ComboBox();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFilterYear)).BeginInit();
@@ -55,20 +55,11 @@ namespace EducationalCenter
             // 
             this.labelSubjects.AutoSize = true;
             this.labelSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubjects.Location = new System.Drawing.Point(18, 56);
+            this.labelSubjects.Location = new System.Drawing.Point(18, 49);
             this.labelSubjects.Name = "labelSubjects";
             this.labelSubjects.Size = new System.Drawing.Size(84, 20);
             this.labelSubjects.TabIndex = 82;
             this.labelSubjects.Text = "Subjects:";
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.Location = new System.Drawing.Point(305, 63);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 83;
-            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // buttonInsert
             // 
@@ -223,11 +214,23 @@ namespace EducationalCenter
             this.comboBoxFilterSubject.Size = new System.Drawing.Size(121, 21);
             this.comboBoxFilterSubject.TabIndex = 107;
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(431, 47);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.comboBoxFilterSubject);
             this.Controls.Add(this.buttonFilter);
@@ -243,7 +246,6 @@ namespace EducationalCenter
             this.Controls.Add(this.comboBoxTeacher);
             this.Controls.Add(this.dataGridViewSubjects);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelSubjects);
             this.Name = "UserControl2E_F";
             this.Size = new System.Drawing.Size(600, 450);
@@ -258,7 +260,6 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.Label labelSubjects;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.DataGridView dataGridViewSubjects;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
@@ -274,5 +275,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.ComboBox comboBoxFilterSubject;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

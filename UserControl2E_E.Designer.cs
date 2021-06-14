@@ -30,7 +30,6 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.labelTeachers = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.dataGridViewTeachers = new System.Windows.Forms.DataGridView();
             this.labelName = new System.Windows.Forms.Label();
             this.labelNationalID = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace EducationalCenter
             this.buttonFilter = new System.Windows.Forms.Button();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.labelSubject = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeachers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,15 +58,6 @@ namespace EducationalCenter
             this.labelTeachers.Size = new System.Drawing.Size(88, 20);
             this.labelTeachers.TabIndex = 81;
             this.labelTeachers.Text = "Teachers:";
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.Location = new System.Drawing.Point(209, 76);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 80;
-            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // dataGridViewTeachers
             // 
@@ -200,10 +191,22 @@ namespace EducationalCenter
             this.labelSubject.TabIndex = 109;
             this.labelSubject.Text = "Subject name";
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(335, 60);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.buttonFilter);
@@ -219,7 +222,6 @@ namespace EducationalCenter
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.dataGridViewTeachers);
             this.Controls.Add(this.labelTeachers);
-            this.Controls.Add(this.labelDelete);
             this.Name = "UserControl2E_E";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeachers)).EndInit();
@@ -231,7 +233,6 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.Label labelTeachers;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.DataGridView dataGridViewTeachers;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelNationalID;
@@ -246,5 +247,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.Label labelSubject;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

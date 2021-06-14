@@ -37,13 +37,13 @@ namespace EducationalCenter
             this.labelSubject = new System.Windows.Forms.Label();
             this.labelTeacher = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.comboBoxTeacher = new System.Windows.Forms.ComboBox();
             this.buttonPrice = new System.Windows.Forms.Button();
             this.comboBoxSubject = new System.Windows.Forms.ComboBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.labelType = new System.Windows.Forms.Label();
             this.comboBoxStudentID = new System.Windows.Forms.ComboBox();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,16 +124,6 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(403, 74);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 41;
-            this.labelDelete.Text = "Double click on a row to delete";
-            // 
             // comboBoxTeacher
             // 
             this.comboBoxTeacher.FormattingEnabled = true;
@@ -191,17 +181,28 @@ namespace EducationalCenter
             this.comboBoxStudentID.TabIndex = 49;
             this.comboBoxStudentID.SelectedIndexChanged += new System.EventHandler(this.comboBoxStudentID_SelectedIndexChanged);
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(529, 58);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.comboBoxStudentID);
             this.Controls.Add(this.comboBoxSubject);
             this.Controls.Add(this.buttonPrice);
             this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.comboBoxTeacher);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelTeacher);
             this.Controls.Add(this.labelSlot);
@@ -228,12 +229,12 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.Label labelTeacher;
         private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.ComboBox comboBoxTeacher;
         private System.Windows.Forms.Button buttonPrice;
         private System.Windows.Forms.ComboBox comboBoxSubject;
         private System.Windows.Forms.ComboBox comboBoxType;
         private System.Windows.Forms.Label labelType;
         private System.Windows.Forms.ComboBox comboBoxStudentID;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

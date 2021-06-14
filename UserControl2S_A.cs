@@ -41,7 +41,7 @@ namespace EducationalCenter
         {
             DataTable dt_Lessons = Controller.Instance.Student_getAllLessonsOrExams( username,"subject", subjectname, Teacher, roomnum, start_datetime, end_datetime);
             dataGridViewLessons.DataSource = dt_Lessons.DefaultView;
-            DataTable dt_Exams = Controller.Instance.Student_getAllLessonsOrExams(username, "Exam", subjectname, Teacher, roomnum, start_datetime, end_datetime);
+            DataTable dt_Exams = Controller.Instance.Student_getAllLessonsOrExams(username, "exam", subjectname, Teacher, roomnum, start_datetime, end_datetime);
             dataGridViewExams.DataSource = dt_Exams.DefaultView;
         }
         private void comboBoxSubject_SelectedIndexChanged(object sender, EventArgs e)

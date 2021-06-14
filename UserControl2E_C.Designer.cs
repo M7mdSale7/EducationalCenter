@@ -30,7 +30,6 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridViewStudents = new System.Windows.Forms.DataGridView();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
             this.labelStudents = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@ namespace EducationalCenter
             this.labelSubject = new System.Windows.Forms.Label();
             this.numericUpDownYearFilter = new System.Windows.Forms.NumericUpDown();
             this.labelFilterYear = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStudyYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYearFilter)).BeginInit();
@@ -60,16 +60,6 @@ namespace EducationalCenter
             this.dataGridViewStudents.Size = new System.Drawing.Size(439, 150);
             this.dataGridViewStudents.TabIndex = 0;
             this.dataGridViewStudents.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewStudents_CellMouseDoubleClick);
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(297, 61);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 43;
-            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // buttonInsert
             // 
@@ -228,10 +218,22 @@ namespace EducationalCenter
             this.labelFilterYear.TabIndex = 111;
             this.labelFilterYear.Text = "Study Year";
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(423, 45);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 113;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.numericUpDownYearFilter);
             this.Controls.Add(this.labelFilterYear);
             this.Controls.Add(this.comboBoxTeacher);
@@ -247,7 +249,6 @@ namespace EducationalCenter
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelStudents);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.dataGridViewStudents);
             this.Name = "UserControl2E_C";
             this.Size = new System.Drawing.Size(600, 450);
@@ -262,7 +263,6 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewStudents;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Label labelStudents;
         private System.Windows.Forms.Label labelName;
@@ -278,5 +278,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.NumericUpDown numericUpDownYearFilter;
         private System.Windows.Forms.Label labelFilterYear;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

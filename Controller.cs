@@ -364,7 +364,7 @@ namespace EducationalCenter
                 Direction = ParameterDirection.Input
             };
             parameters.Add(parameter);
-            dbMan.ExecuteNonQuery("deleteRoom", "sp", parameters);
+            dbMan.ExecuteNonQuery("deleteEmployee", "sp", parameters);
         }
 
         public void deleteRoom(int roomId)

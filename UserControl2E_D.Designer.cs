@@ -37,13 +37,13 @@ namespace EducationalCenter
             this.comboBoxStudentID = new System.Windows.Forms.ComboBox();
             this.dataGridViewParents = new System.Windows.Forms.DataGridView();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.labelParents = new System.Windows.Forms.Label();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.comboBoxFilterStudentID = new System.Windows.Forms.ComboBox();
             this.labelFilterStudentID = new System.Windows.Forms.Label();
             this.comboBoxFilterName = new System.Windows.Forms.ComboBox();
             this.labelFilterName = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewParents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,16 +119,6 @@ namespace EducationalCenter
             this.labelPhoneNumber.TabIndex = 77;
             this.labelPhoneNumber.Text = "Phone number";
             // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(398, 69);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 78;
-            this.labelDelete.Text = "Double click on a row to delete";
-            // 
             // labelParents
             // 
             this.labelParents.AutoSize = true;
@@ -186,17 +176,28 @@ namespace EducationalCenter
             this.labelFilterName.TabIndex = 102;
             this.labelFilterName.Text = "Name";
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(524, 53);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.comboBoxFilterName);
             this.Controls.Add(this.labelFilterName);
             this.Controls.Add(this.comboBoxFilterStudentID);
             this.Controls.Add(this.labelFilterStudentID);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.labelParents);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelPhoneNumber);
             this.Controls.Add(this.dataGridViewParents);
             this.Controls.Add(this.comboBoxStudentID);
@@ -223,12 +224,12 @@ namespace EducationalCenter
         private System.Windows.Forms.ComboBox comboBoxStudentID;
         private System.Windows.Forms.DataGridView dataGridViewParents;
         private System.Windows.Forms.Label labelPhoneNumber;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelParents;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.ComboBox comboBoxFilterStudentID;
         private System.Windows.Forms.Label labelFilterStudentID;
         private System.Windows.Forms.ComboBox comboBoxFilterName;
         private System.Windows.Forms.Label labelFilterName;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

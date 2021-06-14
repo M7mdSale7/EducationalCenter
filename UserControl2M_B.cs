@@ -12,11 +12,13 @@ namespace EducationalCenter
 {
     public partial class UserControl2M_B : UserControl
     {
+        DataGridViewCellMouseEventArgs delete;
         public UserControl2M_B()
         {
             InitializeComponent();
             LoadTheme();
             displayData();
+            buttonDelete.Visible = false;
         }
         private void LoadTheme()
         {
@@ -169,16 +171,23 @@ namespace EducationalCenter
             
         }
 
-        private void dataGridViewUsers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewUsers_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            buttonDelete.Visible = true;
+            delete = e;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (delete.RowIndex >= 0)
             {
                 if (MessageBox.Show("Are you sure you want to delete this row?", "Delete User", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    Controller.Instance.deleteUser(dataGridViewUsers.Rows[e.RowIndex].Cells[0].Value.ToString(), dataGridViewUsers.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    dataGridViewUsers.Rows.RemoveAt(e.RowIndex);
+                    Controller.Instance.deleteUser(dataGridViewUsers.Rows[delete.RowIndex].Cells[0].Value.ToString(), dataGridViewUsers.Rows[delete.RowIndex].Cells[1].Value.ToString());
+                    dataGridViewUsers.Rows.RemoveAt(delete.RowIndex);
                 }
             }
+            buttonDelete.Visible = false;
         }
     }
 }

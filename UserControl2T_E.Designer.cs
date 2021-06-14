@@ -37,8 +37,8 @@ namespace EducationalCenter
             this.labelName = new System.Windows.Forms.Label();
             this.dataGridViewTeacherAssistants = new System.Windows.Forms.DataGridView();
             this.labelTA = new System.Windows.Forms.Label();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.buttonInsert = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacherAssistants)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,16 +118,6 @@ namespace EducationalCenter
             this.labelTA.TabIndex = 83;
             this.labelTA.Text = "Teaching Assistants:";
             // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(197, 78);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 82;
-            this.labelDelete.Text = "Double click on a row to delete";
-            // 
             // buttonInsert
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -140,12 +130,23 @@ namespace EducationalCenter
             this.buttonInsert.UseVisualStyleBackColor = true;
             this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(323, 62);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2T_E
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelTA);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.textBoxPhoneNumber);
@@ -172,7 +173,7 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.DataGridView dataGridViewTeacherAssistants;
         private System.Windows.Forms.Label labelTA;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Button buttonInsert;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

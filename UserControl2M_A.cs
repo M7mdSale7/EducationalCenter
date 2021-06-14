@@ -13,12 +13,14 @@ namespace EducationalCenter
     public partial class UserControl2M_A : UserControl
     {
         UserControl1M userControl1M;
+        DataGridViewCellMouseEventArgs delete;
         public UserControl2M_A(UserControl1M userControl1M)
         {
             this.userControl1M = userControl1M;
             InitializeComponent();
             LoadTheme();
             displayData();
+            buttonDelete.Visible = false;
         }
         private void LoadTheme()
         {
@@ -127,22 +129,29 @@ namespace EducationalCenter
             displayData();
         }
 
-        private void dataGridViewEmployees_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(e.RowIndex >= 0)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete Employee", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    Controller.Instance.deleteEmployee(dataGridViewEmployees.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    dataGridViewEmployees.Rows.RemoveAt(e.RowIndex);
-                }
-
-            }
-        }
-
         private void buttonReport_Click(object sender, EventArgs e)
         {
             userControl1M.OpenChildForm(new EmployeesReport());
+        }
+
+        private void dataGridViewEmployees_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            delete = e;
+            buttonDelete.Visible = true;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (delete.RowIndex >= 0)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this row?", "Delete Employee", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Controller.Instance.deleteEmployee(dataGridViewEmployees.Rows[delete.RowIndex].Cells[1].Value.ToString());
+                    dataGridViewEmployees.Rows.RemoveAt(delete.RowIndex);
+                }
+
+            }
+            buttonDelete.Visible = false;
         }
     }
 }

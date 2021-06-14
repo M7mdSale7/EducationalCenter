@@ -30,7 +30,6 @@ namespace EducationalCenter
         private void InitializeComponent()
         {
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
-            this.labelDelete = new System.Windows.Forms.Label();
             this.labelAccounts = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
@@ -46,6 +45,7 @@ namespace EducationalCenter
             this.labelNonUsernames = new System.Windows.Forms.Label();
             this.textBoxNewPassword = new System.Windows.Forms.TextBox();
             this.labelnewPass = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,17 +57,7 @@ namespace EducationalCenter
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.Size = new System.Drawing.Size(344, 150);
             this.dataGridViewUsers.TabIndex = 0;
-            this.dataGridViewUsers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellDoubleClick);
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(222, 92);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 45;
-            this.labelDelete.Text = "Double click on a row to delete";
+            this.dataGridViewUsers.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewUsers_CellMouseClick);
             // 
             // labelAccounts
             // 
@@ -216,10 +206,23 @@ namespace EducationalCenter
             this.labelnewPass.TabIndex = 99;
             this.labelnewPass.Text = "New password";
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(348, 76);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
             // UserControl2M_B
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelnewPass);
             this.Controls.Add(this.textBoxNewPassword);
             this.Controls.Add(this.labelNonUsernames);
@@ -234,7 +237,6 @@ namespace EducationalCenter
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelAccounts);
             this.Controls.Add(this.dataGridViewUsers);
             this.Name = "UserControl2M_B";
@@ -248,7 +250,6 @@ namespace EducationalCenter
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewUsers;
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelAccounts;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonInsert;
@@ -264,5 +265,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelNonUsernames;
         private System.Windows.Forms.TextBox textBoxNewPassword;
         private System.Windows.Forms.Label labelnewPass;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

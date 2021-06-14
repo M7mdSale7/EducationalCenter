@@ -29,7 +29,6 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelDelete = new System.Windows.Forms.Label();
             this.labelRooms = new System.Windows.Forms.Label();
             this.dataGridViewRooms = new System.Windows.Forms.DataGridView();
             this.labelNumber = new System.Windows.Forms.Label();
@@ -38,20 +37,11 @@ namespace EducationalCenter
             this.numericUpDownNumber = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCapacity = new System.Windows.Forms.NumericUpDown();
             this.buttonReport = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCapacity)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(138, 110);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 98;
-            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // labelRooms
             // 
@@ -131,10 +121,22 @@ namespace EducationalCenter
             this.buttonReport.UseVisualStyleBackColor = true;
             this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(264, 94);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 111;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_H
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.numericUpDownCapacity);
             this.Controls.Add(this.numericUpDownNumber);
@@ -142,7 +144,6 @@ namespace EducationalCenter
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.labelNumber);
             this.Controls.Add(this.dataGridViewRooms);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelRooms);
             this.Name = "UserControl2E_H";
             this.Size = new System.Drawing.Size(600, 450);
@@ -155,8 +156,6 @@ namespace EducationalCenter
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelRooms;
         private System.Windows.Forms.DataGridView dataGridViewRooms;
         private System.Windows.Forms.Label labelNumber;
@@ -165,5 +164,6 @@ namespace EducationalCenter
         private System.Windows.Forms.NumericUpDown numericUpDownNumber;
         private System.Windows.Forms.NumericUpDown numericUpDownCapacity;
         private System.Windows.Forms.Button buttonReport;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

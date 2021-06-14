@@ -29,7 +29,6 @@ namespace EducationalCenter
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelDelete = new System.Windows.Forms.Label();
             this.labelExams = new System.Windows.Forms.Label();
             this.dataGridViewExams = new System.Windows.Forms.DataGridView();
             this.buttonInsert = new System.Windows.Forms.Button();
@@ -51,20 +50,11 @@ namespace EducationalCenter
             this.dateTimePickerDay = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelDelete
-            // 
-            this.labelDelete.AutoSize = true;
-            this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(403, 74);
-            this.labelDelete.Name = "labelDelete";
-            this.labelDelete.Size = new System.Drawing.Size(154, 13);
-            this.labelDelete.TabIndex = 96;
-            this.labelDelete.Text = "Double click on a row to delete";
             // 
             // labelExams
             // 
@@ -271,10 +261,22 @@ namespace EducationalCenter
             this.dateTimePickerTo.Size = new System.Drawing.Size(82, 20);
             this.dateTimePickerTo.TabIndex = 128;
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Location = new System.Drawing.Point(529, 58);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(28, 26);
+            this.buttonDelete.TabIndex = 129;
+            this.buttonDelete.Text = "X";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
             // UserControl2E_G
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.dateTimePickerTo);
             this.Controls.Add(this.dateTimePickerFrom);
             this.Controls.Add(this.dateTimePickerDay);
@@ -295,7 +297,6 @@ namespace EducationalCenter
             this.Controls.Add(this.labelSubjectName);
             this.Controls.Add(this.buttonInsert);
             this.Controls.Add(this.dataGridViewExams);
-            this.Controls.Add(this.labelDelete);
             this.Controls.Add(this.labelExams);
             this.Name = "UserControl2E_G";
             this.Size = new System.Drawing.Size(600, 450);
@@ -308,8 +309,6 @@ namespace EducationalCenter
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelDelete;
         private System.Windows.Forms.Label labelExams;
         private System.Windows.Forms.DataGridView dataGridViewExams;
         private System.Windows.Forms.Button buttonInsert;
@@ -331,5 +330,6 @@ namespace EducationalCenter
         private System.Windows.Forms.DateTimePicker dateTimePickerDay;
         private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
         private System.Windows.Forms.DateTimePicker dateTimePickerTo;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }
