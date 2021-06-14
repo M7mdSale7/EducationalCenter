@@ -71,7 +71,7 @@ namespace EducationalCenter
                 }
             }
         }
-        private void OpenChildForm(UserControl childForm)
+        public void OpenChildForm(UserControl childForm)
         {
             activeForm = childForm;
             childForm.BorderStyle = BorderStyle.None;
@@ -141,7 +141,7 @@ namespace EducationalCenter
         {
             Reset();
             ActivateButton(sender);
-            OpenChildForm(new UserControl2M_A());
+            OpenChildForm(new UserControl2M_A(this));
             labelTitle.Text = "Employees";
         }
 

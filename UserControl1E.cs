@@ -49,7 +49,7 @@ namespace EducationalCenter
         {
             Reset();
             ActivateButton(sender);
-            OpenChildForm(new UserControl2E_H());
+            OpenChildForm(new UserControl2E_H(this));
             labelTitle.Text = "Rooms";
         }
 

@@ -12,8 +12,10 @@ namespace EducationalCenter
 {
     public partial class UserControl2M_A : UserControl
     {
-        public UserControl2M_A()
+        UserControl1M userControl1M;
+        public UserControl2M_A(UserControl1M userControl1M)
         {
+            this.userControl1M = userControl1M;
             InitializeComponent();
             LoadTheme();
             displayData();
@@ -136,6 +138,11 @@ namespace EducationalCenter
                 }
 
             }
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            userControl1M.OpenChildForm(new EmployeesReport());
         }
     }
 }

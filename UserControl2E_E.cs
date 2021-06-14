@@ -81,7 +81,7 @@ namespace EducationalCenter
 
         private void buttonTA_Click(object sender, EventArgs e)
         {
-            usercontrol1E.OpenChildForm(new UserControl2E_J(comboBoxTeacherID.Text));
+            usercontrol1E.OpenChildForm(new UserControl2E_J(usercontrol1E,comboBoxTeacherID.Text));
         }
     }
 }

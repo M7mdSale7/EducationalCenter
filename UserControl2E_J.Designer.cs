@@ -65,13 +65,12 @@ namespace EducationalCenter
             this.buttonBack.TabIndex = 108;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            //this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // UserControl2E_J
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::EducationalCenter.Properties.Resources.Background;
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTA);
             this.Controls.Add(this.dataGridViewTA);

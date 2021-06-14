@@ -103,7 +103,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherAssistants.Name = "dataGridViewTeacherAssistants";
             this.dataGridViewTeacherAssistants.ReadOnly = true;
             this.dataGridViewTeacherAssistants.RowTemplate.Height = 25;
-            this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(473, 130);
+            this.dataGridViewTeacherAssistants.Size = new System.Drawing.Size(336, 130);
             this.dataGridViewTeacherAssistants.TabIndex = 27;
             this.dataGridViewTeacherAssistants.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTeacherAssistants_CellMouseDoubleClick);
             // 
@@ -122,7 +122,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(334, 78);
+            this.labelDelete.Location = new System.Drawing.Point(197, 78);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 82;

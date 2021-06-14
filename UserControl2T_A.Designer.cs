@@ -54,7 +54,7 @@ namespace EducationalCenter
             this.dataGridViewTeacherSchedule.Location = new System.Drawing.Point(31, 115);
             this.dataGridViewTeacherSchedule.Name = "dataGridViewTeacherSchedule";
             this.dataGridViewTeacherSchedule.ReadOnly = true;
-            this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(260, 150);
+            this.dataGridViewTeacherSchedule.Size = new System.Drawing.Size(230, 150);
             this.dataGridViewTeacherSchedule.TabIndex = 45;
             // 
             // UserControl2T_A

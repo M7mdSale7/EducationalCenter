@@ -204,7 +204,7 @@ namespace EducationalCenter
             // 
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClear.Location = new System.Drawing.Point(487, 333);
+            this.buttonClear.Location = new System.Drawing.Point(487, 356);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 135;
@@ -216,7 +216,7 @@ namespace EducationalCenter
             // 
             this.buttonFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFilter.Location = new System.Drawing.Point(487, 288);
+            this.buttonFilter.Location = new System.Drawing.Point(487, 312);
             this.buttonFilter.Name = "buttonFilter";
             this.buttonFilter.Size = new System.Drawing.Size(75, 23);
             this.buttonFilter.TabIndex = 134;
@@ -264,7 +264,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(487, 245);
+            this.buttonInsert.Location = new System.Drawing.Point(487, 256);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 129;

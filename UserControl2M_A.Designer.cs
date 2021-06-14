@@ -45,6 +45,7 @@ namespace EducationalCenter
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonFilter = new System.Windows.Forms.Button();
             this.numericUpDownSalary = new System.Windows.Forms.NumericUpDown();
+            this.buttonReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSalary)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@ namespace EducationalCenter
             // 
             this.dataGridViewEmployees.AllowUserToAddRows = false;
             this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmployees.Location = new System.Drawing.Point(22, 110);
+            this.dataGridViewEmployees.Location = new System.Drawing.Point(12, 100);
             this.dataGridViewEmployees.Name = "dataGridViewEmployees";
             this.dataGridViewEmployees.ReadOnly = true;
             this.dataGridViewEmployees.RowTemplate.Height = 25;
@@ -65,7 +66,7 @@ namespace EducationalCenter
             // 
             this.labelDelete.AutoSize = true;
             this.labelDelete.BackColor = System.Drawing.Color.Transparent;
-            this.labelDelete.Location = new System.Drawing.Point(410, 94);
+            this.labelDelete.Location = new System.Drawing.Point(400, 84);
             this.labelDelete.Name = "labelDelete";
             this.labelDelete.Size = new System.Drawing.Size(154, 13);
             this.labelDelete.TabIndex = 43;
@@ -76,7 +77,7 @@ namespace EducationalCenter
             this.labelEmployees.AutoSize = true;
             this.labelEmployees.BackColor = System.Drawing.Color.Transparent;
             this.labelEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.labelEmployees.Location = new System.Drawing.Point(18, 60);
+            this.labelEmployees.Location = new System.Drawing.Point(8, 50);
             this.labelEmployees.Name = "labelEmployees";
             this.labelEmployees.Size = new System.Drawing.Size(101, 20);
             this.labelEmployees.TabIndex = 42;
@@ -84,7 +85,7 @@ namespace EducationalCenter
             // 
             // textBoxAddress
             // 
-            this.textBoxAddress.Location = new System.Drawing.Point(330, 289);
+            this.textBoxAddress.Location = new System.Drawing.Point(320, 279);
             this.textBoxAddress.MaxLength = 15;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(100, 20);
@@ -92,7 +93,7 @@ namespace EducationalCenter
             // 
             // textBoxNID
             // 
-            this.textBoxNID.Location = new System.Drawing.Point(177, 289);
+            this.textBoxNID.Location = new System.Drawing.Point(167, 279);
             this.textBoxNID.MaxLength = 15;
             this.textBoxNID.Name = "textBoxNID";
             this.textBoxNID.Size = new System.Drawing.Size(100, 20);
@@ -100,7 +101,7 @@ namespace EducationalCenter
             // 
             // textBoxPhoneNumber
             // 
-            this.textBoxPhoneNumber.Location = new System.Drawing.Point(177, 357);
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(167, 347);
             this.textBoxPhoneNumber.MaxLength = 15;
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
             this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 20);
@@ -108,7 +109,7 @@ namespace EducationalCenter
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(34, 289);
+            this.textBoxName.Location = new System.Drawing.Point(24, 279);
             this.textBoxName.MaxLength = 15;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
@@ -117,7 +118,7 @@ namespace EducationalCenter
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(344, 271);
+            this.labelAddress.Location = new System.Drawing.Point(317, 262);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(45, 13);
             this.labelAddress.TabIndex = 56;
@@ -126,7 +127,7 @@ namespace EducationalCenter
             // labelNationalID
             // 
             this.labelNationalID.AutoSize = true;
-            this.labelNationalID.Location = new System.Drawing.Point(177, 272);
+            this.labelNationalID.Location = new System.Drawing.Point(167, 262);
             this.labelNationalID.Name = "labelNationalID";
             this.labelNationalID.Size = new System.Drawing.Size(60, 13);
             this.labelNationalID.TabIndex = 55;
@@ -135,7 +136,7 @@ namespace EducationalCenter
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(177, 340);
+            this.labelPhoneNumber.Location = new System.Drawing.Point(167, 330);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
             this.labelPhoneNumber.Size = new System.Drawing.Size(78, 13);
             this.labelPhoneNumber.TabIndex = 54;
@@ -144,7 +145,7 @@ namespace EducationalCenter
             // labelSalary
             // 
             this.labelSalary.AutoSize = true;
-            this.labelSalary.Location = new System.Drawing.Point(31, 340);
+            this.labelSalary.Location = new System.Drawing.Point(21, 330);
             this.labelSalary.Name = "labelSalary";
             this.labelSalary.Size = new System.Drawing.Size(36, 13);
             this.labelSalary.TabIndex = 53;
@@ -153,7 +154,7 @@ namespace EducationalCenter
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(31, 273);
+            this.labelName.Location = new System.Drawing.Point(21, 263);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(35, 13);
             this.labelName.TabIndex = 52;
@@ -163,7 +164,7 @@ namespace EducationalCenter
             // 
             this.buttonInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInsert.Location = new System.Drawing.Point(504, 287);
+            this.buttonInsert.Location = new System.Drawing.Point(320, 348);
             this.buttonInsert.Name = "buttonInsert";
             this.buttonInsert.Size = new System.Drawing.Size(75, 23);
             this.buttonInsert.TabIndex = 82;
@@ -175,7 +176,7 @@ namespace EducationalCenter
             // 
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClear.Location = new System.Drawing.Point(504, 380);
+            this.buttonClear.Location = new System.Drawing.Point(494, 403);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 22);
             this.buttonClear.TabIndex = 98;
@@ -187,7 +188,7 @@ namespace EducationalCenter
             // 
             this.buttonFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFilter.Location = new System.Drawing.Point(504, 331);
+            this.buttonFilter.Location = new System.Drawing.Point(494, 349);
             this.buttonFilter.Name = "buttonFilter";
             this.buttonFilter.Size = new System.Drawing.Size(75, 22);
             this.buttonFilter.TabIndex = 97;
@@ -198,7 +199,7 @@ namespace EducationalCenter
             // numericUpDownSalary
             // 
             this.numericUpDownSalary.DecimalPlaces = 2;
-            this.numericUpDownSalary.Location = new System.Drawing.Point(34, 358);
+            this.numericUpDownSalary.Location = new System.Drawing.Point(24, 348);
             this.numericUpDownSalary.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -208,10 +209,23 @@ namespace EducationalCenter
             this.numericUpDownSalary.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownSalary.TabIndex = 99;
             // 
+            // buttonReport
+            // 
+            this.buttonReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonReport.Location = new System.Drawing.Point(494, 279);
+            this.buttonReport.Name = "buttonReport";
+            this.buttonReport.Size = new System.Drawing.Size(75, 23);
+            this.buttonReport.TabIndex = 109;
+            this.buttonReport.Text = "Report";
+            this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
+            // 
             // UserControl2M_A
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.numericUpDownSalary);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonFilter);
@@ -256,5 +270,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonFilter;
         private System.Windows.Forms.NumericUpDown numericUpDownSalary;
+        private System.Windows.Forms.Button buttonReport;
     }
 }

@@ -12,8 +12,10 @@ namespace EducationalCenter
 {
     public partial class UserControl2E_J : UserControl
     {
-        public UserControl2E_J(string TID)
+        UserControl1E userControl1E;
+        public UserControl2E_J(UserControl1E userControl1E,string TID)
         {
+            this.userControl1E = userControl1E;
             InitializeComponent();
             LoadTheme();
             DataTable dt = Controller.Instance.getTeacherAssistants(TID);
@@ -32,6 +34,11 @@ namespace EducationalCenter
                 }
             }
             labelTA.ForeColor = ThemeColor.PrimaryColor;
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            userControl1E.OpenChildForm(new UserControl2E_E(userControl1E));
         }
     }
 }

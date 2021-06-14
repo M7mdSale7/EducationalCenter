@@ -37,6 +37,7 @@ namespace EducationalCenter
             this.labelCapacity = new System.Windows.Forms.Label();
             this.numericUpDownNumber = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCapacity = new System.Windows.Forms.NumericUpDown();
+            this.buttonReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCapacity)).BeginInit();
@@ -118,10 +119,23 @@ namespace EducationalCenter
             this.numericUpDownCapacity.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownCapacity.TabIndex = 107;
             // 
+            // buttonReport
+            // 
+            this.buttonReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonReport.Location = new System.Drawing.Point(373, 343);
+            this.buttonReport.Name = "buttonReport";
+            this.buttonReport.Size = new System.Drawing.Size(75, 23);
+            this.buttonReport.TabIndex = 108;
+            this.buttonReport.Text = "Report";
+            this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
+            // 
             // UserControl2E_H
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.numericUpDownCapacity);
             this.Controls.Add(this.numericUpDownNumber);
             this.Controls.Add(this.labelCapacity);
@@ -150,5 +164,6 @@ namespace EducationalCenter
         private System.Windows.Forms.Label labelCapacity;
         private System.Windows.Forms.NumericUpDown numericUpDownNumber;
         private System.Windows.Forms.NumericUpDown numericUpDownCapacity;
+        private System.Windows.Forms.Button buttonReport;
     }
 }
